@@ -45,26 +45,19 @@
 
 ---
 
-## ✅ 路線解析狀態
+## 🗺️ 七日路線概覽
 
-| # | Day | 路線 |
-|---|---|---|
-| ✅ | Day 1 | **福岡空港 → Times 福岡空港店（取車）→ HIVE** |
-| ✅ | Day 2 | HIVE → 糸島 6 點環線 → HIVE |
-| ✅ | Day 3 | HIVE → 太宰府 → 柳川（本吉屋・北原白秋）→ YOUR ROOM 熊本駅 |
-| ✅ | Day 4 | YOUR ROOM 熊本駅 → 熊本城 → 城彩苑 → 阿蘇山 → YOUR ROOM 熊本駅 |
-| ✅ | Day 5 | YOUR ROOM 熊本駅 → 由布院 → 金鱗湖 → 別府地獄 → Beppu 乃音 |
-| ✅ | Day 6 | Beppu 乃音 → 鐵輪溫泉 → Beppu 乃音 |
-| ✅ | Day 7 | （別府→博多市區）→ HIVE 一帶採買 → Times 福岡空港店還車 → Aoki（機場區）|
+| Day | 路線 |
+|---|---|
+| Day 1 | 福岡空港 → Times 福岡空港店（取車）→ HIVE |
+| Day 2 | HIVE → 糸島 6 點環線 → HIVE |
+| Day 3 | HIVE → 太宰府 → 柳川（本吉屋・北原白秋）→ YOUR ROOM 熊本駅 |
+| Day 4 | YOUR ROOM 熊本駅 → 熊本城 → 城彩苑 → 阿蘇周邊（米塚・草千里・大觀峰）→ YOUR ROOM 熊本駅 |
+| Day 5 | YOUR ROOM 熊本駅 → 由布院 → 金鱗湖 → 別府地獄 → Beppu 乃音 |
+| Day 6 | Beppu 乃音 → 鐵輪溫泉 → Beppu 乃音 |
+| Day 7 | Beppu 乃音 → 博多市區採買 → Times 福岡空港店還車 → 福岡空港 |
 
-> 7 天 Google Maps URL 全部對齊訂單，含取/還車站。
-
-### 🆕 重要發現：租車店家是「Times 福岡空港店」（不是博多東中洲店）
-
-- 訂單地址 **2-1-48 東那珂（Higashinaka）, 812-0892**
-- Google Maps 標示為「**Times Car Rental Fukuoka Airport International**」
-- 位置在福岡空港西南 ~1.5 km，**有 shuttle bus 接駁機場**
-- 這對取車（9/19 抵達後接駁過去）與還車（9/25 還車後接駁到機場）都比博多市區方便
+> 🚗 租車店家「**Times Car Rental 福岡空港店**」位於東那珂 2-1-48，福岡空港西南 1.5 km，**有免費 shuttle 接駁機場**，取/還車都方便。
 
 ---
 
@@ -165,9 +158,11 @@
 
 | 景點 | 狀態 | 說明 |
 |---|---|---|
-| **阿蘇中岳火口** | ❌ **全部人都不能去** | 2026/1/27 起因直升機事故全面關閉中，**草千里仍開放** |
-| 草千里 | ✅ OK | 平坦草原，遠眺阿蘇五岳 |
+| **阿蘇中岳火口** | ❌ **全員不上去** | 2026/1/27 起因事故全面關閉中；本來計畫就只在周圍走走 |
+| 草千里浜 | ✅ OK | 平坦草原，遠眺阿蘇五岳 |
+| 米塚展望所 | ✅ OK | 路邊停車 5 分鐘，無下車走路 |
 | 大觀峰 | ✅ OK | 平坦展望台 |
+| 道の駅 阿蘇 | ✅ OK | 火山資訊館 + 物產店，可休息 |
 | 柳川遊船 | ❌ 不搭 | 木船 70 分鐘無廁所、上下船有高低差 |
 | 別府地獄 | ✅ OK | 用看的，不下水 |
 | **地獄蒸し工房** | ⚠️ 看狀況 | 蒸氣熱、人多排隊，**孕婦可在外等不參加** |
@@ -187,7 +182,7 @@
 
 ## 📅 每日行程（含完整地址）
 
-> 以下每個 spot 都從 PDF 的 Google Maps URL 中解析確認過地址與座標。
+> 每個 spot 都附完整地址；對應 Google Maps 連結整理在文末的「每日路線連結」。
 
 ---
 
@@ -292,10 +287,13 @@
 |---|---|---|
 | 1 | **熊本城** | 熊本市中央区本丸 1-1（860-0002）|
 | 2 | **櫻之馬場 城彩苑（Sakura-no-baba Josaien）** | 熊本市中央区二之丸 1-1-2（860-0008）|
-| 3 | **阿蘇山（草千里・米塚展望所）** | 熊本縣阿蘇市高原 Takawara（869-2223）|
+| 3 | **阿蘇山周邊** | 熊本縣阿蘇市高原 Takawara（869-2223）|
 | 4 | **YOUR ROOM 熊本駅** | 熊本市中央区本山 3-5-7（860-0821）|
 
 **預估車程**：YOUR ROOM 熊本駅 → 熊本城 3 km / 10 分 → 阿蘇 50 km / 1 hr 15 分 → 大觀峰 → 回熊本 50 km / 1 hr 30 分
+
+> 🌋 **阿蘇行程：在山腳/山腰周圍走走**（不上中岳火口，孕婦友善的緩慢散步）
+> 中岳火口因事故全面關閉中，本來就不上去；改成沿著阿蘇周邊環線挑幾個展望點走走、拍照、吃在地小吃。
 
 | 時間 | 地點 |
 |---|---|
@@ -303,16 +301,20 @@
 | 9:00 | **熊本城**（天守閣 2021 年復原完成，全面開放）|
 | | 9:00–17:00 入園，最終入園 16:00；票價 ¥800 |
 | 11:00 | **城彩苑** 午餐 + 伴手禮 |
-| 13:00 | 出發阿蘇 |
-| 14:30 | **米塚展望所** 拍照（路邊休息 5 分）|
-| 14:45 | **草千里浜** 散步（**中岳火口因事故全面關閉中，無法上去**）|
-| 16:00 | **大觀峰** 看阿蘇五岳全景 |
-| 17:30 | 回熊本市（約 1 hr 30 分）|
+| 13:00 | 出發阿蘇（走 ミルクロード 風景線最舒服）|
+| 14:15 | **道の駅 阿蘇** 停一下，看一下火山資訊館、買特產 |
+| 14:45 | **米塚展望所** 路邊停車，看圓錐型小火山地形（5 分鐘）|
+| 15:00 | **草千里浜** 平坦草原散步，遠眺烏帽子岳、看放牧的牛馬（30–40 分）|
+| | 旁邊 **阿蘇火山博物館** 可以躲太陽（孕婦不想走可在館內或咖啡廳休息）|
+| 16:15 | **大觀峰** 阿蘇五岳全景眺望台（平坦步道，孕婦 OK）|
+| 17:00 | 回熊本市（走 やまなみ → 九州道，約 1 hr 30 分）|
 | 19:30 | 晚餐：**勝烈亭 新市街本店** / **天外天 本店**（熊本豚骨拉麵元祖）|
 
-> 💴 熊本城 ¥800（高中以上）
+> 💴 熊本城 ¥800（高中以上）；阿蘇周邊景點多數免費
 
-> 🅿️ 熊本城櫻之馬場 ¥500，草千里 ¥500。
+> 🅿️ 熊本城櫻之馬場 ¥500；阿蘇道の駅免費；草千里 ¥500；大觀峰免費
+
+> 👶 **孕婦友善提醒**：阿蘇周邊都是緩坡或平坦展望台，沒有爬山行程。**陽光強要帶帽子、水**；山上溫差大（9 月中下旬約 18–22°C），帶薄外套。
 
 ---
 
@@ -378,9 +380,7 @@
 
 ### Day 7｜9/25（五）回國日｜別府 → 博多市區 → 還車 → 機場
 
-> 📝 **PDF v2 Day 7 URL 結構**：HIVE 一帶 → Times 福岡空港店（還車）→ Aoki（青木區，福岡空港西側）。URL 描繪的是博多市區內最後段「採買 → 還車 → 機場」，**從別府開回福岡的高速段省略未列**。
-
-**完整路線**：Beppu 乃音 → 博多市區 / HIVE 一帶（採買用餐）→ Times 福岡空港店還車 → shuttle 到福岡空港
+**路線**：Beppu 乃音 → 博多市區 / HIVE 一帶（採買用餐）→ Times 福岡空港店還車 → shuttle 到福岡空港
 
 | 順序 | Spot | 地址 |
 |---|---|---|
@@ -417,17 +417,17 @@
 
 ## 🗺️ 每日路線連結
 
-> 以下為 PDF v2 中附的 Google Maps URL（依停靠點順序）。
+> 依停靠點順序的 Google Maps 路線連結。
 
 | Day | 路線 | Maps URL |
 |---|---|---|
-| 1 | 福岡空港 → Times 福岡空港店（取車）→ HIVE | [PDF v2](https://www.google.com/maps/dir/Fukuoka+Airport,+778-1+Shimousui,+Hakata+Ward,+Fukuoka,+812-0003,+Japan/Times+Car+Rental+Fukuoka+Airport+International,+2+Chome-1-48+Higashinaka,+Hakata+Ward,+Fukuoka,+812-0892,+Japan/4-3+Kamigofukumachi,+Hakata+Ward,+Fukuoka,+812-0036,+Japan/) |
-| 2 | HIVE → 櫻井神社 → 白糸の滝 → Palm Beach Garden → 椰子樹鞦韆 → 伊都菜彩 → HIVE | [PDF v2](https://www.google.com/maps/dir/4-3+Kamigofukumachi,+Hakata+Ward,+Fukuoka,+812-0036,+Japan/Sakurai+Shrine,+4227+Shimasakurai,+Itoshima,+Fukuoka+819-1304,+Japan/Shiraito+Waterfall,+460-6+Shiraito,+Itoshima,+Fukuoka+819-1154,+Japan/SURF+SIDE+CAFE+Palm+Beach+Gardens,+285-B+Nishinoura,+Nishi+Ward,+Fukuoka,+819-0202,+Japan/Palm+Tree+Swing,+79-6+Kota,+Nishi+Ward,+Fukuoka,+819-0203,+Japan/ITOSAISAI+Farmer's+Market,+567-1+Hatae,+Itoshima,+Fukuoka+819-1104,+Japan/4-3+Kamigofukumachi,+Hakata+Ward,+Fukuoka,+812-0036,+Japan/) |
-| 3 | HIVE → 太宰府天滿宮 → 本吉屋柳川 → 北原白秋故居 → YOUR ROOM 熊本駅 | [PDF v2](https://www.google.com/maps/dir/4-3+Kamigofukumachi,+Hakata+Ward,+Fukuoka,+812-0036,+Japan/Dazaifu+Tenmangu+Shrine,+4+Chome-7-1+Saifu,+Dazaifu,+Fukuoka+818-0117,+Japan/Ganso+Motoyoshiya,+69+Asahimachi,+Yanagawa,+Fukuoka+832-0022,+Japan/Kitahara+Hakushu's+Birthplace+and+Memorial+Hall,+55-1+Okinohatamachi,+Yanagawa,+Fukuoka+832-0065,+Japan/YOUR+ROOM+%E7%86%8A%E6%9C%AC%E9%A7%85,+%E3%80%92860-0821+Kumamoto,+Chuo+Ward,+Motoyama,+3+Chome%E2%88%925%E2%88%927/) |
-| 4 | YOUR ROOM 熊本駅 → 熊本城 → 城彩苑 → 阿蘇山 → YOUR ROOM 熊本駅 | [PDF v2](https://www.google.com/maps/dir/YOUR+ROOM+%E7%86%8A%E6%9C%AC%E9%A7%85,+%E3%80%92860-0821+Kumamoto,+Chuo+Ward,+Motoyama,+3+Chome%E2%88%925%E2%88%927/Kumamoto+Castle,+1-1+Honmaru,+Chuo+Ward,+Kumamoto,+860-0002,+Japan/Sakura-no-baba+Josaien,+1-1-2+Ninomaru,+Chuo+Ward,+Kumamoto,+860-0008,+Japan/Mount+Aso,+Takawara,+Aso,+Kumamoto+869-2223,+Japan/YOUR+ROOM+%E7%86%8A%E6%9C%AC%E9%A7%85,+%E3%80%92860-0821+Kumamoto,+Chuo+Ward,+Motoyama,+3+Chome%E2%88%925%E2%88%927/) |
-| 5 | YOUR ROOM 熊本駅 → 由布院温泉 → 金鱗湖 → 別府地獄 → Beppu 乃音 | [PDF v2](https://www.google.com/maps/dir/YOUR+ROOM+%E7%86%8A%E6%9C%AC%E9%A7%85,+%E3%80%92860-0821+Kumamoto,+Chuo+Ward,+Motoyama,+3+Chome%E2%88%925%E2%88%927/Yufuin+Onsen,+Yufu,+Oita,+Japan/Lake+Kinrin,+1561-1+Yufuincho+Kawakami,+Yufu,+Oita+879-5102,+Japan/Beppu+Jigoku+(Hells+of+Beppu),+559-1+Kannawa,+Beppu,+Oita+874-0000,+Japan/BEPPU+non,+%E3%80%92874-0920+Oita,+Beppu,+Kitahama,+3+Chome%E2%88%925%E2%88%926/) |
-| 6 | Beppu 乃音 → 鐵輪溫泉 → Beppu 乃音 | [PDF v2](https://www.google.com/maps/dir/BEPPU+non,+%E3%80%92874-0920+Oita,+Beppu,+Kitahama,+3+Chome%E2%88%925%E2%88%926/Kannawa+Hot+Spring,+%E5%88%A5%E5%BA%9C%E5%B8%82%E5%A4%A7%E5%AD%97%E9%89%84%E8%BC%AA,+212,+Beppu,+Oita+874-0041,+Japan/BEPPU+non,+%E3%80%92874-0920+Oita,+Beppu,+Kitahama,+3+Chome%E2%88%925%E2%88%926/) |
-| 7 | HIVE 一帶 → Times 福岡空港店（還車）→ Aoki（機場區）| [PDF v2](https://www.google.com/maps/dir/4-3+Kamigofukumachi,+Hakata+Ward,+Fukuoka,+812-0036,+Japan/Times+Car+Rental+Fukuoka+Airport+International,+2+Chome-1-48+Higashinaka,+Hakata+Ward,+Fukuoka,+812-0892,+Japan/Aoki,+Hakata+Ward,+Fukuoka,+812-0851,+Japan/) |
+| 1 | 福岡空港 → Times 福岡空港店（取車）→ HIVE | [Google Maps](https://www.google.com/maps/dir/Fukuoka+Airport,+778-1+Shimousui,+Hakata+Ward,+Fukuoka,+812-0003,+Japan/Times+Car+Rental+Fukuoka+Airport+International,+2+Chome-1-48+Higashinaka,+Hakata+Ward,+Fukuoka,+812-0892,+Japan/4-3+Kamigofukumachi,+Hakata+Ward,+Fukuoka,+812-0036,+Japan/) |
+| 2 | HIVE → 櫻井神社 → 白糸の滝 → Palm Beach Garden → 椰子樹鞦韆 → 伊都菜彩 → HIVE | [Google Maps](https://www.google.com/maps/dir/4-3+Kamigofukumachi,+Hakata+Ward,+Fukuoka,+812-0036,+Japan/Sakurai+Shrine,+4227+Shimasakurai,+Itoshima,+Fukuoka+819-1304,+Japan/Shiraito+Waterfall,+460-6+Shiraito,+Itoshima,+Fukuoka+819-1154,+Japan/SURF+SIDE+CAFE+Palm+Beach+Gardens,+285-B+Nishinoura,+Nishi+Ward,+Fukuoka,+819-0202,+Japan/Palm+Tree+Swing,+79-6+Kota,+Nishi+Ward,+Fukuoka,+819-0203,+Japan/ITOSAISAI+Farmer's+Market,+567-1+Hatae,+Itoshima,+Fukuoka+819-1104,+Japan/4-3+Kamigofukumachi,+Hakata+Ward,+Fukuoka,+812-0036,+Japan/) |
+| 3 | HIVE → 太宰府天滿宮 → 本吉屋柳川 → 北原白秋故居 → YOUR ROOM 熊本駅 | [Google Maps](https://www.google.com/maps/dir/4-3+Kamigofukumachi,+Hakata+Ward,+Fukuoka,+812-0036,+Japan/Dazaifu+Tenmangu+Shrine,+4+Chome-7-1+Saifu,+Dazaifu,+Fukuoka+818-0117,+Japan/Ganso+Motoyoshiya,+69+Asahimachi,+Yanagawa,+Fukuoka+832-0022,+Japan/Kitahara+Hakushu's+Birthplace+and+Memorial+Hall,+55-1+Okinohatamachi,+Yanagawa,+Fukuoka+832-0065,+Japan/YOUR+ROOM+%E7%86%8A%E6%9C%AC%E9%A7%85,+%E3%80%92860-0821+Kumamoto,+Chuo+Ward,+Motoyama,+3+Chome%E2%88%925%E2%88%927/) |
+| 4 | YOUR ROOM 熊本駅 → 熊本城 → 城彩苑 → 阿蘇山 → YOUR ROOM 熊本駅 | [Google Maps](https://www.google.com/maps/dir/YOUR+ROOM+%E7%86%8A%E6%9C%AC%E9%A7%85,+%E3%80%92860-0821+Kumamoto,+Chuo+Ward,+Motoyama,+3+Chome%E2%88%925%E2%88%927/Kumamoto+Castle,+1-1+Honmaru,+Chuo+Ward,+Kumamoto,+860-0002,+Japan/Sakura-no-baba+Josaien,+1-1-2+Ninomaru,+Chuo+Ward,+Kumamoto,+860-0008,+Japan/Mount+Aso,+Takawara,+Aso,+Kumamoto+869-2223,+Japan/YOUR+ROOM+%E7%86%8A%E6%9C%AC%E9%A7%85,+%E3%80%92860-0821+Kumamoto,+Chuo+Ward,+Motoyama,+3+Chome%E2%88%925%E2%88%927/) |
+| 5 | YOUR ROOM 熊本駅 → 由布院温泉 → 金鱗湖 → 別府地獄 → Beppu 乃音 | [Google Maps](https://www.google.com/maps/dir/YOUR+ROOM+%E7%86%8A%E6%9C%AC%E9%A7%85,+%E3%80%92860-0821+Kumamoto,+Chuo+Ward,+Motoyama,+3+Chome%E2%88%925%E2%88%927/Yufuin+Onsen,+Yufu,+Oita,+Japan/Lake+Kinrin,+1561-1+Yufuincho+Kawakami,+Yufu,+Oita+879-5102,+Japan/Beppu+Jigoku+(Hells+of+Beppu),+559-1+Kannawa,+Beppu,+Oita+874-0000,+Japan/BEPPU+non,+%E3%80%92874-0920+Oita,+Beppu,+Kitahama,+3+Chome%E2%88%925%E2%88%926/) |
+| 6 | Beppu 乃音 → 鐵輪溫泉 → Beppu 乃音 | [Google Maps](https://www.google.com/maps/dir/BEPPU+non,+%E3%80%92874-0920+Oita,+Beppu,+Kitahama,+3+Chome%E2%88%925%E2%88%926/Kannawa+Hot+Spring,+%E5%88%A5%E5%BA%9C%E5%B8%82%E5%A4%A7%E5%AD%97%E9%89%84%E8%BC%AA,+212,+Beppu,+Oita+874-0041,+Japan/BEPPU+non,+%E3%80%92874-0920+Oita,+Beppu,+Kitahama,+3+Chome%E2%88%925%E2%88%926/) |
+| 7 | HIVE 一帶 → Times 福岡空港店（還車）→ Aoki（機場區）| [Google Maps](https://www.google.com/maps/dir/4-3+Kamigofukumachi,+Hakata+Ward,+Fukuoka,+812-0036,+Japan/Times+Car+Rental+Fukuoka+Airport+International,+2+Chome-1-48+Higashinaka,+Hakata+Ward,+Fukuoka,+812-0892,+Japan/Aoki,+Hakata+Ward,+Fukuoka,+812-0851,+Japan/) |
 
 ---
 
@@ -529,12 +529,8 @@
 |---|---|---|
 | 住宿結構 | APA 福岡 3+1 晚、熊本 1、別府 1 | **HIVE 福岡 2 + YOUR ROOM 熊本 2 + Beppu 乃音 別府 2** |
 | 租車門市 | Toyota Rent a Car 福岡空港 / 博多站 | **Times Car Rental — 福岡空港店**（東那珂 2-1-48）|
-| Day 4 起點（v1）| APA 福岡天神西 | v2 已修正為 YOUR ROOM 熊本駅 ✅ |
-| Day 6 起點（v1）| Business Hotel Star | v2 已修正為 Beppu 乃音 ✅ |
-| Day 1 路線 | 福岡空港 → HIVE | **使用者已補取車站：福岡空港 → Times 福岡空港店 → HIVE** ✅ |
-| Day 7 路線（v1/v2 初版）| Beppu 乃音 → 福岡空港直達，無還車站 | **使用者已補：HIVE → Times 福岡空港店還車 → Aoki**（補上博多市區段）✅ |
 | 連假性質 | 一般連假 | **11 年來首次 5 連休 + 可能 9 連休** |
-| 阿蘇中岳火口 | 孕婦不可去 | **2026/1/27 起全部人都不能去**（直升機事故搜救） |
+| 阿蘇中岳火口 | 孕婦不可去 | **2026/1/27 起全員不能上**（直升機事故搜救關閉中；本來就只計畫在周圍走走）|
 | 別府地獄共通券 | ¥2,200 | **¥2,400**（2024 年漲價）|
 | KEP 價格 | 6 天 ¥12,500 | **2024/10 漲 72-103%，6 天約 ¥18,000+** |
 | 駕照譯本費用 | JAF ¥4,000 | **台灣監理所 NT$100** |
@@ -546,7 +542,7 @@
 
 ---
 
-> 📝 本行程文件最後更新：2026/05/16（PDF v2 全部 7 天 Google Maps URL 已對齊：Day 1 補上 Times 福岡空港店取車站、Day 7 補上 Times 福岡空港店還車站；確認租車店家為「Times Car Rental 福岡空港店」）
+> 📝 本行程文件最後更新：2026/05/16
 
 ## 資料來源
 
