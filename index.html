@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FFB7C5">
+<title>福岡九州 7 日自駕行程 🌸</title>
+<link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><g fill='%23FFB7C5'><ellipse cx='12' cy='5' rx='3' ry='4'/><ellipse cx='19' cy='10' rx='3' ry='4' transform='rotate(72 19 10)'/><ellipse cx='16' cy='18' rx='3' ry='4' transform='rotate(144 16 18)'/><ellipse cx='8' cy='18' rx='3' ry='4' transform='rotate(216 8 18)'/><ellipse cx='5' cy='10' rx='3' ry='4' transform='rotate(288 5 10)'/></g><circle cx='12' cy='12' r='1.8' fill='%23FFEB57'/></svg>">
+<style>
+  :root{
+    --sakura-50:#FFF8FA;
+    --sakura-100:#FFE5EC;
+    --sakura-200:#FFD0DC;
+    --sakura-300:#FFB7C5;
+    --sakura-400:#FF8FA3;
+    --sakura-500:#FB6F92;
+    --sakura-600:#E84A75;
+    --text:#3D2A2F;
+    --text-soft:#6B4F56;
+    --muted:#9B7B82;
+    --card:#FFFFFF;
+    --border:#FFD6E0;
+    --shadow:0 4px 12px rgba(251,111,146,.12);
+    --warn-bg:#FFF4E5; --warn-bd:#FFD18A; --warn-tx:#7A4A00;
+    --danger-bg:#FFE9EE; --danger-bd:#FF8FA3; --danger-tx:#A8154A;
+    --ok-bg:#E8F7EE; --ok-bd:#9ED8B5; --ok-tx:#1F6D3E;
+    --info-bg:#EEF2FF; --info-bd:#B7C4F0; --info-tx:#27408A;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    color:var(--text);
+    background:var(--sakura-50);
+    line-height:1.6;
+    font-size:15px;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--sakura-600);text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  /* ============ Hero ============ */
+  .hero{
+    position:relative;
+    padding:28px 20px 22px;
+    background:linear-gradient(135deg,#FFE5EC 0%,#FFC8DD 45%,#FFB7C5 100%);
+    color:#5B1E33;
+    overflow:hidden;
+    text-align:center;
+  }
+  .hero::before,.hero::after{
+    content:"";position:absolute;border-radius:50%;
+    background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.55),transparent 60%);
+    pointer-events:none;
+  }
+  .hero::before{width:220px;height:220px;top:-60px;right:-40px}
+  .hero::after{width:160px;height:160px;bottom:-50px;left:-30px}
+  .hero h1{margin:0 0 6px;font-size:22px;letter-spacing:1px;font-weight:800;position:relative}
+  .hero .sub{margin:0;font-size:13px;opacity:.85;position:relative}
+  .hero .dates{display:inline-block;margin-top:10px;padding:4px 14px;background:rgba(255,255,255,.65);border-radius:999px;font-size:12px;font-weight:600;position:relative}
+  .sakura-deco{position:absolute;opacity:.7;pointer-events:none;animation:float 8s ease-in-out infinite}
+  .sakura-deco svg{width:100%;height:100%;display:block}
+  .sakura-deco.s1{width:34px;height:34px;top:18px;left:12px;animation-delay:0s}
+  .sakura-deco.s2{width:22px;height:22px;top:60px;right:24px;animation-delay:-2s}
+  .sakura-deco.s3{width:28px;height:28px;bottom:22px;right:60px;animation-delay:-4s}
+  .sakura-deco.s4{width:18px;height:18px;bottom:50px;left:48px;animation-delay:-6s}
+  @keyframes float{
+    0%,100%{transform:translateY(0) rotate(0deg)}
+    50%{transform:translateY(-8px) rotate(15deg)}
+  }
+
+  /* ============ Tabs ============ */
+  .tabs{
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,248,250,.95);
+    backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--border);
+    display:flex;overflow-x:auto;scroll-behavior:smooth;
+    scrollbar-width:none;
+  }
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{
+    flex:0 0 auto;
+    padding:14px 16px;
+    font-size:14px;font-weight:600;
+    color:var(--text-soft);
+    background:transparent;border:none;cursor:pointer;
+    border-bottom:3px solid transparent;
+    white-space:nowrap;
+    transition:color .15s,border-color .15s;
+  }
+  .tab:hover{color:var(--sakura-500)}
+  .tab.active{color:var(--sakura-600);border-bottom-color:var(--sakura-500)}
+
+  /* ============ Main ============ */
+  main{padding:18px 14px 80px;max-width:780px;margin:0 auto}
+  .panel{display:none;animation:fadeIn .25s ease}
+  .panel.active{display:block}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+
+  .card{
+    background:var(--card);border:1px solid var(--border);
+    border-radius:14px;padding:16px;margin-bottom:14px;
+    box-shadow:var(--shadow);
+  }
+  .card h2{margin:0 0 12px;font-size:18px;color:var(--sakura-600);display:flex;align-items:center;gap:8px}
+  .card h3{margin:14px 0 8px;font-size:15px;color:var(--text);display:flex;align-items:center;gap:6px}
+  .card p{margin:6px 0}
+  .card ul,.card ol{margin:6px 0;padding-left:22px}
+  .card li{margin:3px 0}
+
+  /* Alert boxes */
+  .alert{border-radius:10px;padding:12px 14px;margin:10px 0;font-size:14px;border-left:4px solid}
+  .alert.warn{background:var(--warn-bg);border-color:var(--warn-bd);color:var(--warn-tx)}
+  .alert.danger{background:var(--danger-bg);border-color:var(--sakura-400);color:var(--danger-tx)}
+  .alert.ok{background:var(--ok-bg);border-color:var(--ok-bd);color:var(--ok-tx)}
+  .alert.info{background:var(--info-bg);border-color:var(--info-bd);color:var(--info-tx)}
+  .alert b{font-weight:700}
+
+  /* Tables */
+  .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:8px -4px;padding:0 4px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th,td{padding:8px 10px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border)}
+  th{background:var(--sakura-100);color:var(--sakura-600);font-weight:700;font-size:13px;white-space:nowrap}
+  tr:last-child td{border-bottom:none}
+  td b{color:var(--sakura-600)}
+
+  /* Day pills (sub-nav) */
+  .day-pills{display:flex;overflow-x:auto;gap:8px;padding:4px 0 14px;scrollbar-width:none}
+  .day-pills::-webkit-scrollbar{display:none}
+  .pill{
+    flex:0 0 auto;
+    padding:8px 14px;border-radius:999px;font-size:13px;font-weight:600;
+    background:#fff;color:var(--text-soft);border:1.5px solid var(--border);
+    cursor:pointer;transition:all .15s;white-space:nowrap;
+  }
+  .pill:hover{border-color:var(--sakura-400);color:var(--sakura-500)}
+  .pill.active{background:linear-gradient(135deg,var(--sakura-400),var(--sakura-500));color:#fff;border-color:transparent;box-shadow:0 4px 10px rgba(251,111,146,.3)}
+  .pill .pill-date{display:block;font-size:10px;opacity:.8;margin-top:1px;font-weight:500}
+
+  /* Day card hero */
+  .day-hero{
+    background:linear-gradient(135deg,#FFF0F4 0%,#FFE5EC 100%);
+    border:1px solid var(--sakura-200);
+    border-radius:14px;padding:16px;margin-bottom:14px;
+    position:relative;overflow:hidden;
+  }
+  .day-hero::after{
+    content:"";position:absolute;width:120px;height:120px;
+    top:-30px;right:-30px;
+    background:radial-gradient(circle,rgba(251,111,146,.18),transparent 70%);border-radius:50%;
+  }
+  .day-hero .day-num{display:inline-block;padding:3px 10px;border-radius:999px;background:var(--sakura-500);color:#fff;font-size:11px;font-weight:700;letter-spacing:.5px}
+  .day-hero h2{margin:8px 0 4px;font-size:18px;color:var(--text);border:none;padding:0}
+  .day-hero .day-meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12.5px;color:var(--text-soft);margin-top:6px}
+  .day-hero .day-meta span{display:inline-flex;align-items:center;gap:4px}
+  .day-hero .day-route{margin-top:10px;padding:8px 10px;background:rgba(255,255,255,.6);border-radius:8px;font-size:13px;color:var(--text)}
+
+  .timeline-row{display:flex;gap:10px;padding:8px 0;border-bottom:1px dashed var(--border)}
+  .timeline-row:last-child{border:none}
+  .timeline-row .t{flex:0 0 50px;color:var(--sakura-500);font-weight:700;font-size:13px}
+  .timeline-row .e{flex:1;font-size:14px}
+
+  .stops{display:flex;flex-direction:column;gap:6px;margin:6px 0}
+  .stop{display:flex;gap:10px;align-items:flex-start;padding:8px 10px;background:var(--sakura-50);border-radius:8px;font-size:13.5px}
+  .stop .n{flex:0 0 22px;height:22px;background:var(--sakura-400);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}
+  .stop .info b{display:block;color:var(--text);font-size:14px}
+  .stop .info span{color:var(--muted);font-size:12px}
+
+  .hotel-eat{
+    margin-top:14px;padding:14px;border-radius:12px;
+    background:linear-gradient(135deg,#FFF5F7 0%,#FFEAF0 100%);
+    border:1px dashed var(--sakura-300);
+  }
+  .hotel-eat h3{margin:0 0 8px;font-size:15px;color:var(--sakura-600)}
+  .hotel-eat .hint{font-size:12px;color:var(--text-soft);margin:0 0 8px}
+
+  .map-btn{
+    display:inline-flex;align-items:center;gap:6px;
+    margin-top:10px;padding:8px 14px;border-radius:999px;
+    background:linear-gradient(135deg,var(--sakura-400),var(--sakura-500));
+    color:#fff;font-weight:600;font-size:13px;
+    box-shadow:0 4px 10px rgba(251,111,146,.3);
+  }
+  .map-btn:hover{text-decoration:none;transform:translateY(-1px)}
+
+  /* checklist */
+  .checklist{list-style:none;padding:0;margin:6px 0}
+  .checklist li{
+    padding:8px 10px;margin:4px 0;background:var(--sakura-50);
+    border-radius:8px;border-left:3px solid var(--sakura-300);
+    font-size:13.5px;display:flex;gap:8px;align-items:flex-start;
+  }
+  .checklist li::before{content:"☐";color:var(--sakura-500);font-weight:700;font-size:16px;line-height:1}
+  .checklist li.done{opacity:.55;text-decoration:line-through}
+  .checklist li.done::before{content:"☑"}
+  .checklist.urgent li{border-left-color:var(--sakura-600);background:#FFF0F4}
+  .checklist.urgent li::before{color:var(--sakura-600)}
+
+  /* Tag chips */
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+  .chip{padding:3px 10px;border-radius:999px;background:var(--sakura-100);color:var(--sakura-600);font-size:12px;font-weight:600}
+  .chip.warn{background:var(--warn-bg);color:var(--warn-tx)}
+  .chip.danger{background:var(--danger-bg);color:var(--danger-tx)}
+  .chip.ok{background:var(--ok-bg);color:var(--ok-tx)}
+
+  /* Quick action grid */
+  .quick-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:10px 0}
+  .quick-grid .quick{
+    padding:12px;border-radius:12px;background:#fff;border:1px solid var(--border);
+    text-align:center;font-size:13px;font-weight:600;color:var(--text-soft);
+    display:flex;flex-direction:column;align-items:center;gap:6px;
+  }
+  .quick-grid .quick .ico{font-size:22px}
+  .quick-grid .quick:hover{border-color:var(--sakura-400);color:var(--sakura-600);text-decoration:none;transform:translateY(-1px);transition:.15s}
+
+  /* Phone list */
+  .phone-list a{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-radius:8px;background:var(--sakura-50);margin:6px 0;text-decoration:none;color:var(--text)}
+  .phone-list a:hover{background:var(--sakura-100)}
+  .phone-list .name{font-weight:600;font-size:13.5px}
+  .phone-list .num{color:var(--sakura-600);font-weight:700;font-size:13px;font-variant-numeric:tabular-nums}
+
+  /* Today highlight */
+  .today-banner{
+    margin:0 0 12px;padding:10px 14px;border-radius:10px;
+    background:linear-gradient(135deg,var(--sakura-400),var(--sakura-500));
+    color:#fff;font-weight:600;font-size:13px;
+    display:flex;align-items:center;gap:8px;
+  }
+
+  /* Footer */
+  footer{padding:30px 20px;text-align:center;color:var(--muted);font-size:12px}
+  footer .heart{color:var(--sakura-500)}
+
+  /* Large screen */
+  @media(min-width:720px){
+    main{padding:24px 24px 80px}
+    .hero h1{font-size:26px}
+    .quick-grid{grid-template-columns:repeat(4,1fr)}
+    .card{padding:20px}
+  }
+</style>
+</head>
+<body>
+
+<!-- Sakura SVG defs (reusable) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="sakura" viewBox="0 0 24 24">
+      <g fill="#FFB7C5" stroke="#FF8FA3" stroke-width=".3">
+        <ellipse cx="12" cy="5" rx="3" ry="4.2"/>
+        <ellipse cx="19" cy="10" rx="3" ry="4.2" transform="rotate(72 19 10)"/>
+        <ellipse cx="16.5" cy="18" rx="3" ry="4.2" transform="rotate(144 16.5 18)"/>
+        <ellipse cx="7.5" cy="18" rx="3" ry="4.2" transform="rotate(216 7.5 18)"/>
+        <ellipse cx="5" cy="10" rx="3" ry="4.2" transform="rotate(288 5 10)"/>
+      </g>
+      <circle cx="12" cy="12" r="1.8" fill="#FFE57F"/>
+      <g stroke="#FFC44D" stroke-width=".6" stroke-linecap="round">
+        <line x1="12" y1="12" x2="12" y2="9"/>
+        <line x1="12" y1="12" x2="14.5" y2="10.5"/>
+        <line x1="12" y1="12" x2="14.5" y2="13.5"/>
+        <line x1="12" y1="12" x2="9.5" y2="13.5"/>
+        <line x1="12" y1="12" x2="9.5" y2="10.5"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="hero">
+  <div class="sakura-deco s1"><svg><use href="#sakura"/></svg></div>
+  <div class="sakura-deco s2"><svg><use href="#sakura"/></svg></div>
+  <div class="sakura-deco s3"><svg><use href="#sakura"/></svg></div>
+  <div class="sakura-deco s4"><svg><use href="#sakura"/></svg></div>
+  <h1>福岡九州 7 日自駕</h1>
+  <p class="sub">4 人（含孕婦）｜福岡 → 熊本 → 別府</p>
+  <span class="dates">2026 / 09 / 19 (六) — 09 / 25 (五)</span>
+</header>
+
+<nav class="tabs" id="mainTabs" role="tablist">
+  <button class="tab active" data-tab="home">🌸 總覽</button>
+  <button class="tab" data-tab="daily">📅 每日行程</button>
+  <button class="tab" data-tab="food">🍴 美食地圖</button>
+  <button class="tab" data-tab="info">🎟️ 重要資訊</button>
+  <button class="tab" data-tab="pregnancy">🤰 孕婦提醒</button>
+  <button class="tab" data-tab="prep">📋 行前準備</button>
+  <button class="tab" data-tab="emergency">📞 緊急聯絡</button>
+</nav>
+
+<main>
+
+<!-- ============ HOME ============ -->
+<section class="panel active" id="home" role="tabpanel">
+
+  <div id="todayBanner"></div>
+
+  <div class="card">
+    <h2>🚨 出發前最重要：致電 Times 改取/還車時間</h2>
+    <div class="alert danger">
+      <b>訂單時間跟班機完全對不上</b>，必須打電話改，否則會「沒車可開」或「沒地方還車」。<br>
+      📞 <a href="tel:+81924327070"><b>092-432-7070</b></a>（門市 08:00–19:00）
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>項目</th><th>訂單寫</th><th>實際要</th></tr></thead>
+      <tbody>
+        <tr><td>🟥 9/19 取車</td><td>10:00</td><td><b>18:45</b></td></tr>
+        <tr><td>🟥 9/25 還車</td><td>10:00</td><td><b>14:30</b></td></tr>
+      </tbody>
+    </table></div>
+    <h3>📞 致電腳本</h3>
+    <ol>
+      <li>報訂單編號：<b>QXQ799749</b></li>
+      <li>「機票時間關係，9/19 取車改為 <b>18:45</b>」</li>
+      <li>「9/25 還車改為 <b>14:30 或 15:00</b>」</li>
+      <li>確認 shuttle bus 末班、ETC + NOC 加購、兩位駕駛登記</li>
+    </ol>
+    <div class="alert warn">⏰ 建議 <b>2026/08 中旬</b>就打，不要拖到出發前一週。</div>
+  </div>
+
+  <div class="card">
+    <h2>⚠️ 必看：九州 5 連休警告</h2>
+    <p><b>2026/9/19–9/23 是日本 11 年來首次「Silver Week 5 連休」</b></p>
+    <ul>
+      <li>9/19 (六)、9/20 (日) 週末</li>
+      <li>9/21 (一) 敬老日</li>
+      <li>9/22 (二) 國民休日（11 年來首見）</li>
+      <li>9/23 (三) 秋分日</li>
+    </ul>
+    <div class="alert warn">
+      🚗 高速塞車，車程抓平常 <b>1.5 倍</b><br>
+      🍴 太宰府、柳川、由布院人爆滿<br>
+      ⛽ 高速 SA/PA、加油站可能排隊
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🗺️ 七日路線速覽</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Day</th><th>路線</th></tr></thead>
+      <tbody>
+        <tr><td>Day 1</td><td>福岡空港 → Times 取車 → <b>HIVE</b></td></tr>
+        <tr><td>Day 2</td><td>HIVE → 糸島 6 點環線 → HIVE</td></tr>
+        <tr><td>Day 3</td><td>HIVE → 太宰府 → 柳川 → <b>YOUR ROOM 熊本駅</b></td></tr>
+        <tr><td>Day 4</td><td>熊本 → 熊本城 → 阿蘇周邊 → 熊本</td></tr>
+        <tr><td>Day 5</td><td>熊本 → 由布院 → 金鱗湖 → 別府地獄 → <b>Beppu 乃音</b></td></tr>
+        <tr><td>Day 6</td><td>乃音 → 鐵輪溫泉 → 乃音</td></tr>
+        <tr><td>Day 7</td><td>乃音 → 博多採買 → Times 還車 → 機場</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="card">
+    <h2>📌 已確認訂單</h2>
+    <div class="table-wrap"><table>
+      <tbody>
+        <tr><td>✈️ 機票</td><td><b>EVZKEH</b> CI 0128 / CI 0117</td></tr>
+        <tr><td>🚗 租車</td><td><b>QXQ799749</b> Toyota Noah 油電</td></tr>
+        <tr><td>🏨 福岡</td><td>Fukuoka Guesthouse HIVE 9/19–9/20</td></tr>
+        <tr><td>🏨 熊本</td><td>YOUR ROOM 熊本駅 9/21–9/22</td></tr>
+        <tr><td>🏨 別府</td><td>Beppu 乃音 9/23–9/24</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="card">
+    <h2>⚡ 快速連結</h2>
+    <div class="quick-grid">
+      <a href="#" class="quick" data-go="daily"><span class="ico">📅</span>每日行程</a>
+      <a href="#" class="quick" data-go="food"><span class="ico">🍜</span>美食地圖</a>
+      <a href="#" class="quick" data-go="pregnancy"><span class="ico">🤰</span>孕婦提醒</a>
+      <a href="#" class="quick" data-go="emergency"><span class="ico">📞</span>緊急聯絡</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DAILY ============ -->
+<section class="panel" id="daily" role="tabpanel">
+  <div class="day-pills" id="dayPills">
+    <button class="pill active" data-day="1">Day 1<span class="pill-date">9/19 六</span></button>
+    <button class="pill" data-day="2">Day 2<span class="pill-date">9/20 日</span></button>
+    <button class="pill" data-day="3">Day 3<span class="pill-date">9/21 一</span></button>
+    <button class="pill" data-day="4">Day 4<span class="pill-date">9/22 二</span></button>
+    <button class="pill" data-day="5">Day 5<span class="pill-date">9/23 三</span></button>
+    <button class="pill" data-day="6">Day 6<span class="pill-date">9/24 四</span></button>
+    <button class="pill" data-day="7">Day 7<span class="pill-date">9/25 五</span></button>
+  </div>
+
+  <!-- Day 1 -->
+  <div class="day-content" data-day="1">
+    <div class="day-hero">
+      <span class="day-num">DAY 1 · 9/19 (六)</span>
+      <h2>抵達日｜入境取車進博多</h2>
+      <div class="day-meta">
+        <span>🏨 Fukuoka Guesthouse HIVE</span>
+        <span>🚗 ~30 分</span>
+      </div>
+      <div class="day-route">福岡空港 → Times 福岡空港店（取車）→ HIVE</div>
+    </div>
+
+    <div class="card">
+      <h2>📍 停靠點</h2>
+      <div class="stops">
+        <div class="stop"><div class="n">1</div><div class="info"><b>福岡空港 國際線航廈</b><span>福岡市博多区下臼井 778-1</span></div></div>
+        <div class="stop"><div class="n">2</div><div class="info"><b>Times Car Rental 福岡空港店</b><span>博多区東那珂 2-1-48</span></div></div>
+        <div class="stop"><div class="n">3</div><div class="info"><b>Fukuoka Guesthouse HIVE</b><span>博多区上呉服町 4-3</span></div></div>
+      </div>
+      <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Fukuoka+Airport,+778-1+Shimousui,+Hakata+Ward,+Fukuoka,+812-0003,+Japan/Times+Car+Rental+Fukuoka+Airport+International,+2+Chome-1-48+Higashinaka,+Hakata+Ward,+Fukuoka,+812-0892,+Japan/4-3+Kamigofukumachi,+Hakata+Ward,+Fukuoka,+812-0036,+Japan/">🗺️ 開啟 Google Maps 路線</a>
+    </div>
+
+    <div class="card">
+      <h2>⏰ 時間軸</h2>
+      <div class="timeline-row"><div class="t">18:05</div><div class="e">CI0128 抵 FUK 國際線</div></div>
+      <div class="timeline-row"><div class="t">18:35</div><div class="e">出航廈 → 搭 Times shuttle</div></div>
+      <div class="timeline-row"><div class="t">18:45</div><div class="e"><b>抵 Times 福岡空港店</b>（門市 19:00 關）</div></div>
+      <div class="timeline-row"><div class="t">19:15</div><div class="e">取車完畢，開往 HIVE</div></div>
+      <div class="timeline-row"><div class="t">19:35</div><div class="e">Check-in HIVE</div></div>
+      <div class="timeline-row"><div class="t">20:30</div><div class="e">晚餐：一蘭 本社總本店 / 博多もつ鍋 おおやま</div></div>
+      <div class="alert info">🅿️ HIVE 為町家旅宿，自有停車場容量有限；備案 Times 川端 Parking ¥1,400/晚。</div>
+    </div>
+
+    <div class="hotel-eat" data-eat="fukuoka"></div>
+  </div>
+
+  <!-- Day 2 -->
+  <div class="day-content" data-day="2" hidden>
+    <div class="day-hero">
+      <span class="day-num">DAY 2 · 9/20 (日)</span>
+      <h2>糸島半島環線</h2>
+      <div class="day-meta">
+        <span>🏨 Fukuoka Guesthouse HIVE</span>
+        <span>🚗 環線 ~105 km</span>
+        <span>⏱️ 5–6 小時</span>
+      </div>
+      <div class="day-route">HIVE → 櫻井神社 → 白糸の滝 → Palm Beach → 椰子鞦韆 → 伊都菜彩 → HIVE</div>
+    </div>
+
+    <div class="card">
+      <h2>📍 停靠點</h2>
+      <div class="stops">
+        <div class="stop"><div class="n">1</div><div class="info"><b>櫻井神社</b><span>糸島市志摩櫻井 4227</span></div></div>
+        <div class="stop"><div class="n">2</div><div class="info"><b>糸島 白糸の滝</b><span>糸島市白糸 460-6</span></div></div>
+        <div class="stop"><div class="n">3</div><div class="info"><b>SURF SIDE CAFE Palm Beach Gardens</b><span>福岡市西區西浦 285-B</span></div></div>
+        <div class="stop"><div class="n">4</div><div class="info"><b>椰子樹鞦韆 Palm Tree Swing</b><span>福岡市西區小田 79-6</span></div></div>
+        <div class="stop"><div class="n">5</div><div class="info"><b>伊都菜彩 道の駅</b><span>糸島市波多江 567-1</span></div></div>
+      </div>
+      <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/4-3+Kamigofukumachi,+Hakata+Ward,+Fukuoka,+812-0036,+Japan/Sakurai+Shrine,+4227+Shimasakurai,+Itoshima,+Fukuoka+819-1304,+Japan/Shiraito+Waterfall,+460-6+Shiraito,+Itoshima,+Fukuoka+819-1154,+Japan/SURF+SIDE+CAFE+Palm+Beach+Gardens,+285-B+Nishinoura,+Nishi+Ward,+Fukuoka,+819-0202,+Japan/Palm+Tree+Swing,+79-6+Kota,+Nishi+Ward,+Fukuoka,+819-0203,+Japan/ITOSAISAI+Farmer's+Market,+567-1+Hatae,+Itoshima,+Fukuoka+819-1104,+Japan/4-3+Kamigofukumachi,+Hakata+Ward,+Fukuoka,+812-0036,+Japan/">🗺️ 開啟 Google Maps 路線</a>
+    </div>
+
+    <div class="card">
+      <h2>⏰ 時間軸</h2>
+      <div class="timeline-row"><div class="t">9:00</div><div class="e">出發</div></div>
+      <div class="timeline-row"><div class="t">10:00</div><div class="e"><b>櫻井神社</b>（嵐粉絲聖地，不是鬼滅）</div></div>
+      <div class="timeline-row"><div class="t">11:30</div><div class="e"><b>白糸の滝</b>（孕婦在水車食堂吃流しそうめん ¥600/人）</div></div>
+      <div class="timeline-row"><div class="t">13:00</div><div class="e">午餐：Palm Beach Gardens（海景）</div></div>
+      <div class="timeline-row"><div class="t">14:30</div><div class="e">椰子樹鞦韆・天使之翼壁畫</div></div>
+      <div class="timeline-row"><div class="t">15:30</div><div class="e">伊都菜彩買水果（巨峰、無花果）</div></div>
+      <div class="timeline-row"><div class="t">17:00</div><div class="e">回 HIVE</div></div>
+      <div class="timeline-row"><div class="t">19:00</div><div class="e">晚餐：博多もつ鍋 笑樂 / やま中</div></div>
+    </div>
+
+    <div class="hotel-eat" data-eat="fukuoka"></div>
+  </div>
+
+  <!-- Day 3 -->
+  <div class="day-content" data-day="3" hidden>
+    <div class="day-hero">
+      <span class="day-num">DAY 3 · 9/21 (一・敬老日)</span>
+      <h2>福岡 → 太宰府 → 柳川 → 熊本</h2>
+      <div class="day-meta">
+        <span>🏨 YOUR ROOM 熊本駅</span>
+        <span>🚗 ~170 km</span>
+      </div>
+      <div class="day-route">HIVE → 太宰府 → 元祖本吉屋 → 北原白秋故居 → YOUR ROOM 熊本駅</div>
+    </div>
+
+    <div class="alert danger">⚠️ 連假首日太宰府絕對爆滿，<b>8:00 前到</b>最舒服</div>
+
+    <div class="card">
+      <h2>📍 停靠點</h2>
+      <div class="stops">
+        <div class="stop"><div class="n">1</div><div class="info"><b>太宰府天滿宮</b><span>太宰府市宰府 4-7-1</span></div></div>
+        <div class="stop"><div class="n">2</div><div class="info"><b>元祖本吉屋（柳川本店）</b><span>柳川市旭町 69｜📞 +81-944-72-6155</span></div></div>
+        <div class="stop"><div class="n">3</div><div class="info"><b>北原白秋故居・記念館</b><span>柳川市沖端町 55-1</span></div></div>
+        <div class="stop"><div class="n">4</div><div class="info"><b>YOUR ROOM 熊本駅</b><span>熊本市中央区本山 3-5-7</span></div></div>
+      </div>
+      <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/4-3+Kamigofukumachi,+Hakata+Ward,+Fukuoka,+812-0036,+Japan/Dazaifu+Tenmangu+Shrine,+4+Chome-7-1+Saifu,+Dazaifu,+Fukuoka+818-0117,+Japan/Ganso+Motoyoshiya,+69+Asahimachi,+Yanagawa,+Fukuoka+832-0022,+Japan/Kitahara+Hakushu's+Birthplace+and+Memorial+Hall,+55-1+Okinohatamachi,+Yanagawa,+Fukuoka+832-0065,+Japan/YOUR+ROOM+%E7%86%8A%E6%9C%AC%E9%A7%85,+%E3%80%92860-0821+Kumamoto,+Chuo+Ward,+Motoyama,+3+Chome%E2%88%925%E2%88%927/">🗺️ 開啟 Google Maps 路線</a>
+    </div>
+
+    <div class="card">
+      <h2>⏰ 時間軸</h2>
+      <div class="timeline-row"><div class="t">7:30</div><div class="e">HIVE 退房</div></div>
+      <div class="timeline-row"><div class="t">8:30</div><div class="e"><b>太宰府天滿宮</b>（仮殿已拆，本殿改修近完工。梅枝餅：やす武 / かさの家。星巴克隈研吾建築）</div></div>
+      <div class="timeline-row"><div class="t">10:30</div><div class="e">出發柳川</div></div>
+      <div class="timeline-row"><div class="t">11:30</div><div class="e"><b>元祖本吉屋</b> 蒸籠鰻魚飯（用餐 2–3 hr，<b>必預約</b>或 10:30 開門前到）</div></div>
+      <div class="timeline-row"><div class="t">14:30</div><div class="e">北原白秋故居 + 柳川川下り眺望（不搭船）</div></div>
+      <div class="timeline-row"><div class="t">15:30</div><div class="e">出發熊本（高速 ~1 hr 50 分）</div></div>
+      <div class="timeline-row"><div class="t">17:30</div><div class="e">Check-in YOUR ROOM 熊本駅</div></div>
+      <div class="timeline-row"><div class="t">19:00</div><div class="e">晚餐：菅乃屋（馬肉）/ 勝烈亭 / 桂花拉麵</div></div>
+      <div class="alert info">📞 本吉屋只接電話預約，請 HIVE concierge 代撥<br>🅿️ 太宰府駐車場 ¥500，柳川市營 ¥500</div>
+    </div>
+
+    <div class="hotel-eat" data-eat="kumamoto"></div>
+  </div>
+
+  <!-- Day 4 -->
+  <div class="day-content" data-day="4" hidden>
+    <div class="day-hero">
+      <span class="day-num">DAY 4 · 9/22 (二・國民休日)</span>
+      <h2>熊本城＋阿蘇周邊</h2>
+      <div class="day-meta">
+        <span>🏨 YOUR ROOM 熊本駅</span>
+        <span>🚗 ~110 km</span>
+      </div>
+      <div class="day-route">YOUR ROOM → 熊本城 → 城彩苑 → 阿蘇（米塚・草千里・大觀峰）→ YOUR ROOM</div>
+    </div>
+
+    <div class="alert warn">🌋 中岳火口因事故全面關閉中，<b>全員不上去</b>。改沿阿蘇周邊環線挑展望點走走</div>
+
+    <div class="card">
+      <h2>📍 停靠點</h2>
+      <div class="stops">
+        <div class="stop"><div class="n">1</div><div class="info"><b>熊本城</b><span>中央区本丸 1-1｜¥800</span></div></div>
+        <div class="stop"><div class="n">2</div><div class="info"><b>櫻之馬場 城彩苑</b><span>中央区二之丸 1-1-2</span></div></div>
+        <div class="stop"><div class="n">3</div><div class="info"><b>阿蘇山周邊</b><span>阿蘇市高原（米塚・草千里・大觀峰）</span></div></div>
+      </div>
+      <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/YOUR+ROOM+%E7%86%8A%E6%9C%AC%E9%A7%85,+%E3%80%92860-0821+Kumamoto,+Chuo+Ward,+Motoyama,+3+Chome%E2%88%925%E2%88%927/Kumamoto+Castle,+1-1+Honmaru,+Chuo+Ward,+Kumamoto,+860-0002,+Japan/Sakura-no-baba+Josaien,+1-1-2+Ninomaru,+Chuo+Ward,+Kumamoto,+860-0008,+Japan/Mount+Aso,+Takawara,+Aso,+Kumamoto+869-2223,+Japan/YOUR+ROOM+%E7%86%8A%E6%9C%AC%E9%A7%85,+%E3%80%92860-0821+Kumamoto,+Chuo+Ward,+Motoyama,+3+Chome%E2%88%925%E2%88%927/">🗺️ 開啟 Google Maps 路線</a>
+    </div>
+
+    <div class="card">
+      <h2>⏰ 時間軸</h2>
+      <div class="timeline-row"><div class="t">8:30</div><div class="e">出發</div></div>
+      <div class="timeline-row"><div class="t">9:00</div><div class="e"><b>熊本城</b>（天守閣 2021 全面復原，9:00–17:00，最終入園 16:00）</div></div>
+      <div class="timeline-row"><div class="t">11:00</div><div class="e">城彩苑 午餐 + 伴手禮（馬肉、陣太鼓、くまモン）</div></div>
+      <div class="timeline-row"><div class="t">13:00</div><div class="e">出發阿蘇（走 ミルクロード 風景線）</div></div>
+      <div class="timeline-row"><div class="t">14:15</div><div class="e">道の駅 阿蘇</div></div>
+      <div class="timeline-row"><div class="t">14:45</div><div class="e">米塚展望所（路邊停 5 分）</div></div>
+      <div class="timeline-row"><div class="t">15:00</div><div class="e"><b>草千里浜</b> 平坦草原 30–40 分。阿蘇火山博物館可躲太陽</div></div>
+      <div class="timeline-row"><div class="t">16:15</div><div class="e"><b>大觀峰</b> 阿蘇五岳全景</div></div>
+      <div class="timeline-row"><div class="t">17:00</div><div class="e">回熊本市（やまなみ → 九州道 ~1.5 hr）</div></div>
+      <div class="timeline-row"><div class="t">19:30</div><div class="e">晚餐：勝烈亭 / 天外天（豚骨拉麵元祖）</div></div>
+      <div class="alert info">🅿️ 城彩苑 ¥500、道の駅免費、草千里 ¥500、大觀峰免費<br>👶 陽光強帶帽水；山上 18–22°C 帶薄外套</div>
+    </div>
+
+    <div class="hotel-eat" data-eat="kumamoto"></div>
+  </div>
+
+  <!-- Day 5 -->
+  <div class="day-content" data-day="5" hidden>
+    <div class="day-hero">
+      <span class="day-num">DAY 5 · 9/23 (三・秋分日)</span>
+      <h2>熊本 → 由布院 → 別府</h2>
+      <div class="day-meta">
+        <span>🏨 Beppu 乃音</span>
+        <span>🚗 ~165 km</span>
+      </div>
+      <div class="day-route">YOUR ROOM → 由布院温泉 → 金鱗湖 → 別府地獄 → Beppu 乃音</div>
+    </div>
+
+    <div class="alert warn">⚠️ 連假最後一天：建議走 <b>ミルクロード+やまなみハイウェイ</b> 風景線（107 km / 2.5 hr，但風景超美）</div>
+
+    <div class="card">
+      <h2>📍 停靠點</h2>
+      <div class="stops">
+        <div class="stop"><div class="n">1</div><div class="info"><b>由布院温泉（湯の坪街道）</b><span>大分縣由布市湯布院町</span></div></div>
+        <div class="stop"><div class="n">2</div><div class="info"><b>金鱗湖</b><span>由布市湯布院町川上 1561-1</span></div></div>
+        <div class="stop"><div class="n">3</div><div class="info"><b>別府地獄</b><span>別府市鐵輪 559-1｜共通券 ¥2,400</span></div></div>
+        <div class="stop"><div class="n">4</div><div class="info"><b>Beppu 乃音</b><span>別府市北浜 3-5-6</span></div></div>
+      </div>
+      <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/YOUR+ROOM+%E7%86%8A%E6%9C%AC%E9%A7%85,+%E3%80%92860-0821+Kumamoto,+Chuo+Ward,+Motoyama,+3+Chome%E2%88%925%E2%88%927/Yufuin+Onsen,+Yufu,+Oita,+Japan/Lake+Kinrin,+1561-1+Yufuincho+Kawakami,+Yufu,+Oita+879-5102,+Japan/Beppu+Jigoku+(Hells+of+Beppu),+559-1+Kannawa,+Beppu,+Oita+874-0000,+Japan/BEPPU+non,+%E3%80%92874-0920+Oita,+Beppu,+Kitahama,+3+Chome%E2%88%925%E2%88%926/">🗺️ 開啟 Google Maps 路線</a>
+    </div>
+
+    <div class="card">
+      <h2>⏰ 時間軸</h2>
+      <div class="timeline-row"><div class="t">8:00</div><div class="e">YOUR ROOM 退房出發</div></div>
+      <div class="timeline-row"><div class="t">10:30</div><div class="e"><b>由布院</b>。金鱗湖 5 分繞一圈、湯の坪街道、B-speak 蛋糕卷、Snoopy 茶屋、金賞可樂餅</div></div>
+      <div class="timeline-row"><div class="t">12:30</div><div class="e">午餐：ゆふいん市 豐後牛漢堡 / 山椒郎</div></div>
+      <div class="timeline-row"><div class="t">14:00</div><div class="e">出發別府（高速 30 分）</div></div>
+      <div class="timeline-row"><div class="t">14:30</div><div class="e"><b>別府地獄</b> 精選 3 個：海地獄 + 血池 + 龍卷</div></div>
+      <div class="timeline-row"><div class="t">17:00</div><div class="e">Check-in Beppu 乃音</div></div>
+      <div class="timeline-row"><div class="t">18:00</div><div class="e">晚餐：とよ常 天婦羅 / 冷麺の胡月</div></div>
+      <div class="alert info">🅿️ 湯の坪公營 ¥500、金鱗湖週邊 ¥600（土日祝 ¥900）、別府地獄各區免費、乃音停車先電話確認</div>
+    </div>
+
+    <div class="hotel-eat" data-eat="beppu"></div>
+  </div>
+
+  <!-- Day 6 -->
+  <div class="day-content" data-day="6" hidden>
+    <div class="day-hero">
+      <span class="day-num">DAY 6 · 9/24 (四)</span>
+      <h2>別府慢遊｜鐵輪溫泉</h2>
+      <div class="day-meta">
+        <span>🏨 Beppu 乃音</span>
+        <span>🚗 ~30 km</span>
+      </div>
+      <div class="day-route">Beppu 乃音 → 鐵輪溫泉 → 明礬湯之里 → 湯けむり展望台 → 乃音</div>
+    </div>
+
+    <div class="card">
+      <h2>📍 停靠點</h2>
+      <div class="stops">
+        <div class="stop"><div class="n">1</div><div class="info"><b>鐵輪溫泉 地獄蒸し工房</b><span>別府市大字鉄輪字風呂本 212｜10:00 開門</span></div></div>
+        <div class="stop"><div class="n">2</div><div class="info"><b>鐵輪 岡本屋売店</b><span>地獄蒸布丁、溫泉蛋</span></div></div>
+        <div class="stop"><div class="n">3</div><div class="info"><b>明礬湯之里</b><span>湯花小屋、買湯花入浴劑</span></div></div>
+        <div class="stop"><div class="n">4</div><div class="info"><b>湯けむり展望台</b><span>鐵輪溫泉煙霧群</span></div></div>
+      </div>
+      <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/BEPPU+non,+%E3%80%92874-0920+Oita,+Beppu,+Kitahama,+3+Chome%E2%88%925%E2%88%926/Kannawa+Hot+Spring,+%E5%88%A5%E5%BA%9C%E5%B8%82%E5%A4%A7%E5%AD%97%E9%89%84%E8%BC%AA,+212,+Beppu,+Oita+874-0041,+Japan/BEPPU+non,+%E3%80%92874-0920+Oita,+Beppu,+Kitahama,+3+Chome%E2%88%925%E2%88%926/">🗺️ 開啟 Google Maps 路線</a>
+    </div>
+
+    <div class="card">
+      <h2>⏰ 時間軸</h2>
+      <div class="timeline-row"><div class="t">9:30</div><div class="e">從乃音出發</div></div>
+      <div class="timeline-row"><div class="t">10:00</div><div class="e"><b>地獄蒸し工房</b>（¥400 起；孕婦可在外等）</div></div>
+      <div class="timeline-row"><div class="t">12:00</div><div class="e">繼續地獄蒸 / 岡本屋 地獄蒸布丁 + 溫泉蛋</div></div>
+      <div class="timeline-row"><div class="t">13:30</div><div class="e">明礬湯之里（看湯花小屋・買入浴劑）</div></div>
+      <div class="timeline-row"><div class="t">14:30</div><div class="e">湯けむり展望台</div></div>
+      <div class="timeline-row"><div class="t">16:00</div><div class="e">自由：竹瓦溫泉 ¥300（孕婦不下水）/ Global Tower 展望</div></div>
+      <div class="timeline-row"><div class="t">18:30</div><div class="e">晚餐：お食事處 千成 / 東洋軒（炸雞元祖）</div></div>
+      <div class="alert info">💡 出發前一週上官網或撥 0977-66-3775 確認 9/24 工房無休館</div>
+    </div>
+
+    <div class="hotel-eat" data-eat="beppu"></div>
+  </div>
+
+  <!-- Day 7 -->
+  <div class="day-content" data-day="7" hidden>
+    <div class="day-hero">
+      <span class="day-num">DAY 7 · 9/25 (五)</span>
+      <h2>回國日｜博多採買 → 還車 → 機場</h2>
+      <div class="day-meta">
+        <span>✈️ CI0117 21:00 FUK → 22:25 TPE</span>
+        <span>🚗 ~140 km</span>
+      </div>
+      <div class="day-route">乃音 → 博多市區（採買用餐）→ Times 還車 → shuttle → 福岡空港</div>
+    </div>
+
+    <div class="alert danger">⚠️ <b>必協調</b>：訂單寫 10:00 還車，實際 <b>14:30</b> 才能還。出發前打 092-432-7070 確認延後</div>
+
+    <div class="card">
+      <h2>📍 停靠點</h2>
+      <div class="stops">
+        <div class="stop"><div class="n">1</div><div class="info"><b>Beppu 乃音</b><span>別府市北浜 3-5-6</span></div></div>
+        <div class="stop"><div class="n">2</div><div class="info"><b>博多市區</b><span>HIVE / 博多站 / 運河城周邊</span></div></div>
+        <div class="stop"><div class="n">3</div><div class="info"><b>Times Car Rental 福岡空港店（還車）</b><span>博多区東那珂 2-1-48</span></div></div>
+        <div class="stop"><div class="n">4</div><div class="info"><b>福岡空港 國際線</b><span>博多区下臼井 778-1</span></div></div>
+      </div>
+      <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/4-3+Kamigofukumachi,+Hakata+Ward,+Fukuoka,+812-0036,+Japan/Times+Car+Rental+Fukuoka+Airport+International,+2+Chome-1-48+Higashinaka,+Hakata+Ward,+Fukuoka,+812-0892,+Japan/Aoki,+Hakata+Ward,+Fukuoka,+812-0851,+Japan/">🗺️ 開啟 Google Maps 路線</a>
+    </div>
+
+    <div class="card">
+      <h2>⏰ 時間軸</h2>
+      <div class="timeline-row"><div class="t">7:00</div><div class="e">乃音退房</div></div>
+      <div class="timeline-row"><div class="t">7:30</div><div class="e">出發福岡（高速 ~2 hr 10 分）</div></div>
+      <div class="timeline-row"><div class="t">9:45</div><div class="e">抵博多市區</div></div>
+      <div class="timeline-row"><div class="t">10:00</div><div class="e"><b>博多阪急 B1</b> / <b>博多デイトス</b> 採買明太子、洋菓子</div></div>
+      <div class="timeline-row"><div class="t">11:30</div><div class="e">午餐：水炊き 若杉 本店 / 博多市場（孕婦避生食 → 改若杉）</div></div>
+      <div class="timeline-row"><div class="t">13:00</div><div class="e">博多運河城 / Daimaru / KITTE 博多 最後採買</div></div>
+      <div class="timeline-row"><div class="t">14:00</div><div class="e">開車到 Times 福岡空港店（~15 分）</div></div>
+      <div class="timeline-row"><div class="t">14:30</div><div class="e"><b>抵 Times 還車</b></div></div>
+      <div class="timeline-row"><div class="t">15:00</div><div class="e">shuttle 到福岡空港 國際線（~10 分）</div></div>
+      <div class="timeline-row"><div class="t">18:30</div><div class="e">Check-in、退稅、通關</div></div>
+      <div class="timeline-row"><div class="t">21:00</div><div class="e">CI0117 起飛</div></div>
+      <div class="alert info">💡 備案（門市不延後）：7:00 出發 → 9:45 直接還車 → shuttle 到機場 Locker 寄物 → 地鐵到博多採買 → 16:00 返機場</div>
+    </div>
+
+    <div class="hotel-eat" data-eat="fukuoka"></div>
+  </div>
+
+</section>
+
+<!-- ============ FOOD ============ -->
+<section class="panel" id="food" role="tabpanel">
+
+  <div class="card">
+    <h2>🏨 福岡 HIVE 周邊（Day 1、2、7）</h2>
+    <p class="hint" style="color:var(--text-soft);font-size:12.5px">博多区上呉服町。步行可到櫛田神社、川端商店街、博多運河城、中洲、天神</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>必吃</th><th>地址 / 提醒</th></tr></thead>
+      <tbody>
+        <tr><td><b>一蘭 本社總本店</b>（24h）</td><td>博多区中洲 5-3-2；本社限定「重箱」吃法</td></tr>
+        <tr><td><b>博多もつ鍋 おおやま 本店</b></td><td>博多区中洲 3-7-24；醬油味噌湯頭都神</td></tr>
+        <tr><td><b>博多もつ鍋 笑樂 本店</b></td><td>中央区西中洲 11-4</td></tr>
+        <tr><td><b>水炊き 橙</b>（中洲）</td><td>博多区中洲 5-3-8；雞湯系名店</td></tr>
+        <tr><td><b>水炊き 若杉 本店</b></td><td>博多区奈良屋町 8-12（HIVE 步行 5 分）</td></tr>
+        <tr><td><b>元祖博多めんたい重</b></td><td>中央区西中洲 6-15；明太子米飯重</td></tr>
+        <tr><td><b>博多運河城 Ramen Stadium</b></td><td>5F 拉麵主題集合</td></tr>
+        <tr><td><b>川端ぜんざい広場</b></td><td>川端商店街內，紅豆湯名店（HIVE 步行 3 分）</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="card">
+    <h2>🏨 熊本 YOUR ROOM 周邊（Day 3、4）</h2>
+    <p class="hint" style="color:var(--text-soft);font-size:12.5px">中央区本山，熊本駅南側。步行 8 分到熊本駅</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>必吃</th><th>地址 / 提醒</th></tr></thead>
+      <tbody>
+        <tr><td><b>菅乃屋 熊本駅店</b>（馬肉）</td><td>熊本駅內；馬刺身/壽司（孕婦不吃生馬，改烤馬肉膳）</td></tr>
+        <tr><td><b>勝烈亭 新市街本店</b>（炸豬排）</td><td>中央区新市街 8-18</td></tr>
+        <tr><td><b>桂花拉麵 本店</b></td><td>中央区花畑町 11-9；熊本豚骨元祖</td></tr>
+        <tr><td><b>天外天 本店</b>（拉麵）</td><td>中央区安政町</td></tr>
+        <tr><td><b>黒亭 本店</b>（拉麵）</td><td>西区二本木 2-1-23（熊本駅步行 5 分）</td></tr>
+        <tr><td><b>大關馬肉</b></td><td>中央区下通；熟食/馬肉醬煮孕婦可吃</td></tr>
+        <tr><td><b>いきなり団子</b></td><td>路邊小吃 / 熊本駅內物產館</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="card">
+    <h2>🏨 別府 乃音 周邊（Day 5、6）</h2>
+    <p class="hint" style="color:var(--text-soft);font-size:12.5px">北浜在別府站東邊海岸線；步行 5 分到別府站，10 分到別府塔</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>必吃</th><th>地址 / 提醒</th></tr></thead>
+      <tbody>
+        <tr><td><b>とよ常 本店</b>（天婦羅）</td><td>北浜 2-12-24；特上天丼 ¥980 銅板神店</td></tr>
+        <tr><td><b>冷麺の胡月</b>（別府冷麺）</td><td>石垣東 8-1-26</td></tr>
+        <tr><td><b>お食事處 千成</b>（鄉土料理）</td><td>北浜 1-9-2</td></tr>
+        <tr><td><b>東洋軒 別府本店</b>（炸雞元祖）</td><td>石垣東 7-8-22；大分炸雞發源</td></tr>
+        <tr><td><b>岡本屋売店</b>（鐵輪）</td><td>鐵輪上 1-鶴見 5；地獄蒸布丁、溫泉蛋</td></tr>
+        <tr><td><b>べっぷ駅市場</b></td><td>別府站旁；當地早餐、関アジ握り</td></tr>
+        <tr><td><b>甘味茶屋</b>（だんご汁）</td><td>実相寺 1-4；大分鄉土麵食</td></tr>
+        <tr><td><b>友永パン屋</b>（百年麵包店）</td><td>千代町 2-29；當地人早餐</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="card">
+    <h2>🛍️ 必買紀念品</h2>
+    <h3>🥢 福岡 / 博多</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>品項</th><th>哪裡買</th></tr></thead>
+      <tbody>
+        <tr><td><b>明太子</b>（ふくや / やまや / あごおとし）</td><td>博多阪急 B1、博多デイトス、機場</td></tr>
+        <tr><td><b>博多通りもん</b>（必買）</td><td>全部物產店</td></tr>
+        <tr><td>二○加煎餅、博多ぽてと、鶴乃子</td><td>博多デイトス、機場</td></tr>
+        <tr><td>博多もつ鍋 真空包</td><td>おおやま、笑樂 公式店</td></tr>
+      </tbody>
+    </table></div>
+    <h3>🐴 熊本</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>品項</th><th>哪裡買</th></tr></thead>
+      <tbody>
+        <tr><td>馬肉味噌、馬肉ジャーキー、馬刺し醬油</td><td>城彩苑、熊本駅物產館</td></tr>
+        <tr><td>誠味屋 陣太鼓、いきなり団子禮盒</td><td>城彩苑、熊本駅</td></tr>
+        <tr><td><b>くまモン周邊</b></td><td>城彩苑「くまモンスクエア」、機場</td></tr>
+        <tr><td>球磨燒酎（孕婦不飲，送禮佳）</td><td>熊本駅物產館</td></tr>
+      </tbody>
+    </table></div>
+    <h3>♨️ 別府 / 大分</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>品項</th><th>哪裡買</th></tr></thead>
+      <tbody>
+        <tr><td><b>湯花入浴劑</b>（明礬湯之里限定）</td><td>明礬湯之里現場、別府站</td></tr>
+        <tr><td>岡本屋 地獄蒸布丁（不耐放）</td><td>鐵輪 岡本屋売店</td></tr>
+        <tr><td>かぼす製品、椎茸乾貨</td><td>別府站、道の駅</td></tr>
+        <tr><td>関アジ・関サバ 加工品</td><td>別府站、福岡空港</td></tr>
+        <tr><td>由布院 B-speak ロールケーキ</td><td>湯之坪商店街（Day 5 順買）</td></tr>
+        <tr><td>Snoopy 茶屋限定品</td><td>湯之坪商店街</td></tr>
+      </tbody>
+    </table></div>
+    <h3>🛒 採買時機</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Day</th><th>採買重點</th></tr></thead>
+      <tbody>
+        <tr><td>2</td><td>伊都菜彩水果（出國前吃完）</td></tr>
+        <tr><td>4</td><td>城彩苑 + 道の駅阿蘇（馬肉、阿蘇牛乳）</td></tr>
+        <tr><td>5</td><td>由布院湯之坪（B-speak、Snoopy）；別府站湯花、布丁</td></tr>
+        <tr><td>6</td><td>明礬湯之里補湯花；岡本屋現買布丁</td></tr>
+        <tr><td>7</td><td><b>博多阪急 B1 / デイトス / 機場</b> 主力採買</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<!-- ============ INFO ============ -->
+<section class="panel" id="info" role="tabpanel">
+  <div class="card">
+    <h2>✈️ 機票</h2>
+    <p><b>訂位代號：EVZKEH</b></p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>日期</th><th>航班</th><th>起飛</th><th>抵達</th></tr></thead>
+      <tbody>
+        <tr><td>9/19 (六)</td><td>CI 0128</td><td>14:40 TPE</td><td>18:05 FUK</td></tr>
+        <tr><td>9/25 (五)</td><td>CI 0117</td><td>21:00 FUK</td><td>22:25 TPE</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="card">
+    <h2>🏨 住宿</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>入住</th><th>飯店</th><th>房型 / 房價</th></tr></thead>
+      <tbody>
+        <tr><td>9/19、20</td><td><b>Fukuoka Guesthouse HIVE</b><br><span style="color:var(--muted);font-size:12px">博多区上呉服町 4-3</span></td><td>日式四人房 × 2 / TWD 10,817</td></tr>
+        <tr><td>9/21、22</td><td><b>YOUR ROOM 熊本駅</b><br><span style="color:var(--muted);font-size:12px">中央区本山 3-5-7</span></td><td>雙臥室公寓 × 2 / TWD 13,076</td></tr>
+        <tr><td>9/23、24</td><td><b>Beppu 乃音</b><br><span style="color:var(--muted);font-size:12px">別府市北浜 3-5-6</span></td><td>雙人/雙床 × 2 / TWD 6,063</td></tr>
+      </tbody>
+    </table></div>
+    <div class="alert info">總價約 <b>TWD 29,956</b>（每人 ~ TWD 7,500）。三家都是公寓/民宿型，多為密碼鎖 self check-in，出發前一週確認入住信件。</div>
+  </div>
+
+  <div class="card">
+    <h2>🚗 租車</h2>
+    <p><b>QXQ799749</b> · Toyota Noah 油電 7 人座 · Times Car Rental</p>
+    <div class="table-wrap"><table>
+      <tbody>
+        <tr><td>取/還車門市</td><td><b>Times 福岡空港店</b><br>博多区東那珂 2-1-48<br>📞 092-432-7070<br>福岡空港西南 ~1.5 km，有免費 shuttle</td></tr>
+        <tr><td>取車</td><td>9/19 10:00（<b>改 18:45</b>）</td></tr>
+        <tr><td>還車</td><td>9/25 10:00（<b>改 14:30</b>）</td></tr>
+        <tr><td>門市營業</td><td>08:00–19:00</td></tr>
+        <tr><td>駕駛</td><td>兩位（兩位都需日文譯本）</td></tr>
+      </tbody>
+    </table></div>
+    <h3>加購</h3>
+    <ul>
+      <li>✅ <b>ETC 卡</b>（¥330/天）必加</li>
+      <li>✅ <b>NOC 免責補償</b> 必加</li>
+      <li>❓ <b>KEP</b> 2024/10 漲價後 6 天 ¥18,000+，<b>現場臨櫃</b>請對方算 ETC 比較</li>
+    </ul>
+    <h3>必備文件</h3>
+    <ul class="checklist">
+      <li>台灣駕照正本（兩位駕駛）</li>
+      <li>駕照日文譯本（兩位各一份；台灣監理所 NT$100）</li>
+      <li>護照</li>
+      <li>租車預約單 QXQ799749</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🎟️ 門票 & 預約</h2>
+    <h3>需事先預約</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>項目</th><th>方式 / 提醒</th></tr></thead>
+      <tbody>
+        <tr><td><b>本吉屋柳川</b>（鰻魚飯）</td><td>📞 +81-944-72-6155 僅電話。<b>必訂</b>，請 HIVE concierge 代撥；現點現做 2–3 hr</td></tr>
+        <tr><td><b>水炊き 若杉 本店</b></td><td>Tabelog / 📞 092-282-1075（Day 7 午餐建議訂）</td></tr>
+        <tr><td><b>水炊き 橙</b>（中洲）</td><td>Tabelog / 📞 092-733-2227</td></tr>
+        <tr><td>Palm Beach Garden</td><td>旺季週末 OpenTable 建議訂位</td></tr>
+      </tbody>
+    </table></div>
+    <h3>門票（成人單張）</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>景點</th><th>票價</th></tr></thead>
+      <tbody>
+        <tr><td>熊本城</td><td>¥800（9:00–17:00 / 最終 16:00）</td></tr>
+        <tr><td>別府地獄共通券（7 個）</td><td>¥2,400（單買 ¥450/個）</td></tr>
+        <tr><td>北原白秋故居</td><td>¥600</td></tr>
+        <tr><td>阿蘇火山博物館</td><td>¥1,100（選擇性）</td></tr>
+        <tr><td>竹瓦溫泉</td><td>入浴 ¥300 / 砂湯 ¥1,500（孕婦不入浴）</td></tr>
+        <tr><td>地獄蒸し工房</td><td>食材 ¥500–1,500 + 蒸鍋 ¥510</td></tr>
+        <tr><td>流しそうめん 千寿庵</td><td>¥600/人</td></tr>
+      </tbody>
+    </table></div>
+    <h3>完全免費</h3>
+    <p style="font-size:13px;color:var(--text-soft)">櫻井神社、太宰府天滿宮、城彩苑、米塚展望所、草千里浜（停車 ¥500）、大觀峰、道の駅 阿蘇、由布院湯之坪、金鱗湖、明礬湯之里、湯けむり展望台、伊都菜彩、椰子樹鞦韆</p>
+  </div>
+
+  <div class="card">
+    <h2>💰 預算試算</h2>
+    <p style="font-size:13px;color:var(--text-soft)">4 人共用固定費用；餐費、伴手禮、個人消費另計</p>
+    <div class="table-wrap"><table>
+      <tbody>
+        <tr><td>🏨 住宿 6 晚</td><td><b>TWD 29,956</b></td></tr>
+        <tr><td>🚗 租車 6 天 + 全險 + NOC</td><td>~¥75,000</td></tr>
+        <tr><td>💳 ETC 卡 ¥330×6</td><td>¥1,980</td></tr>
+        <tr><td>🛣️ 高速通行費</td><td>~¥10,000–15,000</td></tr>
+        <tr><td>⛽ 燃油（30 km/L）</td><td>~¥6,500</td></tr>
+        <tr><td>🅿️ 停車 6 晚</td><td>~¥6,000</td></tr>
+        <tr><td>🎟️ 主要門票 ×4</td><td>~¥17,200</td></tr>
+      </tbody>
+    </table></div>
+    <div class="alert ok">合計 ≈ <b>NT$55,500（4 人）</b> / 每人約 <b>NT$14,000</b></div>
+  </div>
+</section>
+
+<!-- ============ PREGNANCY ============ -->
+<section class="panel" id="pregnancy" role="tabpanel">
+  <div class="card">
+    <h2>🤰 景點適宜度</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>景點</th><th>狀態</th><th>說明</th></tr></thead>
+      <tbody>
+        <tr><td><b>阿蘇中岳火口</b></td><td><span class="chip danger">❌ 全員不上</span></td><td>2026/1/27 起因事故關閉</td></tr>
+        <tr><td>草千里浜</td><td><span class="chip ok">✅ OK</span></td><td>平坦草原，記得戴帽</td></tr>
+        <tr><td>米塚展望所</td><td><span class="chip ok">✅ OK</span></td><td>路邊停 5 分</td></tr>
+        <tr><td>大觀峰</td><td><span class="chip ok">✅ OK</span></td><td>緩坡 100 m</td></tr>
+        <tr><td>太宰府天滿宮</td><td><span class="chip ok">✅ OK</span></td><td>連假首日 8:00 前到</td></tr>
+        <tr><td>柳川遊船</td><td><span class="chip danger">❌ 不搭</span></td><td>70 分無廁所，上下船高低差</td></tr>
+        <tr><td>北原白秋故居</td><td><span class="chip ok">✅ OK</span></td><td>平面館內</td></tr>
+        <tr><td>熊本城</td><td><span class="chip warn">⚠️ 留意</span></td><td>天守閣有階梯，孕婦走外圍 + 城彩苑</td></tr>
+        <tr><td>由布院湯之坪</td><td><span class="chip ok">✅ OK</span></td><td>平坦商店街</td></tr>
+        <tr><td>金鱗湖</td><td><span class="chip ok">✅ OK</span></td><td>5 分繞一圈</td></tr>
+        <tr><td>別府地獄</td><td><span class="chip ok">✅ OK</span></td><td>看池子；硫磺味重就縮短</td></tr>
+        <tr><td>地獄蒸し工房</td><td><span class="chip warn">⚠️ 看狀況</span></td><td>蒸氣熱、人多；孕婦可在外等</td></tr>
+        <tr><td>明礬湯之里</td><td><span class="chip ok">✅ OK</span></td><td>戶外平坦</td></tr>
+        <tr><td>湯けむり展望台</td><td><span class="chip ok">✅ OK</span></td><td>短步道 3 分</td></tr>
+        <tr><td>竹瓦溫泉</td><td><span class="chip warn">⚠️ 看狀況</span></td><td>不入浴；外觀 OK</td></tr>
+        <tr><td>糸島白糸の滝</td><td><span class="chip warn">⚠️ 下方休息</span></td><td>上瀑布有階梯，在水車食堂吃流しそうめん</td></tr>
+        <tr><td>櫻井神社</td><td><span class="chip ok">✅ OK</span></td><td>平坦境內</td></tr>
+        <tr><td>椰子樹鞦韆</td><td><span class="chip warn">⚠️ 不盪</span></td><td>拍照即可</td></tr>
+        <tr><td>中洲屋台</td><td><span class="chip danger">❌ 跳過</span></td><td>沒廁所、座位窄、二手菸</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="card">
+    <h2>🌡️ 9 月孕婦特別注意</h2>
+    <ul>
+      <li>9 月福岡白天 28–30°C：勤補水、戴帽、室外 ≤ 1 hr 找冷氣</li>
+      <li>Day 3、5、7 長途車程：每 1 hr 下休息站走 5 分鐘</li>
+      <li>別府硫磺味敏感：地獄區單個 5–10 分，不一次看 7 個</li>
+      <li>食物禁忌：生魚片、生牡蠣（伊都菜彩）、未熟雞肉、未殺菌乳酪、酒精料理 PASS</li>
+      <li>咖啡因：星巴克太宰府、B-speak 點低咖啡因/無咖啡因</li>
+      <li>太宰府、湯之坪、運河城走中央，避免被撞肚子</li>
+      <li>緊急狀況打 119 或下方產婦科</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🎒 孕婦必帶</h2>
+    <ul>
+      <li>母子健康手冊（中日文版）</li>
+      <li>健保卡 + 海外醫療險（<b>含懷孕條款</b>）</li>
+      <li>維他命、藥（英日文藥名清單）</li>
+      <li>家附近婦產科聯絡方式</li>
+      <li>當地產婦科急診紙本（見下表）</li>
+      <li>護腰帶、好走的鞋、寬鬆衣物</li>
+      <li>暖暖包、薄外套（山區用）</li>
+      <li>防曬乳、帽子、口罩</li>
+      <li>飲水壺 + 點心（穩定血糖）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🏥 當地產婦科急診（建議印紙本）</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>城市</th><th>醫院</th><th>電話</th></tr></thead>
+      <tbody>
+        <tr><td>福岡</td><td>福岡市民病院</td><td><a href="tel:+81926321111">092-632-1111</a></td></tr>
+        <tr><td>福岡</td><td>九州大學病院</td><td><a href="tel:+81926411151">092-641-1151</a></td></tr>
+        <tr><td>熊本</td><td>熊本赤十字病院</td><td><a href="tel:+81963842111">096-384-2111</a></td></tr>
+        <tr><td>熊本</td><td>熊本市民病院</td><td><a href="tel:+81963651711">096-365-1711</a></td></tr>
+        <tr><td>別府</td><td>別府醫療中心</td><td><a href="tel:+81977671111">0977-67-1111</a></td></tr>
+        <tr><td>大分</td><td>大分大學病院</td><td><a href="tel:+81975494411">097-549-4411</a></td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<!-- ============ PREP ============ -->
+<section class="panel" id="prep" role="tabpanel">
+  <div class="card">
+    <h2>✅ 已完成</h2>
+    <ul class="checklist">
+      <li class="done">機票 EVZKEH</li>
+      <li class="done">租車 Times QXQ799749</li>
+      <li class="done">Fukuoka Guesthouse HIVE（9/19、20）</li>
+      <li class="done">YOUR ROOM 熊本駅（9/21、22）</li>
+      <li class="done">Beppu 乃音（9/23、24）</li>
+      <li class="done">每日 Google Maps 路線</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🔴 最優先：8 月中以前必辦</h2>
+    <ul class="checklist urgent">
+      <li>📞 致電 Times 092-432-7070 改取/還車（QXQ799749）<br>
+        9/19：10:00 → <b>18:45</b>　9/25：10:00 → <b>14:30</b><br>
+        順便確認 shuttle 末班、ETC + NOC、兩位駕駛登記</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🗓️ 一個月前</h2>
+    <ul class="checklist">
+      <li>加購 ETC + NOC（電話確認）；KEP 現場再決定</li>
+      <li>駕照日文譯本（台灣監理所 NT$100，兩位各一份）</li>
+      <li>海外醫療險（<b>含懷孕條款</b>）</li>
+      <li>確認三家飯店 check-in 方式</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🗓️ 兩週內</h2>
+    <ul class="checklist">
+      <li>換日幣（現金 ¥40,000–60,000/人）</li>
+      <li>海外刷卡（玉山 Pi 拍錢 / 聯邦賴點 / 樂天）</li>
+      <li>eSIM（Holafly / Ubigi / 中華電信漫遊）</li>
+      <li>本吉屋柳川預約（請 HIVE 代撥 +81-944-72-6155）</li>
+      <li>水炊き 若杉或橙預約（Tabelog）</li>
+      <li>各飯店停車位確認</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🗓️ 出發前</h2>
+    <ul class="checklist">
+      <li>印日文譯本、駕照、護照、租車預約單（紙本必備）</li>
+      <li>印機票 EVZKEH、三家飯店訂房紀錄</li>
+      <li>下載離線地圖</li>
+      <li>母子健康手冊、健保卡</li>
+      <li>確認阿蘇火口最新狀態 <a target="_blank" href="https://www.aso-volcano.jp/">aso-volcano.jp</a></li>
+      <li>確認地獄蒸し工房 9/24 無休館（0977-66-3775）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>📱 必裝 App</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>App</th><th>用途</th></tr></thead>
+      <tbody>
+        <tr><td><b>Google Maps</b></td><td>主要導航</td></tr>
+        <tr><td><b>NAVITIME for Japan Travel</b></td><td>離線地圖、JR 換乘、加油站</td></tr>
+        <tr><td><b>Yahoo!カーナビ</b></td><td>路線比 Google 準</td></tr>
+        <tr><td><b>Tabelog 食べログ</b></td><td>餐廳評分、預約</td></tr>
+        <tr><td><b>Japan Official Travel</b></td><td>災害警報、急救醫院</td></tr>
+        <tr><td><b>LINE</b></td><td>日本人通訊主要工具</td></tr>
+        <tr><td>PayPay（可選）</td><td>日本最大電子支付</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<!-- ============ EMERGENCY ============ -->
+<section class="panel" id="emergency" role="tabpanel">
+  <div class="card">
+    <h2>📞 緊急聯絡</h2>
+    <div class="phone-list">
+      <a href="tel:119"><span class="name">🚑 急救 / 救護車</span><span class="num">119</span></a>
+      <a href="tel:110"><span class="name">👮 警察</span><span class="num">110</span></a>
+      <a href="tel:+81927342810"><span class="name">🇹🇼 駐福岡台北辦事處</span><span class="num">+81-92-734-2810</span></a>
+      <a href="tel:+818019327958"><span class="name">🆘 急難救助專線 24h</span><span class="num">+81-80-1932-7958</span></a>
+      <a href="tel:+81332807917"><span class="name">📡 駐日代表處 急難總機</span><span class="num">+81-3-3280-7917</span></a>
+      <a href="tel:+81570008139"><span class="name">🚗 JAF 道路救援 24h</span><span class="num">#8139 / 0570-00-8139</span></a>
+      <a href="tel:+81924327070"><span class="name">🏢 Times 福岡空港店</span><span class="num">092-432-7070</span></a>
+      <a href="tel:+81944726155"><span class="name">🍱 本吉屋柳川（鰻魚）</span><span class="num">+81-944-72-6155</span></a>
+      <a href="tel:+81977663775"><span class="name">♨️ 地獄蒸し工房</span><span class="num">0977-66-3775</span></a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🏥 產婦科急診</h2>
+    <div class="phone-list">
+      <a href="tel:+81926321111"><span class="name">福岡市民病院</span><span class="num">092-632-1111</span></a>
+      <a href="tel:+81926411151"><span class="name">九州大學病院</span><span class="num">092-641-1151</span></a>
+      <a href="tel:+81963842111"><span class="name">熊本赤十字病院</span><span class="num">096-384-2111</span></a>
+      <a href="tel:+81963651711"><span class="name">熊本市民病院</span><span class="num">096-365-1711</span></a>
+      <a href="tel:+81977671111"><span class="name">別府醫療中心</span><span class="num">0977-67-1111</span></a>
+      <a href="tel:+81975494411"><span class="name">大分大學病院</span><span class="num">097-549-4411</span></a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🏨 住宿地址</h2>
+    <div class="phone-list">
+      <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=4-3+Kamigofukumachi+Hakata-ku+Fukuoka"><span class="name">HIVE 福岡</span><span class="num">📍 地圖</span></a>
+      <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=3-5-7+Motoyama+Chuo-ku+Kumamoto"><span class="name">YOUR ROOM 熊本駅</span><span class="num">📍 地圖</span></a>
+      <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=3-5-6+Kitahama+Beppu+Oita"><span class="name">Beppu 乃音</span><span class="num">📍 地圖</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  最後更新：2026/05/16 · made with <span class="heart">♥</span> for 我們的九州自駕
+</footer>
+
+<!-- ====== Reusable hotel-eat templates ====== -->
+<template id="eat-fukuoka">
+  <h3>🍴 今晚住 HIVE｜博多周邊必吃</h3>
+  <p class="hint">步行可到櫛田神社、川端商店街、博多運河城、中洲、天神</p>
+  <div class="table-wrap"><table>
+    <tbody>
+      <tr><td><b>一蘭 本社總本店</b>（24h）</td><td>中洲 5-3-2｜本社限定「重箱」</td></tr>
+      <tr><td><b>博多もつ鍋 おおやま</b></td><td>中洲 3-7-24｜醬油味噌都神</td></tr>
+      <tr><td><b>博多もつ鍋 笑樂</b></td><td>西中洲 11-4</td></tr>
+      <tr><td><b>水炊き 橙</b></td><td>中洲 5-3-8｜雞湯名店</td></tr>
+      <tr><td><b>水炊き 若杉</b></td><td>奈良屋町 8-12（HIVE 步行 5 分）</td></tr>
+      <tr><td><b>元祖博多めんたい重</b></td><td>西中洲 6-15｜明太子米飯重</td></tr>
+      <tr><td><b>運河城 Ramen Stadium</b></td><td>5F 拉麵主題集合</td></tr>
+      <tr><td><b>川端ぜんざい広場</b></td><td>川端商店街（HIVE 步行 3 分）</td></tr>
+    </tbody>
+  </table></div>
+</template>
+
+<template id="eat-kumamoto">
+  <h3>🍴 今晚住 YOUR ROOM｜熊本駅周邊必吃</h3>
+  <p class="hint">中央区本山，熊本駅南側。步行 8 分到熊本駅</p>
+  <div class="table-wrap"><table>
+    <tbody>
+      <tr><td><b>菅乃屋 熊本駅店</b>（馬肉）</td><td>熊本駅內｜孕婦改烤馬肉膳</td></tr>
+      <tr><td><b>勝烈亭 新市街本店</b>（炸豬排）</td><td>中央区新市街 8-18</td></tr>
+      <tr><td><b>桂花拉麵 本店</b></td><td>花畑町 11-9｜豚骨元祖</td></tr>
+      <tr><td><b>天外天 本店</b></td><td>中央区安政町</td></tr>
+      <tr><td><b>黒亭 本店</b></td><td>二本木 2-1-23（熊本駅步行 5 分）</td></tr>
+      <tr><td><b>大關馬肉</b></td><td>中央区下通｜熟食孕婦可吃</td></tr>
+      <tr><td><b>いきなり団子</b></td><td>路邊 / 熊本駅物產館</td></tr>
+    </tbody>
+  </table></div>
+</template>
+
+<template id="eat-beppu">
+  <h3>🍴 今晚住 乃音｜別府北浜周邊必吃</h3>
+  <p class="hint">步行 5 分到別府站，10 分到別府塔</p>
+  <div class="table-wrap"><table>
+    <tbody>
+      <tr><td><b>とよ常 本店</b>（天婦羅）</td><td>北浜 2-12-24｜特上天丼 ¥980 神店</td></tr>
+      <tr><td><b>冷麺の胡月</b></td><td>石垣東 8-1-26｜別府冷麺</td></tr>
+      <tr><td><b>お食事處 千成</b></td><td>北浜 1-9-2｜鄉土料理</td></tr>
+      <tr><td><b>東洋軒 別府本店</b></td><td>石垣東 7-8-22｜炸雞元祖</td></tr>
+      <tr><td><b>岡本屋売店</b>（鐵輪）</td><td>地獄蒸布丁、溫泉蛋</td></tr>
+      <tr><td><b>べっぷ駅市場</b></td><td>別府站旁｜當地早餐</td></tr>
+      <tr><td><b>甘味茶屋</b></td><td>実相寺 1-4｜だんご汁</td></tr>
+      <tr><td><b>友永パン屋</b></td><td>千代町 2-29｜百年麵包</td></tr>
+    </tbody>
+  </table></div>
+</template>
+
+<script>
+(function(){
+  // ---- Main tab switching ----
+  const tabs = document.querySelectorAll('.tab');
+  const panels = document.querySelectorAll('.panel');
+  function activate(id){
+    tabs.forEach(t=>t.classList.toggle('active',t.dataset.tab===id));
+    panels.forEach(p=>p.classList.toggle('active',p.id===id));
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+  tabs.forEach(t=>t.addEventListener('click',()=>activate(t.dataset.tab)));
+  document.querySelectorAll('[data-go]').forEach(a=>{
+    a.addEventListener('click',e=>{e.preventDefault();activate(a.dataset.go);});
+  });
+
+  // ---- Day pills ----
+  const pills = document.querySelectorAll('#dayPills .pill');
+  const dayContents = document.querySelectorAll('.day-content');
+  function showDay(d){
+    pills.forEach(p=>p.classList.toggle('active',p.dataset.day===d));
+    dayContents.forEach(c=>c.hidden = c.dataset.day !== d);
+    // scroll active pill into view
+    const active = document.querySelector(`#dayPills .pill[data-day="${d}"]`);
+    if(active) active.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+  }
+  pills.forEach(p=>p.addEventListener('click',()=>showDay(p.dataset.day)));
+
+  // ---- Inject hotel-eat content from templates ----
+  document.querySelectorAll('.hotel-eat[data-eat]').forEach(el=>{
+    const tpl = document.getElementById('eat-'+el.dataset.eat);
+    if(tpl) el.appendChild(tpl.content.cloneNode(true));
+  });
+
+  // ---- Today highlight ----
+  const tripDays = [
+    {d:1,date:'2026-09-19'},{d:2,date:'2026-09-20'},{d:3,date:'2026-09-21'},
+    {d:4,date:'2026-09-22'},{d:5,date:'2026-09-23'},{d:6,date:'2026-09-24'},{d:7,date:'2026-09-25'},
+  ];
+  const today = new Date().toISOString().slice(0,10);
+  const todayTrip = tripDays.find(t=>t.date===today);
+  const banner = document.getElementById('todayBanner');
+  if(todayTrip){
+    banner.innerHTML = `<div class="today-banner">🌸 今天是 Day ${todayTrip.d}（${todayTrip.date}）<a style="color:#fff;text-decoration:underline;margin-left:auto" href="#" data-jump="${todayTrip.d}">看今日行程 →</a></div>`;
+    banner.querySelector('[data-jump]').addEventListener('click',e=>{
+      e.preventDefault();
+      activate('daily');
+      showDay(String(todayTrip.d));
+    });
+  } else if(today < '2026-09-19'){
+    const days = Math.ceil((new Date('2026-09-19') - new Date(today))/86400000);
+    banner.innerHTML = `<div class="today-banner">🌸 距離出發還有 <b style="margin:0 4px">${days}</b> 天</div>`;
+  }
+})();
+</script>
+</body>
+</html>
