@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#FAF7F2">
 <title>福岡九州 7 日自駕｜2026.09.19 – 09.25</title>
-<meta name="description" content="2026 年 9 月福岡九州 7 日 4 人自駕行程（含孕婦友善路線）">
+<meta name="description" content="2026 年 9 月福岡九州 7 日 4 人自駕行程（含孕婦友善路線）｜HIVE → YOUR ROOM 熊本駅 → Beppu 乃音">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet">
@@ -29,6 +29,8 @@
   --warn-border:#D9A441;
   --danger-bg:#FCEDEC;
   --danger-border:#C0392B;
+  --ok-bg:#E8F0E2;
+  --ok-text:#4A6B2C;
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html{scroll-behavior:smooth;scroll-padding-top:64px}
@@ -65,23 +67,23 @@ body::before{
   max-width:780px;margin:0 auto;
   display:flex;align-items:center;justify-content:space-between;
   padding:10px 16px;
-  font-size:13px;
+  font-size:13px;gap:12px;
 }
-.topnav .brand{font-family:'Shippori Mincho',serif;font-weight:700;letter-spacing:.08em}
+.topnav .brand{font-family:'Shippori Mincho',serif;font-weight:700;letter-spacing:.08em;white-space:nowrap}
 .topnav .brand .small{color:var(--vermillion);font-size:11px;margin-left:6px;letter-spacing:.2em}
-.topnav .links{display:flex;gap:14px;color:var(--ink-soft);overflow-x:auto;scrollbar-width:none}
+.topnav .links{display:flex;gap:14px;color:var(--ink-soft);overflow-x:auto;scrollbar-width:none;flex:1}
 .topnav .links::-webkit-scrollbar{display:none}
 .topnav .links a{color:inherit;text-decoration:none;white-space:nowrap;font-size:12px}
 .topnav .links a:hover{color:var(--vermillion)}
+.topnav .links a.alert-link{color:var(--vermillion);font-weight:700}
 
 /* === Container === */
 .wrap{position:relative;z-index:1;max-width:780px;margin:0 auto;padding:0 16px}
 
 /* === Hero === */
 .hero{
-  padding:64px 16px 48px;
+  padding:56px 16px 40px;
   text-align:center;
-  position:relative;
 }
 .hero .kanji-mark{
   display:inline-block;
@@ -110,6 +112,11 @@ body::before{
   font-size:13px;color:var(--ink-mute);
   letter-spacing:.3em;margin-top:6px;
 }
+.hero .route{
+  margin-top:14px;font-size:12.5px;
+  color:var(--ink-soft);letter-spacing:.06em;
+}
+.hero .route .arrow{color:var(--vermillion);margin:0 6px}
 .hero .date-band{
   display:inline-flex;align-items:center;gap:14px;
   font-family:'Shippori Mincho',serif;
@@ -123,7 +130,7 @@ body::before{
 .hero .date-band .sep{color:var(--vermillion)}
 .hero .stats{
   display:flex;justify-content:center;gap:28px;
-  margin-top:32px;flex-wrap:wrap;
+  margin-top:28px;flex-wrap:wrap;
 }
 .hero .stats .stat{text-align:center}
 .hero .stats .num{
@@ -133,10 +140,10 @@ body::before{
 .hero .stats .label{font-size:11px;color:var(--ink-mute);letter-spacing:.2em;margin-top:2px}
 
 /* === Section === */
-section{padding:36px 0;scroll-margin-top:72px}
+section{padding:32px 0;scroll-margin-top:72px}
 .section-head{
   display:flex;align-items:baseline;gap:10px;
-  margin-bottom:20px;
+  margin-bottom:18px;
   padding-bottom:10px;
   border-bottom:1px solid var(--line);
 }
@@ -163,7 +170,7 @@ section{padding:36px 0;scroll-margin-top:72px}
   background:var(--bg-paper);
   border:1px solid var(--line);
   border-radius:4px;
-  padding:20px;
+  padding:18px;
   margin-bottom:14px;
 }
 .card h3{
@@ -173,7 +180,7 @@ section{padding:36px 0;scroll-margin-top:72px}
 .card .label{
   font-size:11px;color:var(--ink-mute);
   letter-spacing:.2em;text-transform:uppercase;
-  font-family:'Noto Serif JP',serif;
+  font-family:'Noto Serif JP',serif;font-weight:400;
 }
 .card .row{
   display:flex;justify-content:space-between;gap:12px;
@@ -194,12 +201,20 @@ section{padding:36px 0;scroll-margin-top:72px}
   font-size:14px;
 }
 .alert.danger{border-left-color:var(--danger-border);background:var(--danger-bg)}
+.alert.info{border-left-color:var(--indigo);background:#F0F4F8}
 .alert h4{
-  margin:0 0 8px;font-size:14px;font-weight:700;
+  margin:0 0 8px;font-size:14.5px;font-weight:700;
   font-family:'Shippori Mincho',serif;letter-spacing:.1em;
 }
 .alert ul{margin:8px 0 0;padding-left:18px}
 .alert li{margin-bottom:4px}
+.alert .tel{
+  display:inline-block;background:var(--vermillion);color:#fff;
+  padding:6px 14px;border-radius:2px;
+  font-family:'Shippori Mincho',serif;font-weight:700;
+  text-decoration:none;font-size:14px;
+  margin-top:8px;letter-spacing:.06em;
+}
 
 /* === Day card === */
 .day{
@@ -211,12 +226,12 @@ section{padding:36px 0;scroll-margin-top:72px}
 }
 .day-head{
   display:flex;align-items:center;gap:14px;
-  padding:18px 20px;
+  padding:16px 18px;
   border-bottom:1px solid var(--line);
   background:linear-gradient(180deg,#fff 0%,#fbfaf5 100%);
 }
 .day-num{
-  width:48px;height:48px;flex-shrink:0;
+  width:46px;height:46px;flex-shrink:0;
   display:flex;flex-direction:column;align-items:center;justify-content:center;
   background:var(--vermillion);color:#fff;
   font-family:'Shippori Mincho',serif;
@@ -232,7 +247,7 @@ section{padding:36px 0;scroll-margin-top:72px}
 }
 .day-head .date .week{color:var(--ink-mute);margin-left:6px;font-size:13px}
 .day-head .title{
-  font-size:14px;color:var(--ink-soft);margin-top:2px;
+  font-size:13.5px;color:var(--ink-soft);margin-top:2px;
 }
 .day-head .holiday{
   display:inline-block;
@@ -241,20 +256,37 @@ section{padding:36px 0;scroll-margin-top:72px}
   margin-left:6px;letter-spacing:.15em;font-family:'Shippori Mincho',serif;
 }
 
-.timeline{padding:18px 20px 8px}
+.day-route{
+  padding:10px 18px;
+  background:var(--bg-soft);
+  font-size:12.5px;color:var(--ink-soft);
+  display:flex;align-items:center;gap:6px;
+  border-bottom:1px solid var(--line);
+}
+.day-route .arrow{color:var(--vermillion);font-weight:700;margin:0 2px}
+.day-route .maps{
+  display:inline-block;font-size:11px;
+  color:var(--matcha);text-decoration:none;
+  margin-left:auto;padding:3px 8px;
+  border:1px solid var(--matcha);border-radius:2px;
+  letter-spacing:.05em;white-space:nowrap;
+}
+.day-route .maps:hover{background:var(--matcha);color:#fff}
+
+.timeline{padding:16px 18px 6px}
 .t-item{
-  display:flex;gap:16px;
-  padding:10px 0;
+  display:flex;gap:14px;
+  padding:9px 0;
   position:relative;
 }
 .t-item::before{
   content:"";position:absolute;
-  left:50px;top:18px;bottom:-10px;
+  left:47px;top:18px;bottom:-9px;
   width:1px;background:var(--line);
 }
 .t-item:last-child::before{display:none}
 .t-time{
-  flex-shrink:0;width:48px;
+  flex-shrink:0;width:45px;
   font-family:'Shippori Mincho',serif;
   font-size:13px;font-weight:700;
   color:var(--vermillion);
@@ -266,7 +298,7 @@ section{padding:36px 0;scroll-margin-top:72px}
   border:2px solid var(--vermillion);
   margin-top:8px;z-index:1;
 }
-.t-content{flex:1;min-width:0;padding-bottom:4px}
+.t-content{flex:1;min-width:0;padding-bottom:2px}
 .t-content .place{font-weight:500;font-size:14.5px;color:var(--ink)}
 .t-content .note{font-size:13px;color:var(--ink-soft);margin-top:3px;line-height:1.6}
 .t-content .note .badge{
@@ -277,13 +309,13 @@ section{padding:36px 0;scroll-margin-top:72px}
 }
 .t-content .note .badge.warn{background:var(--warn-bg);color:#8B6914}
 .t-content .note .badge.danger{background:var(--danger-bg);color:var(--vermillion)}
-.t-content .note .badge.ok{background:#E8F0E2;color:#4A6B2C}
+.t-content .note .badge.ok{background:var(--ok-bg);color:var(--ok-text)}
 
 .day-foot{
-  padding:12px 20px;
+  padding:11px 18px;
   background:var(--bg-soft);
   font-size:12.5px;color:var(--ink-soft);
-  display:flex;flex-wrap:wrap;gap:14px;
+  display:flex;flex-wrap:wrap;gap:12px;
   border-top:1px solid var(--line);
 }
 .day-foot .item{display:flex;align-items:center;gap:6px}
@@ -321,17 +353,60 @@ section{padding:36px 0;scroll-margin-top:72px}
 }
 .tbl tr.total td.num{color:var(--ink);font-size:16px}
 
+/* === Order summary === */
+.order-grid{
+  display:grid;gap:10px;
+  grid-template-columns:1fr;
+}
+.order-card{
+  background:var(--bg-paper);
+  border:1px solid var(--line);
+  border-left:3px solid var(--matcha);
+  border-radius:4px;
+  padding:14px 16px;
+  font-size:13.5px;
+}
+.order-card .ico{font-size:18px;margin-right:6px}
+.order-card .name{font-family:'Shippori Mincho',serif;font-weight:700;font-size:14px;letter-spacing:.05em}
+.order-card .num{
+  font-family:'Shippori Mincho',serif;color:var(--vermillion);
+  font-weight:700;letter-spacing:.06em;font-size:13px;
+}
+.order-card .det{margin-top:6px;color:var(--ink-soft);font-size:13px;line-height:1.6}
+
+/* === Hotel block === */
+.hotel-block{
+  background:var(--bg-paper);
+  border:1px solid var(--line);
+  border-radius:4px;
+  padding:16px;
+  margin-bottom:12px;
+}
+.hotel-block .h-head{
+  display:flex;align-items:baseline;gap:10px;margin-bottom:8px;
+  padding-bottom:8px;border-bottom:1px dashed var(--line);
+}
+.hotel-block .h-name{font-family:'Shippori Mincho',serif;font-weight:700;font-size:15.5px;letter-spacing:.04em}
+.hotel-block .h-night{font-size:11px;color:var(--vermillion);letter-spacing:.15em}
+.hotel-block .h-addr{font-size:12.5px;color:var(--ink-mute);line-height:1.6}
+.hotel-block .h-price{margin-top:6px;font-size:12.5px;color:var(--ink-soft)}
+.hotel-block .h-price strong{color:var(--vermillion);font-family:'Shippori Mincho',serif}
+
 /* === Checklist === */
-.ck-group{margin-bottom:20px}
+.ck-group{margin-bottom:18px}
 .ck-group h4{
   font-family:'Shippori Mincho',serif;
   font-size:14px;font-weight:700;letter-spacing:.1em;
   margin:0 0 10px;
   color:var(--vermillion);
 }
+.ck-group.urgent h4{color:var(--vermillion);font-size:15px}
+.ck-group.urgent h4::before{content:"🔴 ";font-size:13px}
+.ck-group.done h4{color:var(--matcha)}
+.ck-group.done h4::before{content:"✅ ";font-size:13px}
 .ck-item{
   display:flex;align-items:flex-start;gap:10px;
-  padding:8px 0;border-bottom:1px dashed var(--line-soft);
+  padding:7px 0;border-bottom:1px dashed var(--line-soft);
   font-size:13.5px;cursor:pointer;
 }
 .ck-item input{
@@ -339,7 +414,7 @@ section{padding:36px 0;scroll-margin-top:72px}
   width:16px;height:16px;
   accent-color:var(--vermillion);cursor:pointer;
 }
-.ck-item label{cursor:pointer;flex:1}
+.ck-item label{cursor:pointer;flex:1;line-height:1.55}
 .ck-item input:checked + label{text-decoration:line-through;color:var(--ink-mute)}
 
 /* === App list === */
@@ -363,11 +438,11 @@ section{padding:36px 0;scroll-margin-top:72px}
 .phones{display:flex;flex-direction:column;gap:8px}
 .phone{
   display:flex;justify-content:space-between;align-items:center;
-  padding:12px 14px;background:var(--bg-paper);border:1px solid var(--line);
+  padding:11px 14px;background:var(--bg-paper);border:1px solid var(--line);
   border-radius:4px;font-size:13.5px;
 }
 .phone a{color:var(--vermillion);text-decoration:none;font-family:'Shippori Mincho',serif;font-weight:700}
-.phone .urgent{color:var(--vermillion);font-weight:700}
+.phone .urgent{color:var(--vermillion);font-weight:700;font-size:15px}
 
 /* === Footer === */
 .foot{
@@ -394,29 +469,42 @@ section{padding:36px 0;scroll-margin-top:72px}
 /* === Notes === */
 .note-box{
   background:var(--bg-soft);
-  border-radius:4px;padding:14px 16px;
-  font-size:13px;color:var(--ink-soft);
-  margin-bottom:12px;line-height:1.7;
+  border-radius:4px;padding:12px 14px;
+  font-size:12.5px;color:var(--ink-soft);
+  margin-bottom:10px;line-height:1.7;
 }
 .note-box strong{color:var(--vermillion)}
 
+/* === Tags / Pills === */
+.pill{
+  display:inline-block;font-size:11px;
+  padding:2px 8px;border-radius:10px;
+  background:var(--bg-soft);color:var(--ink-soft);
+  letter-spacing:.06em;margin-right:4px;
+  font-family:'Shippori Mincho',serif;
+}
+.pill.warn{background:var(--warn-bg);color:#8B6914}
+.pill.ok{background:var(--ok-bg);color:var(--ok-text)}
+.pill.danger{background:var(--danger-bg);color:var(--vermillion)}
+
 /* === Mobile tweaks === */
 @media (max-width:520px){
-  .hero{padding:48px 16px 36px}
+  .hero{padding:40px 16px 28px}
   .hero .stats{gap:18px}
   .hero .stats .num{font-size:20px}
-  section{padding:28px 0}
-  .card{padding:16px}
-  .day-head{padding:14px 16px}
-  .timeline{padding:14px 16px 4px}
-  .day-foot{padding:10px 16px}
+  section{padding:24px 0}
+  .card{padding:14px}
+  .day-head{padding:13px 14px}
+  .timeline{padding:13px 14px 4px}
+  .day-foot,.day-route{padding:10px 14px}
   .applist{grid-template-columns:repeat(2,1fr)}
-  .topnav-inner{padding:8px 12px}
+  .topnav-inner{padding:8px 12px;gap:8px}
 }
 
 @media (min-width:780px){
   body{font-size:16px}
-  .hero h1{font-size:48px}
+  .hero h1{font-size:44px}
+  .order-grid{grid-template-columns:1fr 1fr 1fr}
 }
 
 /* Print */
@@ -434,10 +522,12 @@ section{padding:36px 0;scroll-margin-top:72px}
   <div class="topnav-inner">
     <div class="brand serif">福岡九州<span class="small">FUK</span></div>
     <div class="links">
-      <a href="#warning">⚠️ 連假</a>
-      <a href="#info">資訊</a>
-      <a href="#preg">孕婦</a>
+      <a href="#urgent" class="alert-link">🚨 必聯絡</a>
+      <a href="#orders">已訂</a>
       <a href="#trip">行程</a>
+      <a href="#preg">孕婦</a>
+      <a href="#eat">必吃</a>
+      <a href="#shop">伴手禮</a>
       <a href="#budget">預算</a>
       <a href="#checklist">清單</a>
       <a href="#sos">SOS</a>
@@ -451,6 +541,7 @@ section{padding:36px 0;scroll-margin-top:72px}
     <div class="kanji-mark serif">九州 自駕 旅</div>
     <h1 class="serif">福岡九州<br><span class="accent">七日</span> 自駕之旅</h1>
     <div class="subtitle">FUKUOKA · KUMAMOTO · YUFUIN · BEPPU</div>
+    <div class="route">福岡 <span class="arrow">→</span> 熊本 <span class="arrow">→</span> 別府</div>
     <div class="date-band">
       <div>
         <div class="y">CHECK-IN</div>
@@ -466,19 +557,112 @@ section{padding:36px 0;scroll-margin-top:72px}
       <div class="stat"><div class="num serif">4</div><div class="label">PEOPLE</div></div>
       <div class="stat"><div class="num serif">7</div><div class="label">DAYS</div></div>
       <div class="stat"><div class="num serif">6</div><div class="label">NIGHTS</div></div>
-      <div class="stat"><div class="num serif">600<span style="font-size:12px">km</span></div><div class="label">DRIVE</div></div>
+      <div class="stat"><div class="num serif">~600<span style="font-size:12px">km</span></div><div class="label">DRIVE</div></div>
     </div>
   </div>
 </header>
 
 <div class="wrap">
 
+<!-- ===== URGENT ===== -->
+<section id="urgent">
+  <div class="section-head">
+    <span class="ja serif">最 優 先</span>
+    <span class="zh serif">出發前必聯絡</span>
+    <span class="stamp">急</span>
+  </div>
+
+  <div class="alert danger">
+    <h4>📞 致電 Times 福岡空港店 改取/還車時間</h4>
+    <div>訂單上的時間和班機完全對不上，必須親自打電話確認改時間，否則會發生「沒車可開」或「沒地方還車」的災難。</div>
+    <a class="tel" href="tel:+81924327070">092-432-7070</a>
+    <ul style="margin-top:12px">
+      <li><strong>9/19 取車</strong>：訂單寫 10:00 AM → 改 <strong>18:45–19:00</strong>（門市 19:00 關前 15 分到，因 CI0128 才 18:05 抵）</li>
+      <li><strong>9/25 還車</strong>：訂單寫 10:00 AM → 改 <strong>14:30–15:00</strong>（21:00 班機，下午還車剛好接 shuttle）</li>
+      <li>訂單號：<strong>QXQ799749</strong></li>
+      <li>順便確認：shuttle 末班、ETC + NOC 加購流程、兩位駕駛登記</li>
+    </ul>
+    <div style="margin-top:10px;font-size:12.5px;color:var(--ink-soft)">⏰ 建議出發前一個月（2026/08 中旬）就打，不要拖。</div>
+  </div>
+
+  <div class="alert">
+    <h4>⛑️ Plan B（門市無法配合延後還車）</h4>
+    <ul>
+      <li>早上 7:00 出發 → 9:45 直接到 Times 還車 → shuttle 到機場 → 行李 Locker → 地鐵到博多採買 → 16:00 回機場</li>
+      <li>或維持 10:00 還車 → shuttle 到機場 → 地鐵到博多採買 → 下午回機場</li>
+    </ul>
+  </div>
+</section>
+
+<div class="divider">● ● ● ● ●</div>
+
+<!-- ===== ORDERS ===== -->
+<section id="orders">
+  <div class="section-head">
+    <span class="ja serif">予 約</span>
+    <span class="zh serif">已確認訂單</span>
+    <span class="stamp">已 訂</span>
+  </div>
+
+  <div class="order-grid">
+    <div class="order-card">
+      <div><span class="ico">✈️</span><span class="name">機票</span></div>
+      <div class="num">EVZKEH</div>
+      <div class="det">CI 0128 去 / CI 0117 回<br>9/19 14:40 TPE→FUK 18:05<br>9/25 21:00 FUK→TPE 22:25</div>
+    </div>
+    <div class="order-card">
+      <div><span class="ico">🚗</span><span class="name">租車</span></div>
+      <div class="num">QXQ799749</div>
+      <div class="det">Times Car Rental<br>Toyota Noah 油電（7 人座）<br>福岡空港店 取&還</div>
+    </div>
+    <div class="order-card">
+      <div><span class="ico">🏨</span><span class="name">3 家飯店</span></div>
+      <div class="num">TWD 29,956</div>
+      <div class="det">HIVE 2 晚 + YOUR ROOM 熊本駅 2 晚 + Beppu 乃音 2 晚</div>
+    </div>
+  </div>
+
+  <h3 style="margin:24px 0 12px;font-family:'Shippori Mincho',serif;font-size:16px;letter-spacing:.08em">🏨 住宿明細</h3>
+
+  <div class="hotel-block">
+    <div class="h-head">
+      <span class="h-name">Fukuoka Guesthouse HIVE</span>
+      <span class="h-night">2 晚</span>
+    </div>
+    <div class="h-addr">📍 福岡市博多区上呉服町 4-3（812-0036）<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Fukuoka+Guesthouse+HIVE+4-3+Kamigofukumachi">地圖</a></div>
+    <div class="h-price">9/19 · 9/20 · 日式四人房 · <strong>TWD 10,817</strong></div>
+  </div>
+
+  <div class="hotel-block">
+    <div class="h-head">
+      <span class="h-name">YOUR ROOM 熊本駅</span>
+      <span class="h-night">2 晚</span>
+    </div>
+    <div class="h-addr">📍 熊本市中央区本山 3-5-7（860-0821）<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=YOUR+ROOM+%E7%86%8A%E6%9C%AC%E9%A7%85+Motoyama+3-5-7">地圖</a></div>
+    <div class="h-price">9/21 · 9/22 · 雙臥室公寓 · <strong>TWD 13,076</strong></div>
+  </div>
+
+  <div class="hotel-block">
+    <div class="h-head">
+      <span class="h-name">Beppu 乃音（BEPPU non）</span>
+      <span class="h-night">2 晚</span>
+    </div>
+    <div class="h-addr">📍 別府市北浜 3-5-6（874-0920）<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=BEPPU+non+Kitahama+3-5-6">地圖</a></div>
+    <div class="h-price">9/23 · 9/24 · 雙人雙床房 × 2 · <strong>TWD 6,063</strong></div>
+  </div>
+
+  <div class="note-box">
+    💡 三家飯店都是公寓/民宿型，多為密碼鎖 self check-in，出發前一週要再次確認入住流程信件是否寄達。
+  </div>
+</section>
+
+<div class="divider">● ● ● ● ●</div>
+
 <!-- ===== WARNING ===== -->
 <section id="warning">
   <div class="section-head">
     <span class="ja serif">注 意</span>
     <span class="zh serif">重要警示</span>
-    <span class="stamp">必讀</span>
   </div>
 
   <div class="alert danger">
@@ -486,7 +670,6 @@ section{padding:36px 0;scroll-margin-top:72px}
     <div>9/19–9/23 連休 + 9/22「國民休日」自動成立，全九州交通與住宿衝擊大。</div>
     <ul>
       <li>🚗 高速公路車程抓 <strong>平日 1.5 倍</strong>，特別是 9/22、9/23 跨縣移動</li>
-      <li>🏨 熊本／別府連假住宿漲 30–50%，<strong>6 月底前訂</strong></li>
       <li>🍴 太宰府、由布院熱門點建議 <strong>8:00 前抵達</strong></li>
       <li>⛽ SA/PA 加油站可能排隊，車內備水備食</li>
     </ul>
@@ -494,62 +677,13 @@ section{padding:36px 0;scroll-margin-top:72px}
 
   <div class="alert danger">
     <h4>🌋 阿蘇中岳火口 全面關閉</h4>
-    <div>2026/1/27 起因觀光直升機事故搜救作業，<strong>所有人皆不可上火口</strong>。草千里、登山道、米塚、大觀峰仍正常開放。</div>
-  </div>
-
-  <div class="alert">
-    <h4>🚺 孕婦同行注意</h4>
-    <ul>
-      <li>母子健康手冊、健保卡、海外醫療險（<strong>含懷孕條款</strong>）三件必帶</li>
-      <li>柳川遊船、屋台、地獄蒸體驗皆不參與，由其他人輪流去</li>
-      <li>列印 福岡／熊本／別府當地產婦科急診清單紙本</li>
-    </ul>
+    <div>2026/1/27 起因觀光直升機事故搜救作業，<strong>所有人皆不可上火口</strong>。草千里、登山道、米塚、大觀峰仍正常開放，本來就只計畫在周圍走走。</div>
   </div>
 </section>
 
 <div class="divider">● ● ● ● ●</div>
 
-<!-- ===== INFO ===== -->
-<section id="info">
-  <div class="section-head">
-    <span class="ja serif">情 報</span>
-    <span class="zh serif">基本資訊</span>
-  </div>
-
-  <!-- Flight -->
-  <div class="card">
-    <h3>✈️ 機票 <span class="label">EVZKEH</span></h3>
-    <div class="row"><span class="k">9/19 六 去程</span><span class="v"><strong>CI 0128</strong> · TPE 14:40 → FUK 18:05</span></div>
-    <div class="row"><span class="k">9/25 五 回程</span><span class="v"><strong>CI 0117</strong> · FUK 21:00 → TPE 22:25</span></div>
-  </div>
-
-  <!-- Hotel -->
-  <div class="card">
-    <h3>🏨 住宿</h3>
-    <div class="row"><span class="k">9/19 · 9/20 · 9/21</span><span class="v">APA Hotel 福岡天神西 <strong>✓ 已訂</strong></span></div>
-    <div class="row"><span class="k">9/22（二・連假）</span><span class="v">熊本市區商旅 <strong>待訂</strong></span></div>
-    <div class="row"><span class="k">9/23（三・連假）</span><span class="v">別府站前商旅 <strong>待訂</strong></span></div>
-    <div class="row"><span class="k">9/24</span><span class="v">APA Hotel 福岡天神西 <strong>✓ 已訂</strong></span></div>
-    <div class="note-box" style="margin-top:12px">
-      <strong>熊本推薦：</strong>ANA Crowne Plaza、JR 九州 Hotel 熊本、三井 Garden、東橫 INN 通町筋<br>
-      <strong>別府推薦：</strong>APA 別府站前、Hotel AreaOne、AB Hotel、東橫 INN 別府東口（避硫磺味）
-    </div>
-  </div>
-
-  <!-- Car -->
-  <div class="card">
-    <h3>🚗 租車</h3>
-    <div class="row"><span class="k">車型</span><span class="v">Toyota Noah / Voxy（7 人座）</span></div>
-    <div class="row"><span class="k">取車</span><span class="v">福岡空港 Toyota 國際線店<br><span style="font-size:11px;color:var(--ink-mute)">營業 8:00–20:00</span></span></div>
-    <div class="row"><span class="k">還車</span><span class="v">博多站博多口店<br><span style="font-size:11px;color:var(--ink-mute)">營業 8:00–20:00 · 9/25 須 17:00 前還</span></span></div>
-    <div class="row"><span class="k">KEP 高速 Pass</span><span class="v">6 天 <strong>約 ¥18,000+</strong><br><span style="font-size:11px;color:var(--ink-mute)">2024/10 漲價，須現場確認</span></span></div>
-    <div class="row"><span class="k">必備文件</span><span class="v">台灣駕照 + 日文譯本<br><span style="font-size:11px;color:var(--ink-mute)">監理所 NT$100/份</span></span></div>
-  </div>
-</section>
-
-<div class="divider">● ● ● ● ●</div>
-
-<!-- ===== PREGNANCY ===== -->
+<!-- ===== PREG ===== -->
 <section id="preg">
   <div class="section-head">
     <span class="ja serif">妊 婦</span>
@@ -557,21 +691,59 @@ section{padding:36px 0;scroll-margin-top:72px}
   </div>
 
   <div class="card">
+    <h3>景點清單</h3>
     <table class="tbl">
-      <thead><tr><th>景點</th><th>狀態</th></tr></thead>
       <tbody>
-        <tr><td>草千里・大觀峰・米塚</td><td>✅ 平坦遠眺，OK</td></tr>
-        <tr><td>太宰府天滿宮</td><td>✅ 路面平緩</td></tr>
-        <tr><td>糸島・櫻井神社</td><td>✅ 海邊景點 OK</td></tr>
-        <tr><td>由布院金鱗湖</td><td>✅ 5 分繞湖一圈</td></tr>
-        <tr><td>別府地獄（看不入湯）</td><td>✅ 3 個就好</td></tr>
-        <tr><td>白糸の滝（上瀑布）</td><td>⚠️ 在水車食堂等</td></tr>
-        <tr><td>柳川川下り（遊船）</td><td>❌ 70 分無廁所，<strong>只吃鰻魚飯</strong></td></tr>
-        <tr><td>地獄蒸し工房</td><td>⚠️ 蒸氣熱，可在外等</td></tr>
-        <tr><td>阿蘇中岳火口</td><td>❌ <strong>全部人關閉中</strong></td></tr>
-        <tr><td>中洲屋台</td><td>⚠️ 無廁所、二手菸，建議跳過</td></tr>
+        <tr><td>草千里・米塚・大觀峰</td><td><span class="pill ok">✅ OK</span>平坦遠眺</td></tr>
+        <tr><td>太宰府天滿宮</td><td><span class="pill ok">✅ OK</span>路面平緩</td></tr>
+        <tr><td>櫻井神社・伊都菜彩</td><td><span class="pill ok">✅ OK</span>平坦</td></tr>
+        <tr><td>由布院・金鱗湖</td><td><span class="pill ok">✅ OK</span>5 分繞湖</td></tr>
+        <tr><td>湯之坪街道</td><td><span class="pill ok">✅ OK</span>平坦商店街</td></tr>
+        <tr><td>別府地獄（看）</td><td><span class="pill ok">✅ OK</span>不下水</td></tr>
+        <tr><td>明礬湯之里</td><td><span class="pill ok">✅ OK</span>戶外平坦</td></tr>
+        <tr><td>糸島白糸の滝</td><td><span class="pill warn">⚠️ 在下方</span>水車食堂等</td></tr>
+        <tr><td>熊本城天守閣</td><td><span class="pill warn">⚠️ 留意</span>有階梯，可只走外圍</td></tr>
+        <tr><td>地獄蒸し工房</td><td><span class="pill warn">⚠️ 看狀況</span>蒸氣熱可在外等</td></tr>
+        <tr><td>竹瓦溫泉</td><td><span class="pill warn">⚠️ 不入浴</span>外觀參觀 OK</td></tr>
+        <tr><td>柳川川下り遊船</td><td><span class="pill danger">❌ 不搭</span>70 分無廁所</td></tr>
+        <tr><td>阿蘇中岳火口</td><td><span class="pill danger">❌ 全員關閉</span></td></tr>
+        <tr><td>中洲屋台</td><td><span class="pill danger">❌ 跳過</span>無廁所、二手菸</td></tr>
       </tbody>
     </table>
+  </div>
+
+  <div class="card">
+    <h3>9 月孕婦特別注意</h3>
+    <ul style="padding-left:18px;margin:0;font-size:13.5px;color:var(--ink-soft);line-height:1.8">
+      <li>🌡️ <strong>9 月日本仍熱</strong>（福岡白天 28–30°C）：勤補水、戴帽子、室外 1 小時就找冷氣休息</li>
+      <li>🚗 <strong>長途車程</strong>易水腫：Day 3/5/7 都有 2 hr+ 高速段，每小時下交流道走 5 分</li>
+      <li>👃 <strong>別府硫磺味</strong>懷孕對氣味敏感：地獄區單個 5–10 分就走，不一次看 7 個</li>
+      <li>🍣 <strong>食物禁忌</strong>：生魚片、生牡蠣、未煮熟雞肉、未殺菌乳酪、酒精料理一律 PASS</li>
+      <li>☕ <strong>咖啡因</strong>：星巴克太宰府、B-speak 等選低/無咖啡因</li>
+      <li>👶 <strong>人潮地點</strong>走中央避撞肚子；連假首日太宰府特別擠</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>🩺 當地產婦科急診（建議印紙本）</h3>
+    <table class="tbl">
+      <thead><tr><th>地區</th><th>醫院</th><th style="text-align:right">電話</th></tr></thead>
+      <tbody>
+        <tr><td>福岡</td><td>福岡市民病院</td><td style="text-align:right"><a href="tel:+81926321111" style="color:var(--vermillion);text-decoration:none">092-632-1111</a></td></tr>
+        <tr><td>福岡</td><td>九州大學病院</td><td style="text-align:right"><a href="tel:+81926411151" style="color:var(--vermillion);text-decoration:none">092-641-1151</a></td></tr>
+        <tr><td>熊本</td><td>熊本赤十字病院</td><td style="text-align:right"><a href="tel:+81963842111" style="color:var(--vermillion);text-decoration:none">096-384-2111</a></td></tr>
+        <tr><td>熊本</td><td>熊本市民病院</td><td style="text-align:right"><a href="tel:+81963651711" style="color:var(--vermillion);text-decoration:none">096-365-1711</a></td></tr>
+        <tr><td>別府</td><td>別府醫療中心</td><td style="text-align:right"><a href="tel:+81977671111" style="color:var(--vermillion);text-decoration:none">0977-67-1111</a></td></tr>
+        <tr><td>大分</td><td>大分大學病院</td><td style="text-align:right"><a href="tel:+81975494411" style="color:var(--vermillion);text-decoration:none">097-549-4411</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>🎒 孕婦必帶</h3>
+    <div style="font-size:13.5px;color:var(--ink-soft);line-height:1.8">
+      母子健康手冊 · 健保卡 · <strong style="color:var(--vermillion)">海外醫療險（含懷孕條款）</strong> · 平日藥+英日藥名清單 · 護腰帶 · 好走鞋 · 寬鬆衣 · 暖暖包 · 薄外套 · 防曬+帽子+口罩 · 飲水壺+點心
+    </div>
   </div>
 </section>
 
@@ -591,28 +763,35 @@ section{padding:36px 0;scroll-margin-top:72px}
       <div class="day-num"><span class="small">DAY</span><span class="big">1</span></div>
       <div class="info">
         <div class="date">9月19日 <span class="week">SAT</span></div>
-        <div class="title">抵達福岡・天神入夜</div>
+        <div class="title">抵達福岡・入住 HIVE</div>
       </div>
+    </div>
+    <div class="day-route">
+      福岡空港 <span class="arrow">→</span> Times 取車 <span class="arrow">→</span> HIVE
+      <a class="maps" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Fukuoka+Airport,+778-1+Shimousui,+Hakata+Ward,+Fukuoka,+812-0003,+Japan/Times+Car+Rental+Fukuoka+Airport+International,+2+Chome-1-48+Higashinaka,+Hakata+Ward,+Fukuoka,+812-0892,+Japan/4-3+Kamigofukumachi,+Hakata+Ward,+Fukuoka,+812-0036,+Japan/">路線</a>
     </div>
     <div class="timeline">
       <div class="t-item"><div class="t-time">18:05</div><div class="t-dot"></div><div class="t-content">
         <div class="place">CI0128 抵 FUK 國際線</div>
       </div></div>
-      <div class="t-item"><div class="t-time">19:00</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">取車：Toyota 機場國際線店</div>
-        <div class="note"><span class="badge warn">注意</span>店家 20:00 關，先打電話確認</div>
+      <div class="t-item"><div class="t-time">18:35</div><div class="t-dot"></div><div class="t-content">
+        <div class="place">搭 Times shuttle bus</div>
+        <div class="note">國際線航廈外指定接駁點</div>
       </div></div>
-      <div class="t-item"><div class="t-time">19:30</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">開往 APA 天神西（13km）<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=APA+Hotel+Fukuoka+Tenjinnishi">地圖</a></div>
+      <div class="t-item"><div class="t-time">18:45</div><div class="t-dot"></div><div class="t-content">
+        <div class="place">Times 福岡空港店<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Times+Car+Rental+Fukuoka+Airport+International">地圖</a></div>
+        <div class="note"><span class="badge danger">19:00 關門</span>事先電話協調延後</div>
+      </div></div>
+      <div class="t-item"><div class="t-time">19:35</div><div class="t-dot"></div><div class="t-content">
+        <div class="place">Check-in HIVE（密碼鎖）<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Fukuoka+Guesthouse+HIVE">地圖</a></div>
       </div></div>
       <div class="t-item"><div class="t-time">20:30</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">晚餐：一蘭 天神西通り店 / 博多もつ鍋 おおやま</div>
-        <div class="note">輕鬆吃，明天養精蓄銳</div>
+        <div class="place">晚餐：一蘭 本社總本店 / おおやま もつ鍋</div>
       </div></div>
     </div>
     <div class="day-foot">
-      <div class="item"><span class="ico">🏨</span>APA 福岡天神西</div>
-      <div class="item"><span class="ico">🅿️</span>飯店停車 ¥1,500</div>
+      <div class="item"><span class="ico">🏨</span>Fukuoka Guesthouse HIVE</div>
+      <div class="item"><span class="ico">🅿️</span>HIVE 自有停車（先 email 確認）</div>
     </div>
   </article>
 
@@ -622,39 +801,41 @@ section{padding:36px 0;scroll-margin-top:72px}
       <div class="day-num"><span class="small">DAY</span><span class="big">2</span></div>
       <div class="info">
         <div class="date">9月20日 <span class="week">SUN</span></div>
-        <div class="title">糸島半島・海岸線</div>
+        <div class="title">糸島半島環線</div>
       </div>
+    </div>
+    <div class="day-route">
+      HIVE <span class="arrow">→</span> 糸島 6 點環線 <span class="arrow">→</span> HIVE（約 105 km）
+      <a class="maps" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/4-3+Kamigofukumachi,+Hakata+Ward,+Fukuoka,+812-0036,+Japan/Sakurai+Shrine,+4227+Shimasakurai,+Itoshima,+Fukuoka+819-1304,+Japan/Shiraito+Waterfall,+460-6+Shiraito,+Itoshima,+Fukuoka+819-1154,+Japan/SURF+SIDE+CAFE+Palm+Beach+Gardens,+285-B+Nishinoura,+Nishi+Ward,+Fukuoka,+819-0202,+Japan/Palm+Tree+Swing,+79-6+Kota,+Nishi+Ward,+Fukuoka,+819-0203,+Japan/ITOSAISAI+Farmer's+Market,+567-1+Hatae,+Itoshima,+Fukuoka+819-1104,+Japan/4-3+Kamigofukumachi,+Hakata+Ward,+Fukuoka,+812-0036,+Japan/">路線</a>
     </div>
     <div class="timeline">
       <div class="t-item"><div class="t-time">10:00</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">櫻井二見浦 夫婦岩・白鳥居<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E6%AB%BB%E4%BA%95%E4%BA%8C%E8%A6%8B%E6%B5%A6">地圖</a></div>
-      </div></div>
-      <div class="t-item"><div class="t-time">10:45</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">櫻井神社<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E6%AB%BB%E4%BA%95%E7%A5%9E%E7%A4%BE+%E7%B3%B8%E5%B3%B6">地圖</a></div>
+        <div class="place">櫻井神社<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Sakurai+Shrine+Itoshima">地圖</a></div>
         <div class="note"><span class="badge ok">嵐神社</span>嵐櫻井翔粉絲聖地（不是鬼滅）</div>
       </div></div>
       <div class="t-item"><div class="t-time">11:30</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">糸島 白糸の滝<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E7%99%BD%E7%B3%B8%E3%81%AE%E6%BB%9D+%E7%B3%B8%E5%B3%B6">地圖</a></div>
-        <div class="note"><span class="badge">¥600</span>流しそうめん（4/29-10/31）孕婦在水車食堂吃即可</div>
+        <div class="place">糸島 白糸の滝<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Shiraito+Waterfall+Itoshima">地圖</a></div>
+        <div class="note"><span class="badge">¥600</span>流しそうめん 4/29–10/31 · 孕婦在水車食堂吃即可</div>
       </div></div>
       <div class="t-item"><div class="t-time">13:00</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">午餐：Current / Palm Beach / Sumi Cafe</div>
-        <div class="note">海景咖啡擇一</div>
+        <div class="place">SURF SIDE CAFE Palm Beach Gardens<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Palm+Beach+Gardens+Fukuoka">地圖</a></div>
+        <div class="note">海景咖啡 · 旺季週末建議事先訂位</div>
       </div></div>
       <div class="t-item"><div class="t-time">14:30</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">ヤシの木鞦韆・天使之翼壁畫</div>
+        <div class="place">椰子樹鞦韆・天使之翼壁畫<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Palm+Tree+Swing+79-6+Kota">地圖</a></div>
+        <div class="note">孕婦拍照即可、不盪鞦韆</div>
       </div></div>
       <div class="t-item"><div class="t-time">15:30</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">伊都菜彩 道の駅</div>
-        <div class="note">巨峰、無花果、生牡蠣加工品</div>
+        <div class="place">伊都菜彩 ITOSAISAI Farmer's Market<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=ITOSAISAI+Farmers+Market">地圖</a></div>
+        <div class="note">巨峰、無花果 · 出國前要吃完</div>
       </div></div>
       <div class="t-item"><div class="t-time">19:00</div><div class="t-dot"></div><div class="t-content">
         <div class="place">晚餐：博多もつ鍋 笑樂 / やま中</div>
       </div></div>
     </div>
     <div class="day-foot">
-      <div class="item"><span class="ico">🏨</span>APA 福岡天神西</div>
-      <div class="item"><span class="ico">🚗</span>來回約 90 分</div>
+      <div class="item"><span class="ico">🏨</span>Fukuoka Guesthouse HIVE</div>
+      <div class="item"><span class="ico">🚗</span>環線約 5–6 hr</div>
     </div>
   </article>
 
@@ -664,37 +845,44 @@ section{padding:36px 0;scroll-margin-top:72px}
       <div class="day-num"><span class="small">DAY</span><span class="big">3</span></div>
       <div class="info">
         <div class="date">9月21日 <span class="week">MON</span><span class="holiday">敬老日</span></div>
-        <div class="title">太宰府・柳川鰻魚飯</div>
+        <div class="title">太宰府・柳川・遷熊本</div>
       </div>
+    </div>
+    <div class="day-route">
+      HIVE <span class="arrow">→</span> 太宰府 <span class="arrow">→</span> 柳川 <span class="arrow">→</span> YOUR ROOM 熊本駅
+      <a class="maps" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/4-3+Kamigofukumachi,+Hakata+Ward,+Fukuoka,+812-0036,+Japan/Dazaifu+Tenmangu+Shrine,+4+Chome-7-1+Saifu,+Dazaifu,+Fukuoka+818-0117,+Japan/Ganso+Motoyoshiya,+69+Asahimachi,+Yanagawa,+Fukuoka+832-0022,+Japan/Kitahara+Hakushu's+Birthplace+and+Memorial+Hall,+55-1+Okinohatamachi,+Yanagawa,+Fukuoka+832-0065,+Japan/YOUR+ROOM+%E7%86%8A%E6%9C%AC%E9%A7%85,+%E3%80%92860-0821+Kumamoto,+Chuo+Ward,+Motoyama,+3+Chome%E2%88%925%E2%88%927/">路線</a>
     </div>
     <div class="timeline">
       <div class="t-item"><div class="t-time">7:30</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">早出避連假人潮</div>
-        <div class="note"><span class="badge danger">連假首日</span>8:00 前到太宰府最舒服</div>
+        <div class="place">HIVE 退房，行李上車</div>
+        <div class="note"><span class="badge danger">連假首日</span>太宰府爆滿，8:00 前到</div>
       </div></div>
       <div class="t-item"><div class="t-time">8:30</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">太宰府天滿宮<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E5%A4%AA%E5%AE%B0%E5%BA%9C%E5%A4%A9%E6%BA%80%E5%AE%AE">地圖</a></div>
-        <div class="note">梅枝餅：やす武／かさの家 · 隈研吾設計星巴克</div>
-      </div></div>
-      <div class="t-item"><div class="t-time">10:30</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">高速前往柳川（約 22 分）</div>
+        <div class="place">太宰府天滿宮<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Dazaifu+Tenmangu">地圖</a></div>
+        <div class="note">梅枝餅やす武／かさの家 · 隈研吾星巴克 · 仮殿已拆</div>
       </div></div>
       <div class="t-item"><div class="t-time">11:30</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">元祖 本吉屋 本店<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E5%85%83%E7%A5%96+%E6%9C%AC%E5%90%89%E5%B1%8B+%E6%9F%B3%E5%B7%9D">地圖</a></div>
-        <div class="note"><span class="badge warn">2-3 hr</span>蒸籠鰻魚飯始祖 · 須電話預約 +81-944-72-6155</div>
+        <div class="place">元祖本吉屋 柳川本店<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Ganso+Motoyoshiya+Yanagawa">地圖</a></div>
+        <div class="note"><span class="badge warn">2-3 hr</span>蒸籠鰻魚飯 · 電話預約 +81-944-72-6155</div>
       </div></div>
       <div class="t-item"><div class="t-time">14:30</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">柳川散步：北原白秋故居、御花</div>
-        <div class="note"><span class="badge danger">不搭船</span>看川面風光即可</div>
+        <div class="place">北原白秋故居・記念館<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Kitahara+Hakushu+Birthplace">地圖</a></div>
+        <div class="note"><span class="badge">¥600</span>看川面 · <span class="badge danger">不搭船</span></div>
+      </div></div>
+      <div class="t-item"><div class="t-time">15:30</div><div class="t-dot"></div><div class="t-content">
+        <div class="place">出發熊本（高速約 1 hr 50 分）</div>
       </div></div>
       <div class="t-item"><div class="t-time">17:30</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">博多運河城 Canal City<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Canal+City+Hakata">地圖</a></div>
-        <div class="note">Ramen Stadium 拉麵展示館</div>
+        <div class="place">Check-in YOUR ROOM 熊本駅<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=YOUR+ROOM+Kumamoto+Station">地圖</a></div>
+        <div class="note">密碼鎖入住 · 行前確認信件</div>
+      </div></div>
+      <div class="t-item"><div class="t-time">19:00</div><div class="t-dot"></div><div class="t-content">
+        <div class="place">晚餐：菅乃屋 / 勝烈亭 / 桂花拉麵</div>
       </div></div>
     </div>
     <div class="day-foot">
-      <div class="item"><span class="ico">🏨</span>APA 福岡天神西</div>
-      <div class="item"><span class="ico">🅿️</span>太宰府駐車 ¥500</div>
+      <div class="item"><span class="ico">🏨</span>YOUR ROOM 熊本駅</div>
+      <div class="item"><span class="ico">🅿️</span>太宰府 ¥500 · 柳川 ¥500</div>
     </div>
   </article>
 
@@ -704,41 +892,51 @@ section{padding:36px 0;scroll-margin-top:72px}
       <div class="day-num"><span class="small">DAY</span><span class="big">4</span></div>
       <div class="info">
         <div class="date">9月22日 <span class="week">TUE</span><span class="holiday">國民休日</span></div>
-        <div class="title">熊本城・阿蘇草千里</div>
+        <div class="title">熊本城・阿蘇周邊環遊</div>
       </div>
     </div>
+    <div class="day-route">
+      YOUR ROOM <span class="arrow">→</span> 熊本城 <span class="arrow">→</span> 阿蘇山周邊 <span class="arrow">→</span> YOUR ROOM
+      <a class="maps" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/YOUR+ROOM+%E7%86%8A%E6%9C%AC%E9%A7%85,+%E3%80%92860-0821+Kumamoto,+Chuo+Ward,+Motoyama,+3+Chome%E2%88%925%E2%88%927/Kumamoto+Castle,+1-1+Honmaru,+Chuo+Ward,+Kumamoto,+860-0002,+Japan/Sakura-no-baba+Josaien,+1-1-2+Ninomaru,+Chuo+Ward,+Kumamoto,+860-0008,+Japan/Mount+Aso,+Takawara,+Aso,+Kumamoto+869-2223,+Japan/YOUR+ROOM+%E7%86%8A%E6%9C%AC%E9%A7%85,+%E3%80%92860-0821+Kumamoto,+Chuo+Ward,+Motoyama,+3+Chome%E2%88%925%E2%88%927/">路線</a>
+    </div>
     <div class="timeline">
-      <div class="t-item"><div class="t-time">7:00</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">APA 退房，行李上車</div>
-        <div class="note"><span class="badge danger">連假尖峰</span>九州道塞車，提早出發</div>
-      </div></div>
-      <div class="t-item"><div class="t-time">9:30</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">熊本城<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E7%86%8A%E6%9C%AC%E5%9F%8E">地圖</a></div>
-        <div class="note"><span class="badge">¥800</span>天守閣 2021 已全面復原 · 入園 9:00-17:00</div>
+      <div class="t-item"><div class="t-time">9:00</div><div class="t-dot"></div><div class="t-content">
+        <div class="place">熊本城<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Kumamoto+Castle">地圖</a></div>
+        <div class="note"><span class="badge">¥800</span>天守閣 2021 復原完成 · 入園 9-17（最終 16）</div>
       </div></div>
       <div class="t-item"><div class="t-time">11:00</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">城彩苑（櫻之馬場）</div>
+        <div class="place">櫻之馬場 城彩苑<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Sakura+no+Baba+Josaien">地圖</a></div>
         <div class="note">馬肉、肥後拉麵、いきなり団子</div>
       </div></div>
-      <div class="t-item"><div class="t-time">14:30</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">米塚展望所</div>
-        <div class="note">路邊休息 5 分拍照</div>
+      <div class="t-item"><div class="t-time">13:00</div><div class="t-dot"></div><div class="t-content">
+        <div class="place">出發阿蘇（走 ミルクロード 風景線）</div>
+      </div></div>
+      <div class="t-item"><div class="t-time">14:15</div><div class="t-dot"></div><div class="t-content">
+        <div class="place">道の駅 阿蘇</div>
+        <div class="note">火山資訊館 + 特產，躲太陽</div>
       </div></div>
       <div class="t-item"><div class="t-time">14:45</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">草千里浜<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E8%8D%89%E5%8D%83%E9%87%8C%E3%83%B6%E6%B5%9C">地圖</a></div>
-        <div class="note"><span class="badge danger">火口禁止</span>中岳火口全面關閉中</div>
+        <div class="place">米塚展望所</div>
+        <div class="note">圓錐火山 · 路邊停 5 分</div>
       </div></div>
-      <div class="t-item"><div class="t-time">16:00</div><div class="t-dot"></div><div class="t-content">
+      <div class="t-item"><div class="t-time">15:00</div><div class="t-dot"></div><div class="t-content">
+        <div class="place">草千里浜<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Kusasenri+Aso">地圖</a></div>
+        <div class="note"><span class="badge danger">火口禁止</span>平坦草原 · 阿蘇火山博物館可躲太陽</div>
+      </div></div>
+      <div class="t-item"><div class="t-time">16:15</div><div class="t-dot"></div><div class="t-content">
         <div class="place">大觀峰</div>
-        <div class="note">阿蘇五岳全景，光線最美時段</div>
+        <div class="note">阿蘇五岳全景眺望</div>
+      </div></div>
+      <div class="t-item"><div class="t-time">17:00</div><div class="t-dot"></div><div class="t-content">
+        <div class="place">回熊本市（やまなみ → 九州道）</div>
       </div></div>
       <div class="t-item"><div class="t-time">19:30</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">熊本晚餐：菅乃屋 / 勝烈亭 / 桂花拉麵</div>
+        <div class="place">晚餐：勝烈亭 / 天外天本店（豚骨拉麵元祖）</div>
       </div></div>
     </div>
     <div class="day-foot">
-      <div class="item"><span class="ico">🏨</span>熊本市區商旅</div>
-      <div class="item"><span class="ico">🚗</span>全日約 3.5 hr</div>
+      <div class="item"><span class="ico">🏨</span>YOUR ROOM 熊本駅</div>
+      <div class="item"><span class="ico">🅿️</span>熊本城 ¥500 · 草千里 ¥500</div>
     </div>
   </article>
 
@@ -748,36 +946,43 @@ section{padding:36px 0;scroll-margin-top:72px}
       <div class="day-num"><span class="small">DAY</span><span class="big">5</span></div>
       <div class="info">
         <div class="date">9月23日 <span class="week">WED</span><span class="holiday">秋分日</span></div>
-        <div class="title">由布院・別府地獄</div>
+        <div class="title">由布院・別府地獄・遷別府</div>
       </div>
+    </div>
+    <div class="day-route">
+      YOUR ROOM <span class="arrow">→</span> 由布院 <span class="arrow">→</span> 別府地獄 <span class="arrow">→</span> Beppu 乃音
+      <a class="maps" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/YOUR+ROOM+%E7%86%8A%E6%9C%AC%E9%A7%85,+%E3%80%92860-0821+Kumamoto,+Chuo+Ward,+Motoyama,+3+Chome%E2%88%925%E2%88%927/Yufuin+Onsen,+Yufu,+Oita,+Japan/Lake+Kinrin,+1561-1+Yufuincho+Kawakami,+Yufu,+Oita+879-5102,+Japan/Beppu+Jigoku+(Hells+of+Beppu),+559-1+Kannawa,+Beppu,+Oita+874-0000,+Japan/BEPPU+non,+%E3%80%92874-0920+Oita,+Beppu,+Kitahama,+3+Chome%E2%88%925%E2%88%926/">路線</a>
     </div>
     <div class="timeline">
       <div class="t-item"><div class="t-time">8:00</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">熊本退房，走やまなみハイウェイ</div>
-        <div class="note">高原風景線，107km / 約 2.5 hr</div>
+        <div class="place">YOUR ROOM 退房出發</div>
+        <div class="note">建議走やまなみハイウェイ（107km/2.5 hr 風景超美）</div>
       </div></div>
       <div class="t-item"><div class="t-time">10:30</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">由布院 金鱗湖<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E9%87%91%E9%B1%97%E6%B9%96+%E7%94%B1%E5%B8%83%E9%99%A2">地圖</a></div>
-        <div class="note">B-speak 蛋糕卷 · 湯の坪街道 · Snoopy 茶屋</div>
+        <div class="place">由布院 金鱗湖<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Lake+Kinrin+Yufuin">地圖</a></div>
+        <div class="note">湯の坪街道 · B-speak · Snoopy 茶屋</div>
       </div></div>
       <div class="t-item"><div class="t-time">12:30</div><div class="t-dot"></div><div class="t-content">
         <div class="place">午餐：ゆふいん市 豐後牛漢堡 / 山椒郎</div>
       </div></div>
       <div class="t-item"><div class="t-time">14:00</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">由布院 → 別府（高速 30 分）</div>
+        <div class="place">出發別府（高速 30 分）</div>
       </div></div>
       <div class="t-item"><div class="t-time">14:30</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">別府地獄精選 3 個<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E5%88%A5%E5%BA%9C%E5%9C%B0%E7%8D%84">地圖</a></div>
-        <div class="note"><span class="badge">¥2,400</span>共通券 · 推薦海地獄 + 血池 + 龍卷</div>
+        <div class="place">別府地獄精選 3 個<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Beppu+Jigoku+Hells+of+Beppu">地圖</a></div>
+        <div class="note"><span class="badge">¥2,400</span>共通券 · 海地獄 + 血池 + 龍卷</div>
+      </div></div>
+      <div class="t-item"><div class="t-time">17:00</div><div class="t-dot"></div><div class="t-content">
+        <div class="place">Check-in Beppu 乃音<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=BEPPU+non+Kitahama">地圖</a></div>
       </div></div>
       <div class="t-item"><div class="t-time">18:00</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">晚餐：とよ常天婦羅 / 冷麺の胡月</div>
-        <div class="note">とよ常特上天丼 ¥980 神 CP</div>
+        <div class="place">晚餐：とよ常 天婦羅 / 冷麺の胡月</div>
+        <div class="note">特上天丼 ¥980 銅板神店</div>
       </div></div>
     </div>
     <div class="day-foot">
-      <div class="item"><span class="ico">🏨</span>別府站前商旅</div>
-      <div class="item"><span class="ico">🚗</span>全日約 3 hr</div>
+      <div class="item"><span class="ico">🏨</span>Beppu 乃音</div>
+      <div class="item"><span class="ico">🅿️</span>湯の坪 ¥500 · 地獄免費</div>
     </div>
   </article>
 
@@ -787,30 +992,39 @@ section{padding:36px 0;scroll-margin-top:72px}
       <div class="day-num"><span class="small">DAY</span><span class="big">6</span></div>
       <div class="info">
         <div class="date">9月24日 <span class="week">THU</span></div>
-        <div class="title">別府回福岡・市區購物</div>
+        <div class="title">別府慢遊・鐵輪溫泉</div>
       </div>
+    </div>
+    <div class="day-route">
+      Beppu 乃音 <span class="arrow">→</span> 鐵輪溫泉 <span class="arrow">→</span> 明礬 <span class="arrow">→</span> Beppu 乃音
+      <a class="maps" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/BEPPU+non,+%E3%80%92874-0920+Oita,+Beppu,+Kitahama,+3+Chome%E2%88%925%E2%88%926/Kannawa+Hot+Spring,+%E5%88%A5%E5%BA%9C%E5%B8%82%E5%A4%A7%E5%AD%97%E9%89%84%E8%BC%AA,+212,+Beppu,+Oita+874-0041,+Japan/BEPPU+non,+%E3%80%92874-0920+Oita,+Beppu,+Kitahama,+3+Chome%E2%88%925%E2%88%926/">路線</a>
     </div>
     <div class="timeline">
       <div class="t-item"><div class="t-time">10:00</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">鐵輪溫泉 地獄蒸し工房<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E5%9C%B0%E7%8D%84%E8%92%B8%E3%81%97%E5%B7%A5%E6%88%BF+%E9%89%84%E8%BC%AA">地圖</a></div>
-        <div class="note"><span class="badge warn">10:00 開</span>自蒸海鮮蔬菜 · ¥400 起 · 孕婦可在外等</div>
+        <div class="place">地獄蒸し工房 鐵輪<a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Jigokumushi+Kobo+Kannawa">地圖</a></div>
+        <div class="note"><span class="badge warn">10:00 開</span>¥400 起 · 孕婦可在外等</div>
       </div></div>
-      <div class="t-item"><div class="t-time">11:00</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">出發回福岡（約 2 小時）</div>
+      <div class="t-item"><div class="t-time">12:00</div><div class="t-dot"></div><div class="t-content">
+        <div class="place">岡本屋売店 地獄蒸布丁 + 溫泉蛋</div>
       </div></div>
       <div class="t-item"><div class="t-time">13:30</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">午餐：水炊き 橙（中洲）/ 元祖博多めんたい重</div>
+        <div class="place">明礬湯之里</div>
+        <div class="note">湯花小屋・買湯花入浴劑</div>
       </div></div>
-      <div class="t-item"><div class="t-time">15:00</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">採購二選一</div>
-        <div class="note">A. 運河城 + 櫛田神社 + 川端商店街<br>B. Marinoa City Outlet</div>
+      <div class="t-item"><div class="t-time">14:30</div><div class="t-dot"></div><div class="t-content">
+        <div class="place">湯けむり展望台</div>
+        <div class="note">鐵輪溫泉煙霧群眺望</div>
       </div></div>
-      <div class="t-item"><div class="t-time">19:30</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">晚餐：博多 やまや（明太子吃到飽）</div>
+      <div class="t-item"><div class="t-time">16:00</div><div class="t-dot"></div><div class="t-content">
+        <div class="place">自由活動：竹瓦溫泉外觀 / GLOBAL TOWER</div>
+      </div></div>
+      <div class="t-item"><div class="t-time">18:30</div><div class="t-dot"></div><div class="t-content">
+        <div class="place">晚餐：千成 鄉土料理 / 東洋軒 別府本店（炸雞元祖）</div>
       </div></div>
     </div>
     <div class="day-foot">
-      <div class="item"><span class="ico">🏨</span>APA 福岡天神西</div>
+      <div class="item"><span class="ico">🏨</span>Beppu 乃音</div>
+      <div class="item"><span class="ico">📞</span>前一週確認 9/24 無休館</div>
     </div>
   </article>
 
@@ -820,27 +1034,40 @@ section{padding:36px 0;scroll-margin-top:72px}
       <div class="day-num"><span class="small">DAY</span><span class="big">7</span></div>
       <div class="info">
         <div class="date">9月25日 <span class="week">FRI</span></div>
-        <div class="title">福岡市區・回國</div>
+        <div class="title">別府 → 博多採買 → 還車 → 回國</div>
       </div>
     </div>
+    <div class="day-route">
+      Beppu 乃音 <span class="arrow">→</span> 博多市區 <span class="arrow">→</span> Times 還車 <span class="arrow">→</span> 福岡空港
+      <a class="maps" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/4-3+Kamigofukumachi,+Hakata+Ward,+Fukuoka,+812-0036,+Japan/Times+Car+Rental+Fukuoka+Airport+International,+2+Chome-1-48+Higashinaka,+Hakata+Ward,+Fukuoka,+812-0892,+Japan/Aoki,+Hakata+Ward,+Fukuoka,+812-0851,+Japan/">路線</a>
+    </div>
     <div class="timeline">
-      <div class="t-item"><div class="t-time">9:30</div><div class="t-dot"></div><div class="t-content">
+      <div class="t-item"><div class="t-time">7:00</div><div class="t-dot"></div><div class="t-content">
+        <div class="place">Beppu 乃音退房，行李上車</div>
+      </div></div>
+      <div class="t-item"><div class="t-time">7:30</div><div class="t-dot"></div><div class="t-content">
+        <div class="place">出發福岡（高速約 2 hr 10 分）</div>
+      </div></div>
+      <div class="t-item"><div class="t-time">10:00</div><div class="t-dot"></div><div class="t-content">
         <div class="place">博多阪急 B1 / 博多デイトス</div>
         <div class="note">明太子、洋菓子伴手禮</div>
       </div></div>
-      <div class="t-item"><div class="t-time">11:00</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">午餐：水炊き 若杉 本店（¥1,500 套餐神 CP）</div>
-        <div class="note">孕婦避免生食 → 改若杉雞肉鍋</div>
+      <div class="t-item"><div class="t-time">11:30</div><div class="t-dot"></div><div class="t-content">
+        <div class="place">水炊き 若杉 本店</div>
+        <div class="note">¥1,500 套餐神 CP · 孕婦友善</div>
       </div></div>
       <div class="t-item"><div class="t-time">13:00</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">最後採買：Daimaru / KITTE 博多</div>
+        <div class="place">博多運河城 / Daimaru / KITTE 博多</div>
       </div></div>
-      <div class="t-item"><div class="t-time">15:30</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">博多站 Toyota 還車</div>
-        <div class="note"><span class="badge warn">17:00 deadline</span>確保趕上 21:00 班機</div>
+      <div class="t-item"><div class="t-time">14:30</div><div class="t-dot"></div><div class="t-content">
+        <div class="place">Times 福岡空港店還車</div>
+        <div class="note"><span class="badge warn">已電話延後</span>事前協調至 14:30–15:00</div>
       </div></div>
-      <div class="t-item"><div class="t-time">16:30</div><div class="t-dot"></div><div class="t-content">
-        <div class="place">地下鐵到福岡空港（5 分 ¥260）</div>
+      <div class="t-item"><div class="t-time">15:00</div><div class="t-dot"></div><div class="t-content">
+        <div class="place">Times shuttle 到福岡空港國際線（約 10 分）</div>
+      </div></div>
+      <div class="t-item"><div class="t-time">18:30</div><div class="t-dot"></div><div class="t-content">
+        <div class="place">Check-in、退稅、通關</div>
       </div></div>
       <div class="t-item"><div class="t-time">21:00</div><div class="t-dot"></div><div class="t-content">
         <div class="place">CI0117 起飛 → 22:25 抵 TPE</div>
@@ -854,31 +1081,182 @@ section{padding:36px 0;scroll-margin-top:72px}
 
 <div class="divider">● ● ● ● ●</div>
 
+<!-- ===== TICKETS ===== -->
+<section id="tickets">
+  <div class="section-head">
+    <span class="ja serif">予 約</span>
+    <span class="zh serif">門票 & 預約清單</span>
+  </div>
+
+  <div class="card">
+    <h3>📞 需事先預約</h3>
+    <table class="tbl">
+      <thead><tr><th>項目</th><th>方式</th></tr></thead>
+      <tbody>
+        <tr><td><strong>本吉屋柳川</strong> 鰻魚飯</td><td>電話 <a href="tel:+81944726155" style="color:var(--vermillion)">+81-944-72-6155</a><br><span style="color:var(--ink-mute);font-size:11px">請 HIVE 代撥；2-3 hr</span></td></tr>
+        <tr><td><strong>水炊き 若杉</strong> 本店</td><td>Tabelog / <a href="tel:+81922821075" style="color:var(--vermillion)">092-282-1075</a><br><span style="color:var(--ink-mute);font-size:11px">Day 7 午餐</span></td></tr>
+        <tr><td><strong>水炊き 橙</strong> 中洲</td><td>Tabelog / <a href="tel:+81927332227" style="color:var(--vermillion)">092-733-2227</a><br><span style="color:var(--ink-mute);font-size:11px">Day 1 / 6 晚餐</span></td></tr>
+        <tr><td>Palm Beach Garden</td><td>OpenTable<br><span style="color:var(--ink-mute);font-size:11px">Day 2 中午</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>🎟️ 主要門票（成人單張）</h3>
+    <table class="tbl">
+      <tbody>
+        <tr><td>熊本城（天守閣 + 城內）</td><td class="num">¥800</td></tr>
+        <tr><td>別府地獄共通券（7 個地獄）</td><td class="num">¥2,400</td></tr>
+        <tr><td>北原白秋故居・記念館</td><td class="num">¥600</td></tr>
+        <tr><td>阿蘇火山博物館（選擇性）</td><td class="num">¥1,100</td></tr>
+        <tr><td>地獄蒸し工房（按食材）</td><td class="num">¥500-1,500</td></tr>
+        <tr><td>流しそうめん（白糸の滝）</td><td class="num">¥600/人</td></tr>
+      </tbody>
+    </table>
+    <div class="note-box" style="margin-top:10px">
+      <strong>免費：</strong>櫻井神社、太宰府、城彩苑、米塚、大觀峰、由布院街道、金鱗湖、明礬湯之里、湯けむり展望台、伊都菜彩、椰子樹鞦韆
+    </div>
+  </div>
+</section>
+
+<div class="divider">● ● ● ● ●</div>
+
+<!-- ===== EAT ===== -->
+<section id="eat">
+  <div class="section-head">
+    <span class="ja serif">名 物</span>
+    <span class="zh serif">三間住宿周邊必吃</span>
+  </div>
+
+  <div class="card">
+    <h3>🏨 福岡 HIVE 周邊（博多）</h3>
+    <table class="tbl">
+      <tbody>
+        <tr><td>一蘭 本社總本店</td><td>24h · 本社限定重箱</td></tr>
+        <tr><td>博多もつ鍋 おおやま 本店</td><td>醬油味噌湯頭都神</td></tr>
+        <tr><td>博多もつ鍋 笑樂 本店</td><td>西中洲 11-4</td></tr>
+        <tr><td>水炊き 橙 中洲</td><td>雞湯系名店</td></tr>
+        <tr><td>水炊き 若杉 本店</td><td>步行 HIVE 5 分</td></tr>
+        <tr><td>元祖博多めんたい重</td><td>明太子米飯重</td></tr>
+        <tr><td>川端ぜんざい広場</td><td>紅豆湯 · HIVE 步行 3 分</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>🏨 熊本 YOUR ROOM 周邊（熊本駅）</h3>
+    <table class="tbl">
+      <tbody>
+        <tr><td>菅乃屋 熊本駅店（馬肉）</td><td>孕婦點烤馬肉膳</td></tr>
+        <tr><td>勝烈亭 新市街本店</td><td>炸豬排</td></tr>
+        <tr><td>桂花拉麵 本店</td><td>熊本豚骨元祖</td></tr>
+        <tr><td>天外天 本店</td><td>豚骨拉麵</td></tr>
+        <tr><td>黒亭 本店</td><td>熊本駅步行 5 分</td></tr>
+        <tr><td>大關馬肉</td><td>熟食 / 馬肉醬煮孕婦可吃</td></tr>
+        <tr><td>いきなり団子</td><td>路邊 / 熊本駅內</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>🏨 別府 乃音 周邊（北浜）</h3>
+    <table class="tbl">
+      <tbody>
+        <tr><td>とよ常 本店（天婦羅）</td><td>特上天丼 ¥980 神店</td></tr>
+        <tr><td>冷麺の胡月</td><td>別府冷麺名店</td></tr>
+        <tr><td>千成 鄉土料理</td><td>北浜 1-9-2</td></tr>
+        <tr><td>東洋軒 別府本店</td><td>大分炸雞發源</td></tr>
+        <tr><td>岡本屋売店（鐵輪）</td><td>地獄蒸布丁、溫泉蛋</td></tr>
+        <tr><td>べっぷ駅市場</td><td>當地早餐</td></tr>
+        <tr><td>友永パン屋</td><td>百年麵包店</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<div class="divider">● ● ● ● ●</div>
+
+<!-- ===== SHOP ===== -->
+<section id="shop">
+  <div class="section-head">
+    <span class="ja serif">土 産</span>
+    <span class="zh serif">必買伴手禮</span>
+  </div>
+
+  <div class="card">
+    <h3>🥢 福岡 / 博多</h3>
+    <ul style="font-size:13.5px;color:var(--ink-soft);line-height:1.9;padding-left:18px;margin:0">
+      <li><strong>明太子</strong>（ふくや / やまや / 博多あごおとし）</li>
+      <li><strong>博多通りもん</strong>（西洋風白餡饅頭，必買）</li>
+      <li>二○加煎餅、博多ぽてと、鶴乃子（石村萬盛堂）</li>
+      <li>博多もつ鍋 真空包（おおやま、笑樂 公式店）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>🐴 熊本</h3>
+    <ul style="font-size:13.5px;color:var(--ink-soft);line-height:1.9;padding-left:18px;margin:0">
+      <li><strong>馬肉商品</strong>（馬肉味噌、馬肉ジャーキー）</li>
+      <li><strong>いきなり団子</strong>（真空版禮盒）</li>
+      <li>誠味屋 陣太鼓（紅豆羊羹）</li>
+      <li>くまモン周邊（玩偶、文具、零食）</li>
+      <li>天草鹽、阿蘇牛乳製品（道の駅 阿蘇）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>♨️ 別府 / 大分</h3>
+    <ul style="font-size:13.5px;color:var(--ink-soft);line-height:1.9;padding-left:18px;margin:0">
+      <li><strong>湯花入浴劑</strong>（明礬湯之里限定）</li>
+      <li><strong>岡本屋 地獄蒸布丁</strong>（不耐放當天吃）</li>
+      <li>かぼす（臭橙）製品（果汁、ぽん酢）</li>
+      <li>椎茸乾貨、関アジ關鯖一夜干</li>
+      <li>由布院 B-speak ロールケーキ（限購當天吃）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>🛒 採買時機</h3>
+    <table class="tbl">
+      <tbody>
+        <tr><td>Day 2</td><td>伊都菜彩水果（巨峰、無花果，出國前吃完）</td></tr>
+        <tr><td>Day 4</td><td>城彩苑 + 道の駅阿蘇（馬肉、阿蘇牛乳）</td></tr>
+        <tr><td>Day 5</td><td>湯之坪 B-speak、Snoopy；別府站湯花、布丁</td></tr>
+        <tr><td>Day 6</td><td>明礬補湯花；岡本屋當天現買布丁</td></tr>
+        <tr><td>Day 7</td><td><strong>博多阪急 B1 / デイトス / 機場</strong>主力採買</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<div class="divider">● ● ● ● ●</div>
+
 <!-- ===== BUDGET ===== -->
 <section id="budget">
   <div class="section-head">
     <span class="ja serif">予 算</span>
-    <span class="zh serif">預算試算</span>
+    <span class="zh serif">預算試算（固定費用）</span>
   </div>
 
   <div class="card">
     <table class="tbl">
-      <thead><tr><th>項目</th><th style="text-align:right">金額 ¥</th></tr></thead>
+      <thead><tr><th>項目</th><th style="text-align:right">金額</th></tr></thead>
       <tbody>
-        <tr><td>租車 7 天 Noah/Voxy（含全險 ETC）</td><td class="num">85,000</td></tr>
-        <tr><td>KEP 高速 Pass 6 天</td><td class="num">18,000~20,000</td></tr>
-        <tr><td>燃油（約 600 km）</td><td class="num">10,000</td></tr>
-        <tr><td>飯店停車 6 晚</td><td class="num">9,000</td></tr>
-        <tr><td>熊本飯店 1 晚（連假價）</td><td class="num">35,000</td></tr>
-        <tr><td>別府飯店 1 晚（連假價）</td><td class="num">35,000</td></tr>
-        <tr><td>餐費 7 天 4 人</td><td class="num">120,000</td></tr>
-        <tr><td>門票 + 雜支</td><td class="num">20,000</td></tr>
-        <tr><td>伴手禮</td><td class="num">40,000</td></tr>
-        <tr class="total"><td>4 人總額</td><td class="num">約 372,000</td></tr>
-        <tr class="total"><td>每人</td><td class="num">¥93,000<br><span style="font-size:11px;color:var(--ink-mute);font-family:inherit;font-weight:400">≈ NT$20,000</span></td></tr>
+        <tr><td>🏨 住宿 6 晚（已訂）</td><td class="num">TWD 29,956</td></tr>
+        <tr><td>🚗 租車 Noah 油電 + 全險 + NOC</td><td class="num">¥75,000</td></tr>
+        <tr><td>💳 ETC 卡（¥330×6）</td><td class="num">¥1,980</td></tr>
+        <tr><td>🛣️ 高速通行費（ETC 估）</td><td class="num">¥10,000-15,000</td></tr>
+        <tr><td>⛽ 燃油（油電 30 km/L）</td><td class="num">¥6,500</td></tr>
+        <tr><td>🅿️ 停車費</td><td class="num">¥6,000</td></tr>
+        <tr><td>🎟️ 主要門票 4 人</td><td class="num">¥17,200</td></tr>
+        <tr class="total"><td>4 人總額</td><td class="num">≈ NT$55,500</td></tr>
+        <tr class="total"><td>每人</td><td class="num">NT$14,000<br><span style="font-size:11px;color:var(--ink-mute);font-family:inherit;font-weight:400">固定費用</span></td></tr>
       </tbody>
     </table>
-    <div class="note-box" style="margin-top:14px">不含已訂機票與 APA 福岡 4 晚。連假期間住宿價可能再上浮，建議現在比價。</div>
+    <div class="note-box" style="margin-top:14px">
+      💡 餐費、伴手禮、額外景點、個人消費另計。<br>
+      💡 <strong>KEP（¥18,000+）</strong>到 Times 臨櫃時請對方算給聽，若高速 ETC 費接近 ¥18,000 才買；否則用 ETC 划算。
+    </div>
   </div>
 </section>
 
@@ -892,32 +1270,47 @@ section{padding:36px 0;scroll-margin-top:72px}
   </div>
 
   <div class="card">
+    <div class="ck-group done">
+      <h4>已完成</h4>
+      <div class="ck-item"><input type="checkbox" id="d1" checked disabled><label for="d1">✈️ 機票（EVZKEH）</label></div>
+      <div class="ck-item"><input type="checkbox" id="d2" checked disabled><label for="d2">🚗 租車（Times QXQ799749）</label></div>
+      <div class="ck-item"><input type="checkbox" id="d3" checked disabled><label for="d3">🏨 Fukuoka HIVE（9/19、9/20）</label></div>
+      <div class="ck-item"><input type="checkbox" id="d4" checked disabled><label for="d4">🏨 YOUR ROOM 熊本駅（9/21、9/22）</label></div>
+      <div class="ck-item"><input type="checkbox" id="d5" checked disabled><label for="d5">🏨 Beppu 乃音（9/23、9/24）</label></div>
+      <div class="ck-item"><input type="checkbox" id="d6" checked disabled><label for="d6">🗺️ 每日 Google Maps 路線</label></div>
+    </div>
+
+    <div class="ck-group urgent">
+      <h4>最優先：8 月中旬以前</h4>
+      <div class="ck-item"><input type="checkbox" id="c1"><label for="c1"><strong>📞 致電 Times 福岡空港店 092-432-7070</strong><br>改 9/19 取車 18:45 / 9/25 還車 14:30</label></div>
+    </div>
+
     <div class="ck-group">
-      <h4>🗓️ 6 月底前（連假房間搶手）</h4>
-      <div class="ck-item"><input type="checkbox" id="c1"><label for="c1">熊本飯店 9/22 一晚（兩雙人房）</label></div>
-      <div class="ck-item"><input type="checkbox" id="c2"><label for="c2">別府飯店 9/23 一晚（兩雙人房）</label></div>
-      <div class="ck-item"><input type="checkbox" id="c3"><label for="c3">取消 APA 9/22、9/23 兩晚</label></div>
-      <div class="ck-item"><input type="checkbox" id="c4"><label for="c4">租車預約 Noah/Voxy（加 KEP + ETC + NOC）</label></div>
-      <div class="ck-item"><input type="checkbox" id="c5"><label for="c5">駕照日文譯本 × 2 駕駛（監理所 NT$100）</label></div>
-      <div class="ck-item"><input type="checkbox" id="c6"><label for="c6">海外醫療險（含懷孕條款）</label></div>
+      <h4>🗓️ 一個月前</h4>
+      <div class="ck-item"><input type="checkbox" id="c2"><label for="c2">加購 ETC + NOC（電話確認）</label></div>
+      <div class="ck-item"><input type="checkbox" id="c3"><label for="c3">駕照日文譯本 × 2 駕駛（監理所 NT$100）</label></div>
+      <div class="ck-item"><input type="checkbox" id="c4"><label for="c4">海外醫療險（<strong>含懷孕條款</strong>）</label></div>
+      <div class="ck-item"><input type="checkbox" id="c5"><label for="c5">確認三家飯店 check-in 方式（多為密碼鎖）</label></div>
     </div>
 
     <div class="ck-group">
       <h4>🗓️ 兩週內</h4>
-      <div class="ck-item"><input type="checkbox" id="c7"><label for="c7">日幣現金 ¥40,000–60,000/人</label></div>
-      <div class="ck-item"><input type="checkbox" id="c8"><label for="c8">海外刷卡（Pi 拍錢／賴點／樂天）</label></div>
-      <div class="ck-item"><input type="checkbox" id="c9"><label for="c9">eSIM 上網（Holafly / Ubigi）</label></div>
-      <div class="ck-item"><input type="checkbox" id="c10"><label for="c10">本吉屋柳川鰻魚飯預約（請飯店代撥）</label></div>
-      <div class="ck-item"><input type="checkbox" id="c11"><label for="c11">水炊き若杉或橙預約</label></div>
-      <div class="ck-item"><input type="checkbox" id="c12"><label for="c12">APA 停車位預約</label></div>
+      <div class="ck-item"><input type="checkbox" id="c6"><label for="c6">日幣現金 ¥40,000–60,000/人</label></div>
+      <div class="ck-item"><input type="checkbox" id="c7"><label for="c7">海外刷卡（Pi 拍錢／賴點／樂天）</label></div>
+      <div class="ck-item"><input type="checkbox" id="c8"><label for="c8">eSIM 上網（Holafly / Ubigi）</label></div>
+      <div class="ck-item"><input type="checkbox" id="c9"><label for="c9">本吉屋柳川鰻魚飯預約（請 HIVE 代撥）</label></div>
+      <div class="ck-item"><input type="checkbox" id="c10"><label for="c10">水炊き若杉或橙預約</label></div>
+      <div class="ck-item"><input type="checkbox" id="c11"><label for="c11">各飯店停車位確認</label></div>
     </div>
 
     <div class="ck-group">
       <h4>🗓️ 出發前</h4>
-      <div class="ck-item"><input type="checkbox" id="c13"><label for="c13">紙本：日文譯本、台灣駕照、護照、租車單</label></div>
-      <div class="ck-item"><input type="checkbox" id="c14"><label for="c14">下載離線地圖、NAVITIME、Yahoo!カーナビ</label></div>
+      <div class="ck-item"><input type="checkbox" id="c12"><label for="c12">紙本：日文譯本、台灣駕照、護照、租車單（QXQ799749）</label></div>
+      <div class="ck-item"><input type="checkbox" id="c13"><label for="c13">三家飯店訂房紀錄印紙本</label></div>
+      <div class="ck-item"><input type="checkbox" id="c14"><label for="c14">下載離線地圖（七日路線）</label></div>
       <div class="ck-item"><input type="checkbox" id="c15"><label for="c15">母子健康手冊、健保卡</label></div>
       <div class="ck-item"><input type="checkbox" id="c16"><label for="c16">確認阿蘇火口最新狀態 aso-volcano.jp</label></div>
+      <div class="ck-item"><input type="checkbox" id="c17"><label for="c17">確認地獄蒸し工房 9/24 無休館</label></div>
     </div>
   </div>
 </section>
@@ -933,7 +1326,7 @@ section{padding:36px 0;scroll-margin-top:72px}
 
   <div class="applist">
     <div class="app"><div class="ico">🗺️</div><div class="name">Google Maps</div><div class="desc">主要導航</div></div>
-    <div class="app"><div class="ico">🚌</div><div class="name">NAVITIME</div><div class="desc">日本旅行專用</div></div>
+    <div class="app"><div class="ico">🚌</div><div class="name">NAVITIME</div><div class="desc">日本旅行</div></div>
     <div class="app"><div class="ico">🚗</div><div class="name">Yahoo!カーナビ</div><div class="desc">日本路線最準</div></div>
     <div class="app"><div class="ico">🍴</div><div class="name">食べログ</div><div class="desc">餐廳評分</div></div>
     <div class="app"><div class="ico">⛑️</div><div class="name">Japan Travel</div><div class="desc">災害警報</div></div>
@@ -957,8 +1350,8 @@ section{padding:36px 0;scroll-margin-top:72px}
     <div class="phone"><span>🇹🇼 駐福岡台北辦事處</span><a href="tel:+81927342810">+81-92-734-2810</a></div>
     <div class="phone"><span>🆘 急難救助專線 24h</span><a href="tel:+818019327958">+81-80-1932-7958</a></div>
     <div class="phone"><span>🚗 JAF 道路救援</span><a href="tel:#8139">#8139</a></div>
-    <div class="phone"><span>🏨 APA 天神西</span><a href="tel:+81927411111">092-741-1111</a></div>
-    <div class="phone"><span>🍱 本吉屋柳川（鰻魚飯預約）</span><a href="tel:+81944726155">+81-944-72-6155</a></div>
+    <div class="phone"><span>🚙 Times 福岡空港店</span><a href="tel:+81924327070">092-432-7070</a></div>
+    <div class="phone"><span>🍱 本吉屋柳川（鰻魚飯）</span><a href="tel:+81944726155">+81-944-72-6155</a></div>
     <div class="phone"><span>♨️ 地獄蒸し工房</span><a href="tel:+81977663775">0977-66-3775</a></div>
   </div>
 </section>
@@ -968,20 +1361,21 @@ section{padding:36px 0;scroll-margin-top:72px}
 <!-- ===== FOOTER ===== -->
 <footer class="foot">
   <span class="mark serif">福 岡 九 州</span>
-  <div>2026.09.19 — 09.25 · 4 人 · 自駕</div>
-  <div style="margin-top:14px">資料校正：2026/05/09</div>
+  <div>2026.09.19 — 09.25 · 4 人 · 自駕（含孕婦）</div>
+  <div style="margin-top:8px">HIVE 2 晚 · YOUR ROOM 熊本駅 2 晚 · Beppu 乃音 2 晚</div>
+  <div style="margin-top:14px">資料校正：2026/05/16</div>
   <div style="margin-top:6px">
     來源：<a href="https://www.aso-volcano.jp/" target="_blank" rel="noopener">阿蘇火山</a> ·
     <a href="https://www.beppu-jigoku.com/" target="_blank" rel="noopener">別府地獄</a> ·
     <a href="https://castle.kumamoto-guide.jp/" target="_blank" rel="noopener">熊本城</a> ·
-    <a href="https://global.w-nexco.co.jp/en/kep/" target="_blank" rel="noopener">KEP</a>
+    <a href="https://www.timescar-rental.com/" target="_blank" rel="noopener">Times</a>
   </div>
 </footer>
 
 <script>
 // Persist checkboxes in localStorage
-document.querySelectorAll('.ck-item input[type=checkbox]').forEach(cb=>{
-  const k='fuk-trip-'+cb.id;
+document.querySelectorAll('.ck-item input[type=checkbox]:not([disabled])').forEach(cb=>{
+  const k='fuk-trip-v2-'+cb.id;
   if(localStorage.getItem(k)==='1') cb.checked=true;
   cb.addEventListener('change',()=>{
     localStorage.setItem(k, cb.checked?'1':'0');
