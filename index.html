@@ -228,6 +228,59 @@
     display:flex;align-items:center;gap:8px;
   }
 
+  /* Weather */
+  .weather-card{
+    background:linear-gradient(135deg,#FFF0F4 0%,#E8F0FF 100%);
+    border:1px solid var(--sakura-200);
+    border-radius:14px;padding:14px;margin-bottom:14px;
+  }
+  .weather-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+  .weather-head .loc{font-weight:700;font-size:14px;color:var(--text);display:flex;align-items:center;gap:6px}
+  .weather-head .src{font-size:11px;color:var(--muted)}
+  .weather-summary{display:flex;align-items:center;gap:14px;padding:10px 12px;background:rgba(255,255,255,.65);border-radius:10px;margin-bottom:10px}
+  .weather-summary .big-ico{font-size:36px;line-height:1}
+  .weather-summary .temps{font-size:15px;font-weight:700;color:var(--text)}
+  .weather-summary .temps .hi{color:#E84A4A}
+  .weather-summary .temps .lo{color:#3F7BD8}
+  .weather-summary .meta{font-size:12.5px;color:var(--text-soft);margin-top:2px}
+  .hourly-strip{display:flex;overflow-x:auto;gap:8px;padding-bottom:4px;scrollbar-width:none}
+  .hourly-strip::-webkit-scrollbar{display:none}
+  .hour-cell{flex:0 0 auto;min-width:56px;padding:8px 6px;text-align:center;background:#fff;border:1px solid var(--border);border-radius:10px;font-size:12px}
+  .hour-cell .h{color:var(--text-soft);font-weight:600;font-size:11px}
+  .hour-cell .i{font-size:20px;margin:2px 0;line-height:1}
+  .hour-cell .t{font-weight:700;color:var(--text)}
+  .hour-cell .p{font-size:10px;color:#3F7BD8;margin-top:2px}
+  .weather-loading{text-align:center;padding:14px;color:var(--muted);font-size:13px}
+  .weather-fallback{font-size:12px;color:var(--text-soft);background:rgba(255,255,255,.6);padding:8px 10px;border-radius:8px;margin-top:6px}
+
+  /* FX */
+  .fx-rate-box{
+    background:linear-gradient(135deg,var(--sakura-400),var(--sakura-500));
+    color:#fff;border-radius:14px;padding:16px;text-align:center;margin-bottom:14px;
+    box-shadow:0 6px 14px rgba(251,111,146,.25);
+  }
+  .fx-rate-box .rate{font-size:28px;font-weight:800;letter-spacing:.5px;font-variant-numeric:tabular-nums}
+  .fx-rate-box .rate small{font-size:13px;font-weight:500;opacity:.85;display:block;margin-top:2px}
+  .fx-rate-box .ts{font-size:11px;opacity:.8;margin-top:6px}
+  .fx-row{display:flex;align-items:center;gap:10px;margin:10px 0;padding:14px;background:#fff;border:1px solid var(--border);border-radius:12px}
+  .fx-row .flag{font-size:28px}
+  .fx-row .code{font-size:13px;color:var(--muted);font-weight:600;letter-spacing:1px}
+  .fx-row input{
+    flex:1;font-size:22px;font-weight:700;color:var(--text);
+    border:none;outline:none;background:transparent;
+    text-align:right;font-variant-numeric:tabular-nums;
+    min-width:0;width:100%;
+  }
+  .fx-row input::placeholder{color:var(--sakura-200)}
+  .fx-row .label{font-size:12px;color:var(--muted);margin-top:2px}
+  .fx-row .col{display:flex;flex-direction:column;flex:0 0 auto}
+  .fx-swap{display:flex;justify-content:center;margin:-4px 0}
+  .fx-swap button{background:var(--sakura-100);border:none;color:var(--sakura-600);width:36px;height:36px;border-radius:50%;font-size:18px;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.06)}
+  .fx-quick{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:10px}
+  .fx-quick button{padding:8px 4px;border-radius:8px;background:var(--sakura-50);border:1px solid var(--border);color:var(--text-soft);font-size:12px;font-weight:600;cursor:pointer}
+  .fx-quick button:hover{background:var(--sakura-100);color:var(--sakura-600)}
+  .fx-note{font-size:12px;color:var(--text-soft);background:var(--sakura-50);padding:10px 12px;border-radius:8px;margin-top:10px}
+
   /* Footer */
   footer{padding:30px 20px;text-align:center;color:var(--muted);font-size:12px}
   footer .heart{color:var(--sakura-500)}
@@ -283,6 +336,7 @@
   <button class="tab" data-tab="info">🎟️ 重要資訊</button>
   <button class="tab" data-tab="pregnancy">🤰 孕婦提醒</button>
   <button class="tab" data-tab="prep">📋 行前準備</button>
+  <button class="tab" data-tab="fx">💱 匯率</button>
   <button class="tab" data-tab="emergency">📞 緊急聯絡</button>
 </nav>
 
@@ -1020,6 +1074,74 @@
   </div>
 </section>
 
+<!-- ============ FX ============ -->
+<section class="panel" id="fx" role="tabpanel">
+  <div class="fx-rate-box">
+    <div class="rate" id="fxRate">— <small>載入中…</small></div>
+    <div class="ts" id="fxTs">取得最新匯率中…</div>
+  </div>
+
+  <div class="card">
+    <h2>💱 雙向試算</h2>
+
+    <div class="fx-row">
+      <div class="flag">🇯🇵</div>
+      <div class="col">
+        <div class="code">JPY</div>
+        <div class="label">日圓</div>
+      </div>
+      <input id="jpyInput" type="number" inputmode="decimal" placeholder="0" />
+    </div>
+
+    <div class="fx-swap"><button id="fxSwap" title="清空">⇅</button></div>
+
+    <div class="fx-row">
+      <div class="flag">🇹🇼</div>
+      <div class="col">
+        <div class="code">TWD</div>
+        <div class="label">台幣</div>
+      </div>
+      <input id="twdInput" type="number" inputmode="decimal" placeholder="0" />
+    </div>
+
+    <div class="fx-quick">
+      <button data-jpy="100">¥100</button>
+      <button data-jpy="500">¥500</button>
+      <button data-jpy="1000">¥1,000</button>
+      <button data-jpy="5000">¥5,000</button>
+      <button data-jpy="10000">¥10,000</button>
+      <button data-jpy="20000">¥20,000</button>
+      <button data-jpy="50000">¥50,000</button>
+      <button data-jpy="100000">¥10萬</button>
+    </div>
+
+    <div class="fx-note">💡 來源 exchangerate-api（每日更新）。實際刷卡/換匯會有手續費，海外刷卡約 +1.5%、機場兌換較差，建議在台灣銀行先換好或用優惠日幣信用卡（Pi 拍錢、聯邦賴點、樂天）。</div>
+  </div>
+
+  <div class="card">
+    <h2>💴 常用價格參考</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>項目</th><th>日圓</th><th>≈ 台幣</th></tr></thead>
+      <tbody id="fxRefTable">
+        <tr><td>一蘭拉麵</td><td>¥980</td><td>—</td></tr>
+        <tr><td>もつ鍋一人份</td><td>¥2,500</td><td>—</td></tr>
+        <tr><td>本吉屋鰻魚飯（松）</td><td>¥4,500</td><td>—</td></tr>
+        <tr><td>とよ常特上天丼</td><td>¥980</td><td>—</td></tr>
+        <tr><td>熊本城門票</td><td>¥800</td><td>—</td></tr>
+        <tr><td>別府地獄共通券</td><td>¥2,400</td><td>—</td></tr>
+        <tr><td>地獄蒸し工房（一份）</td><td>¥1,000</td><td>—</td></tr>
+        <tr><td>湯花入浴劑（小包）</td><td>¥600</td><td>—</td></tr>
+        <tr><td>博多通りもん（10 入）</td><td>¥1,400</td><td>—</td></tr>
+        <tr><td>B-speak ロールケーキ（半條）</td><td>¥1,600</td><td>—</td></tr>
+        <tr><td>計程車起跳（福岡）</td><td>¥670</td><td>—</td></tr>
+        <tr><td>便利商店便當</td><td>¥600</td><td>—</td></tr>
+        <tr><td>瓶裝水</td><td>¥130</td><td>—</td></tr>
+        <tr><td>單日油資估算</td><td>¥1,500</td><td>—</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
 <!-- ============ EMERGENCY ============ -->
 <section class="panel" id="emergency" role="tabpanel">
   <div class="card">
@@ -1140,6 +1262,8 @@
     // scroll active pill into view
     const active = document.querySelector(`#dayPills .pill[data-day="${d}"]`);
     if(active) active.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+    // hook: lazy-load weather for this day
+    if(typeof loadWeather === 'function') loadWeather(d);
   }
   pills.forEach(p=>p.addEventListener('click',()=>showDay(p.dataset.day)));
 
@@ -1147,6 +1271,208 @@
   document.querySelectorAll('.hotel-eat[data-eat]').forEach(el=>{
     const tpl = document.getElementById('eat-'+el.dataset.eat);
     if(tpl) el.appendChild(tpl.content.cloneNode(true));
+  });
+
+  // ---- Weather: inject card + fetch ----
+  const dayMeta = {
+    '1':{name:'福岡', lat:33.5904, lon:130.4017, date:'2026-09-19'},
+    '2':{name:'福岡 / 糸島', lat:33.5904, lon:130.4017, date:'2026-09-20'},
+    '3':{name:'福岡 → 柳川 → 熊本', lat:32.8032, lon:130.7079, date:'2026-09-21'},
+    '4':{name:'熊本 / 阿蘇', lat:32.9441, lon:131.0676, date:'2026-09-22'},
+    '5':{name:'熊本 → 由布院 → 別府', lat:33.2846, lon:131.4910, date:'2026-09-23'},
+    '6':{name:'別府', lat:33.2846, lon:131.4910, date:'2026-09-24'},
+    '7':{name:'別府 → 博多 → 機場', lat:33.5904, lon:130.4017, date:'2026-09-25'},
+  };
+  // 9月下旬氣候平均（fallback）
+  const climatology = {
+    '福岡':{hi:27,lo:21,rain:30,note:'9 月下旬白天偏熱、夜涼，降雨機率中等'},
+    '福岡 / 糸島':{hi:27,lo:21,rain:30,note:'海邊風大，注意防曬'},
+    '福岡 → 柳川 → 熊本':{hi:28,lo:21,rain:30,note:'柳川悶熱，熊本同樣偏熱'},
+    '熊本 / 阿蘇':{hi:23,lo:14,rain:35,note:'阿蘇山區涼快，山上溫差大，帶薄外套'},
+    '熊本 → 由布院 → 別府':{hi:25,lo:18,rain:35,note:'由布院、別府山區較涼，海邊回溫'},
+    '別府':{hi:26,lo:19,rain:30,note:'別府海邊偏溫和'},
+    '別府 → 博多 → 機場':{hi:27,lo:21,rain:30,note:'博多再回到偏熱'},
+  };
+  const wmoIcon = c=>{
+    if(c===0) return '☀️';
+    if(c===1||c===2) return '🌤️';
+    if(c===3) return '☁️';
+    if(c>=45&&c<=48) return '🌫️';
+    if(c>=51&&c<=57) return '🌦️';
+    if(c>=61&&c<=67) return '🌧️';
+    if(c>=71&&c<=77) return '🌨️';
+    if(c>=80&&c<=82) return '🌦️';
+    if(c>=85&&c<=86) return '🌨️';
+    if(c>=95) return '⛈️';
+    return '🌡️';
+  };
+
+  const weatherCache = {};
+  function renderClimatology(card, m){
+    const k = climatology[m.name] || {hi:'—',lo:'—',rain:'—',note:''};
+    card.innerHTML = `
+      <div class="weather-head">
+        <div class="loc">🌸 ${m.name} · ${m.date}</div>
+        <div class="src">9 月下旬氣候平均</div>
+      </div>
+      <div class="weather-summary">
+        <div class="big-ico">🌤️</div>
+        <div>
+          <div class="temps"><span class="hi">${k.hi}°</span> / <span class="lo">${k.lo}°</span></div>
+          <div class="meta">降雨機率約 ${k.rain}%</div>
+        </div>
+      </div>
+      <div class="weather-fallback">⚠️ 預報需出發前 16 天內查詢。目前顯示往年 9 月下旬平均：${k.note}</div>
+    `;
+  }
+  async function fetchWeather(d){
+    if(weatherCache[d]) return weatherCache[d];
+    const m = dayMeta[d];
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${m.lat}&longitude=${m.lon}&hourly=temperature_2m,precipitation_probability,weather_code&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max,weather_code&timezone=Asia%2FTokyo&start_date=${m.date}&end_date=${m.date}`;
+    const r = await fetch(url);
+    if(!r.ok) throw new Error('weather api');
+    const j = await r.json();
+    if(!j.daily || !j.daily.time || j.daily.time.length === 0 || j.daily.temperature_2m_max[0] == null){
+      throw new Error('out of range');
+    }
+    weatherCache[d] = j;
+    return j;
+  }
+  function renderWeather(card, d, j){
+    const m = dayMeta[d];
+    const hi = Math.round(j.daily.temperature_2m_max[0]);
+    const lo = Math.round(j.daily.temperature_2m_min[0]);
+    const pop = j.daily.precipitation_probability_max[0] ?? '—';
+    const dayCode = j.daily.weather_code[0];
+    // hourly: pick 7, 10, 13, 16, 19, 22
+    const wantHours = [7,10,13,16,19,22];
+    const cells = wantHours.map(hr=>{
+      const idx = j.hourly.time.findIndex(t=>t.endsWith(String(hr).padStart(2,'0')+':00'));
+      if(idx<0) return '';
+      const t = Math.round(j.hourly.temperature_2m[idx]);
+      const p = j.hourly.precipitation_probability[idx] ?? 0;
+      const c = j.hourly.weather_code[idx];
+      return `<div class="hour-cell"><div class="h">${hr}:00</div><div class="i">${wmoIcon(c)}</div><div class="t">${t}°</div><div class="p">💧${p}%</div></div>`;
+    }).join('');
+    card.innerHTML = `
+      <div class="weather-head">
+        <div class="loc">🌸 ${m.name} · ${m.date}</div>
+        <div class="src">Open-Meteo</div>
+      </div>
+      <div class="weather-summary">
+        <div class="big-ico">${wmoIcon(dayCode)}</div>
+        <div>
+          <div class="temps"><span class="hi">${hi}°</span> / <span class="lo">${lo}°</span></div>
+          <div class="meta">降雨機率 ${pop}%</div>
+        </div>
+      </div>
+      <div class="hourly-strip">${cells}</div>
+    `;
+  }
+  async function loadWeather(d){
+    const card = document.querySelector(`.day-content[data-day="${d}"] .weather-card`);
+    if(!card || card.dataset.loaded) return;
+    card.innerHTML = '<div class="weather-loading">☁️ 取得天氣中…</div>';
+    try{
+      const j = await fetchWeather(d);
+      renderWeather(card, d, j);
+    }catch(e){
+      renderClimatology(card, dayMeta[d]);
+    }
+    card.dataset.loaded = '1';
+  }
+  // inject empty weather card to each day-content (before first card)
+  document.querySelectorAll('.day-content').forEach(c=>{
+    const wc = document.createElement('div');
+    wc.className = 'weather-card';
+    const hero = c.querySelector('.day-hero');
+    if(hero && hero.nextSibling) c.insertBefore(wc, hero.nextSibling);
+    else c.appendChild(wc);
+  });
+  // load weather for the visible day (Day 1) on init
+  loadWeather('1');
+
+  // ---- FX: TWD <-> JPY ----
+  // rate = JPY per 1 TWD (e.g. ~4.7). Fallback: 4.8
+  let twdToJpy = 5.0;
+  let fxFetched = false;
+  const fxRateEl = document.getElementById('fxRate');
+  const fxTsEl = document.getElementById('fxTs');
+  const jpyIn = document.getElementById('jpyInput');
+  const twdIn = document.getElementById('twdInput');
+
+  function fmt(n,dp){
+    if(!isFinite(n)) return '';
+    return n.toLocaleString('en-US',{minimumFractionDigits:0,maximumFractionDigits:dp??2});
+  }
+  function updateRateDisplay(){
+    fxRateEl.innerHTML = `1 TWD ≈ ${twdToJpy.toFixed(3)} JPY <small>（¥100 ≈ NT$${(100/twdToJpy).toFixed(2)}）</small>`;
+  }
+  function recalcRef(){
+    document.querySelectorAll('#fxRefTable tr').forEach(tr=>{
+      const cells = tr.querySelectorAll('td');
+      if(cells.length<3) return;
+      const jpyTxt = cells[1].textContent.replace(/[^\d]/g,'');
+      const jpy = parseFloat(jpyTxt);
+      if(isFinite(jpy)) cells[2].textContent = '≈ NT$'+fmt(jpy/twdToJpy,0);
+    });
+  }
+  function setJpyFromTwd(){
+    const v = parseFloat(twdIn.value);
+    jpyIn.value = isFinite(v) ? Math.round(v*twdToJpy) : '';
+  }
+  function setTwdFromJpy(){
+    const v = parseFloat(jpyIn.value);
+    twdIn.value = isFinite(v) ? (v/twdToJpy).toFixed(2) : '';
+  }
+  jpyIn.addEventListener('input', setTwdFromJpy);
+  twdIn.addEventListener('input', setJpyFromTwd);
+  document.getElementById('fxSwap').addEventListener('click', ()=>{
+    jpyIn.value = ''; twdIn.value = '';
+    jpyIn.focus();
+  });
+  document.querySelectorAll('.fx-quick button').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      jpyIn.value = b.dataset.jpy;
+      setTwdFromJpy();
+    });
+  });
+
+  async function fetchFx(){
+    if(fxFetched) return;
+    // Fawaz Ahmed currency-api (no key, jsDelivr CDN, fallbacks)
+    const urls = [
+      'https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/twd.json',
+      'https://latest.currency-api.pages.dev/v1/currencies/twd.json',
+    ];
+    for(const u of urls){
+      try{
+        const r = await fetch(u);
+        if(!r.ok) continue;
+        const j = await r.json();
+        if(j && j.twd && j.twd.jpy){
+          twdToJpy = j.twd.jpy;
+          fxTsEl.textContent = '更新於 '+(j.date||'-')+'（jsDelivr currency-api）';
+          fxFetched = true;
+          updateRateDisplay();
+          recalcRef();
+          // recompute current inputs
+          if(jpyIn.value) setTwdFromJpy();
+          else if(twdIn.value) setJpyFromTwd();
+          return;
+        }
+      }catch(e){}
+    }
+    fxTsEl.textContent = '⚠️ 無法取得最新匯率，使用預設 1 TWD ≈ 5.00 JPY';
+    updateRateDisplay();
+    recalcRef();
+  }
+  updateRateDisplay();
+  recalcRef();
+  // fetch when fx tab is opened (lazy)
+  let fxLoaded = false;
+  document.querySelector('.tab[data-tab="fx"]').addEventListener('click', ()=>{
+    if(!fxLoaded){ fetchFx(); fxLoaded = true; }
   });
 
   // ---- Today highlight ----
