@@ -285,6 +285,22 @@
   footer{padding:30px 20px;text-align:center;color:var(--muted);font-size:12px}
   footer .heart{color:var(--sakura-500)}
 
+  /* Shuttle guide images */
+  .guide-imgs{display:flex;flex-direction:column;gap:16px;margin-top:12px;max-width:720px}
+  .guide-fig{margin:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+  .guide-fig img{display:block;width:100%;height:auto}
+  .guide-fig figcaption{padding:10px 12px;font-size:13px;color:var(--text-soft);border-top:1px solid var(--line)}
+  .guide-fig .step{display:inline-block;background:var(--accent,#e8618c);color:#fff;border-radius:999px;
+    padding:1px 8px;font-size:11px;font-weight:700;margin-right:6px}
+
+  /* Road sign grid */
+  .sign-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:4px}
+  @media(min-width:560px){.sign-grid{grid-template-columns:repeat(4,1fr)}}
+  .sign-item{text-align:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 8px}
+  .sign-item img{width:76px;height:76px;display:block;margin:0 auto 8px}
+  .sign-item .jp{display:block;font-weight:700;font-size:13px;color:#333}
+  .sign-item .zh{display:block;font-size:12px;color:#666;margin-top:2px}
+
   /* Large screen */
   @media(min-width:720px){
     main{padding:24px 24px 80px}
@@ -334,6 +350,7 @@
   <button class="tab" data-tab="daily">📅 每日行程</button>
   <button class="tab" data-tab="food">🍴 美食地圖</button>
   <button class="tab" data-tab="info">🎟️ 重要資訊</button>
+  <button class="tab" data-tab="driving">🚦 開車須知</button>
   <button class="tab" data-tab="prep">📋 行前準備</button>
   <button class="tab" data-tab="fx">💱 匯率</button>
   <button class="tab" data-tab="emergency">📞 緊急聯絡</button>
@@ -419,7 +436,7 @@
     <div class="quick-grid">
       <a href="#" class="quick" data-go="daily"><span class="ico">📅</span>每日行程</a>
       <a href="#" class="quick" data-go="food"><span class="ico">🍜</span>美食地圖</a>
-      <a href="#" class="quick" data-go="prep"><span class="ico">📋</span>行前準備</a>
+      <a href="#" class="quick" data-go="driving"><span class="ico">🚦</span>開車須知</a>
       <a href="#" class="quick" data-go="emergency"><span class="ico">📞</span>緊急聯絡</a>
     </div>
   </div>
@@ -454,9 +471,9 @@
     <div class="card">
       <h2>📍 停靠點</h2>
       <div class="stops">
-        <div class="stop"><div class="n">1</div><div class="info"><b>福岡空港 國際線航廈</b><span>福岡市博多区下臼井 778-1</span></div></div>
-        <div class="stop"><div class="n">2</div><div class="info"><b>IX RENTAL 福岡機場店</b><span>博多区西月隈 2-4-31｜📞 +81-80-3226-1688</span></div></div>
-        <div class="stop"><div class="n">3</div><div class="info"><b>中今旅館（ゲストハウス中今）</b><span>博多区冷泉町 6-26｜📞 +81-92-261-5070</span></div></div>
+        <div class="stop"><div class="n">1</div><div class="info"><b>福岡空港 國際線航廈</b><span>🇯🇵 福岡空港 国際線ターミナル｜🇬🇧 Fukuoka Airport Int'l Terminal<br>福岡市博多区下臼井 778-1</span></div></div>
+        <div class="stop"><div class="n">2</div><div class="info"><b>IX RENTAL 福岡機場店</b><span>🇯🇵 アイエックスレンタカー 福岡支店｜🇬🇧 IX Rental Fukuoka Airport<br>🇬🇧 2-4-31 Nishitsukiguma, Hakata-ku<br>博多区西月隈 2-4-31｜📞 +81-80-3226-1688</span></div></div>
+        <div class="stop"><div class="n">3</div><div class="info"><b>中今旅館（ゲストハウス中今）</b><span>🇯🇵 ゲストハウス中今｜🇬🇧 GuestHouse Nakaima<br>🇬🇧 6-26 Reisenmachi, Hakata-ku<br>博多区冷泉町 6-26｜📞 +81-92-261-5070</span></div></div>
       </div>
       <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Fukuoka+Airport,+778-1+Shimousui,+Hakata+Ward,+Fukuoka,+812-0003,+Japan/IX+RENTAL,+2-4-31+Nishitsukiguma,+Hakata+Ward,+Fukuoka,+812-0058,+Japan/6-26+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/">🗺️ 開啟 Google Maps 路線</a>
     </div>
@@ -464,11 +481,27 @@
     <div class="card">
       <h2>⏰ 時間軸</h2>
       <div class="timeline-row"><div class="t">18:05</div><div class="e">CI0128 抵 FUK 國際線</div></div>
-      <div class="timeline-row"><div class="t">18:35</div><div class="e">出航廈 → 前往 IX RENTAL（<b>接駁方式待確認</b>，計程車約 10 分）</div></div>
-      <div class="timeline-row"><div class="t">19:00</div><div class="e"><b>抵 IX RENTAL 取車</b>（門市關門時間待確認）</div></div>
+      <div class="timeline-row"><div class="t">18:35</div><div class="e">出航廈 → <b>1F Shuttle Bus 標識往右</b> → <b>A3 出口</b>左側人行道 → <b>「一般車」乘降場（15 號柱）</b>打電話叫接駁</div></div>
+      <div class="timeline-row"><div class="t">19:00</div><div class="e"><b>抵 IX RENTAL 取車</b>（門市關門時間待確認）📞 +81-80-3226-1688</div></div>
       <div class="timeline-row"><div class="t">19:30</div><div class="e">取車完畢，開往中今旅館</div></div>
       <div class="timeline-row"><div class="t">19:50</div><div class="e"><b>Check-in 中今旅館</b>（已告知抵達 20:00–21:00）</div></div>
       <div class="timeline-row"><div class="t">20:30</div><div class="e">晚餐：博多もつ鍋 おおやま / 水炊き 若杉（步行 7 分）</div></div>
+      <div class="guide-imgs">
+        <figure class="guide-fig">
+          <a href="images/ix-rental-shuttle-1.jpg" target="_blank" rel="noopener"><img src="images/ix-rental-shuttle-1.jpg" alt="Step 1：國際線 1F 找 Shuttle Bus 標識，往右直走" loading="lazy"></a>
+          <figcaption><span class="step">1</span>1F「Shuttle Bus」標識 → 往右</figcaption>
+        </figure>
+        <figure class="guide-fig">
+          <a href="images/ix-rental-shuttle-2.jpg" target="_blank" rel="noopener"><img src="images/ix-rental-shuttle-2.jpg" alt="Step 2：從 A3 出口出來，走左邊人行道過斑馬線" loading="lazy"></a>
+          <figcaption><span class="step">2</span>A3 出口 → 左邊人行道</figcaption>
+        </figure>
+        <figure class="guide-fig">
+          <a href="images/ix-rental-shuttle-3.jpg" target="_blank" rel="noopener"><img src="images/ix-rental-shuttle-3.jpg" alt="Step 3：到 15 號柱「一般車」乘降場後打電話" loading="lazy"></a>
+          <figcaption><span class="step">3</span>15 號柱「一般車」→ 打電話</figcaption>
+        </figure>
+      </div>
+      <p style="font-size:12px;color:var(--text-soft);margin:8px 0 0">☝️ 落地後照這三張走；點圖可放大。📞 <a href="tel:+818032261688">+81-80-3226-1688</a></p>
+
       <div class="alert info">🅿️ 旅館停車 ¥500/日、<b>無法預約</b>，現場問；備案 Times 川端 Parking ¥1,400/晚。<br>🚿 00:00–07:00 廚房・客廳・淋浴間停用；全館禁菸。</div>
     </div>
 
@@ -491,11 +524,11 @@
     <div class="card">
       <h2>📍 停靠點</h2>
       <div class="stops">
-        <div class="stop"><div class="n">☕</div><div class="info"><b>山水水出珈琲（早餐・步行）</b><span>博多区下川端町 3-1 博多リバレイン 1F｜步行 3–5 分</span></div></div>
-        <div class="stop"><div class="n">1</div><div class="info"><b>一蘭の森</b><span>糸島市志摩松隈 256-10</span></div></div>
-        <div class="stop"><div class="n">2</div><div class="info"><b>工房とったん（またいちの塩）</b><span>糸島市志摩芥屋 3757</span></div></div>
-        <div class="stop"><div class="n">3</div><div class="info"><b>箱島神社</b><span>糸島市志摩桜井</span></div></div>
-        <div class="stop"><div class="n">4</div><div class="info"><b>夫婦岩 二見ヶ浦</b><span>糸島市志摩桜井</span></div></div>
+        <div class="stop"><div class="n">☕</div><div class="info"><b>山水水出珈琲（早餐・步行）</b><span>🇯🇵 山水水出珈琲｜🇬🇧 Sansui Mizudashi Coffee<br>📞 092-282-0101｜8:00–16:30<br>博多区下川端町 3-1 博多リバレイン 1F｜步行 3–5 分</span></div></div>
+        <div class="stop"><div class="n">1</div><div class="info"><b>一蘭の森</b><span>🇯🇵 一蘭の森｜🇬🇧 Ichiran no Mori<br>糸島市志摩松隈 256-10</span></div></div>
+        <div class="stop"><div class="n">2</div><div class="info"><b>工房とったん（またいちの塩）</b><span>🇯🇵 またいちの塩 工房とったん｜🇬🇧 Kobo Tottan<br>糸島市志摩芥屋 3757</span></div></div>
+        <div class="stop"><div class="n">3</div><div class="info"><b>箱島神社</b><span>🇯🇵 箱島神社｜🇬🇧 Hakoshima Shrine<br>糸島市志摩桜井</span></div></div>
+        <div class="stop"><div class="n">4</div><div class="info"><b>夫婦岩 二見ヶ浦</b><span>🇯🇵 桜井二見ヶ浦（夫婦岩）｜🇬🇧 Sakurai Futamigaura<br>糸島市志摩桜井</span></div></div>
       </div>
       <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/6-26+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/Ichiran+no+Mori,+256-10+Shima+Matsukuma,+Itoshima,+Fukuoka+819-1304,+Japan/Kobo+Tottan+Mataichi+no+Shio,+3757+Shima+Keya,+Itoshima,+Fukuoka+819-1332,+Japan/Hakoshima+Shrine,+Shima+Sakurai,+Itoshima,+Fukuoka+819-1304,+Japan/Meoto+Iwa+Futamigaura,+Shima+Sakurai,+Itoshima,+Fukuoka+819-1304,+Japan/6-26+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/">🗺️ 開啟 Google Maps 路線</a>
     </div>
@@ -531,11 +564,11 @@
     <div class="card">
       <h2>📍 停靠點</h2>
       <div class="stops">
-        <div class="stop"><div class="n">1</div><div class="info"><b>食堂 おわん</b>（早餐）<span>博多区冷泉町 9-20 1F｜旅館步行 2 分｜📞 092-292-0409</span></div></div>
-        <div class="stop"><div class="n">2</div><div class="info"><b>星巴克 太宰府天滿宮表參道店</b><span>太宰府市宰府 3-2-43｜隈研吾建築</span></div></div>
-        <div class="stop"><div class="n">3</div><div class="info"><b>一蘭 太宰府参道店</b>（午餐）<span>太宰府市宰府 2-6-2｜9:30–18:30｜全球唯一「合格拉麵」</span></div></div>
-        <div class="stop"><div class="n">4</div><div class="info"><b>柳川松濤園・藩主立花邸</b> — 蒸籠鰻魚飯<span>柳川市新外町 1｜入園 ¥1,000｜園區餐廳 📞 0944-73-2217</span></div></div>
-        <div class="stop"><div class="n">5</div><div class="info"><b>熊本之門酒店</b><span>熊本市西区春日 1-14-1｜📞 +81-96-288-0170</span></div></div>
+        <div class="stop"><div class="n">1</div><div class="info"><b>食堂 おわん</b>（早餐）<span>🇯🇵 食堂 おわん｜🇬🇧 Shokudo Owan<br>博多区冷泉町 9-20 1F｜旅館步行 2 分｜📞 092-292-0409</span></div></div>
+        <div class="stop"><div class="n">2</div><div class="info"><b>星巴克 太宰府天滿宮表參道店</b><span>🇯🇵 スターバックス 太宰府天満宮表参道店｜🇬🇧 Starbucks Dazaifu Tenmangu Omotesando<br>太宰府市宰府 3-2-43｜隈研吾建築</span></div></div>
+        <div class="stop"><div class="n">3</div><div class="info"><b>一蘭 太宰府参道店</b>（午餐）<span>🇯🇵 一蘭 太宰府参道店｜🇬🇧 Ichiran Dazaifu Sando<br>太宰府市宰府 2-6-2｜9:30–18:30｜全球唯一「合格拉麵」</span></div></div>
+        <div class="stop"><div class="n">4</div><div class="info"><b>柳川松濤園・藩主立花邸</b> — 蒸籠鰻魚飯<span>🇯🇵 柳川藩主立花邸 御花（松濤園）｜🇬🇧 Yanagawa Ohana / Shotoen<br>🇬🇧 1 Shingaimachi, Yanagawa<br>柳川市新外町 1｜入園 ¥1,000｜園區餐廳 📞 0944-73-2217</span></div></div>
+        <div class="stop"><div class="n">5</div><div class="info"><b>熊本之門酒店</b><span>🇯🇵 ホテル ザ ゲート熊本｜🇬🇧 Hotel The Gate Kumamoto<br>🇬🇧 1-14-1 Kasuga, Nishi-ku<br>熊本市西区春日 1-14-1｜📞 +81-96-288-0170</span></div></div>
       </div>
       <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/6-26+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/9-20+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/Starbucks+Coffee+Dazaifu+Tenmangu+Omotesando,+3-2-43+Saifu,+Dazaifu,+Fukuoka+818-0117,+Japan/Ichiran+Dazaifu+Sando,+2-6-2+Saifu,+Dazaifu,+Fukuoka+818-0117,+Japan/Yanagawa+Ohana,+1+Shingaimachi,+Yanagawa,+Fukuoka+832-0069,+Japan/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/">🗺️ 開啟 Google Maps 路線</a>
     </div>
@@ -571,14 +604,20 @@
       <div class="day-route">熊本之門酒店 → 熊本城 → 城彩苑 → 阿蘇（米塚・草千里・大觀峰）→ 熊本之門酒店</div>
     </div>
 
-    <div class="alert warn">🌋 中岳火口因事故全面關閉中，<b>全員不上去</b>。改沿阿蘇周邊環線挑展望點走走</div>
+    <div class="alert danger">🌋 <b>阿蘇噴火警戒等級 3（入山規制）— 2026/8/14 起</b><br>
+      火口周圍 <b>2 km 禁止進入</b>；高岳・中岳・杵島岳・烏帽子岳<b>禁止登山</b>。<br>
+      ✅ <b>草千里・草千里展望所・阿蘇火山博物館・大觀峰・道の駅 阿蘇 照常開放</b>，本日行程不受影響。<br>
+      🚗 <b>上山走北側（阿蘇市側）</b>：ミルクロード → 縣道 111 / 299・298。<br>
+      ⛔ <b>南登山道（南阿蘇村側縣道 111）中途全面通行止</b> — 導航若帶你走南阿蘇村側要手動改掉。</div>
+    <div class="alert warn">🏯 <b>2026/7/28 熊本地震（M7.1・震度 7）後續</b>：熊本城 <b>8/13 已重新開園</b>（天守閣 + 特別見學通路照常），石垣 59 處受損、數寄屋丸崩落，部分區域可能圍起。<br>
+      城彩苑 <b>わくわく座臨時休館</b>，櫻之小路美食商店與觀光案內所正常。九州道 8/14 全線恢復、熊本市電正常運行。</div>
 
     <div class="card">
       <h2>📍 停靠點</h2>
       <div class="stops">
-        <div class="stop"><div class="n">1</div><div class="info"><b>熊本城</b><span>中央区本丸 1-1｜¥800</span></div></div>
-        <div class="stop"><div class="n">2</div><div class="info"><b>櫻之馬場 城彩苑</b><span>中央区二之丸 1-1-2</span></div></div>
-        <div class="stop"><div class="n">3</div><div class="info"><b>阿蘇山周邊</b><span>阿蘇市高原（米塚・草千里・大觀峰）</span></div></div>
+        <div class="stop"><div class="n">1</div><div class="info"><b>熊本城</b><span>🇯🇵 熊本城｜🇬🇧 Kumamoto Castle<br>中央区本丸 1-1｜¥800</span></div></div>
+        <div class="stop"><div class="n">2</div><div class="info"><b>櫻之馬場 城彩苑</b><span>🇯🇵 桜の馬場 城彩苑｜🇬🇧 Sakura-no-baba Josaien<br>中央区二之丸 1-1-2</span></div></div>
+        <div class="stop"><div class="n">3</div><div class="info"><b>阿蘇山周邊</b><span>🇯🇵 米塚／草千里ヶ浜／大観峰／道の駅 阿蘇<br>🇬🇧 Komezuka / Kusasenrigahama / Daikanbo<br>阿蘇市高原（米塚・草千里・大觀峰）</span></div></div>
       </div>
       <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/Kumamoto+Castle,+1-1+Honmaru,+Chuo+Ward,+Kumamoto,+860-0002,+Japan/Sakura-no-baba+Josaien,+1-1-2+Ninomaru,+Chuo+Ward,+Kumamoto,+860-0008,+Japan/Mount+Aso,+Takawara,+Aso,+Kumamoto+869-2223,+Japan/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/">🗺️ 開啟 Google Maps 路線</a>
     </div>
@@ -586,14 +625,15 @@
     <div class="card">
       <h2>⏰ 時間軸</h2>
       <div class="timeline-row"><div class="t">8:30</div><div class="e">出發</div></div>
-      <div class="timeline-row"><div class="t">9:00</div><div class="e"><b>熊本城</b>（天守閣 2021 全面復原，9:00–17:00，最終入園 16:00）</div></div>
-      <div class="timeline-row"><div class="t">11:00</div><div class="e">城彩苑 午餐 + 伴手禮（馬肉、陣太鼓、くまモン）</div></div>
-      <div class="timeline-row"><div class="t">13:00</div><div class="e">出發阿蘇（走 ミルクロード 風景線）</div></div>
+      <div class="timeline-row"><div class="t">9:00</div><div class="e"><b>熊本城</b>（<b>8/13 震後重新開園</b>；天守閣 + 特別見學通路，9:00–17:00，最終入園 16:00）</div></div>
+      <div class="timeline-row"><div class="t">11:00</div><div class="e">城彩苑 午餐 + 伴手禮（馬肉、陣太鼓、くまモン）｜<b>わくわく座休館中</b></div></div>
+      <div class="timeline-row"><div class="t">13:00</div><div class="e">出發阿蘇（走 <b>ミルクロード</b>，從<b>北側</b>上山）</div></div>
       <div class="timeline-row"><div class="t">14:15</div><div class="e">道の駅 阿蘇</div></div>
       <div class="timeline-row"><div class="t">14:45</div><div class="e">米塚展望所（路邊停 5 分）</div></div>
       <div class="timeline-row"><div class="t">15:00</div><div class="e"><b>草千里浜</b> 平坦草原 30–40 分。阿蘇火山博物館可躲太陽</div></div>
       <div class="timeline-row"><div class="t">16:15</div><div class="e"><b>大觀峰</b> 阿蘇五岳全景</div></div>
       <div class="timeline-row"><div class="t">17:00</div><div class="e">回熊本市（やまなみ → 九州道 ~1.5 hr）</div></div>
+      <div class="alert info">🔄 <b>備案</b>：若出發前噴火警戒升到<b>等級 4</b>，草千里一帶也會關閉 → 改成熊本城周邊延長（城彩苑・くまモンスクエア）+ <b>菊池溪谷</b>或大觀峰以北的ミルクロード段。</div>
       <div class="timeline-row"><div class="t">19:30</div><div class="e">晚餐：勝烈亭 / 天外天（豚骨拉麵元祖）</div></div>
       <div class="alert info">🅿️ 城彩苑 ¥500、道の駅免費、草千里 ¥500、大觀峰免費<br>👶 陽光強帶帽水；山上 18–22°C 帶薄外套</div>
     </div>
@@ -618,10 +658,10 @@
     <div class="card">
       <h2>📍 停靠點</h2>
       <div class="stops">
-        <div class="stop"><div class="n">1</div><div class="info"><b>由布院温泉（湯の坪街道）</b><span>大分縣由布市湯布院町</span></div></div>
-        <div class="stop"><div class="n">2</div><div class="info"><b>金鱗湖</b><span>由布市湯布院町川上 1561-1</span></div></div>
-        <div class="stop"><div class="n">3</div><div class="info"><b>別府地獄</b><span>別府市鐵輪 559-1｜共通券 ¥2,400</span></div></div>
-        <div class="stop"><div class="n">4</div><div class="info"><b>Super Hotel 別府駅前</b><span>別府市駅前町 13-8｜📞 +81-977-73-9000</span></div></div>
+        <div class="stop"><div class="n">1</div><div class="info"><b>由布院温泉（湯の坪街道）</b><span>🇯🇵 由布院温泉 湯の坪街道｜🇬🇧 Yunotsubo Kaido, Yufuin<br>大分縣由布市湯布院町</span></div></div>
+        <div class="stop"><div class="n">2</div><div class="info"><b>金鱗湖</b><span>🇯🇵 金鱗湖｜🇬🇧 Lake Kinrin<br>由布市湯布院町川上 1561-1</span></div></div>
+        <div class="stop"><div class="n">3</div><div class="info"><b>別府地獄</b><span>🇯🇵 別府地獄めぐり（海地獄／血の池地獄／龍巻地獄）<br>🇬🇧 Hells of Beppu<br>別府市鐵輪 559-1｜共通券 ¥2,400</span></div></div>
+        <div class="stop"><div class="n">4</div><div class="info"><b>Super Hotel 別府駅前</b><span>🇯🇵 スーパーホテル別府駅前｜🇬🇧 Super Hotel Beppu Ekimae<br>🇬🇧 13-8 Ekimaecho, Beppu<br>別府市駅前町 13-8｜📞 +81-977-73-9000</span></div></div>
       </div>
       <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/Yufuin+Onsen,+Yufu,+Oita,+Japan/Lake+Kinrin,+1561-1+Yufuincho+Kawakami,+Yufu,+Oita+879-5102,+Japan/Beppu+Jigoku+(Hells+of+Beppu),+559-1+Kannawa,+Beppu,+Oita+874-0000,+Japan/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/">🗺️ 開啟 Google Maps 路線</a>
     </div>
@@ -656,10 +696,10 @@
     <div class="card">
       <h2>📍 停靠點</h2>
       <div class="stops">
-        <div class="stop"><div class="n">1</div><div class="info"><b>鐵輪溫泉 地獄蒸し工房</b><span>別府市大字鉄輪字風呂本 212｜10:00 開門</span></div></div>
-        <div class="stop"><div class="n">2</div><div class="info"><b>鐵輪 岡本屋売店</b><span>地獄蒸布丁、溫泉蛋</span></div></div>
-        <div class="stop"><div class="n">3</div><div class="info"><b>明礬湯之里</b><span>湯花小屋、買湯花入浴劑</span></div></div>
-        <div class="stop"><div class="n">4</div><div class="info"><b>湯けむり展望台</b><span>鐵輪溫泉煙霧群</span></div></div>
+        <div class="stop"><div class="n">1</div><div class="info"><b>鐵輪溫泉 地獄蒸し工房</b><span>🇯🇵 鉄輪温泉／地獄蒸し工房 鉄輪｜🇬🇧 Kannawa Onsen / Jigoku Mushi Kobo<br>別府市大字鉄輪字風呂本 212｜10:00 開門</span></div></div>
+        <div class="stop"><div class="n">2</div><div class="info"><b>鐵輪 岡本屋売店</b><span>🇯🇵 岡本屋売店｜🇬🇧 Okamotoya Baiten<br>地獄蒸布丁、溫泉蛋</span></div></div>
+        <div class="stop"><div class="n">3</div><div class="info"><b>明礬湯之里</b><span>🇯🇵 明礬 湯の里｜🇬🇧 Myoban Yunosato<br>湯花小屋、買湯花入浴劑</span></div></div>
+        <div class="stop"><div class="n">4</div><div class="info"><b>湯けむり展望台</b><span>🇯🇵 湯けむり展望台｜🇬🇧 Yukemuri Observatory<br>鐵輪溫泉煙霧群</span></div></div>
       </div>
       <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/Kannawa+Hot+Spring,+%E5%88%A5%E5%BA%9C%E5%B8%82%E5%A4%A7%E5%AD%97%E9%89%84%E8%BC%AA,+212,+Beppu,+Oita+874-0041,+Japan/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/">🗺️ 開啟 Google Maps 路線</a>
     </div>
@@ -691,15 +731,15 @@
       <div class="day-route">Super Hotel 別府駅前 → 博多市區（採買用餐）→ IX RENTAL 還車 → 福岡空港</div>
     </div>
 
-    <div class="alert danger">⚠️ <b>必協調</b>：訂單寫 10:00 還車，實際 <b>14:30</b> 才能還。出發前打 092-432-7070 確認延後</div>
+    <div class="alert danger">⚠️ <b>必協調</b>：訂單寫 10:00 還車，實際 <b>14:30</b> 才能還。打 <a href="tel:+818032261688">+81-80-3226-1688</a>（IX RENTAL）或 Klook 客服確認延後 — <b>9/18 10:00 前</b>處理完</div>
 
     <div class="card">
       <h2>📍 停靠點</h2>
       <div class="stops">
-        <div class="stop"><div class="n">1</div><div class="info"><b>Super Hotel 別府駅前</b><span>別府市駅前町 13-8</span></div></div>
-        <div class="stop"><div class="n">2</div><div class="info"><b>博多市區</b><span>博多站 / 運河城 / 冷泉町一帶</span></div></div>
-        <div class="stop"><div class="n">3</div><div class="info"><b>IX RENTAL 福岡機場店（還車）</b><span>博多区西月隈 2-4-31｜📞 +81-80-3226-1688</span></div></div>
-        <div class="stop"><div class="n">4</div><div class="info"><b>福岡空港 國際線</b><span>博多区下臼井 778-1</span></div></div>
+        <div class="stop"><div class="n">1</div><div class="info"><b>Super Hotel 別府駅前</b><span>🇯🇵 スーパーホテル別府駅前｜🇬🇧 Super Hotel Beppu Ekimae<br>🇬🇧 13-8 Ekimaecho, Beppu<br>別府市駅前町 13-8</span></div></div>
+        <div class="stop"><div class="n">2</div><div class="info"><b>博多市區</b><span>🇯🇵 博多駅／キャナルシティ博多｜🇬🇧 Hakata Station / Canal City<br>博多站 / 運河城 / 冷泉町一帶</span></div></div>
+        <div class="stop"><div class="n">3</div><div class="info"><b>IX RENTAL 福岡機場店（還車）</b><span>🇯🇵 アイエックスレンタカー 福岡支店｜🇬🇧 IX Rental Fukuoka Airport<br>博多区西月隈 2-4-31｜📞 +81-80-3226-1688</span></div></div>
+        <div class="stop"><div class="n">4</div><div class="info"><b>福岡空港 國際線</b><span>🇯🇵 福岡空港 国際線ターミナル｜🇬🇧 Fukuoka Airport Int'l Terminal<br>博多区下臼井 778-1</span></div></div>
       </div>
       <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/Hakata+Station,+1-1+Hakataekichuogai,+Hakata+Ward,+Fukuoka,+812-0012,+Japan/IX+RENTAL,+2-4-31+Nishitsukiguma,+Hakata+Ward,+Fukuoka,+812-0058,+Japan/Fukuoka+Airport,+778-1+Shimousui,+Hakata+Ward,+Fukuoka,+812-0003,+Japan/">🗺️ 開啟 Google Maps 路線</a>
     </div>
@@ -714,7 +754,7 @@
       <div class="timeline-row"><div class="t">13:00</div><div class="e">博多運河城 / Daimaru / KITTE 博多 最後採買</div></div>
       <div class="timeline-row"><div class="t">14:00</div><div class="e">開車到 IX RENTAL 福岡機場店（~20 分）</div></div>
       <div class="timeline-row"><div class="t">14:30</div><div class="e"><b>抵 IX RENTAL 還車</b>（訂單原定 10:00，須已協調延後）</div></div>
-      <div class="timeline-row"><div class="t">15:00</div><div class="e">前往福岡空港 國際線（<b>接駁方式待確認</b>，計程車約 10 分）</div></div>
+      <div class="timeline-row"><div class="t">15:00</div><div class="e">回福岡空港 國際線（<b>還車後的接送方式取車時先問清楚</b>）</div></div>
       <div class="timeline-row"><div class="t">18:30</div><div class="e">Check-in、退稅、通關</div></div>
       <div class="timeline-row"><div class="t">21:00</div><div class="e">CI0117 起飛</div></div>
       <div class="alert info">💡 備案（門市不延後）：7:00 出發 → 9:45 直接還車 → 到機場 Locker 寄物 → 地鐵到博多採買 → 16:00 返機場</div>
@@ -849,12 +889,13 @@
     <div class="table-wrap"><table>
       <thead><tr><th>入住</th><th>飯店</th><th>房型 / 房價</th></tr></thead>
       <tbody>
-        <tr><td>9/19、20</td><td><b>中今旅館</b><br><span style="color:var(--muted);font-size:12px">博多区冷泉町 6-26｜📞 +81-92-261-5070</span></td><td>混合宿舍上下鋪 × 2 床位<br>TWD 4,956（¥24,800 現場付）</td></tr>
-        <tr><td>9/21、22</td><td><b>熊本之門酒店</b><br><span style="color:var(--muted);font-size:12px">西区春日 1-14-1｜📞 +81-96-288-0170</span></td><td>Semi-Private Bunk Bed 2 人房<br>TWD 4,397（¥22,000）</td></tr>
-        <tr><td>9/23、24</td><td><b>Super Hotel 別府駅前</b><br><span style="color:var(--muted);font-size:12px">別府市駅前町 13-8｜📞 +81-977-73-9000</span></td><td>附沙發床雙人房・<b>含早餐</b><br>TWD 3,976（¥19,894）</td></tr>
+        <tr><td>9/19、20</td><td><b>中今旅館</b><br><span style="color:var(--muted);font-size:12px">🇯🇵 ゲストハウス中今<br>🇬🇧 GuestHouse Nakaima<br>🇯🇵 博多区冷泉町 6-26<br>🇬🇧 6-26 Reisenmachi, Hakata-ku<br>📞 +81-92-261-5070</span></td><td>混合宿舍上下鋪 × 2 床位<br>TWD 4,956（¥24,800 現場付）</td></tr>
+        <tr><td>9/21、22</td><td><b>熊本之門酒店</b><br><span style="color:var(--muted);font-size:12px">🇯🇵 ホテル ザ ゲート熊本<br>🇬🇧 Hotel The Gate Kumamoto<br>🇯🇵 熊本市西区春日 1-14-1<br>🇬🇧 1-14-1 Kasuga, Nishi-ku<br>📞 +81-96-288-0170</span></td><td>Semi-Private Bunk Bed 2 人房<br>TWD 4,397（¥22,000）</td></tr>
+        <tr><td>9/23、24</td><td><b>Super Hotel 別府駅前</b><br><span style="color:var(--muted);font-size:12px">🇯🇵 スーパーホテル別府駅前<br>🇬🇧 Super Hotel Beppu Ekimae<br>🇯🇵 大分県別府市駅前町 13-8<br>🇬🇧 13-8 Ekimaecho, Beppu<br>📞 +81-977-73-9000</span></td><td>附沙發床雙人房・<b>含早餐</b><br>TWD 3,976（¥19,894）</td></tr>
       </tbody>
     </table></div>
     <div class="alert info">總價 <b>TWD 13,329</b>（每人 ~ TWD 6,665）</div>
+    <div class="alert warn">🗣️ <b>問路時直接把 🇯🇵 那行拿給對方看</b> — 日本人多半看不懂英文地址；🇬🇧 那行用來查 Google Maps 與對訂房紀錄。</div>
     <h3>各家關鍵注意</h3>
     <div class="table-wrap"><table>
       <thead><tr><th>飯店</th><th>入住 / 退房</th><th>停車</th><th>一定要知道</th></tr></thead>
@@ -871,16 +912,44 @@
     <p>Klook 訂單 · Toyota Aqua 或同級 小型轎車 · IX RENTAL</p>
     <div class="table-wrap"><table>
       <tbody>
-        <tr><td>取/還車門市</td><td><b>IX RENTAL 福岡機場店</b><br>博多区西月隈 2-4-31<br>📞 <a href="tel:+818032261688">+81-80-3226-1688</a><br>福岡空港西南 ~2 km（<b>接駁待確認</b>）</td></tr>
+        <tr><td>取/還車門市</td><td><b>IX RENTAL 福岡機場店</b><br>🇯🇵 アイエックスレンタカー 福岡支店<br>🇯🇵 福岡市博多区西月隈 2-4-31<br>🇬🇧 2-4-31 Nishitsukiguma, Hakata-ku, Fukuoka<br>📞 <a href="tel:+818032261688">+81-80-3226-1688</a></td></tr>
         <tr><td>取車</td><td>9/19 10:00（<b>需改 18:45–19:30</b>）</td></tr>
         <tr><td>還車</td><td>9/25 10:00（<b>需改 14:30–15:00</b>）</td></tr>
         <tr><td>門市營業</td><td>⚠️ 未確認（查到週日 08:00–20:00）</td></tr>
+        <tr><td>接駁</td><td><b>無定時接駁車</b>：到「一般車」乘降場後打電話請門市來接</td></tr>
         <tr><td>車輛</td><td>5 人座 / <b>行李僅 2 件</b> / 自排 / 空調</td></tr>
         <tr><td>費用</td><td>NT$ 6,697（線上已付）</td></tr>
         <tr><td>燃油 / 里程</td><td>滿油取還 / 無限里程</td></tr>
         <tr><td>駕駛</td><td>兩位（兩位都需日文譯本）</td></tr>
       </tbody>
     </table></div>
+    <h3>🚌 機場 ↔ 門市 接駁流程</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Step</th><th>做什麼</th><th>給日本人看的日文</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>國際線航廈 <b>1F</b> 找 <b>Shuttle Bus</b> 標識 → 往<b>右</b>直走</td><td>国際線の一階で Shuttle Bus の標識を見つけて、右側にまっすぐ行ってください</td></tr>
+        <tr><td>2</td><td>從 <b>A3 出口</b>出去 → 走<b>左邊</b>人行道過斑馬線</td><td>A3 出口から出たら、左側の横断歩道を通ってください</td></tr>
+        <tr><td>3</td><td>到 <b>「一般車」乘降場</b>（藍色柱 <b>15</b> 號）→ <b>打電話</b>請門市來接</td><td>一般車乗降場に到着後、係員に連絡してください</td></tr>
+      </tbody>
+    </table></div>
+    <div class="guide-imgs">
+      <figure class="guide-fig">
+        <a href="images/ix-rental-shuttle-1.jpg" target="_blank" rel="noopener"><img src="images/ix-rental-shuttle-1.jpg" alt="Step 1：國際線 1F 找 Shuttle Bus 標識，往右直走" loading="lazy"></a>
+        <figcaption><span class="step">1</span>國際線 1F「Shuttle Bus」標識 → 往右直走</figcaption>
+      </figure>
+      <figure class="guide-fig">
+        <a href="images/ix-rental-shuttle-2.jpg" target="_blank" rel="noopener"><img src="images/ix-rental-shuttle-2.jpg" alt="Step 2：從 A3 出口出來，走左邊人行道過斑馬線" loading="lazy"></a>
+        <figcaption><span class="step">2</span>A3 出口 → 走左邊人行道過斑馬線</figcaption>
+      </figure>
+      <figure class="guide-fig">
+        <a href="images/ix-rental-shuttle-3.jpg" target="_blank" rel="noopener"><img src="images/ix-rental-shuttle-3.jpg" alt="Step 3：到 15 號柱「一般車」乘降場後打電話" loading="lazy"></a>
+        <figcaption><span class="step">3</span>藍色 15 號柱「一般車」乘降場 → 打電話</figcaption>
+      </figure>
+    </div>
+    <p style="font-size:12px;color:var(--text-soft);margin-top:8px">☝️ 點圖可開大圖（IX RENTAL 福岡支店官方指引，含日／英／中／韓四語）</p>
+
+    <div class="alert warn">📞 接人專線同門市 <a href="tel:+818032261688">+81-80-3226-1688</a>；「一般車」是一般車輛乘降區，不是巴士站。<br>⚠️ <b>還車後回機場</b>的接送方式未確認，取車時當面問清楚。</div>
+
     <h3>訂單已含（不必另外加購）</h3>
     <ul>
       <li>✅ <b>ETC 卡</b>、<b>GPS 導航</b>、<b>多人駕駛</b>（1 位免費）</li>
@@ -896,6 +965,56 @@
       <li>護照</li>
       <li>Klook 租車憑證（紙本）</li>
     </ul>
+  </div>
+
+  <div class="card">
+    <h2>🚇 市區交通（地鐵・市電・巴士）</h2>
+    <p style="font-size:13px;color:var(--text-soft)">全程自駕，以下是不開車時的備援：Day 7 還車後採買、市區夜間移動、喝酒不開車。資料 2026/08 查證，出發前再對一次官網。</p>
+
+    <h3>🌸 福岡市地下鐵（福岡市地下鉄 / Fukuoka City Subway）</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>路線</th><th>區間</th><th>用途</th></tr></thead>
+      <tbody>
+        <tr><td><b>空港線</b><br>Kuko Line</td><td>福岡空港 ↔ 博多 ↔ 天神 ↔ 姪浜</td><td><b>主力</b>：機場、博多、天神、中洲川端</td></tr>
+        <tr><td><b>箱崎線</b><br>Hakozaki Line</td><td>中洲川端 ↔ 貝塚</td><td>幾乎用不到</td></tr>
+        <tr><td><b>七隈線</b><br>Nanakuma Line</td><td>橋本 ↔ 天神南 ↔ 博多</td><td>2023 延伸博多站；藥院、大濠方向</td></tr>
+      </tbody>
+    </table></div>
+    <div class="table-wrap"><table>
+      <tbody>
+        <tr><td>福岡空港 → 博多站</td><td><b>¥260 / 約 5 分</b></td></tr>
+        <tr><td>⚠️ 國際線航廈</td><td><b>沒有地鐵站</b>，要先搭免費連絡巴士到國內線（約 10 分），全程約 20 分</td></tr>
+        <tr><td>一日乘車券</td><td><b>¥640</b>（兒童 ¥320）</td></tr>
+        <tr><td>IC 卡</td><td>Suica / PASMO / ICOCA 全國互通卡可直接刷</td></tr>
+        <tr><td>班距</td><td>白天約 5–8 分</td></tr>
+      </tbody>
+    </table></div>
+    <div class="alert info">💡 中今旅館最近的站是 <b>中洲川端駅</b>（空港線・箱崎線），步行約 5 分；從博多站搭 1 站即到。</div>
+
+    <h3>🐻 熊本市電（熊本市電 / Kumamoto City Tram）</h3>
+    <p style="font-size:13px;color:var(--text-soft)">熊本沒有地鐵，市區靠路面電車 + JR。</p>
+    <div class="table-wrap"><table>
+      <tbody>
+        <tr><td><b>A 系統</b></td><td>田崎橋 ↔ <b>熊本駅前</b> ↔ 辛島町 ↔ <b>熊本城・市役所前</b> ↔ 健軍町</td></tr>
+        <tr><td><b>B 系統</b></td><td>上熊本 ↔ 辛島町 ↔ 健軍町</td></tr>
+        <tr><td>車資</td><td><b>大人均一 ¥200</b>／兒童 ¥100（2025/6 起）</td></tr>
+        <tr><td>一日券</td><td>紙本 <b>¥700</b>；手機版較便宜（市交通局 App / 九州 MaaS）</td></tr>
+        <tr><td>熊本駅前 → 熊本城</td><td><b>A 系統</b>約 10 分 ¥200，城彩苑旁就是電停</td></tr>
+        <tr><td>⚠️ 轉乘</td><td>上熊本方向 ↔ 田崎橋方向要在 <b>辛島町</b> 換車</td></tr>
+      </tbody>
+    </table></div>
+    <div class="alert info">💡 熊本之門酒店在熊本駅西口，走到「熊本駅前」電停即可 — Day 4 不想找停車位時可改搭市電。</div>
+
+    <h3>♨️ 別府（Beppu）</h3>
+    <div class="table-wrap"><table>
+      <tbody>
+        <tr><td>軌道運輸</td><td><b>沒有地鐵也沒有市電</b></td></tr>
+        <tr><td>主要交通</td><td><b>龜之井巴士</b>（亀の井バス / Kamenoi Bus）— 別府駅・別府駅西口・鐵輪為轉運點</td></tr>
+        <tr><td>一日券</td><td>My Beppu Free（マイべっぷフリー）迷你版，含鐵輪・地獄區 — <b>價格出發前官網確認</b></td></tr>
+        <tr><td>JR</td><td>日豐本線 別府 ↔ 大分 約 12 分</td></tr>
+      </tbody>
+    </table></div>
+    <div class="alert info">🅿️ Super Hotel 就在別府駅前，Day 6 鐵輪自駕即可，巴士只是備援。</div>
   </div>
 
   <div class="card">
@@ -915,10 +1034,10 @@
     <div class="table-wrap"><table>
       <thead><tr><th>景點</th><th>票價</th></tr></thead>
       <tbody>
-        <tr><td>熊本城</td><td>¥800（9:00–17:00 / 最終 16:00）</td></tr>
+        <tr><td>熊本城</td><td>¥800（9:00–17:00 / 最終 16:00）｜<b>8/13 震後重新開園</b></td></tr>
         <tr><td>別府地獄共通券（7 個）</td><td>¥2,400（單買 ¥450/個）</td></tr>
         <tr><td>柳川松濤園・藩主立花邸（含史料館）</td><td>¥1,000（見學 10:00–16:00）</td></tr>
-        <tr><td>阿蘇火山博物館</td><td>¥1,100（選擇性）</td></tr>
+        <tr><td>阿蘇火山博物館</td><td>¥1,100（選擇性）｜警戒等級 3 下照常開放</td></tr>
         <tr><td>竹瓦溫泉</td><td>入浴 ¥300 / 砂湯 ¥1,500</td></tr>
         <tr><td>地獄蒸し工房</td><td>食材 ¥500–1,500 + 蒸鍋 ¥510</td></tr>
       </tbody>
@@ -942,6 +1061,139 @@
     </table></div>
     <div class="alert info">日幣小計 <b>¥32,400</b>（≈ TWD 7,130）</div>
     <div class="alert ok">合計 ≈ <b>NT$27,200（2 人）</b> / 每人約 <b>NT$13,600</b></div>
+  </div>
+</section>
+
+<!-- ============ DRIVING ============ -->
+<section class="panel" id="driving" role="tabpanel">
+
+  <div class="card">
+    <h2>🚨 2026/9/1 新制：生活道路 60 → 30 km/h</h2>
+    <div class="alert danger">
+      <b>沒有中央線（分隔線）的一般道路，未特別標示時，法定速度就是 30 km/h。</b><br>
+      我們 9/19 出發，正好在新制上路之後 — 網路上舊的自駕攻略講的 60 km/h 已經不適用。
+    </div>
+    <div class="table-wrap"><table>
+      <tbody>
+        <tr><td>施行日</td><td><b>2026/9/1</b>（出發前 18 天）</td></tr>
+        <tr><td>對象</td><td><b>沒有中央線／中央分隔島</b>的道路，多為<b>寬度未滿 5.5 m</b> 的窄路</td></tr>
+        <tr><td>範圍</td><td>全國國道・都道府県道・市町村道的 <b>約 7 成</b></td></tr>
+        <tr><td>舊制</td><td>無標誌時原則 60 km/h</td></tr>
+      </tbody>
+    </table></div>
+    <div class="alert warn">⚠️ <b>實際會遇到的地方</b>：博多冷泉町老街巷弄、糸島鄉間小路、柳川市區、別府北浜巷弄。<br><b>看到路面沒有中央線，就自動降到 30</b> 最安全。</div>
+  </div>
+
+  <div class="card">
+    <h2>📄 三份文件缺一不可</h2>
+    <ul class="checklist">
+      <li><b>台灣駕照正本</b>（影本無效）</li>
+      <li><b>駕照日文譯本</b> — 監理所 NT$100 當天領。<b>不是國際駕照</b>（日本不承認台灣的國際駕照）</li>
+      <li><b>護照</b></li>
+    </ul>
+    <div class="alert warn">兩位駕駛<b>各自</b>都要備齊三份，缺一租車公司直接拒絕交車。</div>
+  </div>
+
+  <div class="card">
+    <h2>🚸 一定要看懂的號誌</h2>
+    <div class="sign-grid">
+      <div class="sign-item"><img src="images/signs/stop.svg" alt="止まれ 一時停止" loading="lazy"><span class="jp">止まれ</span><span class="zh">完全停止 3 秒<br>（紅色倒三角）</span></div>
+      <div class="sign-item"><img src="images/signs/speed-30.svg" alt="最高速度 30km/h" loading="lazy"><span class="jp">最高速度</span><span class="zh">圈內數字 = 上限<br>無標誌窄路預設 30</span></div>
+      <div class="sign-item"><img src="images/signs/slow.svg" alt="徐行 SLOW" loading="lazy"><span class="jp">徐行</span><span class="zh">減到隨時能停<br>（約 10 km/h）</span></div>
+      <div class="sign-item"><img src="images/signs/no-entry.svg" alt="車両進入禁止" loading="lazy"><span class="jp">車両進入禁止</span><span class="zh">禁止進入<br>（多為單行道逆向）</span></div>
+      <div class="sign-item"><img src="images/signs/oneway.svg" alt="一方通行" loading="lazy"><span class="jp">一方通行</span><span class="zh">單行道<br>只能往箭頭方向</span></div>
+      <div class="sign-item"><img src="images/signs/no-parking.svg" alt="駐車禁止" loading="lazy"><span class="jp">駐車禁止</span><span class="zh">禁止停車<br>可短暫上下客</span></div>
+      <div class="sign-item"><img src="images/signs/no-stopping.svg" alt="駐停車禁止" loading="lazy"><span class="jp">駐停車禁止</span><span class="zh">連停下都不行<br>（斜線交叉 = 更嚴）</span></div>
+      <div class="sign-item"><img src="images/signs/speed-50.svg" alt="最高速度 50km/h" loading="lazy"><span class="jp">最高速度 50</span><span class="zh">標誌永遠優先<br>於法定速度</span></div>
+    </div>
+    <div class="alert warn">💡 <b>藍底 = 指示（可以做）、紅圈 = 禁止、紅色倒三角 = 停下來</b>。記這三個顏色規則就能猜對八成。</div>
+    <p style="font-size:11.5px;color:var(--text-soft);margin-top:6px">號誌圖為日本《道路標識、區劃線及道路標示相關命令》法定圖形，屬公共領域（著作權法第 13 條）；SVG 取自 Wikimedia Commons（Public domain）。</p>
+  </div>
+
+  <div class="card">
+    <h2>🇯🇵 台灣人最容易犯的 5 件事</h2>
+    <div class="table-wrap"><table>
+      <tbody>
+        <tr><td><b>1. 靠左行駛・右駕</b></td><td>方向盤在右、車走左側。最容易錯的是<b>右轉</b>（切到對向）和<b>出停車場</b></td></tr>
+        <tr><td><b>2. 雨刷 ↔ 方向燈相反</b></td><td>日本車雨刷在左、方向燈在右，跟台灣相反。前三天一定會打錯</td></tr>
+        <tr><td><b>3.「止まれ」要完全停止</b></td><td>紅色<b>倒三角</b>標誌 + 路面「止まれ」，<b>輪子停死 3 秒</b>再走。滑行過去就是違規，日本無號誌路口極多</td></tr>
+        <tr><td><b>4. 行人絕對優先</b></td><td>斑馬線前有人（含在等的）<b>一定要停</b>，近年取締極嚴</td></tr>
+        <tr><td><b>5. 平交道一律停車</b></td><td>不管有無柵欄、有無來車，<b>都要停下確認左右</b></td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="card">
+    <h2>🚗 速限</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>道路</th><th>法定速度</th></tr></thead>
+      <tbody>
+        <tr><td><b>高速公路</b></td><td><b>100 km/h</b>（部分區間 120；依現場標誌）</td></tr>
+        <tr><td>一般道路（有中央線）</td><td>60 km/h</td></tr>
+        <tr><td><b>生活道路（無中央線）</b></td><td><b>30 km/h</b>（2026/9/1 起）</td></tr>
+        <tr><td>標誌有寫</td><td><b>以標誌為準</b>（標誌 &gt; 法定）</td></tr>
+      </tbody>
+    </table></div>
+    <div class="alert warn">📷 日本測速照相（オービス）與埋伏取締不少，九州道尤其常見。超速 30 km/h 以上可能<b>直接吊照 + 刑事罰</b>。</div>
+  </div>
+
+  <div class="card">
+    <h2>⛔ 絕對不能做</h2>
+    <div class="table-wrap"><table>
+      <tbody>
+        <tr><td>🍺 <b>酒駕</b></td><td>酒氣帶：<b>3 年以下拘禁刑或 50 萬日圓罰金</b>；酒醉：<b>5 年以下拘禁刑或 100 萬日圓罰金</b></td></tr>
+        <tr><td>🍺 <b>搭酒駕者的車</b></td><td><b>同乘者也會被罰</b>（道交法 65 條）；提供車輛、提供酒給駕駛同樣有罪</td></tr>
+        <tr><td>📱 <b>開車用手機</b></td><td>2019 年起罰則大幅加重，<b>拿在手上就違規</b>；要看導航請靠邊停</td></tr>
+        <tr><td>🚸 <b>不繫安全帶</b></td><td><b>後座也必須繫</b></td></tr>
+      </tbody>
+    </table></div>
+    <div class="alert danger">💡 日本是<b>零容忍</b>，喝一口都算。晚餐要喝酒就把車留在飯店停車場，隔天再開。</div>
+  </div>
+
+  <div class="card">
+    <h2>⛽ 加油（加錯油會毀引擎）</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>日文</th><th>是什麼</th><th>我們的車</th></tr></thead>
+      <tbody>
+        <tr><td><b>レギュラー</b></td><td>一般無鉛汽油（紅色油槍）</td><td>✅ <b>Toyota Aqua 加這個</b></td></tr>
+        <tr><td>ハイオク</td><td>高級汽油（黃色）</td><td>❌ 不需要</td></tr>
+        <tr><td><b>軽油</b></td><td>⚠️ <b>柴油！不是汽油</b>（綠色）</td><td>❌ <b>絕對不能加</b></td></tr>
+      </tbody>
+    </table></div>
+    <div class="alert danger">⚠️「軽油」看起來像「輕的油」，是台灣人最常加錯的一項 — 加了引擎報銷。<b>認 レギュラー 就對了</b>。</div>
+    <div class="alert info">🈵 合約是<b>滿油取還</b>，還車前加滿並留收據。<br>🗣️ 自助加油站說「<b>レギュラー、満タン（man-tan）</b>」= 一般汽油加滿。</div>
+  </div>
+
+  <div class="card">
+    <h2>🅿️ 停車</h2>
+    <ul>
+      <li><b>路邊停車＝違規</b>（日本幾乎沒有合法路邊停車），一律停 <b>コインパーキング</b>（投幣停車場）</li>
+      <li>常見機制：車輪下擋板升起 → 離開前到繳費機輸入<b>車位號碼</b>付款 → 擋板降下才能開走</li>
+      <li>觀光地多為 ¥500/次，市區按時計費</li>
+      <li>⚠️ <b>熊本之門酒店沒有自己的停車場</b>，要另找附近付費停車場</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🛣️ 高速公路</h2>
+    <ul>
+      <li><b>ETC 卡已含在租車訂單內</b>，走 ETC 車道（紫色標示），<b>時速降到 20 km/h 以下</b>通過</li>
+      <li><b>左側行車道、右側超車道</b> — 超完車要回左道，一直佔右道會被取締</li>
+      <li>SA / PA 有廁所餐廳，九州道約每 20–30 km 一個</li>
+      <li>連假 9/19–9/23 塞車嚴重，車程<b>抓平常 1.5 倍</b></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🆘 出事怎麼辦</h2>
+    <div class="phone-list">
+      <a href="tel:110"><span class="name">👮 事故報警（<b>一定要報</b>，否則保險不理賠）</span><span class="num">110</span></a>
+      <a href="tel:119"><span class="name">🚑 有人受傷</span><span class="num">119</span></a>
+      <a href="tel:+81570008139"><span class="name">🚗 JAF 道路救援（故障・沒電・爆胎）</span><span class="num">#8139</span></a>
+      <a href="tel:+818032261688"><span class="name">🏢 IX RENTAL（任何情況都要打）</span><span class="num">+81-80-3226-1688</span></a>
+    </div>
+    <div class="alert info">📋 我們的保險：<b>租車自負額 US$0</b>、車輛竊盜 US$0、第三人責任險（自負額 US$1,237）、NOC 上限 US$800 — 已全包在訂單內。</div>
+    <div class="alert danger">⚠️ 但<b>肇事逃逸、酒駕、無照</b>等情況，保險一律不理賠。</div>
   </div>
 </section>
 
@@ -999,7 +1251,8 @@
       <li>印機票訂位代號、三家飯店訂房確認單（含 PIN 碼）</li>
       <li>下載離線地圖（中今旅館 / 熊本之門 / Super Hotel / IX RENTAL）</li>
       <li>健保卡</li>
-      <li>確認阿蘇火口最新狀態 <a target="_blank" href="https://www.aso-volcano.jp/">aso-volcano.jp</a></li>
+      <li>確認<b>阿蘇噴火警戒等級</b>（目前 <b>3</b>）<a target="_blank" href="https://www.aso-volcano.jp/">aso-volcano.jp</a></li>
+      <li>確認阿蘇道路狀況 <a target="_blank" href="https://www.city.aso.kumamoto.jp/trafficinfo/">阿蘇市道路交通情報</a></li>
       <li>確認地獄蒸し工房 9/24 無休館（0977-66-3775）</li>
     </ul>
   </div>
@@ -1114,10 +1367,10 @@
   <div class="card">
     <h2>🏨 住宿地址</h2>
     <div class="phone-list">
-      <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=6-26+Reisenmachi+Hakata-ku+Fukuoka"><span class="name">中今旅館（博多冷泉町）</span><span class="num">📍 地圖</span></a>
-      <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=1-14-1+Kasuga+Nishi-ku+Kumamoto"><span class="name">熊本之門酒店（熊本駅西口）</span><span class="num">📍 地圖</span></a>
-      <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=13-8+Ekimaecho+Beppu+Oita"><span class="name">Super Hotel 別府駅前</span><span class="num">📍 地圖</span></a>
-      <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=2-4-31+Nishitsukiguma+Hakata-ku+Fukuoka"><span class="name">IX RENTAL 福岡機場店</span><span class="num">📍 地圖</span></a>
+      <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=6-26+Reisenmachi+Hakata-ku+Fukuoka"><span class="name">中今旅館<br><small style="color:var(--muted)">福岡市博多区冷泉町 6-26</small></span><span class="num">📍 地圖</span></a>
+      <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=1-14-1+Kasuga+Nishi-ku+Kumamoto"><span class="name">熊本之門酒店<br><small style="color:var(--muted)">熊本市西区春日 1-14-1</small></span><span class="num">📍 地圖</span></a>
+      <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=13-8+Ekimaecho+Beppu+Oita"><span class="name">Super Hotel 別府駅前<br><small style="color:var(--muted)">大分県別府市駅前町 13-8</small></span><span class="num">📍 地圖</span></a>
+      <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=2-4-31+Nishitsukiguma+Hakata-ku+Fukuoka"><span class="name">IX RENTAL 福岡機場店<br><small style="color:var(--muted)">福岡市博多区西月隈 2-4-31</small></span><span class="num">📍 地圖</span></a>
     </div>
   </div>
 </section>
@@ -1125,7 +1378,7 @@
 </main>
 
 <footer>
-  最後更新：2026/08/18 · made with <span class="heart">♥</span> for 我們的九州自駕
+  最後更新：2026/08/19 · made with <span class="heart">♥</span> for 我們的九州自駕
 </footer>
 
 <!-- ====== Reusable hotel-eat templates ====== -->
