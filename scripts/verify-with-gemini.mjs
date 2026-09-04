@@ -3,10 +3,12 @@
  * 用 Gemini（開啟 Google Search grounding）查證 verification/places.json 裡的地點資訊。
  *
  * 兩種用法：
- *   A. API 模式（自動）      GEMINI_API_KEY=xxx node scripts/verify-with-gemini.mjs
- *   B. Gemini App 模式（手動） node scripts/verify-with-gemini.mjs --prompt-only
+ *   A. Gemini App 模式（預設） node scripts/verify-with-gemini.mjs --prompt-only
  *                            → 產生 verification/prompts/*.md 貼進 gemini.google.com
  *                            → 把回覆存成檔案後：--apply-answer <檔案...>
+ *                            用 Gemini Pro 訂閱，不會另外產生費用
+ *   B. API 模式（自動）      GEMINI_API_KEY=xxx node scripts/verify-with-gemini.mjs
+ *                            注意：訂閱不含 API 額度，是另一套計費
  *
  * 常用選項：
  *   --kind spot|ticket|parking|all   只驗某一類（預設 all）
@@ -314,16 +316,19 @@ if (args.applyAnswer) {
 // ---------- 模式 A：直接打 Gemini API ----------
 const API_KEY = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY;
 if (!API_KEY) {
-  console.error(`找不到 GEMINI_API_KEY。兩個選擇：
+  console.error(`找不到 GEMINI_API_KEY。
 
-  A. 有 API key：
-       export GEMINI_API_KEY=xxx      # https://aistudio.google.com/apikey
-       node scripts/verify-with-gemini.mjs
+  ▶ 建議改走 Gemini App（用 Gemini Pro 訂閱，不會另外產生費用）：
 
-  B. 只有 Gemini App（Pro 訂閱）：
        node scripts/verify-with-gemini.mjs --prompt-only
-       # 把產生的 prompt 貼進 gemini.google.com，回覆存檔後：
-       node scripts/verify-with-gemini.mjs --apply-answer <回覆檔>`);
+       # 把產生的 prompt 貼進 gemini.google.com（選 2.5 Pro），回覆存檔後：
+       node scripts/verify-with-gemini.mjs --apply-answer <回覆檔>
+
+  ▶ 真的要走 API（注意：Gemini Pro 訂閱不含 API 額度，是另一套計費，
+    且本流程有開 Google Search grounding，可能另計費）：
+
+       export GEMINI_API_KEY=xxx      # https://aistudio.google.com/apikey
+       node scripts/verify-with-gemini.mjs`);
   process.exit(1);
 }
 

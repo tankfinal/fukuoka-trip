@@ -24,13 +24,40 @@ README 永遠是唯一資料來源，這個 JSON 只是投影，不要手改它�
 
 ### 2. 丟給 Gemini 查證
 
-先看有沒有 `GEMINI_API_KEY`（`echo ${GEMINI_API_KEY:+set}`）。
+> 💰 **使用者是 Gemini Pro 訂閱制，預設走 App 路線（A），不要主動叫他去辦 API key。**
+> 訂閱和 Gemini API 是分開計費的兩套東西，訂閱**不含任何 API 額度**；
+> API 免費層雖然不開帳單就不會被扣款，但涵蓋哪些模型會變動，且 Google Search
+> grounding 另外算錢。只有使用者自己明講要用 API key 時才走 B。
 
-**A. 有 API key —— 自動跑**
+**A. 預設 —— 走 Gemini App（用使用者已經在付的訂閱，零額外成本）**
+
+```bash
+node scripts/verify-with-gemini.mjs --prompt-only              # 全部
+node scripts/verify-with-gemini.mjs --prompt-only --day "Day 3" # 只驗某一天
+```
+
+產生 `verification/prompts/01-spots.md`、`02-tickets.md`、`03-parking.md`。
+接著：
+
+1. 請使用者在 gemini.google.com 開新對話、選 2.5 Pro，把 prompt 整份貼上。
+   檔案可以用 SendUserFile 傳給他，手機上比較好複製。
+2. 使用者把 Gemini 的回覆**貼回對話**（不必自己存檔），你再寫進
+   `verification/answers/<名稱>.json`，然後：
+
+```bash
+node scripts/verify-with-gemini.mjs --apply-answer verification/answers/spots.json
+```
+
+`--apply-answer` 吃得下整段含說明文字的回覆，會自己抓出 ```json 區塊，
+一次可以吃多個檔案。
+
+改動小的時候用 `--day` / `--id` 縮小範圍，不要每次都叫使用者貼 48 筆。
+
+**B. 只有在使用者明講要用 API key 時 —— 自動跑**
 
 ```bash
 node scripts/verify-with-gemini.mjs                    # 全部 48 筆
-node scripts/verify-with-gemini.mjs --day "Day 3"      # 只驗某一天（改動小的時候用這個）
+node scripts/verify-with-gemini.mjs --day "Day 3"      # 只驗某一天
 node scripts/verify-with-gemini.mjs --id spot-32       # 只驗單一項目
 node scripts/verify-with-gemini.mjs --kind ticket      # 只驗票價
 node scripts/verify-with-gemini.mjs --limit 3          # 試跑
@@ -38,21 +65,7 @@ node scripts/verify-with-gemini.mjs --limit 3          # 試跑
 
 每筆送一次請求、開 `google_search` grounding、`temperature: 0`，預設併發 3。
 模型預設 `gemini-2.5-pro`，可用 `--model` 或 `GEMINI_MODEL` 換。
-
-**B. 沒有 API key —— 走 Gemini App（使用者有 Gemini Pro 訂閱）**
-
-```bash
-node scripts/verify-with-gemini.mjs --prompt-only
-```
-
-產生 `verification/prompts/01-spots.md`、`02-tickets.md`、`03-parking.md`。
-請使用者在 gemini.google.com 開新對話、選 2.5 Pro、整份貼上，把回覆的 json 區塊存成檔案，然後：
-
-```bash
-node scripts/verify-with-gemini.mjs --apply-answer verification/answers/spots.json
-```
-
-`--apply-answer` 吃得下整段含說明文字的回覆，會自己抓出 ```json 區塊。
+跑之前先提醒使用者這條路可能產生費用。
 
 ### 3. 讀報告
 
@@ -87,3 +100,4 @@ node scripts/verify-with-gemini.mjs --apply-answer verification/answers/spots.js
 - Gemini 對「今天是哪天」沒有可靠概念，prompt 裡已經寫死行程日期 2026/09/19–25 與白銀週連假、熊本地震、阿蘇噴火警戒的背景，改 prompt 時不要拿掉這段。
 - 日本店家的營業時間在連假常有特別安排，報告的 `trip_date_note` 欄專門放這個，別忽略。
 - 全部 48 筆跑一次大約 48 次 API 呼叫；只改一天的行程就用 `--day` 或 `--id`，不要每次全掃。
+- App 路線同理：一次叫使用者貼 48 筆很煩，改一天就只給那一天的 prompt。

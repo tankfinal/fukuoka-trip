@@ -19,12 +19,17 @@
 ### 怎麼跑
 
 ```bash
-node scripts/extract-places.mjs                              # README → verification/places.json
-node scripts/verify-with-gemini.mjs --day "Day 3"            # 用 Gemini API 查證（需 GEMINI_API_KEY）
-node scripts/verify-with-gemini.mjs --prompt-only            # 沒有 API key 時，產生貼給 Gemini App 的 prompt
+node scripts/extract-places.mjs                                 # README → verification/places.json
+node scripts/verify-with-gemini.mjs --prompt-only --day "Day 3" # 產生 prompt，貼進 Gemini App
+node scripts/verify-with-gemini.mjs --apply-answer <回覆檔>      # 把 Gemini 的回覆轉成報告
 ```
 
-詳細流程、篩選選項、沒有 API key 的手動路徑，see `.claude/skills/verify-places/SKILL.md`。
+**預設走 Gemini App（`--prompt-only`），不要主動叫使用者去辦 API key。**
+使用者是 Gemini Pro **訂閱制**，訂閱與 Gemini API 是分開計費、訂閱不含 API 額度；
+API 免費層不開帳單雖然不會被扣款，但涵蓋的模型會變動、Google Search grounding 另計費。
+只有使用者自己明講要用 API key 時，才改跑不帶 `--prompt-only` 的自動模式。
+
+詳細流程與篩選選項見 `.claude/skills/verify-places/SKILL.md`。
 
 ### 查證結果怎麼用
 

@@ -11,7 +11,11 @@
 | `answers/` | 從 Gemini App 貼回來的原始回覆 | ❌ 已 gitignore |
 
 ```bash
-node scripts/extract-places.mjs                    # 重新抽項目
-node scripts/verify-with-gemini.mjs --prompt-only  # 產生 prompt（沒有 API key 時）
-GEMINI_API_KEY=xxx node scripts/verify-with-gemini.mjs --day "Day 3"
+node scripts/extract-places.mjs                                  # 重新抽項目
+node scripts/verify-with-gemini.mjs --prompt-only --day "Day 3"  # 產生 prompt → 貼進 Gemini App
+node scripts/verify-with-gemini.mjs --apply-answer answers/x.json # 回覆轉成報告
 ```
+
+預設走 Gemini App（用 Gemini Pro 訂閱，零額外成本）。
+API 模式（`GEMINI_API_KEY=xxx node scripts/verify-with-gemini.mjs`）是另一套計費，
+訂閱不含 API 額度，需要時再用。
