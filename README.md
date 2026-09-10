@@ -60,8 +60,8 @@
 | Day 2 | 中今旅館 →（步行早餐 山水水出珈琲）→ 糸島環線（一蘭の森・工房とったん・箱島神社・夫婦岩 二見ヶ浦）→ 中今旅館 |
 | Day 3 | 中今旅館 → 食堂おわん → 太宰府（星巴克・一蘭）→ 柳川松濤園・藩主立花邸 → 熊本之門酒店 |
 | Day 4 | 熊本之門酒店 → 熊本城 → 城彩苑 → 阿蘇周邊（米塚・草千里・大觀峰）→ 熊本之門酒店 |
-| Day 5 | 熊本之門酒店 → 由布院 → 金鱗湖 → 別府地獄 → Super Hotel 別府駅前 |
-| Day 6 | Super Hotel 別府駅前 → 鐵輪溫泉 → Super Hotel 別府駅前 |
+| Day 5 | 熊本之門酒店 → やまなみハイウェイ → 九重夢大吊橋 → 由布院（湯の坪街道・由布院駅）→ Super Hotel 別府駅前 |
+| Day 6 | Super Hotel 別府駅前 → 海地獄 → 鐵輪（地獄蒸し）→ 明礬 → グローバルタワー → 竹瓦温泉 → Super Hotel 別府駅前 |
 | Day 7 | Super Hotel 別府駅前 → 天神（藍瓶・Bic Camera）→ IX RENTAL 福岡機場店還車 → 福岡空港（免稅店買伴手禮）|
 
 > 🚗 租車店家「**IX RENTAL 福岡機場店**」位於博多区西月隈 2-4-31，福岡空港西南約 2 km。接駁：到國際線「一般車」乘降場打電話請門市來接（流程見 [租車](#-租車)）；**營業時間與還車後回機場方式尚未確認，務必致電 +81-80-3226-1688 問清楚**。
@@ -222,8 +222,12 @@
 | 4 | **道の駅 阿蘇** | 道の駅 | **免費** | |
 | 4 | **草千里** | 草千里駐車場 | **¥500/日** | 2024/7 起改**自動攝影記錄 + 後付制**（無人閘門，別以為沒收費就開走）|
 | 5・6 | **Super Hotel 別府駅前** | 附近私人停車場 | **¥500/晚** | **先到先停、不能預約** |
-| 5 | **由布院・金鱗湖** | Times 湯布院金鱗湖 等 | 依現場 | 湖畔步行 2–4 分，連假會滿 |
-| 5・6 | **別府地獄各站** | 各地獄附設 | **免費** | 海地獄 8:00–17:00 |
+| 5 | **九重"夢"大吊橋** | 吊橋停車場（中村區約 229 台）| **免費** | 8:30–18:00 |
+| 5 | **由布院（湯の坪街道）** | 周邊民營停車場 | 依現場 | 官方：連假「周辺道路や駐車場が大変混雑」，先看停車場地圖 |
+| 6 | **海地獄** | 附設 | **免費** | 8:00–17:00 |
+| 6 | **明礬温泉 湯の里** | 附設 80 台 | **免費** | |
+| 6 | **グローバルタワー** | 室外 138 台／室內 58 台 | 室外**免費**；室內首 1 hr 免費、之後 ¥100/hr | |
+| 6 | **竹瓦温泉** | ⚠️ **無停車場** | 周邊投幣式 | |
 | 7 | **天神（Bic Camera）** | 天神ビックタワー駐車場（Bic 提携，今泉 1-9-2）| 單張收據滿 ¥3,000 送 1 hr／¥5,000 送 2 hr／¥50,000 送 3 hr | **兩館收據不能合併**；24 hr、限高 1.72 m ⚠️ 未證實 |
 
 > 💡 **投幣停車場怎麼用**：車輪下擋板升起 → 離開前到繳費機**輸入車位號碼**付款 → 擋板降下才能開走。忘記付款開不走。
@@ -430,7 +434,10 @@
 | 景點 | 門票 | 備註 |
 |---|---|---|
 | **熊本城**（天守閣 + 城內）| ¥800 | 高中以上；現場買；9:00–17:00（最終入園 16:00）；**8/13 震後重新開園** |
-| **別府地獄共通券**（7 個地獄）| ¥2,400 | 現場或便利商店；單買 ¥450/個；不一定要全部看完 |
+| **海地獄**（Day 6，單館）| ¥450 | 8:00–17:00；我們只看這一個（7 個共通券 ¥2,400）|
+| **九重"夢"大吊橋**（Day 5）| ¥500 | 國中生以上；8:30–18:00（售票至 17:30）|
+| **グローバルタワー**（Day 6）| ¥300 | 展望台 9:00–21:00（3–11 月）|
+| **COMICO ART MUSEUM**（Day 5，選擇性）| ¥1,700 | 事前預約優先，線上折 ¥200 |
 | **柳川松濤園・藩主立花邸**（松濤園 + 大廣間 + 西洋館 + 立花家史料館）| ¥1,000 | 現場買；見學 10:00–16:00 |
 | **阿蘇火山博物館**（選擇性）| ¥1,100 | 草千里旁，**警戒等級 2（9/4 起）照常開放**；停車免費 |
 | **竹瓦溫泉**（選擇性）| 入浴 ¥300 / 砂湯 ¥1,500 | 明治創業的公共浴場；外觀參觀免費 |
@@ -438,7 +445,7 @@
 
 ### 完全免費
 
-- 箱島神社、夫婦岩 二見ヶ浦、太宰府天滿宮（參道）、城彩苑、米塚展望所、草千里浜（停車 ¥500）、大觀峰、道の駅 阿蘇、由布院湯之坪街道、金鱗湖、明礬湯之里、湯けむり展望台
+- 箱島神社、夫婦岩 二見ヶ浦、太宰府天滿宮（參道）、城彩苑、米塚展望所、草千里浜（停車 ¥500）、大觀峰、道の駅 阿蘇、長者原、由布院湯之坪街道、由布院駅・YUFUiNFO、明礬湯之里
 
 ---
 
@@ -724,66 +731,73 @@
 
 ---
 
-### Day 5｜9/23（三・秋分日）熊本 → 由布院 → 別府｜🏨 Super Hotel 別府駅前
+### Day 5｜9/23（三・秋分日）熊本 → 九重夢大吊橋 → 由布院 → 別府｜🏨 Super Hotel 別府駅前
 
-> ⚠️ **連假最後一天**：熊本→由布院走高速 171km / 約 2.3 hr，建議走 ミルクロード+やまなみハイウェイ 風景線（107km / 約 2.5 hr，但風景超美）
+> ⚠️ **連假最後一天**：走 ミルクロード＋やまなみハイウェイ 風景線（九重高原）。吊橋與由布院官方都提醒連假停車場擁擠，**8:00 準時出發**。
 
-**路線**：熊本之門酒店 → 由布院温泉 → 金鱗湖 → 別府地獄 → Super Hotel 別府駅前
+**路線**：熊本之門酒店 → やまなみハイウェイ（長者原）→ 九重"夢"大吊橋 → 由布院（湯の坪街道・由布院駅・YUFUiNFO）→ Super Hotel 別府駅前
 
 | 順序 | Spot | 地址 |
 |---|---|---|
-| 1 | **由布院溫泉（湯之坪街道）**<br>🇯🇵 由布院温泉 湯の坪街道<br>🇬🇧 Yunotsubo Kaido, Yufuin Onsen | 大分県由布市湯布院町 |
-| 2 | **金鱗湖**<br>🇯🇵 金鱗湖<br>🇬🇧 Lake Kinrin | 大分県由布市湯布院町川上 1561-1（879-5102）|
-| 3 | **別府地獄**（海地獄・血池地獄・龍卷地獄）<br>🇯🇵 別府地獄めぐり（海地獄／血の池地獄／龍巻地獄）<br>🇬🇧 Hells of Beppu (Umi / Chinoike / Tatsumaki Jigoku) | 大分県別府市鉄輪 559-1（874-0000）|
-| 4 | **Super Hotel 別府駅前**<br>🇯🇵 スーパーホテル別府駅前<br>🇬🇧 Super Hotel Beppu Ekimae | 🇯🇵 大分県別府市駅前町 13-8（874-0935）<br>🇬🇧 13-8 Ekimaecho, Beppu, Oita<br>📞 +81-977-73-9000 |
+| 1 | **九重"夢"大吊橋**<br>🇯🇵 九重"夢"大吊橋<br>🇬🇧 Kokonoe "Yume" Otsurihashi | 大分県玖珠郡九重町田野 1208（879-4911）<br>8:30–18:00（售票至 17:30），無休｜國中生以上 ¥500｜停車免費 |
+| 2 | **由布院溫泉（湯之坪街道）**<br>🇯🇵 由布院温泉 湯の坪街道<br>🇬🇧 Yunotsubo Kaido, Yufuin Onsen | 大分県由布市湯布院町 |
+| 3 | **由布院駅・YUFUiNFO**（建築）<br>🇯🇵 由布院駅／由布市ツーリストインフォメーションセンター<br>🇬🇧 Yufuin Station / YUFUiNFO | 由布院駅前｜由布院駅：**磯崎新**設計／YUFUiNFO：**坂茂**設計，9:00–17:30 |
+| 4 | （選擇性）**COMICO ART MUSEUM YUFUIN**（建築）<br>🇯🇵 COMICO ART MUSEUM YUFUIN<br>🇬🇧 COMICO Art Museum Yufuin | 大分県由布市湯布院町川上 2995-1（879-5102）<br>**隈研吾**設計｜9:30–17:00｜一般 ¥1,700（事前預約優先，線上折 ¥200）｜無專用停車場 |
+| 5 | **Super Hotel 別府駅前**<br>🇯🇵 スーパーホテル別府駅前<br>🇬🇧 Super Hotel Beppu Ekimae | 🇯🇵 大分県別府市駅前町 13-8（874-0935）<br>🇬🇧 13-8 Ekimaecho, Beppu, Oita<br>📞 +81-977-73-9000 |
 
-**預估車程**：熊本之門酒店 → 由布院 130 km / 2 hr → 別府地獄 25 km / 30 分 → Super Hotel 別府駅前 8 km / 20 分
+**預估車程**（搜尋估計值）：熊本之門酒店 → 九重夢大吊橋 約 1 hr 45 – 2 hr（ミルクロード／やまなみハイウェイ）→ 由布院 30–40 分 → Super Hotel 別府駅前 40–50 分
 
 | 時間 | 地點 |
 |---|---|
-| 8:00 | 熊本之門酒店 退房出發（退房 07:00–10:00）|
-| 10:30 | 抵達 **由布院** |
-| | **金鱗湖** 散步（湖畔 5 分繞一圈）|
-| | **湯の坪街道** 商店街、**B-speak 蛋糕卷**、**Snoopy 茶屋**、**金賞可樂餅** |
-| 12:30 | 午餐：**ゆふいん市** 豐後牛漢堡 / **山椒郎** 季節料理 |
-| 14:00 | 出發別府（高速 30 分鐘）|
-| 14:30 | **別府地獄精選 3 個**：海地獄 + 血池地獄 + 龍卷地獄 |
+| 8:00 | 熊本之門酒店 退房出發（退房 07:00–10:00），走 ミルクロード → やまなみハイウェイ |
+| | 途中 **長者原** 可短暫停車看九重連山（停車場約 450 台，免費）|
+| 10:00 | **九重"夢"大吊橋** — 吊橋、瀑布、溪谷，待 1–1.5 hr（官方提醒人多時**靠左通行**）|
+| 11:30 | 出發由布院（30–40 分）|
+| 12:15 | 抵 **由布院**，午餐：**ゆふいん市** 豐後牛漢堡 / **山椒郎** 季節料理（⚠️ 9/23 週三是否營業未確認）|
+| 13:30 | **湯の坪街道** 慢慢逛：**B-speak 蛋糕卷**、**Snoopy 茶屋**、**金賞可樂餅**；看 **由布院駅**（磯崎新）與 **YUFUiNFO**（坂茂）|
+| | 選擇性：**COMICO ART MUSEUM**（隈研吾，9/23 有開館；9 月只休 9/9、9/30）|
+| 16:00 | 出發別府（40–50 分）|
 | 17:00 | Check-in **Super Hotel 別府駅前**（已告知抵達 17:00–18:00）|
 | 18:00 | 晚餐：**とよ常天婦羅**（特上天丼 ¥980 神店）|
 
 > ⚠️ **冷麺の胡月週三只營業到 17:30**（週二公休），9/23 晚餐排不進去，想吃要改在白天。とよ常 9/23（週三）是否營業**未查到**，出發前確認。
 
-> 💴 別府地獄共通券 **¥2,400**（看 7 個地獄）；單買 ¥450/個。割引券 ¥2,200。
+> 🅿️ 九重夢大吊橋停車免費（中村區約 229 台）；由布院連假周邊道路與停車場「大変混雑」，出發前先看由布院停車場地圖；Super Hotel 用附近私人停車場 ¥500/晚、**先到先停不能預約**。
 
-> 🅿️ 湯の坪公營 ¥500，金鱗湖週邊 ¥600/日（土日祝 ¥900）；別府地獄各區免費；Super Hotel 用附近私人停車場 ¥500/晚、**先到先停不能預約**。
+> 💡 金鱗湖、別府地獄這天不排：金鱗湖略過，別府地獄移到 Day 6 早上只看海地獄。
 
 ---
 
 ### Day 6｜9/24（四）別府慢遊｜🏨 Super Hotel 別府駅前
 
-**路線**：Super Hotel 別府駅前 → 鐵輪溫泉（地獄蒸し工房）→ Super Hotel 別府駅前
+**路線**：Super Hotel 別府駅前 → 海地獄 → 地獄蒸し工房（鐵輪）→ 明礬 湯の里 → グローバルタワー → 竹瓦温泉 → Super Hotel 別府駅前
 
 | 順序 | Spot | 地址 |
 |---|---|---|
-| 1 | **鐵輪溫泉**（地獄蒸し工房）<br>🇯🇵 鉄輪温泉／地獄蒸し工房 鉄輪<br>🇬🇧 Kannawa Onsen / Jigoku Mushi Kobo | 大分県別府市大字鉄輪字風呂本 212（874-0041）|
-| 2 | **Super Hotel 別府駅前**<br>🇯🇵 スーパーホテル別府駅前<br>🇬🇧 Super Hotel Beppu Ekimae | 🇯🇵 大分県別府市駅前町 13-8（874-0935）<br>🇬🇧 13-8 Ekimaecho, Beppu, Oita<br>📞 +81-977-73-9000 |
+| 1 | **海地獄**（風景）<br>🇯🇵 海地獄<br>🇬🇧 Umi Jigoku | 大分県別府市大字鉄輪 559-1<br>8:00–17:00，年中無休｜單館 ¥450 |
+| 2 | **鐵輪溫泉**（地獄蒸し工房）<br>🇯🇵 鉄輪温泉／地獄蒸し工房 鉄輪<br>🇬🇧 Kannawa Onsen / Jigoku Mushi Kobo | 大分県別府市大字鉄輪字風呂本 212（874-0041）|
+| 3 | **明礬温泉 湯の里**（風景・傳統建築）<br>🇯🇵 みょうばん 湯の里<br>🇬🇧 Myoban Yunosato | 大分県別府市明礬 6 組｜湯の花小屋 9:00–18:00 免費參觀｜停車免費 80 台 |
+| 4 | **グローバルタワー**（建築・展望）<br>🇯🇵 ビーコンプラザ グローバルタワー<br>🇬🇧 B-Con Plaza Global Tower | 大分県別府市山の手町 12-1<br>**磯崎新**設計｜展望台 9:00–21:00（3–11 月）｜大人 ¥300｜室外停車免費 138 台 |
+| 5 | **竹瓦温泉**（歷史建築）<br>🇯🇵 竹瓦温泉<br>🇬🇧 Takegawara Onsen | 大分県別府市元町 16-23<br>1938 年唐破風木造建築｜普通浴 6:30–22:30 ¥300／砂湯 ¥1,500｜**無停車場** |
+| 6 | **Super Hotel 別府駅前**<br>🇯🇵 スーパーホテル別府駅前<br>🇬🇧 Super Hotel Beppu Ekimae | 🇯🇵 大分県別府市駅前町 13-8（874-0935）<br>🇬🇧 13-8 Ekimaecho, Beppu, Oita<br>📞 +81-977-73-9000 |
 
-**預估車程**：Super Hotel 別府駅前 ↔ 鐵輪 約 8 km / 20 分
+**預估車程**（搜尋估計值）：Super Hotel ↔ 鐵輪 約 8 km / 20 分；海地獄 → 地獄蒸し工房 1–2 分；→ 明礬 6–10 分；→ グローバルタワー 15–20 分；→ 竹瓦温泉 約 10 分
 
 | 時間 | 地點 |
 |---|---|
-| 9:30 | 飯店吃完早餐出發（**含早餐**）|
-| 10:00 | **鐵輪溫泉「地獄蒸し工房」**（**10:00 才開門**）|
-| | 自己用溫泉蒸海鮮蔬菜，食材 ¥500–1,500 + 蒸し釜 小 ¥400／大 ¥600（15 分內），不接受預約 |
-| 12:00 | 午餐繼續地獄蒸 |
-| 13:30 | **明礬**：**湯之里**（看湯花小屋・買湯花入浴劑）+ **岡本屋売店** 地獄蒸布丁、溫泉蛋（8:30–18:30，L.O. 17:30）|
-| 14:30 | **湯けむり展望台** 眺望鐵輪溫泉煙霧群 |
-| 15:30 | 回別府市區（北浜）|
-| 16:00 | 自由活動：**竹瓦溫泉**（公共浴場 ¥300 / 砂湯 ¥1,500）/ **GLOBAL TOWER 展望台** |
+| 8:30 | 飯店早餐（**含早餐**）|
+| 9:00 | 出發 → **海地獄**：經典鈷藍色溫泉，待 1 hr（8:00 開，單館 ¥450）|
+| 10:00 | **鐵輪溫泉「地獄蒸し工房」**（**10:00 才開門**，海地獄開車 1–2 分）|
+| | 自己用溫泉蒸海鮮蔬菜當早午餐，食材 ¥500–1,500 + 蒸し釜 小 ¥400／大 ¥600（15 分內），不接受預約 |
+| 12:30 | **明礬**：**湯之里**（湯花小屋免費參觀・買湯花入浴劑）+ **岡本屋売店** 地獄蒸布丁、溫泉蛋（8:30–18:30，L.O. 17:30）|
+| 14:30 | **グローバルタワー**（磯崎新設計，展望台看別府灣與市區，¥300）|
+| 16:30 | **竹瓦温泉**（1938 年唐破風木造建築；入浴 ¥300 / 砂湯 ¥1,500）|
 | 18:30 | 晚餐：**お食事處 千成**（鄉土料理）/ **東洋軒 別府本店**（炸雞元祖）|
 
-> 💡 地獄蒸し工房 10:00–19:00（L.O. 18:00），休館日為**每月第 3 個週三**（遇祝日順延隔天）— 9 月是 9/16，**9/24 照常營業**。
-> 🍮 岡本屋売店在**明礬**（不是鐵輪），跟湯之里同一區，13:30 一起逛。
+> 💴 **別府地獄只看海地獄**：單館 ¥450（海地獄官網：「大人（高校生以上）：450円」）。7 個全逛約 2.5–3 hr，蒸氣風景也跟鐵輪、明礬重複，共通券 ¥2,400 不划算。
+> 💡 地獄蒸し工房 10:00–19:00（L.O. 18:00），休館日為**每月第 3 個週三**（遇祝日順延隔天）— 9 月是 9/16，**9/24 照常營業**。竹瓦温泉休館日同為第 3 個週三，9/24 照常。
+> 🍮 岡本屋売店在**明礬**（不是鐵輪），跟湯之里同一區，12:30 一起逛。
+> 🅿️ 竹瓦温泉沒有停車場，停周邊投幣式停車場。
 
 ---
 
@@ -838,8 +852,8 @@
 | 2 | 中今旅館 → 一蘭の森 → 工房とったん → 箱島神社 → 夫婦岩 二見ヶ浦 → 中今旅館 | [Google Maps](https://www.google.com/maps/dir/6-26+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/Ichiran+no+Mori,+256-10+Shima+Matsukuma,+Itoshima,+Fukuoka+819-1304,+Japan/Kobo+Tottan+Mataichi+no+Shio,+3757+Shima+Keya,+Itoshima,+Fukuoka+819-1332,+Japan/Hakoshima+Shrine,+Shima+Sakurai,+Itoshima,+Fukuoka+819-1304,+Japan/Meoto+Iwa+Futamigaura,+Shima+Sakurai,+Itoshima,+Fukuoka+819-1304,+Japan/6-26+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/) |
 | 3 | 中今旅館 → 食堂おわん → 星巴克太宰府表參道 → 一蘭太宰府参道店 → 柳川松濤園・藩主立花邸 → 熊本之門酒店 | [Google Maps](https://www.google.com/maps/dir/6-26+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/9-20+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/Starbucks+Coffee+Dazaifu+Tenmangu+Omotesando,+3-2-43+Saifu,+Dazaifu,+Fukuoka+818-0117,+Japan/Ichiran+Dazaifu+Sando,+2-6-2+Saifu,+Dazaifu,+Fukuoka+818-0117,+Japan/Yanagawa+Ohana,+1+Shingaimachi,+Yanagawa,+Fukuoka+832-0069,+Japan/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/) |
 | 4 | 熊本之門酒店 → 熊本城 → 城彩苑 → 大觀峰 → 道の駅 阿蘇 → 米塚 → 草千里 → 熊本之門酒店 | [Google Maps](https://www.google.com/maps/dir/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/Kumamoto+Castle,+1-1+Honmaru,+Chuo+Ward,+Kumamoto,+860-0002,+Japan/Sakura-no-baba+Josaien,+1-1-2+Ninomaru,+Chuo+Ward,+Kumamoto,+860-0008,+Japan/Daikanbo,+Yamada,+Aso,+Kumamoto+869-2313,+Japan/Michi-no-Eki+Aso,+1440-1+Kurokawa,+Aso,+Kumamoto+869-2225,+Japan/Komezuka,+Otohime,+Aso,+Kumamoto+869-2225,+Japan/Kusasenrigahama,+Akamizu,+Aso,+Kumamoto+869-2612,+Japan/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/) |
-| 5 | 熊本之門酒店 → 由布院温泉 → 金鱗湖 → 別府地獄 → Super Hotel 別府駅前 | [Google Maps](https://www.google.com/maps/dir/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/Yufuin+Onsen,+Yufu,+Oita,+Japan/Lake+Kinrin,+1561-1+Yufuincho+Kawakami,+Yufu,+Oita+879-5102,+Japan/Beppu+Jigoku+(Hells+of+Beppu),+559-1+Kannawa,+Beppu,+Oita+874-0000,+Japan/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/) |
-| 6 | Super Hotel 別府駅前 → 鐵輪溫泉 → Super Hotel 別府駅前 | [Google Maps](https://www.google.com/maps/dir/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/Kannawa+Hot+Spring,+%E5%88%A5%E5%BA%9C%E5%B8%82%E5%A4%A7%E5%AD%97%E9%89%84%E8%BC%AA,+212,+Beppu,+Oita+874-0041,+Japan/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/) |
+| 5 | 熊本之門酒店 → 九重夢大吊橋 → 由布院駅 → Super Hotel 別府駅前 | [Google Maps](https://www.google.com/maps/dir/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/Kokonoe+Yume+Otsurihashi,+1208+Tano,+Kokonoe,+Kusu+District,+Oita+879-4911,+Japan/Yufuin+Station,+Yufuin,+Yufu,+Oita,+Japan/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/) |
+| 6 | Super Hotel 別府駅前 → 海地獄 → 地獄蒸し工房 → 明礬 湯の里 → グローバルタワー → 竹瓦温泉 → Super Hotel 別府駅前 | [Google Maps](https://www.google.com/maps/dir/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/Umi+Jigoku,+559-1+Kannawa,+Beppu,+Oita,+Japan/Kannawa+Hot+Spring,+%E5%88%A5%E5%BA%9C%E5%B8%82%E5%A4%A7%E5%AD%97%E9%89%84%E8%BC%AA,+212,+Beppu,+Oita+874-0041,+Japan/Myoban+Yunosato,+6+Myoban,+Beppu,+Oita,+Japan/B-Con+Plaza+Global+Tower,+12-1+Yamanotecho,+Beppu,+Oita,+Japan/Takegawara+Onsen,+16-23+Motomachi,+Beppu,+Oita,+Japan/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/) |
 | 7 | Super Hotel 別府駅前 → 天神 Bic Camera → IX RENTAL（還車）→ 福岡空港 | [Google Maps](https://www.google.com/maps/dir/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/Bic+Camera+Tenjin,+1-25-1+Imaizumi,+Chuo+Ward,+Fukuoka,+810-0021,+Japan/IX+RENTAL,+2-4-31+Nishitsukiguma,+Hakata+Ward,+Fukuoka,+812-0058,+Japan/Fukuoka+Airport,+778-1+Shimousui,+Hakata+Ward,+Fukuoka,+812-0003,+Japan/) |
 
 ---
@@ -855,11 +869,11 @@
 | 🛣️ 高速通行費（走 ETC）| **約 ¥12,500** | 估約 600 km 高速里程（區間 ¥10,000–15,000）|
 | ⛽ 燃油（Aqua 油電 25–30 km/L）| **約 ¥4,500** | 全程約 600–700 km |
 | 🅿️ 飯店停車 / 景點停車 6 晚 | **約 ¥7,000** | ⚠️ 熊本之門**無自有停車場**，要停附近付費場，成本較高 |
-| 🎟️ 主要景點門票（2 人）| **¥8,400** | 熊本城 ¥800×2 + 別府地獄 ¥2,400×2 + 松濤園・立花邸 ¥1,000×2 |
+| 🎟️ 主要景點門票（2 人）| **¥6,100** | 熊本城 ¥800×2 + 松濤園・立花邸 ¥1,000×2 + 九重夢大吊橋 ¥500×2 + 海地獄 ¥450×2 + グローバルタワー ¥300×2 |
 
-**日幣小計**：¥12,500 + ¥4,500 + ¥7,000 + ¥8,400 = **¥32,400**（≈ TWD 7,130，匯率 0.22）
+**日幣小計**：¥12,500 + ¥4,500 + ¥7,000 + ¥6,100 = **¥30,100**（≈ TWD 6,622，匯率 0.22）
 
-**固定費用合計**：TWD 13,329 + NT$ 6,697 + 約 TWD 7,130 → **共約 NT$27,200（2 人）／每人約 NT$13,600**
+**固定費用合計**：TWD 13,329 + NT$ 6,697 + 約 TWD 6,622 → **共約 NT$26,650（2 人）／每人約 NT$13,325**
 
 > 💡 餐費、伴手禮、額外景點、個人消費請各自抓預算。中今旅館的城市稅 ¥800 與房費 ¥24,800 是**現場付現**。
 
@@ -996,4 +1010,11 @@
 - [岡本屋売店 access](https://www.jigoku-prin.com/access/index.html)
 - [Super Hotel 別府駅前（停車）](https://www.superhotel.co.jp/s_hotels/beppu/)
 - [冷麺の胡月（Tabelog）](https://tabelog.com/oita/A4402/A440202/44000594/)
+- [九重"夢"大吊橋 公式](https://www.yumeooturihashi.com/)
+- [COMICO ART MUSEUM YUFUIN（開館日）](https://camy.oita.jp/)
+- [YUFUiNFO／由布院駅（由布市觀光資訊）](http://yufu-tic.jp/)
+- [海地獄 公式](https://www.umijigoku.co.jp/)
+- [グローバルタワー（B-Con Plaza）](https://www.b-conplaza.jp/visiter/globaltower/)
+- [竹瓦温泉（別府市）](https://www.city.beppu.oita.jp/sisetu/shieionsen/detail4.html)
+- [明礬温泉 湯の里](http://yuno-hana.jp/)
 - [Klook 租車訂單頁](https://www.klook.com/zh-TW/car-rentals/)
