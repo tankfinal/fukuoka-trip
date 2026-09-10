@@ -32,7 +32,7 @@
 
 ### ⛑️ Plan B（供應商無法配合延後）
 - **取車**：(A) 9/20 早上再取車（Day 1 改搭地鐵進博多）/ (B) 9/18 前免費取消，改訂 24 小時或營業到晚間的門市
-- **還車**：(A) 維持上午還車 → 行李寄機場置物櫃 → 地鐵到博多採買 → 16:00 回機場
+- **還車**：(A) 維持上午還車 → 行李寄機場置物櫃 → 地鐵空港線到天神（藍瓶・Bic Camera）→ 16:00 回機場
 
 > ⏰ **立刻打**，不要拖過 **2026/9/18 10:00**（免費取消期限）。
 
@@ -62,7 +62,7 @@
 | Day 4 | 熊本之門酒店 → 熊本城 → 城彩苑 → 阿蘇周邊（米塚・草千里・大觀峰）→ 熊本之門酒店 |
 | Day 5 | 熊本之門酒店 → 由布院 → 金鱗湖 → 別府地獄 → Super Hotel 別府駅前 |
 | Day 6 | Super Hotel 別府駅前 → 鐵輪溫泉 → Super Hotel 別府駅前 |
-| Day 7 | Super Hotel 別府駅前 → 博多市區採買 → IX RENTAL 福岡機場店還車 → 福岡空港 |
+| Day 7 | Super Hotel 別府駅前 → 天神（藍瓶・Bic Camera）→ IX RENTAL 福岡機場店還車 → 福岡空港（免稅店買伴手禮）|
 
 > 🚗 租車店家「**IX RENTAL 福岡機場店**」位於博多区西月隈 2-4-31，福岡空港西南約 2 km。接駁：到國際線「一般車」乘降場打電話請門市來接（流程見 [租車](#-租車)）；**營業時間與還車後回機場方式尚未確認，務必致電 +81-80-3226-1688 問清楚**。
 
@@ -224,6 +224,7 @@
 | 5・6 | **Super Hotel 別府駅前** | 附近私人停車場 | **¥500/晚** | **先到先停、不能預約** |
 | 5 | **由布院・金鱗湖** | Times 湯布院金鱗湖 等 | 依現場 | 湖畔步行 2–4 分，連假會滿 |
 | 5・6 | **別府地獄各站** | 各地獄附設 | **免費** | 海地獄 8:00–17:00 |
+| 7 | **天神（Bic Camera）** | 天神ビックタワー駐車場（Bic 提携，今泉 1-9-2）| 單張收據滿 ¥3,000 送 1 hr／¥5,000 送 2 hr／¥50,000 送 3 hr | **兩館收據不能合併**；24 hr、限高 1.72 m ⚠️ 未證實 |
 
 > 💡 **投幣停車場怎麼用**：車輪下擋板升起 → 離開前到繳費機**輸入車位號碼**付款 → 擋板降下才能開走。忘記付款開不走。
 
@@ -536,7 +537,23 @@
 | Day 4 | 城彩苑 + 道の駅 阿蘇 採買熊本伴手禮（馬肉、阿蘇牛乳製品）|
 | Day 5 | 由布院湯之坪商店街（B-speak、Snoopy）；別府站買湯花、布丁 |
 | Day 6 | 明礬湯之里再補湯花；岡本屋當天現買布丁 |
-| Day 7 | **博多阪急 B1 / 博多デイトス / 機場**主力採買明太子、通りもん；保留行李空間 |
+| Day 7 | **Bic Camera 天神**照下方必買清單買；明太子、通りもん在**機場出境後免稅店**買 |
+
+### 🔌 Bic Camera 必買清單（Day 7 天神）
+
+> 天神有兩間（天神 1 号館：今泉 1-25-1／天神 2 号館：天神 2-4-5），走路 10 分內，一間沒貨就去另一間。**吹風機、塵蟎機體積大，排最後一天買**，不用載著跑。
+
+| # | 品項 | 日本型番 | 參考價（含稅）| 電壓 / 台灣能不能用 | 備註 |
+|---|---|---|---|---|---|
+| 1 | **吹風機** | Panasonic **EH-NE7N**（[台灣商品頁](https://gmonline.twglobalmall.com/product/2EC0321160001015) 對應型號，⚠️ 待確認）| ⚠️ 未查到 | ⚠️ **日本版只有 AC100V**（官方規格：「電源・電圧：AC100V 50-60Hz」）| 台灣 110V 使用有風險，買前再想想或改挑國際電壓款 |
+| 2 | **刮鬍刀** 掌上型 5 枚刃 | Panasonic **ラムダッシュ パームイン** ES-PV6A／ES-PV3A | ⚠️ 未查到（部分款已停產）| ✅ **AC100–240V 自動切換** | USB Type-C 充電 |
+| 3 | **塵蟎機** | アイリスオーヤマ 布団クリーナー **FCA-B2H**／FCA-A3 | FCA-B2H 約 ¥17,720–18,800（⚠️ 未證實）| ⚠️ **只有 AC100V**（規格：「電源： AC100V（50/60Hz）」）| 同吹風機 |
+| 4 | **滑鼠墊**（劍匠）| **ARTISAN（アーチサン）** NINJA FX ゼロ／飛燕 | XXL 約 ¥7,500（⚠️ 未證實）| 不需電 | 先決定尺寸與軟硬度 |
+| 5 | **滑鼠**（palus）| 推測是 **Pulsar（パルサー）** X2V2／Xlite 系列（⚠️ 待確認）| X2V2 約 ¥9,700（⚠️ 未證實）| USB | |
+
+- 🔎 **出發前查庫存**：biccamera.com 商品頁可以查各店在庫，先確認天神兩館哪間有貨
+- 🛂 **免稅**：結帳走 Tax-Free 櫃台，帶**護照正本**。⚠️ 門檻、入境章規定未查到官方頁面 — 保險起見入境時請審查官蓋入境章
+- 🅿️ **停車**：提携停車場「天神ビックタワー駐車場」（今泉 1-9-2；24 小時、限高 1.72 m ⚠️ 未證實）；單張收據滿 ¥3,000 送 1 小時、滿 ¥5,000 送 2 小時，**兩館收據不能合併**
 
 ---
 
@@ -770,40 +787,44 @@
 
 ---
 
-### Day 7｜9/25（五）回國日｜別府 → 博多市區 → 還車 → 機場
+### Day 7｜9/25（五）回國日｜別府 → 天神 → 還車 → 機場
 
-**路線**：Super Hotel 別府駅前 → 博多市區（採買用餐）→ IX RENTAL 福岡機場店還車 → 福岡空港
+**路線**：Super Hotel 別府駅前 → 天神（藍瓶・Bic Camera）→ IX RENTAL 福岡機場店還車 → 福岡空港（免稅店買伴手禮）
 
 | 順序 | Spot | 地址 |
 |---|---|---|
 | 1 | **Super Hotel 別府駅前**<br>🇯🇵 スーパーホテル別府駅前<br>🇬🇧 Super Hotel Beppu Ekimae | 🇯🇵 大分県別府市駅前町 13-8（874-0935）<br>🇬🇧 13-8 Ekimaecho, Beppu, Oita<br>📞 +81-977-73-9000 |
-| 2 | **博多市區**（博多站 / 運河城）<br>🇯🇵 博多駅／キャナルシティ博多<br>🇬🇧 Hakata Station / Canal City Hakata | 福岡市博多区博多駅中央街 1-1 周邊（812-0012）|
-| 3 | **IX RENTAL 福岡機場店**（還車）<br>🇯🇵 アイエックスレンタカー 福岡支店<br>🇬🇧 IX Rental Fukuoka Airport | 🇯🇵 福岡市博多区西月隈 2-4-31（812-0058）<br>🇬🇧 2-4-31 Nishitsukiguma, Hakata-ku, Fukuoka |
-| 4 | **福岡空港 國際線航廈**<br>🇯🇵 福岡空港 国際線ターミナル<br>🇬🇧 Fukuoka Airport Int'l Terminal | 福岡市博多区下臼井 778-1（812-0003）|
+| 2 | **藍瓶咖啡 福岡天神**<br>🇯🇵 ブルーボトルコーヒー 福岡天神カフェ<br>🇬🇧 Blue Bottle Coffee Fukuoka Tenjin Cafe | 福岡市中央区天神 2-2-20 警固神社社務所ビル 1F<br>8:00–20:00，無休，無停車場 |
+| 3 | **Bic Camera 天神 1 号館 / 2 号館**<br>🇯🇵 ビックカメラ 天神1号館／天神2号館<br>🇬🇧 Bic Camera Tenjin | 1 号館：福岡市中央区今泉 1-25-1<br>2 号館：福岡市中央区天神 2-4-5<br>10:00–21:00，年中無休 |
+| 4 | **IX RENTAL 福岡機場店**（還車）<br>🇯🇵 アイエックスレンタカー 福岡支店<br>🇬🇧 IX Rental Fukuoka Airport | 🇯🇵 福岡市博多区西月隈 2-4-31（812-0058）<br>🇬🇧 2-4-31 Nishitsukiguma, Hakata-ku, Fukuoka |
+| 5 | **福岡空港 國際線航廈**<br>🇯🇵 福岡空港 国際線ターミナル<br>🇬🇧 Fukuoka Airport Int'l Terminal | 福岡市博多区下臼井 778-1（812-0003）|
 
-**預估車程**：Super Hotel 別府駅前 → 博多市區 約 130 km / 2 hr 10 分；博多市區 → IX RENTAL 約 7 km / 20 分；IX RENTAL → 福岡空港 約 2 km（**接駁方式待確認**）
+**預估車程**（搜尋估計值）：Super Hotel 別府駅前 → 天神 約 2 hr（兩次查到 1 hr 40 – 2 hr 30）；天神 → IX RENTAL 約 5–6 km / 20–30 分；IX RENTAL → 福岡空港 約 2 km（**接駁方式待確認**）
 
 | 時間 | 地點 |
 |---|---|
-| 7:00 | Super Hotel 退房，行李上車（退房 10:00 前）|
-| 7:30 | 出發福岡（高速約 2 hr 10 分）|
-| 9:45 | 抵博多市區（博多站 / 運河城周邊 Times Parking）|
-| 10:00 | **博多阪急 B1** / **博多デイトス** 採買明太子、洋菓子 |
-| 11:30 | 午餐：**水炊き 若杉 本店** / **博多市場 海鮮丼** |
-| 13:00 | **博多運河城** / **Daimaru** / **KITTE 博多** 最後採買 |
-| 14:00 | 開車到 IX RENTAL 福岡機場店（**7 km / 20 分**）|
+| 7:30 | 飯店早餐 → Super Hotel 退房，行李上車（退房 10:00 前）|
+| 8:00 | 出發天神（高速約 2 hr）|
+| 10:00 | 抵天神，停 Bic 提携「天神ビックタワー駐車場」→ 步行到 **藍瓶 福岡天神カフェ** |
+| 10:45 | **Bic Camera 天神 1 号館 / 2 号館** 照 [必買清單](#-bic-camera-必買清單day-7-天神) 買；一間沒貨就走去另一間（步行約 10 分內）|
+| 12:15 | 天神午餐（現場找；大丸福岡天神店 B2F 有明月堂，可順買通りもん）|
+| 13:30 | 出發 IX RENTAL（20–30 分），**途中加滿油**（滿油還車）|
 | 14:30 | **抵 IX RENTAL 還車**（訂單原定 10:00，須已協調延後）|
 | 15:00 | 前往福岡空港 國際線航廈（**接駁方式待確認**，無接駁則計程車約 10 分）|
 | 15:30 | 抵國際線航廈 → 行李寄存 / 機場閒晃 |
-| 18:30 | Check-in、退稅、通關 |
+| 18:30 | Check-in、退稅、通關 → **出境後免稅店**買明太子、通りもん |
 | 21:00 | CI0117 起飛 |
 | 22:25 | 抵達 TPE |
+
+> 🅿️ **天神停車**：Bic 提携「天神ビックタワー駐車場」（今泉 1-9-2）— 單張收據滿 ¥3,000 送 1 hr、¥5,000 送 2 hr、¥50,000 送 3 hr，**兩館收據不能合併**。我們停約 3.5 hr，大件集中在同一館結帳比較划算。
+
+> 🛍️ **伴手禮改在機場買**：國際線出境後的免稅店有明太子（ふくや／やまや）與博多通りもん，營業「午前7時00分から最終便が出発するまで」（[福岡空港免稅店](https://dfree.fukuoka-airport.jp/)）— 不用提著要冷藏的明太子逛天神。天神大丸 B2F 明月堂當備案（⚠️ 只查到百貨首頁）。
 
 > ⚠️ **必協調**：訂單寫 9/25 10:00 還車，但實際 14:30 才能還。致電 IX RENTAL（+81-80-3226-1688）或 Klook 客服協調，**9/18 前確認**（訂單標示不可更改，最壞情況要免費取消重訂）。
 
 > ⚠️ **9/25 平日國際線出境約需 1.5 小時**（含 check-in、安檢、出境、走到登機門）
 
-> 💡 **備選 plan**（門市無法延後還車）：早上 7:00 出發 → 9:45 直接到 IX RENTAL 還車 → 到機場行李寄存 Locker → 地鐵到博多市區採買 → 16:00 返機場。
+> 💡 **備選 plan**（門市無法延後還車）：早上 8:00 出發 → 10:00 直接到 IX RENTAL 還車 → 到機場行李寄存 Locker → 地鐵空港線到天神（藍瓶・Bic Camera，大件要自己提回機場）→ 16:00 返機場。
 
 ---
 
@@ -819,7 +840,7 @@
 | 4 | 熊本之門酒店 → 熊本城 → 城彩苑 → 大觀峰 → 道の駅 阿蘇 → 米塚 → 草千里 → 熊本之門酒店 | [Google Maps](https://www.google.com/maps/dir/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/Kumamoto+Castle,+1-1+Honmaru,+Chuo+Ward,+Kumamoto,+860-0002,+Japan/Sakura-no-baba+Josaien,+1-1-2+Ninomaru,+Chuo+Ward,+Kumamoto,+860-0008,+Japan/Daikanbo,+Yamada,+Aso,+Kumamoto+869-2313,+Japan/Michi-no-Eki+Aso,+1440-1+Kurokawa,+Aso,+Kumamoto+869-2225,+Japan/Komezuka,+Otohime,+Aso,+Kumamoto+869-2225,+Japan/Kusasenrigahama,+Akamizu,+Aso,+Kumamoto+869-2612,+Japan/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/) |
 | 5 | 熊本之門酒店 → 由布院温泉 → 金鱗湖 → 別府地獄 → Super Hotel 別府駅前 | [Google Maps](https://www.google.com/maps/dir/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/Yufuin+Onsen,+Yufu,+Oita,+Japan/Lake+Kinrin,+1561-1+Yufuincho+Kawakami,+Yufu,+Oita+879-5102,+Japan/Beppu+Jigoku+(Hells+of+Beppu),+559-1+Kannawa,+Beppu,+Oita+874-0000,+Japan/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/) |
 | 6 | Super Hotel 別府駅前 → 鐵輪溫泉 → Super Hotel 別府駅前 | [Google Maps](https://www.google.com/maps/dir/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/Kannawa+Hot+Spring,+%E5%88%A5%E5%BA%9C%E5%B8%82%E5%A4%A7%E5%AD%97%E9%89%84%E8%BC%AA,+212,+Beppu,+Oita+874-0041,+Japan/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/) |
-| 7 | Super Hotel 別府駅前 → 博多站一帶 → IX RENTAL（還車）→ 福岡空港 | [Google Maps](https://www.google.com/maps/dir/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/Hakata+Station,+1-1+Hakataekichuogai,+Hakata+Ward,+Fukuoka,+812-0012,+Japan/IX+RENTAL,+2-4-31+Nishitsukiguma,+Hakata+Ward,+Fukuoka,+812-0058,+Japan/Fukuoka+Airport,+778-1+Shimousui,+Hakata+Ward,+Fukuoka,+812-0003,+Japan/) |
+| 7 | Super Hotel 別府駅前 → 天神 Bic Camera → IX RENTAL（還車）→ 福岡空港 | [Google Maps](https://www.google.com/maps/dir/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/Bic+Camera+Tenjin,+1-25-1+Imaizumi,+Chuo+Ward,+Fukuoka,+810-0021,+Japan/IX+RENTAL,+2-4-31+Nishitsukiguma,+Hakata+Ward,+Fukuoka,+812-0058,+Japan/Fukuoka+Airport,+778-1+Shimousui,+Hakata+Ward,+Fukuoka,+812-0003,+Japan/) |
 
 ---
 
