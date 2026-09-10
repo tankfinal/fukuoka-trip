@@ -287,16 +287,16 @@
 
   /* Shuttle guide images */
   .guide-imgs{display:flex;flex-direction:column;gap:16px;margin-top:12px;max-width:720px}
-  .guide-fig{margin:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+  .guide-fig{margin:0;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--card)}
   .guide-fig img{display:block;width:100%;height:auto}
-  .guide-fig figcaption{padding:10px 12px;font-size:13px;color:var(--text-soft);border-top:1px solid var(--line)}
+  .guide-fig figcaption{padding:10px 12px;font-size:13px;color:var(--text-soft);border-top:1px solid var(--border)}
   .guide-fig .step{display:inline-block;background:var(--accent,#e8618c);color:#fff;border-radius:999px;
     padding:1px 8px;font-size:11px;font-weight:700;margin-right:6px}
 
   /* Road sign grid */
   .sign-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:4px}
   @media(min-width:560px){.sign-grid{grid-template-columns:repeat(4,1fr)}}
-  .sign-item{text-align:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 8px}
+  .sign-item{text-align:center;background:#fff;border:1px solid var(--border);border-radius:12px;padding:12px 8px}
   .sign-item img{width:76px;height:76px;display:block;margin:0 auto 8px}
   .sign-item .jp{display:block;font-weight:700;font-size:13px;color:#333}
   .sign-item .zh{display:block;font-size:12px;color:#666;margin-top:2px}
@@ -561,7 +561,7 @@
       <div class="day-route">中今旅館 → 食堂おわん → 星巴克太宰府 → 一蘭参道店 → 柳川松濤園・藩主立花邸 → 熊本之門酒店</div>
     </div>
 
-    <div class="alert danger">🚨 <b>立花邸的蒸籠鰻魚飯只供應 11:00–15:00</b>，我們吃完一蘭才出發、13:40 才進場。出發前務必打 <a href="tel:+81944732217">0944-73-2217</a> 問 L.O. 時間與能否預約。</div>
+    <div class="alert danger">🚨 <b>立花邸的蒸籠鰻魚飯只供應 11:00–15:00</b>，我們排 13:00 進場。出發前務必打 <a href="tel:+81944732217">0944-73-2217</a> 問 L.O. 時間與能否預約。</div>
 
     <div class="card">
       <h2>📍 停靠點</h2>
@@ -798,7 +798,7 @@
 
   <div class="card">
     <h2>🏨 熊本 熊本之門酒店 周邊（Day 3、4）</h2>
-    <p class="hint" style="color:var(--text-soft);font-size:12.5px">中央区本山，熊本駅南側。步行 8 分到熊本駅</p>
+    <p class="hint" style="color:var(--text-soft);font-size:12.5px">西区春日，熊本駅東口（白川口）步行 1 分（熊本森都心プラザ 1F）</p>
     <div class="table-wrap"><table>
       <thead><tr><th>必吃</th><th>地址 / 提醒</th></tr></thead>
       <tbody>
@@ -806,7 +806,7 @@
         <tr><td><b>勝烈亭 新市街本店</b>（炸豬排）</td><td>中央区新市街 8-18</td></tr>
         <tr><td><b>桂花拉麵 本店</b></td><td>中央区花畑町 11-9；熊本豚骨元祖</td></tr>
         <tr><td><b>天外天 本店</b>（拉麵）</td><td>中央区安政町</td></tr>
-        <tr><td><b>黒亭 本店</b>（拉麵）</td><td>西区二本木 2-1-23（熊本駅步行 5 分）</td></tr>
+        <tr><td><b>黒亭 本店</b>（拉麵）</td><td>西区二本木 2-1-23（飯店步行 8 分）</td></tr>
         <tr><td><b>大關馬肉</b></td><td>中央区下通；熟食 / 馬肉醬煮</td></tr>
         <tr><td><b>いきなり団子</b></td><td>路邊小吃 / 熊本駅內物產館</td></tr>
       </tbody>
@@ -815,7 +815,7 @@
 
   <div class="card">
     <h2>🏨 別府 Super Hotel 別府駅前 周邊（Day 5、6）</h2>
-    <p class="hint" style="color:var(--text-soft);font-size:12.5px">北浜在別府站東邊海岸線；步行 5 分到別府站，10 分到別府塔</p>
+    <p class="hint" style="color:var(--text-soft);font-size:12.5px">飯店就在別府站前，步行 1–2 分到車站、5 分到北浜海岸、10 分到別府塔</p>
     <div class="table-wrap"><table>
       <thead><tr><th>必吃</th><th>地址 / 提醒</th></tr></thead>
       <tbody>
@@ -1346,7 +1346,7 @@
       <button data-jpy="100000">¥10萬</button>
     </div>
 
-    <div class="fx-note">💡 來源 exchangerate-api（每日更新）。實際刷卡/換匯會有手續費，海外刷卡約 +1.5%、機場兌換較差，建議在台灣銀行先換好或用優惠日幣信用卡（Pi 拍錢、聯邦賴點、樂天）。</div>
+    <div class="fx-note">💡 來源 fawazahmed0 currency-api（jsDelivr，每日更新）。實際刷卡/換匯會有手續費，海外刷卡約 +1.5%、機場兌換較差，建議在台灣銀行先換好或用優惠日幣信用卡（Pi 拍錢、聯邦賴點、樂天）。</div>
   </div>
 
   <div class="card">
@@ -1619,7 +1619,7 @@
   loadWeather('1');
 
   // ---- FX: TWD <-> JPY ----
-  // rate = JPY per 1 TWD (e.g. ~4.7). Fallback: 4.8
+  // rate = JPY per 1 TWD (e.g. ~4.7). Fallback: 5.0
   let twdToJpy = 5.0;
   let fxFetched = false;
   const fxRateEl = document.getElementById('fxRate');
@@ -1706,7 +1706,7 @@
     {d:1,date:'2026-09-19'},{d:2,date:'2026-09-20'},{d:3,date:'2026-09-21'},
     {d:4,date:'2026-09-22'},{d:5,date:'2026-09-23'},{d:6,date:'2026-09-24'},{d:7,date:'2026-09-25'},
   ];
-  const today = new Date().toISOString().slice(0,10);
+  const today = new Date().toLocaleDateString('sv-SE',{timeZone:'Asia/Tokyo'}); // YYYY-MM-DD in JST
   const todayTrip = tripDays.find(t=>t.date===today);
   const banner = document.getElementById('todayBanner');
   if(todayTrip){
