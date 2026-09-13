@@ -59,7 +59,7 @@
 | Day 1 | 福岡空港 → IX RENTAL 福岡機場店（取車）→ 中今旅館 |
 | Day 2 | 中今旅館 →（步行早餐 山水水出珈琲）→ 糸島環線（一蘭の森・工房とったん・箱島神社・夫婦岩 二見ヶ浦）→ 中今旅館 |
 | Day 3 | 中今旅館 → 食堂おわん → 太宰府（星巴克）→ 柳川松濤園・藩主立花邸（鰻魚飯午餐）→ 熊本之門酒店 → Bic Camera（熊本駅）|
-| Day 4 | 熊本之門酒店 → 熊本城 → 城彩苑 →（下午待定）→ 熊本之門酒店 |
+| Day 4 | 熊本之門酒店 → 熊本城 → 城彩苑 → 上通・下通商店街 → 熊本之門酒店 |
 | Day 5 | 熊本之門酒店 → 阿蘇（草千里・米塚・道の駅・大觀峰）→ やまなみハイウェイ → Super Hotel 別府駅前 → グローバルタワー（夜景）|
 | Day 6 | Super Hotel 別府駅前 → 別府地獄めぐり（鐵輪・柴石 7 地獄）→ 九重夢大吊橋 → 由布院 → 明礬 → Super Hotel 別府駅前 → 竹瓦温泉 |
 | Day 7 | Super Hotel 別府駅前 → 天神（藍瓶）→ IX RENTAL 福岡機場店還車 → 福岡空港（免稅店買伴手禮）|
@@ -216,7 +216,7 @@
 | 3 | **太宰府** | 太宰府駐車センター | **¥500 一次**（入退場一律）| 850 台、8:00–17:00。**連假 10:00 後易滿**，我們排 9:00 到剛好 |
 | 3 | **柳川 松濤園・立花邸** | 園區專用 | **免費** | 台數未公布 |
 | 3・4 | **熊本之門酒店** | ⚠️ **飯店無停車場** | 附近 Times 約 30 分 ¥200<br>**24 hr 上限 ¥1,100–1,200** | Times JR熊本駅ビル第3（步行 2 分）／九州労働金庫熊本駅支店（2 分）／熊本駅前第4（3 分）<br>⚠️ **地下車位夜間關閉、無法取車** |
-| 4 | **熊本城・城彩苑** | 城彩苑駐車場 | **2026/4/1 改制：2 hr ¥400，之後每 hr ¥200** | 我們停約 3.5 hr ≈ **¥800** |
+| 4 | **熊本城・城彩苑・上通下通** | 城彩苑駐車場 | **2026/4/1 改制：2 hr ¥400，之後每 hr ¥200** | 停到傍晚約 8 hr ≈ **¥1,600**，下午走路去上通・下通 |
 | | ↳ 備案 | 二之丸・三之丸駐車場 | — | 4–10 月 8:00–18:30；城彩苑滿了停這，**有免費接駁巴士**（10–15 分一班）|
 | 3・4 | **西松屋 熊本江越店**（想到再去）| 附設 28 台 | **免費** | 9:00–20:00 |
 | 5 | **草千里** | 草千里駐車場 | **¥500/日** | 2024/7 起改**自動攝影記錄 + 後付制**（無人閘門，別以為沒收費就開走）|
@@ -520,7 +520,7 @@
 | **馬肉商品** | 馬肉味噌、馬肉ジャーキー、馬刺し醬油 | 城彩苑、熊本駅物產館 |
 | **いきなり団子（真空版）** | 地瓜紅豆糕禮盒 | 城彩苑、熊本駅 |
 | **誠味屋 陣太鼓** | 紅豆羊羹名菓 | 城彩苑、熊本駅 |
-| **くまモン周邊** | 玩偶、文具、零食 | 城彩苑「くまモンスクエア」、機場 |
+| **くまモン周邊** | 玩偶、文具、零食 | 鶴屋百貨 東館 1F「くまモンスクエア」、城彩苑、機場 |
 | **球磨燒酎** | 米焼酎，送禮佳品 | 熊本駅物產館 |
 | **天草鹽** / **阿蘇牛乳製品** | 餅乾、起司 | 道の駅 阿蘇 |
 
@@ -542,7 +542,7 @@
 | Day | 採買重點 |
 |---|---|
 | Day 2 | 工房とったん 買「またいちの塩」花藻塩；一蘭の森 限定拉麵伴手禮 |
-| Day 4 | 城彩苑 採買熊本伴手禮（馬肉、陣太鼓、くまモン）|
+| Day 4 | 城彩苑 採買熊本伴手禮（馬肉、陣太鼓）；下午上通・下通、鶴屋 くまモンスクエア |
 | Day 5 | 道の駅 阿蘇（阿蘇牛乳製品）；別府站買湯花 |
 | Day 6 | 由布院湯之坪商店街（B-speak、Snoopy）；明礬湯之里補湯花；岡本屋當天現買布丁 |
 | Day 3 | **Bic Camera 熊本（アミュプラザ）**照下方必買清單買 |
@@ -689,13 +689,14 @@
 
 ### Day 4｜9/22（二・國民休日）熊本市區｜🏨 熊本之門酒店
 
-**路線**：熊本之門酒店 → 熊本城 → 城彩苑（櫻之馬場）→（下午待定）→ 熊本之門酒店
+**路線**：熊本之門酒店 → 熊本城 → 城彩苑（櫻之馬場）→ 上通・下通商店街 → 熊本之門酒店
 
 | 順序 | Spot | 地址 |
 |---|---|---|
 | 1 | **熊本城**<br>🇯🇵 熊本城<br>🇬🇧 Kumamoto Castle | 熊本市中央区本丸 1-1（860-0002）|
 | 2 | **櫻之馬場 城彩苑**<br>🇯🇵 桜の馬場 城彩苑<br>🇬🇧 Sakura-no-baba Josaien | 熊本市中央区二之丸 1-1-2（860-0008）|
-| 3 | **熊本之門酒店**<br>🇯🇵 ホテル ザ ゲート熊本<br>🇬🇧 Hotel The Gate Kumamoto | 熊本市西区春日 1-14-1（860-0047）|
+| 3 | **上通・下通商店街**<br>🇯🇵 上通アーケード／下通アーケード<br>🇬🇧 Kamitori / Shimotori Arcade | 熊本市中央区上通町／下通（通町筋南北兩側）<br>上通約 586 m、下通約 511 m |
+| 4 | **熊本之門酒店**<br>🇯🇵 ホテル ザ ゲート熊本<br>🇬🇧 Hotel The Gate Kumamoto | 熊本市西区春日 1-14-1（860-0047）|
 
 **預估車程**（括號為**連假 ×1.5**）：飯店 → 熊本城 3 km / 10 分（15 分）；不想找停車位可改搭市電 A 系統（熊本駅前 → 熊本城・市役所前 約 10 分）
 
@@ -707,12 +708,16 @@
 | 8:30 | 出發（連假停車位難找，早點到熊本城）|
 | 9:00 | **熊本城**（8/13 震後重新開園；天守閣 + 特別見學通路）｜9:00–17:00，最終入園 16:00，¥800 |
 | 11:00 | **城彩苑** 午餐 + 伴手禮（**わくわく座休館中**，櫻之小路正常）|
-| 13:00 | **下午待定** |
+| 13:00 | 從城彩苑走到**上通・下通商店街**（約 9–15 分；車繼續停城彩苑）|
+| 13:15 | **上通 → 下通**慢慢逛：兩條拱廊商店街中間隔著通町筋（市電），過馬路就接上；**鶴屋百貨**（10:00–19:00）、鶴屋東館 1F 的 **くまモンスクエア**（10:00–19:00）、上通東側的 **上乃裏通り**（町家老屋改建的咖啡店，⚠️ 各店營業時間不一）|
+| 17:00 | 走回城彩苑取車，開回飯店（約 10 分）；不想走回去也可以從辛島町搭市電 A 系統到熊本駅前（約 13 分），但車就要另外取 |
 | 19:00 | 晚餐：**勝烈亭 新市街本店** / **天外天 本店**（熊本豚骨拉麵元祖）|
 
 > 💴 熊本城 ¥800（高中以上）
 
-> 🅿️ 城彩苑駐車場 **2 hr ¥400、之後每 hr ¥200**（2026/4/1 改制）— 詳見 [停車場一覽](#-停車場一覽)
+> 🛍️ 熊本地震後，上通・下通已沒有封閉或施工區段，多數店家恢復營業（[note 2026/8/6](https://note.com/bintang1955/n/n3f96ec7591a3)）；鶴屋、くまモンスクエア營業時間見 [熊本市觀光ガイド](https://kumamoto-guide.jp/spots/detail/367)、[鶴屋營業案內](https://www.tsuruya-dept.co.jp/eigyou/index.html)。
+
+> 🅿️ 城彩苑駐車場 **2 hr ¥400、之後每 hr ¥200**（2026/4/1 改制），停到 17:00 約 ¥1,600；⚠️ 停車場幾點關門未查到，出發前確認 — 詳見 [停車場一覽](#-停車場一覽)
 
 > 🔌 **附近 Bic Camera／西松屋（臨時想去）**：アミュプラザくまもと店就在飯店旁（10:00–20:00）；[コジマ×ビックカメラ 熊本店](https://www.kojima.net/shop/shoplist/kumamoto.html)（熊本市南区日吉 1-7-7），10:00–20:00，免費停車 255 台，熊本駅開車約 15 分；[西松屋 熊本江越店](https://www.24028.jp/tenpo/detail.php?doc=397)（熊本市南区江越 1-17-7），9:00–20:00，免費停車 28 台（⚠️ 飯店開車多久未查證）。
 
@@ -862,7 +867,7 @@
 | 1 | 福岡空港 → IX RENTAL（取車）→ 中今旅館 | [Google Maps](https://www.google.com/maps/dir/Fukuoka+Airport,+778-1+Shimousui,+Hakata+Ward,+Fukuoka,+812-0003,+Japan/IX+RENTAL,+2-4-31+Nishitsukiguma,+Hakata+Ward,+Fukuoka,+812-0058,+Japan/6-26+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/) |
 | 2 | 中今旅館 → 一蘭の森 → 工房とったん → 箱島神社 → 夫婦岩 二見ヶ浦 → 中今旅館 | [Google Maps](https://www.google.com/maps/dir/6-26+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/Ichiran+no+Mori,+256-10+Shima+Matsukuma,+Itoshima,+Fukuoka+819-1304,+Japan/Kobo+Tottan+Mataichi+no+Shio,+3757+Shima+Keya,+Itoshima,+Fukuoka+819-1332,+Japan/Hakoshima+Shrine,+Shima+Sakurai,+Itoshima,+Fukuoka+819-1304,+Japan/Meoto+Iwa+Futamigaura,+Shima+Sakurai,+Itoshima,+Fukuoka+819-1304,+Japan/6-26+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/) |
 | 3 | 中今旅館 → 食堂おわん → 星巴克太宰府表參道 → 柳川松濤園・藩主立花邸 → 熊本之門酒店 | [Google Maps](https://www.google.com/maps/dir/6-26+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/9-20+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/Starbucks+Coffee+Dazaifu+Tenmangu+Omotesando,+3-2-43+Saifu,+Dazaifu,+Fukuoka+818-0117,+Japan/Yanagawa+Ohana,+1+Shingaimachi,+Yanagawa,+Fukuoka+832-0069,+Japan/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/) |
-| 4 | 熊本之門酒店 → 熊本城 → 城彩苑 → 熊本之門酒店 | [Google Maps](https://www.google.com/maps/dir/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/Kumamoto+Castle,+1-1+Honmaru,+Chuo+Ward,+Kumamoto,+860-0002,+Japan/Sakura-no-baba+Josaien,+1-1-2+Ninomaru,+Chuo+Ward,+Kumamoto,+860-0008,+Japan/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/) |
+| 4 | 熊本之門酒店 → 熊本城 → 城彩苑 → 上通 → 下通 → 熊本之門酒店 | [Google Maps](https://www.google.com/maps/dir/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/Kumamoto+Castle,+1-1+Honmaru,+Chuo+Ward,+Kumamoto,+860-0002,+Japan/Sakura-no-baba+Josaien,+1-1-2+Ninomaru,+Chuo+Ward,+Kumamoto,+860-0008,+Japan/Kamitori+Arcade,+Kamitoricho,+Chuo+Ward,+Kumamoto,+Japan/Shimotori+Arcade,+Shimotori,+Chuo+Ward,+Kumamoto,+Japan/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/) |
 | 5 | 熊本之門酒店 → 草千里 → 米塚 → 道の駅 阿蘇 → 大觀峰 → Super Hotel 別府駅前 | [Google Maps](https://www.google.com/maps/dir/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/Kusasenrigahama,+Akamizu,+Aso,+Kumamoto+869-2612,+Japan/Komezuka,+Otohime,+Aso,+Kumamoto+869-2225,+Japan/Michi-no-Eki+Aso,+1440-1+Kurokawa,+Aso,+Kumamoto+869-2225,+Japan/Daikanbo,+Yamada,+Aso,+Kumamoto+869-2313,+Japan/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/) |
 | 6 | Super Hotel 別府駅前 → 海地獄（鐵輪 5 地獄）→ 地獄蒸し工房 → 血の池地獄（柴石）→ 九重夢大吊橋 → 由布院駅 → 明礬 湯の里 → Super Hotel 別府駅前 | [Google Maps](https://www.google.com/maps/dir/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/Umi+Jigoku,+559-1+Kannawa,+Beppu,+Oita,+Japan/Kannawa+Hot+Spring,+%E5%88%A5%E5%BA%9C%E5%B8%82%E5%A4%A7%E5%AD%97%E9%89%84%E8%BC%AA,+212,+Beppu,+Oita+874-0041,+Japan/Chinoike+Jigoku,+Noda,+Beppu,+Oita,+Japan/Kokonoe+Yume+Otsurihashi,+1208+Tano,+Kokonoe,+Kusu+District,+Oita+879-4911,+Japan/Yufuin+Station,+Yufuin,+Yufu,+Oita,+Japan/Myoban+Yunosato,+6+Myoban,+Beppu,+Oita,+Japan/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/) |
 | 7 | Super Hotel 別府駅前 → 天神（藍瓶）→ IX RENTAL（還車）→ 福岡空港 | [Google Maps](https://www.google.com/maps/dir/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/Blue+Bottle+Coffee+Fukuoka+Tenjin+Cafe,+2-2-20+Tenjin,+Chuo+Ward,+Fukuoka,+Japan/IX+RENTAL,+2-4-31+Nishitsukiguma,+Hakata+Ward,+Fukuoka,+812-0058,+Japan/Fukuoka+Airport,+778-1+Shimousui,+Hakata+Ward,+Fukuoka,+812-0003,+Japan/) |
@@ -1026,6 +1031,7 @@
 - [別府地獄組合（營業時間）](https://www.beppu-jigoku.com/)／[別府地獄めぐり（Wikipedia）](https://ja.wikipedia.org/wiki/%E5%88%A5%E5%BA%9C%E5%9C%B0%E7%8D%84%E3%82%81%E3%81%90%E3%82%8A)
 - [別府市觀光 別府・由布院路線](https://beppu-tourism.com/course/19_beppu_yufuin/)
 - [西松屋 熊本江越店](https://www.24028.jp/tenpo/detail.php?doc=397)
+- [上通（熊本県観光サイト）](https://kumamoto.guide/spots/detail/12376)／[下通（熊本市観光ガイド）](https://kumamoto-guide.jp/spots/detail/107)／[くまモンスクエア](https://kumamoto-guide.jp/spots/detail/367)
 - [グローバルタワー（B-Con Plaza）](https://www.b-conplaza.jp/visiter/globaltower/)
 - [竹瓦温泉（別府市）](https://www.city.beppu.oita.jp/sisetu/shieionsen/detail4.html)
 - [明礬温泉 湯の里](http://yuno-hana.jp/)
