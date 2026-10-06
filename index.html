@@ -341,17 +341,19 @@
   <div class="sakura-deco s3"><svg><use href="#sakura"/></svg></div>
   <div class="sakura-deco s4"><svg><use href="#sakura"/></svg></div>
   <h1>福岡九州 7 日自駕</h1>
-  <p class="sub">2 人｜福岡 → 熊本 → 別府｜旅行紀錄</p>
+  <p class="sub">2 人｜福岡 → 熊本 → 別府</p>
   <span class="dates">2026 / 09 / 19 (六) — 09 / 25 (五)</span>
 </header>
 
 <nav class="tabs" id="mainTabs" role="tablist">
   <button class="tab active" data-tab="home">🌸 總覽</button>
   <button class="tab" data-tab="daily">📅 每日行程</button>
+  <button class="tab" data-tab="actual">✅ 實際行程</button>
   <button class="tab" data-tab="food">🍴 美食地圖</button>
-  <button class="tab" data-tab="shopping">🛒 採買結果</button>
+  <button class="tab" data-tab="shopping">🛍️ 必買清單</button>
   <button class="tab" data-tab="info">🎟️ 重要資訊</button>
   <button class="tab" data-tab="driving">🚦 開車須知</button>
+  <button class="tab" data-tab="prep">📋 行前準備</button>
   <button class="tab" data-tab="fx">💱 匯率</button>
   <button class="tab" data-tab="emergency">📞 緊急聯絡</button>
 </nav>
@@ -364,29 +366,67 @@
   <div id="todayBanner"></div>
 
   <div class="card">
-    <h2>📝 旅行紀錄</h2>
-    <div class="alert ok">行程已經走完，這頁記錄<b>實際走過的版本</b>。開車須知、市區交通、美食地圖、伴手禮等資訊保留下來，之後可以參考。</div>
-    <div class="alert info">🚗 IX RENTAL 不接受改取／還車時間：9/19 訂單時間沒改，晚上約 19:00 照樣取到車；9/25 照訂單一早還車（9:50 還完），之後搭門市接駁車到機場，再搭地鐵進天神。</div>
+    <h2>✅ 行程已走完</h2>
+    <div class="alert ok">這頁其他內容是出發前的規劃，原樣保留。實際怎麼走、買了什麼、跟計畫哪裡不同，整理在 <a href="#" data-go="actual"><b>✅ 實際行程</b></a>。</div>
+  </div>
+
+  <div class="card">
+    <h2>🚨 出發前最重要：改 IX RENTAL 取／還車時間</h2>
+    <div class="alert danger">
+      <b>訂單時間跟班機完全對不上</b>，必須聯絡供應商改，否則會「沒車可開」或「沒地方還車」。<br>
+      📞 <a href="tel:+818032261688"><b>+81-80-3226-1688</b></a>（IX RENTAL 福岡機場店）
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>項目</th><th>訂單寫</th><th>實際要</th></tr></thead>
+      <tbody>
+        <tr><td>🟥 9/19 取車</td><td>10:00</td><td><b>18:45–19:30</b></td></tr>
+        <tr><td>🟥 9/25 還車</td><td>10:00</td><td><b>14:30–15:00</b></td></tr>
+      </tbody>
+    </table></div>
+    <h3>💬 聯絡時要談的內容（走 LINE）</h3>
+    <ol>
+      <li>報 Klook 訂單編號（<b>見 Klook App</b>；供應商 IX RENTAL）<br><span style="color:var(--muted);font-size:12px">日文：予約時間の変更をお願いしたいです</span></li>
+      <li>「班機 CI0128 18:05 落地，9/19 取車改為 <b>18:45–19:30</b>」</li>
+      <li>「9/25 還車改為 <b>14:30 或 15:00</b>」</li>
+      <li>確認門市營業時間、機場接駁方式、兩位駕駛登記、ETC + GPS 領取</li>
+    </ol>
+    <div class="alert danger">⚠️ 訂單標示<b>「不可更改」</b>，<b>2026/9/18 10:00 前可免費取消</b>。協調不成就得在期限前重訂別家 — 不要拖過 9/18。</div>
+  </div>
+
+  <div class="card">
+    <h2>⚠️ 必看：九州 5 連休警告</h2>
+    <p><b>2026/9/19–9/23 是日本 11 年來首次「Silver Week 5 連休」</b></p>
+    <ul>
+      <li>9/19 (六)、9/20 (日) 週末</li>
+      <li>9/21 (一) 敬老日</li>
+      <li>9/22 (二) 國民休日（11 年來首見）</li>
+      <li>9/23 (三) 秋分日</li>
+    </ul>
+    <div class="alert warn">
+      🚗 高速塞車，車程抓平常 <b>1.5 倍</b><br>
+      🍴 太宰府、柳川、由布院人爆滿<br>
+      ⛽ 高速 SA/PA、加油站可能排隊
+    </div>
   </div>
 
   <div class="card">
     <h2>🗺️ 七日路線速覽</h2>
     <div class="table-wrap"><table>
-      <thead><tr><th>Day</th><th>實際路線</th></tr></thead>
+      <thead><tr><th>Day</th><th>路線</th></tr></thead>
       <tbody>
-        <tr><td>Day 1</td><td>福岡空港 → IX RENTAL 取車 → <b>中今旅館</b> → やきとり 風林火山（晚餐）</td></tr>
-        <tr><td>Day 2</td><td>山水水出珈琲 → 糸島（一蘭の森・とったん・箱島神社）→ 天神（笑樂・藍瓶・Bic Camera）→ 櫛田神社 → 中洲屋台 → 牛角</td></tr>
-        <tr><td>Day 3</td><td>太宰府（星巴克・天滿宮）→ 柳川（万榮堂 鰻魚飯）→ 有明海眺望堤防 → <b>熊本之門酒店</b> → しゃぶしゃぶ美山</td></tr>
-        <tr><td>Day 4</td><td>RHC CAFE → 熊本城 → 城彩苑 → 下通 → KINH DO 金堂 → 永尾剱神社 → 勝烈亭</td></tr>
-        <tr><td>Day 5</td><td>米塚 → 草千里（騎馬）→ 中岳火口 → 大觀峰 → 九重"夢"大吊橋 → <b>Super Hotel 別府駅前</b> → 一蘭 大分弁天店</td></tr>
-        <tr><td>Day 6</td><td>由布院（金鱗湖・湯の坪街道）→ 別府地獄めぐり 7 個 → ヤマダデンキ → 焼肉 円円</td></tr>
-        <tr><td>Day 7</td><td>別府 → IX RENTAL 還車 → 福岡空港 → 地鐵到天神（PARCO・SEAM・Bic Camera）→ 機場</td></tr>
+        <tr><td>Day 1</td><td>福岡空港 → IX RENTAL 取車 → <b>中今旅館</b></td></tr>
+        <tr><td>Day 2</td><td>中今旅館 →（步行早餐）→ 糸島（一蘭の森・とったん・箱島神社・二見ヶ浦）→ 中今旅館</td></tr>
+        <tr><td>Day 3</td><td>中今旅館 → 太宰府（星巴克）→ 柳川松濤園・藩主立花邸（鰻魚飯午餐）→ <b>熊本之門酒店</b> → Bic Camera（熊本駅）</td></tr>
+        <tr><td>Day 4</td><td>熊本 → 熊本城 → 城彩苑 → 上通・下通商店街 → 熊本</td></tr>
+        <tr><td>Day 5</td><td>熊本 → 阿蘇（草千里・米塚・道の駅・大觀峰）→ やまなみハイウェイ → <b>Super Hotel 別府駅前</b> → グローバルタワー（夜景）</td></tr>
+        <tr><td>Day 6</td><td>Super Hotel → 別府地獄めぐり（7 地獄）→ 九重夢大吊橋 → 由布院 → 明礬 → 竹瓦温泉</td></tr>
+        <tr><td>Day 7</td><td>Super Hotel → 天神（藍瓶）→ IX RENTAL 還車 → 機場</td></tr>
       </tbody>
     </table></div>
   </div>
 
   <div class="card">
-    <h2>📌 訂單一覽</h2>
+    <h2>📌 已確認訂單</h2>
     <div class="table-wrap"><table>
       <tbody>
         <tr><td>✈️ 機票</td><td>CI 0128 / CI 0117（訂位代號見 App）</td></tr>
@@ -428,25 +468,31 @@
       <h2>抵達日｜入境取車進博多</h2>
       <div class="day-meta">
         <span>🏨 中今旅館</span>
+        <span>🚗 ~30 分</span>
       </div>
-      <div class="day-route">福岡空港 → IX RENTAL（取車）→ 中今旅館 → やきとり 風林火山 5号店</div>
+      <div class="day-route">福岡空港 → IX RENTAL（取車）→ 中今旅館</div>
     </div>
 
+    <div class="alert danger">⚠️ 中今旅館 <b>入住只到 21:00</b>，且取車時間原訂 10:00 需事先改成傍晚 — 今晚全靠這兩件事。</div>
+
     <div class="card">
-      <h2>📍 實際停靠</h2>
+      <h2>📍 停靠點</h2>
       <div class="stops">
-        <div class="stop"><div class="n">1</div><div class="info"><b>福岡空港 國際線航廈</b><span>🇯🇵 福岡空港 国際線ターミナル<br>福岡市博多区下臼井 778-1｜18:05 CI0128 抵達</span></div></div>
-        <div class="stop"><div class="n">2</div><div class="info"><b>IX RENTAL 福岡機場店（取車）</b><span>🇯🇵 アイエックスレンタカー 福岡支店<br>博多区西月隈 2-4-31｜到「一般車」乘降場打電話叫接駁，約 19:00 取車</span></div></div>
-        <div class="stop"><div class="n">3</div><div class="info"><b>中今旅館</b><span>🇯🇵 ゲストハウス中今<br>博多区冷泉町 6-26</span></div></div>
-        <div class="stop"><div class="n">4</div><div class="info"><b>やきとり 風林火山 5号店（晚餐・燒鳥）</b><span>博多区博多駅前 2-3-26｜JR 博多站步行約 2 分｜<a target="_blank" rel="noopener" href="https://tabelog.com/fukuoka/A4001/A400101/40024712/">tabelog</a></span></div></div>
+        <div class="stop"><div class="n">1</div><div class="info"><b>福岡空港 國際線航廈</b><span>🇯🇵 福岡空港 国際線ターミナル｜🇬🇧 Fukuoka Airport Int'l Terminal<br>福岡市博多区下臼井 778-1</span></div></div>
+        <div class="stop"><div class="n">2</div><div class="info"><b>IX RENTAL 福岡機場店</b><span>🇯🇵 アイエックスレンタカー 福岡支店｜🇬🇧 IX Rental Fukuoka Airport<br>🇬🇧 2-4-31 Nishitsukiguma, Hakata-ku<br>博多区西月隈 2-4-31｜📞 +81-80-3226-1688</span></div></div>
+        <div class="stop"><div class="n">3</div><div class="info"><b>中今旅館（ゲストハウス中今）</b><span>🇯🇵 ゲストハウス中今｜🇬🇧 GuestHouse Nakaima<br>🇬🇧 6-26 Reisenmachi, Hakata-ku<br>博多区冷泉町 6-26｜📞 +81-92-261-5070</span></div></div>
       </div>
-      <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Fukuoka+Airport,+778-1+Shimousui,+Hakata+Ward,+Fukuoka,+812-0003,+Japan/IX+RENTAL,+2-4-31+Nishitsukiguma,+Hakata+Ward,+Fukuoka,+812-0058,+Japan/6-26+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/Yakitori+Fuurinkazan+5,+2-3-26+Hakataekimae,+Hakata+Ward,+Fukuoka,+Japan/">🗺️ 開啟 Google Maps 路線</a>
+      <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Fukuoka+Airport,+778-1+Shimousui,+Hakata+Ward,+Fukuoka,+812-0003,+Japan/IX+RENTAL,+2-4-31+Nishitsukiguma,+Hakata+Ward,+Fukuoka,+812-0058,+Japan/6-26+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/">🗺️ 開啟 Google Maps 路線</a>
     </div>
 
-    <div class="alert info">📝 IX RENTAL 不接受改時間，訂單上的 10:00 沒改成，晚上到門市照樣取到車。</div>
-
     <div class="card">
-      <h2>🚌 機場 → 門市接駁</h2>
+      <h2>⏰ 時間軸</h2>
+      <div class="timeline-row"><div class="t">18:05</div><div class="e">CI0128 抵 FUK 國際線</div></div>
+      <div class="timeline-row"><div class="t">18:35</div><div class="e">出航廈 → <b>1F Shuttle Bus 標識往右</b> → <b>A3 出口</b>左側人行道 → <b>「一般車」乘降場（15 號柱）</b>打電話叫接駁</div></div>
+      <div class="timeline-row"><div class="t">19:00</div><div class="e"><b>抵 IX RENTAL 取車</b>（門市關門時間待確認）📞 +81-80-3226-1688</div></div>
+      <div class="timeline-row"><div class="t">19:30</div><div class="e">取車完畢，開往中今旅館</div></div>
+      <div class="timeline-row"><div class="t">19:50</div><div class="e"><b>Check-in 中今旅館</b>（已告知抵達 20:00–21:00）</div></div>
+      <div class="timeline-row"><div class="t">20:30</div><div class="e">晚餐：博多もつ鍋 おおやま / 水炊き 若杉（步行 7 分）</div></div>
       <div class="guide-imgs">
         <figure class="guide-fig">
           <a href="images/ix-rental-shuttle-1.jpg" target="_blank" rel="noopener"><img src="images/ix-rental-shuttle-1.jpg" alt="Step 1：國際線 1F 找 Shuttle Bus 標識，往右直走" loading="lazy"></a>
@@ -462,7 +508,11 @@
         </figure>
       </div>
       <p style="font-size:12px;color:var(--text-soft);margin:8px 0 0">☝️ 落地後照這三張走；點圖可放大。📞 <a href="tel:+818032261688">+81-80-3226-1688</a></p>
+
+      <div class="alert info">🅿️ 旅館停車 ¥500/日、<b>無法預約</b>，現場問；備案 <b>トラストパーク櫛田神社前</b>（冷泉町 8-4，步行 3 分，12hr ¥1,400）或 Times（夜間上限 ¥600）。<br>🚿 00:00–07:00 廚房・客廳・淋浴間停用；全館禁菸。</div>
     </div>
+
+    <div class="alert info">🔌 <b>附近 Bic Camera（臨時想去）</b>：天神 1 号館（今泉 1-25-1）／2 号館（天神 2-4-5），10:00–21:00，冷泉町開車 10–15 分。⚠️ 今晚 19:50 才 check-in、21:00 前要辦好入住，實際很趕。</div>
 
     <div class="hotel-eat" data-eat="fukuoka"></div>
   </div>
@@ -471,33 +521,41 @@
   <div class="day-content" data-day="2" hidden>
     <div class="day-hero">
       <span class="day-num">DAY 2 · 9/20 (日)</span>
-      <h2>糸島 → 天神 → 中洲</h2>
+      <h2>糸島半島環線</h2>
       <div class="day-meta">
         <span>🏨 中今旅館</span>
+        <span>🚗 環線 ~85 km</span>
+        <span>⏱️ ~4.5 小時</span>
       </div>
-      <div class="day-route">山水水出珈琲 → 一蘭の森 → 工房とったん → 箱島神社 → 天神（笑樂・藍瓶・Bic Camera）→ 中今旅館 → 櫛田神社 → 中洲屋台 → 牛角</div>
+      <div class="day-route">早餐 山水水出珈琲（步行）→ 中今旅館 → 一蘭の森 → 工房とったん → 箱島神社 → 夫婦岩 二見ヶ浦 → 中今旅館</div>
     </div>
 
     <div class="card">
-      <h2>📍 實際停靠</h2>
+      <h2>📍 停靠點</h2>
       <div class="stops">
-        <div class="stop"><div class="n">☕</div><div class="info"><b>山水水出珈琲（早餐）</b><span>博多区下川端町 3-1 博多リバレイン 1F｜旅館步行 3–5 分</span></div></div>
-        <div class="stop"><div class="n">1</div><div class="info"><b>一蘭の森</b><span>糸島市志摩松隈 256-10</span></div></div>
-        <div class="stop"><div class="n">2</div><div class="info"><b>工房とったん（またいちの塩）</b><span>糸島市志摩芥屋 3757</span></div></div>
-        <div class="stop"><div class="n">3</div><div class="info"><b>箱島神社</b><span>糸島市志摩桜井</span></div></div>
-        <div class="stop"><div class="n">4</div><div class="info"><b>天神</b><span>車停天神中央公園的停車場</span></div></div>
-        <div class="stop"><div class="n">5</div><div class="info"><b>博多もつ鍋 笑樂 本店（晚餐）</b><span>中央区西中洲 11-4｜もつ鍋，加點了馬肉</span></div></div>
-        <div class="stop"><div class="n">6</div><div class="info"><b>藍瓶咖啡 福岡天神</b><span>🇯🇵 ブルーボトルコーヒー 福岡天神カフェ<br>中央区天神 2-2-20｜買了天神限定杯</span></div></div>
-        <div class="stop"><div class="n">7</div><div class="info"><b>Bic Camera 天神 1・2 号館</b><span>1 号館 今泉 1-25-1／2 号館 天神 2-4-5｜買了吹風機、刮鬍刀（見<a href="#" data-go="shopping">採買結果</a>）</span></div></div>
-        <div class="stop"><div class="n">8</div><div class="info"><b>中今旅館</b><span>開回旅館停車</span></div></div>
-        <div class="stop"><div class="n">9</div><div class="info"><b>櫛田神社（步行）</b><span>中今旅館步行約 3 分</span></div></div>
-        <div class="stop"><div class="n">10</div><div class="info"><b>中洲屋台（步行）</b><span>中洲</span></div></div>
-        <div class="stop"><div class="n">11</div><div class="info"><b>牛角（燒肉）</b><span>中洲 Gate's 旁</span></div></div>
+        <div class="stop"><div class="n">☕</div><div class="info"><b>山水水出珈琲（早餐・步行）</b><span>🇯🇵 山水水出珈琲｜🇬🇧 Sansui Mizudashi Coffee<br>📞 092-282-0101｜8:00–16:30<br>博多区下川端町 3-1 博多リバレイン 1F｜步行 3–5 分</span></div></div>
+        <div class="stop"><div class="n">1</div><div class="info"><b>一蘭の森</b><span>🇯🇵 一蘭の森｜🇬🇧 Ichiran no Mori<br>糸島市志摩松隈 256-10</span></div></div>
+        <div class="stop"><div class="n">2</div><div class="info"><b>工房とったん（またいちの塩）</b><span>🇯🇵 またいちの塩 工房とったん｜🇬🇧 Kobo Tottan<br>糸島市志摩芥屋 3757</span></div></div>
+        <div class="stop"><div class="n">3</div><div class="info"><b>箱島神社</b><span>🇯🇵 箱島神社｜🇬🇧 Hakoshima Shrine<br>糸島市志摩桜井</span></div></div>
+        <div class="stop"><div class="n">4</div><div class="info"><b>夫婦岩 二見ヶ浦</b><span>🇯🇵 桜井二見ヶ浦（夫婦岩）｜🇬🇧 Sakurai Futamigaura<br>糸島市志摩桜井</span></div></div>
       </div>
-      <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/6-26+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/Ichiran+no+Mori,+256-10+Shima+Matsukuma,+Itoshima,+Fukuoka+819-1304,+Japan/Kobo+Tottan+Mataichi+no+Shio,+3757+Shima+Keya,+Itoshima,+Fukuoka+819-1332,+Japan/Hakoshima+Shrine,+Shima+Sakurai,+Itoshima,+Fukuoka+819-1304,+Japan/Hakata+Motsunabe+Shoraku+Honten,+11-4+Nishinakasu,+Chuo+Ward,+Fukuoka,+Japan/Blue+Bottle+Coffee+Fukuoka+Tenjin+Cafe,+2-2-20+Tenjin,+Chuo+Ward,+Fukuoka,+Japan/Bic+Camera+Tenjin+2,+2-4-5+Tenjin,+Chuo+Ward,+Fukuoka,+Japan/6-26+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/Kushida+Shrine,+Hakata+Ward,+Fukuoka,+Japan/">🗺️ 開啟 Google Maps 路線</a>
+      <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/6-26+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/Ichiran+no+Mori,+256-10+Shima+Matsukuma,+Itoshima,+Fukuoka+819-1304,+Japan/Kobo+Tottan+Mataichi+no+Shio,+3757+Shima+Keya,+Itoshima,+Fukuoka+819-1332,+Japan/Hakoshima+Shrine,+Shima+Sakurai,+Itoshima,+Fukuoka+819-1304,+Japan/Meoto+Iwa+Futamigaura,+Shima+Sakurai,+Itoshima,+Fukuoka+819-1304,+Japan/6-26+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/">🗺️ 開啟 Google Maps 路線</a>
     </div>
 
-    <div class="alert info">📝 原本排的夫婦岩 二見ヶ浦沒去，箱島神社之後就回福岡市區。</div>
+    <div class="card">
+      <h2>⏰ 時間軸</h2>
+      <div class="timeline-row"><div class="t">8:30</div><div class="e">旅館步行到 <b>山水水出珈琲</b> 吃早餐（8:00 開）</div></div>
+      <div class="timeline-row"><div class="t">10:00</div><div class="e">回旅館取車出發（<b>比原訂晚 30 分</b> — 夕陽 18:21，早去只會在海邊空等）</div></div>
+      <div class="timeline-row"><div class="t">11:15</div><div class="e"><b>一蘭の森</b> 拉麵午餐（連假排隊抓 30 分）</div></div>
+      <div class="timeline-row"><div class="t">13:00</div><div class="e"><b>工房とったん</b> 海邊鹽工房＋咖啡（ゴハンヤイタル），可久留</div></div>
+      <div class="timeline-row"><div class="t">15:00</div><div class="e"><b>箱島神社</b> 池中小島弁財天</div></div>
+      <div class="timeline-row"><div class="t">16:00</div><div class="e"><b>夫婦岩 二見ヶ浦</b> — 先卡停車位，周邊咖啡消磨到 <b>日落 18:21</b> 拍白鳥居夕陽</div></div>
+      <div class="timeline-row"><div class="t">18:40</div><div class="e">回福岡市區（連假車程抓 1 hr 25）</div></div>
+      <div class="timeline-row"><div class="t">20:15</div><div class="e">晚餐：博多もつ鍋 笑樂 / やま中（不訂位，晚到可能要等）</div></div>
+      <div class="alert info">🌅 <b>9/20 糸島日落 18:21</b>（天全黑 18:51）。三天裡最寬鬆的一天，白天不用趕。</div>
+    </div>
+
+    <div class="alert info">🔌 <b>順路 Bic Camera（臨時想去）</b>：<a target="_blank" rel="noopener" href="https://www.kojima.net/shop/shoplist/fukuokanishi.html">コジマ×ビックカメラ 福岡西店</a>（福岡市西区橋本 1-12-3），10:00–20:00，免費停車 189 台，往返糸島順路；回程經過天神的話，天神 1・2 号館開到 21:00。</div>
 
     <div class="hotel-eat" data-eat="fukuoka"></div>
   </div>
@@ -509,23 +567,46 @@
       <h2>福岡 → 太宰府 → 柳川 → 熊本</h2>
       <div class="day-meta">
         <span>🏨 熊本之門酒店</span>
+        <span>🚗 ~175 km</span>
       </div>
-      <div class="day-route">中今旅館 → 太宰府（星巴克・天滿宮）→ 柳川（万榮堂）→ 有明海眺望堤防 → 熊本之門酒店 → しゃぶしゃぶ美山</div>
+      <div class="day-route">中今旅館 → 食堂おわん → 星巴克太宰府 → 柳川松濤園・藩主立花邸（鰻魚飯午餐）→ 熊本之門酒店</div>
+    </div>
+
+    <div class="alert danger">🚨 <b>立花邸的蒸籠鰻魚飯只供應 11:00–15:00</b>，我們排 13:00 進場。出發前務必打 <a href="tel:+81944732217">0944-73-2217</a> 問 L.O. 時間與能否預約。</div>
+
+    <div class="card">
+      <h2>📍 停靠點</h2>
+      <div class="stops">
+        <div class="stop"><div class="n">1</div><div class="info"><b>食堂 おわん</b>（早餐）<span>🇯🇵 食堂 おわん｜🇬🇧 Shokudo Owan<br>博多区冷泉町 9-20 1F｜旅館步行 2 分｜📞 092-292-0409</span></div></div>
+        <div class="stop"><div class="n">2</div><div class="info"><b>星巴克 太宰府天滿宮表參道店</b><span>🇯🇵 スターバックス 太宰府天満宮表参道店｜🇬🇧 Starbucks Dazaifu Tenmangu Omotesando<br>太宰府市宰府 3-2-43｜隈研吾建築</span></div></div>
+        <div class="stop"><div class="n">3</div><div class="info"><b>柳川松濤園・藩主立花邸</b> — 蒸籠鰻魚飯（午餐）<span>🇯🇵 柳川藩主立花邸 御花（松濤園）｜🇬🇧 Yanagawa Ohana / Shotoen<br>🇬🇧 1 Shingaimachi, Yanagawa<br>柳川市新外町 1｜入園 ¥1,000｜園區餐廳 📞 0944-73-2217</span></div></div>
+        <div class="stop"><div class="n">4</div><div class="info"><b>熊本之門酒店</b><span>🇯🇵 ホテル ザ ゲート熊本｜🇬🇧 Hotel The Gate Kumamoto<br>🇬🇧 1-14-1 Kasuga, Nishi-ku<br>熊本市西区春日 1-14-1｜📞 +81-96-288-0170</span></div></div>
+        <div class="stop"><div class="n">5</div><div class="info"><b>Bic Camera アミュプラザくまもと店</b><span>🇯🇵 ビックカメラ アミュプラザくまもと店｜🇬🇧 Bic Camera Amu Plaza Kumamoto<br>西区春日 3-15-60 JR熊本白川ビル 1F・2F｜10:00–20:00｜飯店步行 2–5 分</span></div></div>
+      </div>
+      <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/6-26+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/9-20+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/Starbucks+Coffee+Dazaifu+Tenmangu+Omotesando,+3-2-43+Saifu,+Dazaifu,+Fukuoka+818-0117,+Japan/Yanagawa+Ohana,+1+Shingaimachi,+Yanagawa,+Fukuoka+832-0069,+Japan/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/">🗺️ 開啟 Google Maps 路線</a>
     </div>
 
     <div class="card">
-      <h2>📍 實際停靠</h2>
-      <div class="stops">
-        <div class="stop"><div class="n">1</div><div class="info"><b>7-11（早餐）</b><span>買飯糰路上吃</span></div></div>
-        <div class="stop"><div class="n">2</div><div class="info"><b>星巴克 太宰府天滿宮表參道店</b><span>🇯🇵 スターバックス 太宰府天満宮表参道店<br>太宰府市宰府 3-2-43｜隈研吾設計</span></div></div>
-        <div class="stop"><div class="n">3</div><div class="info"><b>太宰府天滿宮</b><span>門口跟御神牛拍照；參道吃梅ヶ枝餅（烤麻糬包紅豆餡）</span></div></div>
-        <div class="stop"><div class="n">4</div><div class="info"><b>万榮堂（午餐・鰻魚飯）</b><span>柳川市｜原本要吃的御花客滿，改吃這家</span></div></div>
-        <div class="stop"><div class="n">5</div><div class="info"><b>有明海眺望堤防</b><span>柳川沿海｜Google Maps 搜「有明海眺望堤防」</span></div></div>
-        <div class="stop"><div class="n">6</div><div class="info"><b>熊本之門酒店</b><span>🇯🇵 ホテル ザ ゲート熊本<br>熊本市西区春日 1-14-1</span></div></div>
-        <div class="stop"><div class="n">7</div><div class="info"><b>しゃぶしゃぶ美山 アミュプラザくまもと店（晚餐）</b><span>アミュプラザくまもと 7F（熊本駅直結）｜一人一鍋，類似台灣的涮涮鍋</span></div></div>
-      </div>
-      <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/6-26+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/Starbucks+Coffee+Dazaifu+Tenmangu+Omotesando,+3-2-43+Saifu,+Dazaifu,+Fukuoka+818-0117,+Japan/%E4%B8%87%E6%A6%AE%E5%A0%82+%E6%9F%B3%E5%B7%9D%E5%B8%82/%E6%9C%89%E6%98%8E%E6%B5%B7%E7%9C%BA%E6%9C%9B%E5%A0%A4%E9%98%B2/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/">🗺️ 開啟 Google Maps 路線</a>
+      <h2>⏰ 時間軸</h2>
+      <div class="alert info">⏰ <b>連假版時間表</b>：每段車程抓平常 1.5 倍，確保 13:00 前到立花邸吃鰻魚飯（營業時間 11:00–15:00）。</div>
+      <div class="timeline-row"><div class="t">7:30</div><div class="e"><b>食堂 おわん</b> 早餐（<b>開門就吃</b>，L.O. 9:30；土鍋炊飯 + 出汁玉子燒）</div></div>
+      <div class="timeline-row"><div class="t">8:15</div><div class="e">回旅館取行李 → <b>退房出發</b>（退房期限 11:00）</div></div>
+      <div class="timeline-row"><div class="t">9:00</div><div class="e">抵太宰府，停駐車センター ¥500（<b>連假找車位抓 20 分</b>）</div></div>
+      <div class="timeline-row"><div class="t">9:20</div><div class="e"><b>星巴克 太宰府天滿宮表參道店</b>（隈研吾木條建築）+ 參道梅枝餅（やす武 / かさの家）</div></div>
+      <div class="timeline-row"><div class="t">10:00</div><div class="e">參拜<b>太宰府天滿宮</b>、逛參道；不想逛可以提早出發，鰻魚飯 11:00 就開</div></div>
+      <div class="timeline-row"><div class="t">11:15</div><div class="e">出發柳川（九州道 太宰府IC → みやま柳川IC，<b>連假抓 1 hr 25</b>）</div></div>
+      <div class="timeline-row"><div class="t">12:40</div><div class="e">抵 <b>柳川松濤園・藩主立花邸</b>，停車</div></div>
+      <div class="timeline-row"><div class="t">13:00</div><div class="e">午餐：<b>蒸籠鰻魚飯</b>（園區餐廳 11:00–15:00，<b>這個時間進場最安全</b>；おすすめセット ¥3,888）</div></div>
+      <div class="timeline-row"><div class="t">14:00</div><div class="e"><b>松濤園</b> + 大廣間・西洋館・立花家史料館（¥1,000，見學 10:00–16:00）</div></div>
+      <div class="timeline-row"><div class="t">15:00</div><div class="e">出發熊本（九州道，<b>連假抓 2 hr 30</b>）</div></div>
+      <div class="timeline-row"><div class="t">17:30</div><div class="e">Check-in <b>熊本之門酒店</b>（已告知抵達 17:00–18:00）</div></div>
+      <div class="timeline-row"><div class="t">17:45</div><div class="e"><b>Bic Camera アミュプラザくまもと店</b>（10:00–20:00，飯店步行 2–5 分）照<a href="#" data-go="shopping">必買清單</a>買；店開到 20:00，吃完晚餐還能回來補</div></div>
+      <div class="timeline-row"><div class="t">19:00</div><div class="e">晚餐：菅乃屋（馬肉）/ 黒亭（拉麵，步行 8 分）/ 勝烈亭</div></div>
+      <div class="alert info">🌅 <b>9/21 柳川日落 18:19</b>。15:00 出發、17:30 抵熊本，全程天亮時開車，不用摸黑。</div>
+      <div class="alert warn">🅿️ 太宰府駐車センター ¥500；松濤園・立花邸有專用停車場。<br>⚠️ <b>熊本之門酒店沒有自己的停車場</b>，要停附近付費場，且地下車位夜間關閉無法取車 — 抵達前先致電確認。<br>🍽️ 飯店<b>房內禁止用餐</b>；男女共用淋浴間與廁所。</div>
     </div>
+
+    <div class="alert info">🔌 <b>順路 Bic Camera／西松屋</b>：今晚主場是飯店旁的 アミュプラザくまもと店（17:45）。<a target="_blank" rel="noopener" href="https://www.24028.jp/tenpo/detail.php?doc=397">西松屋 熊本江越店</a>（熊本市南区江越 1-17-7，9:00–20:00，免費停車 28 台）想到再去，Day 4 下午也可以（⚠️ 飯店開車多久未查證）。<a target="_blank" rel="noopener" href="https://www.kojima.net/shop/shoplist/fukuokakasuga.html">コジマ×ビックカメラ 福岡春日店</a>（春日市須玖北 1-1-1，免費停車 161 台）在往太宰府方向，但店 10:00 才開，我們 9:00 就到太宰府，排不上。</div>
 
     <div class="hotel-eat" data-eat="kumamoto"></div>
   </div>
@@ -534,28 +615,41 @@
   <div class="day-content" data-day="4" hidden>
     <div class="day-hero">
       <span class="day-num">DAY 4 · 9/22 (二・國民休日)</span>
-      <h2>熊本市區 → 永尾剱神社</h2>
+      <h2>熊本城＋上通・下通</h2>
       <div class="day-meta">
         <span>🏨 熊本之門酒店</span>
+        <span>🚗 ~6 km</span>
       </div>
-      <div class="day-route">SAKURA MACHI Kumamoto（RHC CAFE）→ 熊本城 → 城彩苑 → 下通 → KINH DO 金堂 → 永尾剱神社 → 勝烈亭</div>
+      <div class="day-route">熊本之門酒店 → 熊本城 → 城彩苑 → <b>上通・下通商店街</b> → 熊本之門酒店</div>
+    </div>
+
+    <div class="alert warn">🏯 <b>2026/7/28 熊本地震（M7.1・震度 7）後續</b>：熊本城 <b>8/13 已重新開園</b>（天守閣 + 特別見學通路照常），石垣 59 處受損、數寄屋丸崩落，部分區域可能圍起。<br>
+      城彩苑 <b>わくわく座臨時休館</b>，櫻之小路美食商店與觀光案內所正常。九州道 8/14 全線恢復、熊本市電正常運行。</div>
+
+    <div class="card">
+      <h2>📍 停靠點</h2>
+      <div class="stops">
+        <div class="stop"><div class="n">1</div><div class="info"><b>熊本城</b><span>🇯🇵 熊本城｜🇬🇧 Kumamoto Castle<br>中央区本丸 1-1｜¥800</span></div></div>
+        <div class="stop"><div class="n">2</div><div class="info"><b>櫻之馬場 城彩苑</b><span>🇯🇵 桜の馬場 城彩苑｜🇬🇧 Sakura-no-baba Josaien<br>中央区二之丸 1-1-2</span></div></div>
+        <div class="stop"><div class="n">3</div><div class="info"><b>上通・下通商店街</b><span>🇯🇵 上通アーケード／下通アーケード｜🇬🇧 Kamitori / Shimotori Arcade<br>中央区上通町／下通（通町筋南北兩側）｜上通約 586 m、下通約 511 m</span></div></div>
+        <div class="stop"><div class="n">4</div><div class="info"><b>熊本之門酒店</b><span>🇯🇵 ホテル ザ ゲート熊本｜🇬🇧 Hotel The Gate Kumamoto<br>熊本市西区春日 1-14-1</span></div></div>
+      </div>
+      <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/Kumamoto+Castle,+1-1+Honmaru,+Chuo+Ward,+Kumamoto,+860-0002,+Japan/Sakura-no-baba+Josaien,+1-1-2+Ninomaru,+Chuo+Ward,+Kumamoto,+860-0008,+Japan/Kamitori+Arcade,+Kamitoricho,+Chuo+Ward,+Kumamoto,+Japan/Shimotori+Arcade,+Shimotori,+Chuo+Ward,+Kumamoto,+Japan/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/">🗺️ 開啟 Google Maps 路線</a>
     </div>
 
     <div class="card">
-      <h2>📍 實際停靠</h2>
-      <div class="stops">
-        <div class="stop"><div class="n">1</div><div class="info"><b>SAKURA MACHI Kumamoto</b><span>熊本城旁的購物中心｜車停附近的 Times</span></div></div>
-        <div class="stop"><div class="n">2</div><div class="info"><b>RHC CAFE（早餐）</b><span>SAKURA MACHI Kumamoto 1F｜10:00 開門就進去</span></div></div>
-        <div class="stop"><div class="n">3</div><div class="info"><b>熊本城</b><span>中央区本丸 1-1</span></div></div>
-        <div class="stop"><div class="n">4</div><div class="info"><b>櫻之馬場 城彩苑</b><span>🇯🇵 桜の馬場 城彩苑<br>中央区二之丸 1-1-2</span></div></div>
-        <div class="stop"><div class="n">5</div><div class="info"><b>下通：靴下屋 Life and Feel 熊本下通り店</b><span>中央区手取本町 4-4-5｜買襪子｜<a target="_blank" rel="noopener" href="https://shimotoori.com/shop/kutsushitaya/">下通公式</a></span></div></div>
-        <div class="stop"><div class="n">6</div><div class="info"><b>下通：文具店</b><span>買手帕給小孩當口水巾</span></div></div>
-        <div class="stop"><div class="n">7</div><div class="info"><b>KINH DO - 金堂（午餐・越南料理）</b><span>下通一帶｜<a target="_blank" rel="noopener" href="https://maps.app.goo.gl/vm5ss6n5dcMvVAX26">Google Maps</a></span></div></div>
-        <div class="stop"><div class="n">8</div><div class="info"><b>永尾剱神社（海中鳥居）</b><span>開車過去，看海、逛神社｜<a target="_blank" rel="noopener" href="https://maps.app.goo.gl/arhLQSAsZbgLQuw19">Google Maps</a></span></div></div>
-        <div class="stop"><div class="n">9</div><div class="info"><b>とんかつ勝烈亭 アミュプラザくまもと店（晚餐）</b><span>アミュプラザくまもと 7F（熊本駅直結）</span></div></div>
-      </div>
-      <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/SAKURA+MACHI+Kumamoto/Kumamoto+Castle,+1-1+Honmaru,+Chuo+Ward,+Kumamoto,+860-0002,+Japan/Sakura-no-baba+Josaien,+1-1-2+Ninomaru,+Chuo+Ward,+Kumamoto,+860-0008,+Japan/Kutsushitaya+Life+and+Feel+Kumamoto+Shimotori,+4-4-5+Tetorihoncho,+Chuo+Ward,+Kumamoto,+Japan/KINH+DO+-+%E9%87%91%E5%A0%82,+Kumamoto/Einoo+Shrine,+Kumamoto/Amu+Plaza+Kumamoto/">🗺️ 開啟 Google Maps 路線</a>
+      <h2>⏰ 時間軸</h2>
+      <div class="timeline-row"><div class="t">8:30</div><div class="e">出發（連假停車位難找，早點到熊本城；不想找車位可搭市電 A 系統，熊本駅前 → 熊本城・市役所前 約 10 分）</div></div>
+      <div class="timeline-row"><div class="t">9:00</div><div class="e"><b>熊本城</b>（<b>8/13 震後重新開園</b>；天守閣 + 特別見學通路，9:00–17:00，最終入園 16:00，¥800）</div></div>
+      <div class="timeline-row"><div class="t">11:00</div><div class="e">城彩苑 午餐 + 伴手禮（馬肉、陣太鼓、くまモン）｜<b>わくわく座休館中</b></div></div>
+      <div class="timeline-row"><div class="t">13:00</div><div class="e">從城彩苑走到<b>上通・下通商店街</b>（約 9–15 分；車繼續停城彩苑）</div></div>
+      <div class="timeline-row"><div class="t">13:15</div><div class="e"><b>上通 → 下通</b>慢慢逛：兩條拱廊中間隔著通町筋（市電），過馬路就接上；<b>鶴屋百貨</b>（10:00–19:00）、鶴屋東館 1F <b>くまモンスクエア</b>（10:00–19:00）、上通東側 <b>上乃裏通り</b>（町家老屋改建的咖啡店，⚠️ 各店營業時間不一）</div></div>
+      <div class="timeline-row"><div class="t">17:00</div><div class="e">走回城彩苑取車，開回飯店（約 10 分）；不想走回去也可以從辛島町搭市電 A 系統到熊本駅前（約 13 分），但車就要另外取</div></div>
+      <div class="timeline-row"><div class="t">19:00</div><div class="e">晚餐：勝烈亭 / 天外天（豚骨拉麵元祖）</div></div>
+      <div class="alert info">🅿️ 城彩苑 <b>2hr ¥400 + 每hr ¥200</b>（2026/4 改制），停到 17:00 約 ¥1,600；⚠️ 停車場幾點關門未查到，出發前確認<br>🛍️ 熊本地震後上通・下通已沒有封閉或施工區段，多數店家恢復營業（<a target="_blank" rel="noopener" href="https://note.com/bintang1955/n/n3f96ec7591a3">2026/8/6 現場紀錄</a>）</div>
     </div>
+
+    <div class="alert info">🔌 <b>附近 Bic Camera／西松屋（臨時想去）</b>：アミュプラザくまもと店就在飯店旁（10:00–20:00）；<a target="_blank" rel="noopener" href="https://www.kojima.net/shop/shoplist/kumamoto.html">コジマ×ビックカメラ 熊本店</a>（熊本市南区日吉 1-7-7），10:00–20:00，免費停車 255 台，熊本駅開車約 15 分；<a target="_blank" rel="noopener" href="https://www.24028.jp/tenpo/detail.php?doc=397">西松屋 熊本江越店</a>（熊本市南区江越 1-17-7），9:00–20:00，免費停車 28 台（⚠️ 飯店開車多久未查證）。</div>
 
     <div class="hotel-eat" data-eat="kumamoto"></div>
   </div>
@@ -564,30 +658,50 @@
   <div class="day-content" data-day="5" hidden>
     <div class="day-hero">
       <span class="day-num">DAY 5 · 9/23 (三・秋分日)</span>
-      <h2>熊本 → 阿蘇 → 九重 → 別府</h2>
+      <h2>熊本 → 阿蘇 → 別府</h2>
       <div class="day-meta">
         <span>🏨 Super Hotel 別府駅前</span>
-        <span>🌿 火山草原＋吊橋</span>
+        <span>🌿 火山草原＋外輪山</span>
       </div>
-      <div class="day-route">熊本之門酒店 → 米塚 → 草千里（早餐・騎馬）→ 中岳火口 → 大觀峰 → 九重"夢"大吊橋 → Super Hotel 別府駅前 → 一蘭 大分弁天店</div>
+      <div class="day-route">熊本之門酒店 → 國道 57 → <b>草千里 → 米塚 → 道の駅 阿蘇 → 大觀峰</b> → やまなみハイウェイ（長者原）→ Super Hotel 別府駅前 → <b>グローバルタワー</b>（夜景）</div>
+    </div>
+
+    <div class="alert warn">⚠️ <b>連假最後一天</b>：阿蘇與やまなみハイウェイ連假車多，<b>8:00 準時出發</b>。</div>
+
+    <div class="alert warn">🌋 <b>阿蘇噴火警戒等級 2（火口周邊規制）— 2026/9/4 16:00 起</b>（8/14 起的等級 3 已調降）<br>
+      氣象廳：影響超過中岳第一火口 1 km、到約 2 km 範圍的噴火可能性已降低；<b>火口周邊仍有規制</b>，範圍出發前看 <a target="_blank" rel="noopener" href="https://www.aso-volcano.jp/">aso-volcano.jp</a>。<br>
+      ✅ <b>草千里・草千里展望所・阿蘇火山博物館・大觀峰・道の駅 阿蘇 照常開放</b>，本日行程不受影響。<br>
+      🚗 <b>上草千里的路目前都通行</b>：阿蘇パノラマライン（阿蘇市側縣道 111）、南登山道（南阿蘇村側縣道 111，8 月中封路，<b>9/2 恢復通行</b>）、縣道 298/299（<a target="_blank" rel="noopener" href="https://minamiaso.info/blog/20260814news/">みなみあそ info</a>）。出發前再看一次 <a target="_blank" rel="noopener" href="https://www.city.aso.kumamoto.jp/trafficinfo/">阿蘇市道路交通情報</a>。</div>
+
+    <div class="card">
+      <h2>📍 停靠點</h2>
+      <div class="stops">
+        <div class="stop"><div class="n">1</div><div class="info"><b>阿蘇周邊</b>（依序 草千里 → 米塚 → 道の駅 → 大觀峰）<span>🇯🇵 草千里ヶ浜／米塚／道の駅 阿蘇／大観峰<br>🇬🇧 Kusasenrigahama / Komezuka / Michi-no-Eki Aso / Daikanbo<br>熊本県阿蘇市一帶</span></div></div>
+        <div class="stop"><div class="n">2</div><div class="info"><b>Super Hotel 別府駅前</b><span>🇯🇵 スーパーホテル別府駅前｜🇬🇧 Super Hotel Beppu Ekimae<br>🇬🇧 13-8 Ekimaecho, Beppu<br>別府市駅前町 13-8｜📞 +81-977-73-9000</span></div></div>
+        <div class="stop"><div class="n">3</div><div class="info"><b>グローバルタワー</b>（建築・夜景）<span>🇯🇵 ビーコンプラザ グローバルタワー｜🇬🇧 B-Con Plaza Global Tower<br>別府市山の手町 12-1｜<b>磯崎新</b>設計｜展望台 9:00–21:00｜¥300｜室外停車免費</span></div></div>
+      </div>
+      <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/Kusasenrigahama,+Akamizu,+Aso,+Kumamoto+869-2612,+Japan/Komezuka,+Otohime,+Aso,+Kumamoto+869-2225,+Japan/Michi-no-Eki+Aso,+1440-1+Kurokawa,+Aso,+Kumamoto+869-2225,+Japan/Daikanbo,+Yamada,+Aso,+Kumamoto+869-2313,+Japan/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/">🗺️ 開啟 Google Maps 路線</a>
     </div>
 
     <div class="card">
-      <h2>📍 實際停靠</h2>
-      <div class="stops">
-        <div class="stop"><div class="n">1</div><div class="info"><b>米塚</b><span>熊本県阿蘇市｜圓錐形小火山</span></div></div>
-        <div class="stop"><div class="n">2</div><div class="info"><b>草千里：休息區吃早餐</b><span>草千里停車場旁那排連棟商店</span></div></div>
-        <div class="stop"><div class="n">3</div><div class="info"><b>草千里 騎馬</b><span>草千里入口處｜10:00 一開就騎，下馬後在草千里散步</span></div></div>
-        <div class="stop"><div class="n">4</div><div class="info"><b>中岳火口</b><span>火口入口封閉，開車到外面的停車場繞一圈</span></div></div>
-        <div class="stop"><div class="n">5</div><div class="info"><b>大觀峰</b><span>熊本県阿蘇市｜阿蘇五岳全景</span></div></div>
-        <div class="stop"><div class="n">6</div><div class="info"><b>九重"夢"大吊橋</b><span>玖珠郡九重町田野 1208｜¥500</span></div></div>
-        <div class="stop"><div class="n">7</div><div class="info"><b>Super Hotel 別府駅前（停車、check-in）</b><span>🇯🇵 スーパーホテル別府駅前<br>別府市駅前町 13-8</span></div></div>
-        <div class="stop"><div class="n">8</div><div class="info"><b>一蘭 大分弁天店（晚餐）</b><span>大分市弁天 3-5-1｜從別府開車過去</span></div></div>
-      </div>
-      <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/Komezuka,+Otohime,+Aso,+Kumamoto+869-2225,+Japan/Kusasenrigahama,+Akamizu,+Aso,+Kumamoto+869-2612,+Japan/Aso+Nakadake+Crater,+Aso,+Kumamoto,+Japan/Daikanbo,+Yamada,+Aso,+Kumamoto+869-2313,+Japan/Kokonoe+Yume+Otsurihashi,+1208+Tano,+Kokonoe,+Kusu+District,+Oita+879-4911,+Japan/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/Ichiran+Oita+Benten,+3-5-1+Benten,+Oita,+Japan/">🗺️ 開啟 Google Maps 路線</a>
+      <h2>⏰ 時間軸</h2>
+      <div class="alert info">⏰ <b>連假版時間表</b>：由南往北一路走 — 先上草千里，下山經米塚、道の駅，再上外輪山到大觀峰，接やまなみハイウェイ往東到別府，不走回頭路。<b>15:00 前離開大觀峰</b>，18:00 前才到得了別府（⚠️ 車程是搜尋估計值）。</div>
+      <div class="timeline-row"><div class="t">8:00</div><div class="e">熊本之門酒店 退房出發（退房 07:00–10:00），走國道 57 上阿蘇</div></div>
+      <div class="timeline-row"><div class="t">9:45</div><div class="e"><b>草千里浜</b> 平坦草原、放牧牛馬；旁邊 阿蘇火山博物館（¥1,100，選擇性）</div></div>
+      <div class="timeline-row"><div class="t">11:00</div><div class="e">米塚展望所（路邊停 5 分）</div></div>
+      <div class="timeline-row"><div class="t">11:30</div><div class="e">道の駅 阿蘇（火山資訊館、特產、廁所）；午餐在阿蘇站周邊現場找（⚠️ 店家未查）</div></div>
+      <div class="timeline-row"><div class="t">12:45</div><div class="e">出發大觀峰（連假抓 40 分）</div></div>
+      <div class="timeline-row"><div class="t">13:30</div><div class="e"><b>大觀峰</b> 阿蘇五岳全景（平坦步道 100 m；茶店 8:30–17:00）</div></div>
+      <div class="timeline-row"><div class="t">14:15</div><div class="e">出發別府，走 <b>やまなみハイウェイ</b>（連假抓 2 hr 30）；途中 <b>長者原</b> 可短暫停車看九重連山（免費停車）</div></div>
+      <div class="timeline-row"><div class="t">16:45</div><div class="e">Check-in <b>Super Hotel 別府駅前</b>（已告知抵達 17:00–18:00）</div></div>
+      <div class="timeline-row"><div class="t">18:00</div><div class="e">晚餐：とよ常 天婦羅</div></div>
+      <div class="timeline-row"><div class="t">19:30</div><div class="e"><b>グローバルタワー</b> 夜景（磯崎新設計，展望台開到 21:00，¥300；飯店開車約 5–7 分，⚠️ 估計值）</div></div>
+      <div class="alert warn">⚠️ <b>冷麺の胡月週三只營業到 17:30</b>（週二公休），9/23 晚餐排不進去，想吃要改在白天。とよ常 9/23（週三）是否營業<b>未查到</b>，出發前確認。</div>
+      <div class="alert info">🅿️ 草千里 ¥500、道の駅・大觀峰・長者原免費；Super Hotel 用附近私人停車場 ¥500/晚（先到先停、不能預約）；グローバルタワー 室外免費<br>☀️ 陽光強帶帽水；山上 18–22°C 帶薄外套<br>🚗 車程（搜尋估計值，括號為連假）：熊本 → 草千里 1 hr 15（1 hr 45）→ 米塚 10 分（15）→ 道の駅 20 分（30）→ 大觀峰 25 分（40）→ 別府 約 70 km / 1 hr 45（2 hr 30）</div>
+      <div class="alert info">🔄 <b>備案</b>：若出發前噴火警戒升到<b>等級 4</b>，草千里一帶也會關閉 → 跳過草千里、米塚，直接去道の駅 阿蘇與大觀峰一帶的外輪山，再接やまなみハイウェイ往別府。</div>
     </div>
 
-    <div class="alert warn">🌋 9 月下旬阿蘇噴火警戒等級 2（火口周邊規制），中岳火口不開放；草千里、大觀峰照常。</div>
+    <div class="alert info">🔌 <b>Bic Camera</b>：大分縣（九重、由布院、別府）沒有 Bic 集團門市。</div>
 
     <div class="hotel-eat" data-eat="beppu"></div>
   </div>
@@ -596,28 +710,49 @@
   <div class="day-content" data-day="6" hidden>
     <div class="day-hero">
       <span class="day-num">DAY 6 · 9/24 (四)</span>
-      <h2>由布院 → 別府地獄めぐり</h2>
+      <h2>別府地獄めぐり → 九重夢大吊橋 → 由布院</h2>
       <div class="day-meta">
         <span>🏨 Super Hotel 別府駅前</span>
+        <span>🌿 風景＋建築</span>
       </div>
-      <div class="day-route">Super Hotel 別府駅前 → 金鱗湖 → 湯の坪街道 → 鐵輪 5 地獄 → 柴石 2 地獄 → Super Hotel → ヤマダデンキ → 焼肉 円円</div>
+      <div class="day-route">Super Hotel 別府駅前 → <b>別府地獄めぐり</b>（鐵輪 5 地獄 → 地獄蒸し工房 → 柴石 2 地獄）→ <b>九重"夢"大吊橋</b> → <b>由布院</b>（湯の坪街道・由布院駅・YUFUiNFO）→ 明礬 湯の里 → Super Hotel → <b>竹瓦温泉</b></div>
     </div>
 
     <div class="card">
-      <h2>📍 實際停靠</h2>
+      <h2>📍 停靠點</h2>
       <div class="stops">
-        <div class="stop"><div class="n">1</div><div class="info"><b>金鱗湖</b><span>由布市湯布院町川上 1561-1</span></div></div>
-        <div class="stop"><div class="n">2</div><div class="info"><b>湯の坪街道</b><span>由布市湯布院町</span></div></div>
-        <div class="stop"><div class="n">3</div><div class="info"><b>別府地獄めぐり 鐵輪 5 地獄</b><span>海・鬼石坊主・かまど・鬼山・白池｜車停海地獄（別府市大字鉄輪 559-1），走路串連</span></div></div>
-        <div class="stop"><div class="n">4</div><div class="info"><b>別府地獄めぐり 柴石 2 地獄</b><span>血の池・龍巻（別府市野田）｜走回海地獄取車開過去，停血の池地獄停車場</span></div></div>
-        <div class="stop"><div class="n">5</div><div class="info"><b>Super Hotel 別府駅前</b><span>回飯店休息</span></div></div>
-        <div class="stop"><div class="n">6</div><div class="info"><b>ヤマダデンキ テックランド別府駅前店</b><span>別府駅旁（約 100 m）｜買 IRIS 塵蟎機 FCA-A3-W</span></div></div>
-        <div class="stop"><div class="n">7</div><div class="info"><b>焼肉 円円（晚餐）</b><span>別府市北浜 1-746-15｜別府駅往海邊走約 5 分</span></div></div>
+        <div class="stop"><div class="n">1</div><div class="info"><b>別府地獄めぐり</b>（7 個地獄全看）<span>🇯🇵 別府地獄めぐり｜🇬🇧 Hells of Beppu<br><b>鐵輪 5 個</b>：海・鬼石坊主・かまど・鬼山・白池（海地獄：別府市大字鉄輪 559-1）<br><b>柴石 2 個</b>：血の池・龍巻（別府市野田，鐵輪開車約 10 分）<br>8:00–17:00 年中無休｜共通券 ¥2,400</span></div></div>
+        <div class="stop"><div class="n">2</div><div class="info"><b>鐵輪溫泉 地獄蒸し工房</b><span>🇯🇵 鉄輪温泉／地獄蒸し工房 鉄輪｜🇬🇧 Kannawa Onsen / Jigoku Mushi Kobo<br>別府市大字鉄輪字風呂本 212｜10:00 開門</span></div></div>
+        <div class="stop"><div class="n">3</div><div class="info"><b>九重"夢"大吊橋</b><span>🇯🇵 九重"夢"大吊橋｜🇬🇧 Kokonoe "Yume" Otsurihashi<br>玖珠郡九重町田野 1208｜8:30–18:00（售票至 17:30）無休｜¥500｜停車免費</span></div></div>
+        <div class="stop"><div class="n">4</div><div class="info"><b>由布院温泉（湯の坪街道）</b><span>🇯🇵 由布院温泉 湯の坪街道｜🇬🇧 Yunotsubo Kaido, Yufuin<br>大分縣由布市湯布院町</span></div></div>
+        <div class="stop"><div class="n">5</div><div class="info"><b>由布院駅・YUFUiNFO</b>（建築）<span>🇯🇵 由布院駅／由布市ツーリストインフォメーションセンター｜🇬🇧 Yufuin Station / YUFUiNFO<br>由布院駅：<b>磯崎新</b>設計／YUFUiNFO：<b>坂茂</b>設計，9:00–17:30</span></div></div>
+        <div class="stop"><div class="n">6</div><div class="info"><b>COMICO ART MUSEUM</b>（選擇性・建築）<span>🇯🇵 COMICO ART MUSEUM YUFUIN｜🇬🇧 COMICO Art Museum Yufuin<br>由布市湯布院町川上 2995-1｜<b>隈研吾</b>設計｜9:30–17:00｜¥1,700（事前預約優先）｜無專用停車場</span></div></div>
+        <div class="stop"><div class="n">7</div><div class="info"><b>明礬 湯の里 ＋ 岡本屋売店</b>（風景・傳統建築）<span>🇯🇵 みょうばん 湯の里／岡本屋売店｜🇬🇧 Myoban Yunosato / Okamotoya Baiten<br>湯の花小屋 9:00–18:00 免費參觀、停車免費｜岡本屋 8:30–18:30（L.O. 17:30）地獄蒸布丁</span></div></div>
+        <div class="stop"><div class="n">8</div><div class="info"><b>竹瓦温泉</b>（歷史建築）<span>🇯🇵 竹瓦温泉｜🇬🇧 Takegawara Onsen<br>別府市元町 16-23｜1938 年唐破風木造建築｜普通浴 6:30–22:30 ¥300／砂湯 ¥1,500｜無停車場</span></div></div>
       </div>
-      <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/Lake+Kinrin,+1561-1+Kawakami,+Yufuin,+Yufu,+Oita,+Japan/Yunotsubo+Kaido,+Yufuin,+Yufu,+Oita,+Japan/Umi+Jigoku,+559-1+Kannawa,+Beppu,+Oita,+Japan/Chinoike+Jigoku,+Noda,+Beppu,+Oita,+Japan/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/Yakiniku+Ennen,+1-746-15+Kitahama,+Beppu,+Oita,+Japan/">🗺️ 開啟 Google Maps 路線</a>
+      <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/Umi+Jigoku,+559-1+Kannawa,+Beppu,+Oita,+Japan/Kannawa+Hot+Spring,+%E5%88%A5%E5%BA%9C%E5%B8%82%E5%A4%A7%E5%AD%97%E9%89%84%E8%BC%AA,+212,+Beppu,+Oita+874-0041,+Japan/Chinoike+Jigoku,+Noda,+Beppu,+Oita,+Japan/Kokonoe+Yume+Otsurihashi,+1208+Tano,+Kokonoe,+Kusu+District,+Oita+879-4911,+Japan/Yufuin+Station,+Yufuin,+Yufu,+Oita,+Japan/Myoban+Yunosato,+6+Myoban,+Beppu,+Oita,+Japan/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/">🗺️ 開啟 Google Maps 路線</a>
     </div>
 
-    <div class="alert info">💴 地獄 7 個共通券 ¥2,400（單館 ¥450）。</div>
+    <div class="card">
+      <h2>⏰ 時間軸</h2>
+      <div class="timeline-row"><div class="t">7:30</div><div class="e">飯店早餐（<b>含早餐</b>）</div></div>
+      <div class="timeline-row"><div class="t">8:00</div><div class="e">出發 → 鐵輪（約 20 分），車停<b>海地獄</b>停車場</div></div>
+      <div class="timeline-row"><div class="t">8:20</div><div class="e"><b>鐵輪 5 地獄</b>步行串連：海地獄 → 鬼石坊主 → かまど → 鬼山 → 白池（共通券 ¥2,400，任一地獄窗口買）</div></div>
+      <div class="timeline-row"><div class="t">10:00</div><div class="e"><b>地獄蒸し工房</b> 早午餐（<b>10:00 開門</b>；白池地獄步行約 2–3 分 ⚠️；食材 ¥500–1,500 + 蒸し釜 小 ¥400／大 ¥600（15 分內））</div></div>
+      <div class="timeline-row"><div class="t">11:00</div><div class="e">走回海地獄取車 → 開到<b>柴石</b>（約 10 分）：<b>血の池地獄</b>、<b>龍巻地獄</b>（約每 30–40 分噴一次，先看下一次噴發時間）</div></div>
+      <div class="timeline-row"><div class="t">12:00</div><div class="e">出發九重夢大吊橋（別府IC → 大分道 → 九重IC，約 45–50 分 ⚠️ 2024 年資料）</div></div>
+      <div class="timeline-row"><div class="t">13:00</div><div class="e"><b>九重"夢"大吊橋</b> — 吊橋、瀑布、溪谷，待 1 hr（人多時官方請大家<b>靠左通行</b>）</div></div>
+      <div class="timeline-row"><div class="t">14:00</div><div class="e">出發由布院（30–40 分）</div></div>
+      <div class="timeline-row"><div class="t">14:45</div><div class="e"><b>湯の坪街道</b> 慢慢逛：B-speak 蛋糕卷、Snoopy 茶屋、金賞可樂餅；看 <b>由布院駅</b>（磯崎新）與 <b>YUFUiNFO</b>（坂茂）｜地獄蒸し當早午餐，這裡吃點心；想正式吃可選 ゆふいん市 / 山椒郎（⚠️ 9/24 週四是否營業未確認）｜選擇性：<b>COMICO ART MUSEUM</b>（隈研吾，9/24 有開）</div></div>
+      <div class="timeline-row"><div class="t">16:15</div><div class="e">出發回別府，下山後往北繞明礬（多 5–10 分）</div></div>
+      <div class="timeline-row"><div class="t">17:00</div><div class="e"><b>明礬</b>：湯之里（湯花小屋免費參觀・買入浴劑）+ <b>岡本屋売店</b> 地獄蒸布丁、溫泉蛋（<b>L.O. 17:30</b>）</div></div>
+      <div class="timeline-row"><div class="t">18:00</div><div class="e">回飯店停車 → 晚餐：お食事處 千成 / 東洋軒（炸雞元祖）</div></div>
+      <div class="timeline-row"><div class="t">20:00</div><div class="e"><b>竹瓦温泉</b>（1938 年唐破風木造建築；普通浴開到 22:30 ¥300 / 砂湯 ¥1,500；飯店步行約 8–10 分，⚠️ 估計值）</div></div>
+      <div class="alert info">💴 <b>地獄めぐり 7 個全看</b>：共通券 ¥2,400（單館 ¥450），任一地獄窗口都買得到；全部逛完約 2–2.5 hr（<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Hells_of_Beppu">Wikipedia</a>）。<br>💡 地獄蒸し工房、竹瓦温泉休館日都是每月第 3 個週三（遇祝日順延）— 9 月是 9/16，<b>9/24 照常營業</b>。<br>🍮 岡本屋 <b>L.O. 17:30</b>，由布院最晚 16:15 要出發。</div>
+      <div class="alert info">🅿️ 7 個地獄都有免費停車場，鐵輪 5 個停海地獄走路串連；九重夢大吊橋停車免費（約 229 台）；9/24 平日，由布院停車壓力比連假小，出發前仍先看停車場地圖；竹瓦温泉沒有停車場，走路去。<br>🚗 車程（搜尋估計值）：Super Hotel → 鐵輪 20 分 → 柴石 10 分 → 吊橋 45–50 分 → 由布院 30–40 分 → 別府 35–45 分（繞明礬 +5–10 分）</div>
+    </div>
+
+    <div class="alert info">🔌 <b>Bic Camera</b>：大分縣（別府、大分市）沒有 Bic 集團門市。</div>
 
     <div class="hotel-eat" data-eat="beppu"></div>
   </div>
@@ -626,37 +761,229 @@
   <div class="day-content" data-day="7" hidden>
     <div class="day-hero">
       <span class="day-num">DAY 7 · 9/25 (五)</span>
-      <h2>回國日｜還車 → 天神 → 機場</h2>
+      <h2>回國日｜天神 → 還車 → 機場</h2>
       <div class="day-meta">
         <span>✈️ CI0117 21:00 FUK → 22:25 TPE</span>
+        <span>🚗 ~140 km</span>
       </div>
-      <div class="day-route">Super Hotel 別府駅前 → IX RENTAL（還車）→ 福岡空港（寄行李）→ 地鐵到天神 → 福岡PARCO → SEAM・大國藥妝 → Bic Camera 天神 2 号館 → 福岡空港</div>
+      <div class="day-route">Super Hotel 別府駅前 → 天神（藍瓶）→ IX RENTAL 還車 → 福岡空港（免稅店買伴手禮）</div>
+    </div>
+
+    <div class="alert danger">⚠️ <b>必協調</b>：訂單寫 10:00 還車，實際 <b>14:30</b> 才能還。打 <a href="tel:+818032261688">+81-80-3226-1688</a>（IX RENTAL）或 Klook 客服確認延後 — <b>9/18 10:00 前</b>處理完</div>
+
+    <div class="card">
+      <h2>📍 停靠點</h2>
+      <div class="stops">
+        <div class="stop"><div class="n">1</div><div class="info"><b>Super Hotel 別府駅前</b><span>🇯🇵 スーパーホテル別府駅前｜🇬🇧 Super Hotel Beppu Ekimae<br>🇬🇧 13-8 Ekimaecho, Beppu<br>別府市駅前町 13-8</span></div></div>
+        <div class="stop"><div class="n">2</div><div class="info"><b>藍瓶咖啡 福岡天神</b><span>🇯🇵 ブルーボトルコーヒー 福岡天神カフェ｜🇬🇧 Blue Bottle Coffee Fukuoka Tenjin Cafe<br>中央区天神 2-2-20 警固神社社務所ビル 1F｜8:00–20:00｜無停車場</span></div></div>
+        <div class="stop"><div class="n">3</div><div class="info"><b>IX RENTAL 福岡機場店（還車）</b><span>🇯🇵 アイエックスレンタカー 福岡支店｜🇬🇧 IX Rental Fukuoka Airport<br>博多区西月隈 2-4-31｜📞 +81-80-3226-1688</span></div></div>
+        <div class="stop"><div class="n">4</div><div class="info"><b>福岡空港 國際線</b><span>🇯🇵 福岡空港 国際線ターミナル｜🇬🇧 Fukuoka Airport Int'l Terminal<br>博多区下臼井 778-1｜出境後免稅店買伴手禮、Air BicCamera 補買</span></div></div>
+      </div>
+      <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/Blue+Bottle+Coffee+Fukuoka+Tenjin+Cafe,+2-2-20+Tenjin,+Chuo+Ward,+Fukuoka,+Japan/IX+RENTAL,+2-4-31+Nishitsukiguma,+Hakata+Ward,+Fukuoka,+812-0058,+Japan/Fukuoka+Airport,+778-1+Shimousui,+Hakata+Ward,+Fukuoka,+812-0003,+Japan/">🗺️ 開啟 Google Maps 路線</a>
     </div>
 
     <div class="card">
-      <h2>📍 實際停靠</h2>
-      <div class="stops">
-        <div class="stop"><div class="n">1</div><div class="info"><b>一早從別府出發</b><span>路上在便利商店買東西吃</span></div></div>
-        <div class="stop"><div class="n">2</div><div class="info"><b>IX RENTAL 福岡機場店（還車）</b><span>博多区西月隈 2-4-31｜9:30 抵達、9:50 還完</span></div></div>
-        <div class="stop"><div class="n">3</div><div class="info"><b>福岡空港 國際線航廈</b><span>門市接駁車送到機場；行李寄放置物櫃</span></div></div>
-        <div class="stop"><div class="n">4</div><div class="info"><b>天神</b><span>搭地鐵空港線過去</span></div></div>
-        <div class="stop"><div class="n">5</div><div class="info"><b>福岡PARCO 本館</b><span>天神駅直結｜吉伊卡哇騎乘款</span></div></div>
-        <div class="stop"><div class="n">6</div><div class="info"><b>麦わらストア 福岡店</b><span>福岡PARCO 本館 7F｜懸賞令、布魯克人形立牌、抽卡抽到魯夫</span></div></div>
-        <div class="stop"><div class="n">7</div><div class="info"><b>SK-II 保養套裝</b><span>天神</span></div></div>
-        <div class="stop"><div class="n">8</div><div class="info"><b>SEAM 天神大名店</b><span>中央区大名 2-1-53 BPRスクエア天神大名 1F｜潤髮乳</span></div></div>
-        <div class="stop"><div class="n">9</div><div class="info"><b>大國藥妝</b><span>SEAM 隔壁</span></div></div>
-        <div class="stop"><div class="n">10</div><div class="info"><b>Bic Camera 天神 2 号館</b><span>中央区天神 2-4-5｜寶可夢卡、電競冰絲袖套</span></div></div>
-        <div class="stop"><div class="n">11</div><div class="info"><b>福岡空港 國際線航廈</b><span>出境後在 PORTER 幫岳父買皮夾 → 貴賓室休息</span></div></div>
-        <div class="stop"><div class="n">✈️</div><div class="info"><b>CI0117 21:00 起飛</b><span>22:25 抵 TPE</span></div></div>
-      </div>
-      <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/IX+RENTAL,+2-4-31+Nishitsukiguma,+Hakata+Ward,+Fukuoka,+812-0058,+Japan/Fukuoka+Airport,+778-1+Shimousui,+Hakata+Ward,+Fukuoka,+812-0003,+Japan/Fukuoka+PARCO,+Tenjin,+Chuo+Ward,+Fukuoka,+Japan/SEAM+Tenjin+Daimyo,+2-1-53+Daimyo,+Chuo+Ward,+Fukuoka,+Japan/Bic+Camera+Tenjin+2,+2-4-5+Tenjin,+Chuo+Ward,+Fukuoka,+Japan/Fukuoka+Airport,+778-1+Shimousui,+Hakata+Ward,+Fukuoka,+812-0003,+Japan/">🗺️ 開啟 Google Maps 路線</a>
+      <h2>⏰ 時間軸</h2>
+      <div class="timeline-row"><div class="t">7:30</div><div class="e">飯店早餐 → Super Hotel 退房（10:00 前）</div></div>
+      <div class="timeline-row"><div class="t">8:00</div><div class="e">出發天神（高速約 2 hr，搜尋估計值）</div></div>
+      <div class="timeline-row"><div class="t">10:00</div><div class="e">抵天神，停周邊投幣式停車場 → 步行到 <b>藍瓶 福岡天神カフェ</b>，慢慢喝</div></div>
+      <div class="timeline-row"><div class="t">11:00</div><div class="e">天神散步（警固公園一帶）；熊本沒買到的，旁邊就是 Bic 天神 1・2 号館</div></div>
+      <div class="timeline-row"><div class="t">12:15</div><div class="e">天神午餐（大丸福岡天神店 B2F 有明月堂，可順買通りもん）</div></div>
+      <div class="timeline-row"><div class="t">13:30</div><div class="e">出發 IX RENTAL（20–30 分），<b>途中加滿油</b></div></div>
+      <div class="timeline-row"><div class="t">14:30</div><div class="e"><b>抵 IX RENTAL 還車</b>（訂單原定 10:00，須已協調延後）</div></div>
+      <div class="timeline-row"><div class="t">15:00</div><div class="e">回福岡空港 國際線（<b>還車後的接送方式取車時先問清楚</b>）</div></div>
+      <div class="timeline-row"><div class="t">18:30</div><div class="e">Check-in、退稅、通關 → <b>出境後免稅店</b>買明太子、通りもん；<b>Air BicCamera</b>（3F，安檢後）可最後補買</div></div>
+      <div class="timeline-row"><div class="t">21:00</div><div class="e">CI0117 起飛</div></div>
+      <div class="alert ok">🛍️ 伴手禮在<b>機場出境後免稅店</b>買（明太子 ふくや／やまや、博多通りもん；營業 7:00 至末班機），不用提著明太子逛天神。天神大丸 B2F 明月堂當備案。</div>
+      <div class="alert info">💡 備案（門市不延後）：8:00 出發 → 10:00 直接還車 → 到機場 Locker 寄物 → 地鐵空港線到天神（藍瓶）→ 16:00 返機場</div>
     </div>
 
-    <div class="alert info">📝 IX RENTAL 不接受延後還車，所以照訂單一早還車，行李寄機場後搭地鐵進天神採買（見<a href="#" data-go="shopping">採買結果</a>）。</div>
+    <div class="alert info">🔌 <b>順路 Bic Camera（臨時想去）</b>：天神 1・2 号館就在藍瓶旁邊（10:00–21:00，步行約 5–8 分），提携「天神ビックタワー駐車場」單張收據滿 ¥3,000 送 1 hr；出境後還有 <b>Air BicCamera</b>（國際線 3F，安檢後，7:00–21:00）。</div>
 
     <div class="hotel-eat" data-eat="fukuoka"></div>
   </div>
 
+</section>
+
+<!-- ============ ACTUAL ============ -->
+<section class="panel" id="actual" role="tabpanel">
+  <div class="card">
+    <h2>✅ 實際行程（含採買）</h2>
+    <p style="font-size:13px;color:var(--text-soft)">行程走完後補上的紀錄。其他 tab 都是出發前的規劃，原樣保留；這裡記實際怎麼走、買了什麼、跟原計畫哪裡不同。</p>
+    <h3>🔌 必買清單結果</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>品項</th><th>型號</th><th>結果</th></tr></thead>
+      <tbody>
+        <tr><td><b>吹風機</b></td><td>Panasonic EH-NE7N</td><td>✅ Day 2 Bic Camera 天神</td></tr>
+        <tr><td><b>刮鬍刀（給爸爸）</b></td><td>Panasonic ラムダッシュ パームイン ES-PV3A（掌上型 5 枚刃，ES-PV6A 同款）</td><td>✅ Day 2 Bic Camera 天神</td></tr>
+        <tr><td><b>塵蟎機（白色）</b></td><td>アイリスオーヤマ 布団クリーナー FCA-A3-W</td><td>✅ Day 6 ヤマダデンキ テックランド別府駅前店</td></tr>
+        <tr><td><b>滑鼠墊</b></td><td>ARTISAN（アーチサン）NINJA FX ゼロ／飛燕</td><td>❌ 沒買到</td></tr>
+        <tr><td><b>滑鼠</b></td><td>Pulsar（パルサー）X2V2／Xlite 系列</td><td>❌ 沒買到</td></tr>
+      </tbody>
+    </table></div>
+    <p style="font-size:12px;color:var(--text-soft)">Day 7 天神與機場買的其他東西，列在 Day 7 的「🛍️ 買了什麼」。</p>
+  </div>
+
+  <div class="day-hero">
+    <span class="day-num">DAY 1 · 9/19 (六)</span>
+    <h2>抵達日｜入境取車進博多</h2>
+    <div class="day-meta"><span>🏨 中今旅館</span></div>
+    <div class="day-route">福岡空港 → IX RENTAL（取車）→ 中今旅館 → やきとり 風林火山 5号店</div>
+  </div>
+  <div class="card">
+    <h2>📍 實際停靠</h2>
+    <div class="stops">
+      <div class="stop"><div class="n">1</div><div class="info"><b>福岡空港 國際線航廈</b><span>博多区下臼井 778-1｜18:05 CI0128 抵達</span></div></div>
+      <div class="stop"><div class="n">2</div><div class="info"><b>IX RENTAL 福岡機場店（取車）</b><span>博多区西月隈 2-4-31｜到「一般車」乘降場打電話叫接駁，約 19:00 取車</span></div></div>
+      <div class="stop"><div class="n">3</div><div class="info"><b>中今旅館</b><span>博多区冷泉町 6-26</span></div></div>
+      <div class="stop"><div class="n">4</div><div class="info"><b>やきとり 風林火山 5号店（晚餐・燒鳥）</b><span>博多区博多駅前 2-3-26｜JR 博多站步行約 2 分｜<a target="_blank" rel="noopener" href="https://tabelog.com/fukuoka/A4001/A400101/40024712/">tabelog</a></span></div></div>
+    </div>
+    <div class="alert warn">🔄 <b>跟原計畫不同</b><ul><li>IX RENTAL 不接受改時間，訂單上的 10:00 沒改成，晚上到門市照樣取到車</li><li>晚餐原排もつ鍋 おおやま／水炊き 若杉 → 改吃やきとり 風林火山 5号店</li></ul></div>
+    <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Fukuoka+Airport,+778-1+Shimousui,+Hakata+Ward,+Fukuoka,+812-0003,+Japan/IX+RENTAL,+2-4-31+Nishitsukiguma,+Hakata+Ward,+Fukuoka,+812-0058,+Japan/6-26+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/Yakitori+Fuurinkazan+5,+2-3-26+Hakataekimae,+Hakata+Ward,+Fukuoka,+Japan/">🗺️ 實際路線 Google Maps</a>
+  </div>
+
+  <div class="day-hero">
+    <span class="day-num">DAY 2 · 9/20 (日)</span>
+    <h2>糸島 → 天神 → 中洲</h2>
+    <div class="day-meta"><span>🏨 中今旅館</span></div>
+    <div class="day-route">山水水出珈琲 → 一蘭の森 → 工房とったん → 箱島神社 → 天神（笑樂・藍瓶・Bic Camera）→ 中今旅館 → 櫛田神社 → 中洲屋台 → 牛角</div>
+  </div>
+  <div class="card">
+    <h2>📍 實際停靠</h2>
+    <div class="stops">
+      <div class="stop"><div class="n">☕</div><div class="info"><b>山水水出珈琲（早餐）</b><span>博多区下川端町 3-1 博多リバレイン 1F｜旅館步行 3–5 分</span></div></div>
+      <div class="stop"><div class="n">1</div><div class="info"><b>一蘭の森</b><span>糸島市志摩松隈 256-10</span></div></div>
+      <div class="stop"><div class="n">2</div><div class="info"><b>工房とったん（またいちの塩）</b><span>糸島市志摩芥屋 3757</span></div></div>
+      <div class="stop"><div class="n">3</div><div class="info"><b>箱島神社</b><span>糸島市志摩桜井</span></div></div>
+      <div class="stop"><div class="n">4</div><div class="info"><b>天神</b><span>車停天神中央公園的停車場</span></div></div>
+      <div class="stop"><div class="n">5</div><div class="info"><b>博多もつ鍋 笑樂 本店（晚餐）</b><span>中央区西中洲 11-4｜もつ鍋，加點了馬肉</span></div></div>
+      <div class="stop"><div class="n">6</div><div class="info"><b>藍瓶咖啡 福岡天神</b><span>中央区天神 2-2-20</span></div></div>
+      <div class="stop"><div class="n">7</div><div class="info"><b>Bic Camera 天神 1・2 号館</b><span>1 号館 今泉 1-25-1／2 号館 天神 2-4-5</span></div></div>
+      <div class="stop"><div class="n">8</div><div class="info"><b>中今旅館</b><span>開回旅館停車</span></div></div>
+      <div class="stop"><div class="n">9</div><div class="info"><b>櫛田神社（步行）</b><span>中今旅館步行約 3 分</span></div></div>
+      <div class="stop"><div class="n">10</div><div class="info"><b>中洲屋台（步行）</b><span>中洲</span></div></div>
+      <div class="stop"><div class="n">11</div><div class="info"><b>牛角（燒肉）</b><span>中洲 Gate's 旁</span></div></div>
+    </div>
+    <div class="alert ok">🛍️ <b>買了什麼</b><ul><li>藍瓶 <b>天神限定杯</b>（藍瓶咖啡 福岡天神）</li><li><b>吹風機</b> Panasonic EH-NE7N、<b>刮鬍刀</b> Panasonic ES-PV3A（給爸爸）（Bic Camera 天神）</li></ul></div>
+    <div class="alert warn">🔄 <b>跟原計畫不同</b><ul><li>夫婦岩 二見ヶ浦沒去，箱島神社之後就回福岡市區</li><li>新增：天神（笑樂本店晚餐、藍瓶、Bic Camera）、櫛田神社、中洲屋台、牛角</li><li>必買清單的吹風機、刮鬍刀在這天就買到（原排 Day 3 熊本 Bic Camera）</li></ul></div>
+    <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/6-26+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/Ichiran+no+Mori,+256-10+Shima+Matsukuma,+Itoshima,+Fukuoka+819-1304,+Japan/Kobo+Tottan+Mataichi+no+Shio,+3757+Shima+Keya,+Itoshima,+Fukuoka+819-1332,+Japan/Hakoshima+Shrine,+Shima+Sakurai,+Itoshima,+Fukuoka+819-1304,+Japan/Hakata+Motsunabe+Shoraku+Honten,+11-4+Nishinakasu,+Chuo+Ward,+Fukuoka,+Japan/Blue+Bottle+Coffee+Fukuoka+Tenjin+Cafe,+2-2-20+Tenjin,+Chuo+Ward,+Fukuoka,+Japan/Bic+Camera+Tenjin+2,+2-4-5+Tenjin,+Chuo+Ward,+Fukuoka,+Japan/6-26+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/Kushida+Shrine,+Hakata+Ward,+Fukuoka,+Japan/">🗺️ 實際路線 Google Maps</a>
+  </div>
+
+  <div class="day-hero">
+    <span class="day-num">DAY 3 · 9/21 (一・敬老日)</span>
+    <h2>福岡 → 太宰府 → 柳川 → 熊本</h2>
+    <div class="day-meta"><span>🏨 熊本之門酒店</span></div>
+    <div class="day-route">中今旅館 → 太宰府（星巴克・天滿宮）→ 柳川（万榮堂）→ 有明海眺望堤防 → 熊本之門酒店 → しゃぶしゃぶ美山</div>
+  </div>
+  <div class="card">
+    <h2>📍 實際停靠</h2>
+    <div class="stops">
+      <div class="stop"><div class="n">1</div><div class="info"><b>7-11（早餐）</b><span>買飯糰路上吃</span></div></div>
+      <div class="stop"><div class="n">2</div><div class="info"><b>星巴克 太宰府天滿宮表參道店</b><span>太宰府市宰府 3-2-43｜隈研吾設計</span></div></div>
+      <div class="stop"><div class="n">3</div><div class="info"><b>太宰府天滿宮</b><span>門口跟御神牛拍照；參道吃梅ヶ枝餅（烤麻糬包紅豆餡）</span></div></div>
+      <div class="stop"><div class="n">4</div><div class="info"><b>万榮堂（午餐・鰻魚飯）</b><span>柳川市｜原本要吃的御花客滿，改吃這家</span></div></div>
+      <div class="stop"><div class="n">5</div><div class="info"><b>有明海眺望堤防</b><span>柳川沿海｜Google Maps 搜「有明海眺望堤防」</span></div></div>
+      <div class="stop"><div class="n">6</div><div class="info"><b>熊本之門酒店</b><span>熊本市西区春日 1-14-1</span></div></div>
+      <div class="stop"><div class="n">7</div><div class="info"><b>しゃぶしゃぶ美山 アミュプラザくまもと店（晚餐）</b><span>アミュプラザくまもと 7F（熊本駅直結）｜一人一鍋，類似台灣的涮涮鍋</span></div></div>
+    </div>
+    <div class="alert warn">🔄 <b>跟原計畫不同</b><ul><li>早餐原排食堂おわん → 7-11 飯糰</li><li>柳川御花客滿，鰻魚飯改吃万榮堂；松濤園・立花邸沒進去</li><li>新增：有明海眺望堤防看海</li><li>晚餐原排菅乃屋／黒亭／勝烈亭 → しゃぶしゃぶ美山</li></ul></div>
+    <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/6-26+Reisenmachi,+Hakata+Ward,+Fukuoka,+812-0039,+Japan/Starbucks+Coffee+Dazaifu+Tenmangu+Omotesando,+3-2-43+Saifu,+Dazaifu,+Fukuoka+818-0117,+Japan/%E4%B8%87%E6%A6%AE%E5%A0%82+%E6%9F%B3%E5%B7%9D%E5%B8%82/%E6%9C%89%E6%98%8E%E6%B5%B7%E7%9C%BA%E6%9C%9B%E5%A0%A4%E9%98%B2/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/">🗺️ 實際路線 Google Maps</a>
+  </div>
+
+  <div class="day-hero">
+    <span class="day-num">DAY 4 · 9/22 (二・國民休日)</span>
+    <h2>熊本市區 → 永尾剱神社</h2>
+    <div class="day-meta"><span>🏨 熊本之門酒店</span></div>
+    <div class="day-route">SAKURA MACHI Kumamoto（RHC CAFE）→ 熊本城 → 城彩苑 → 下通 → KINH DO 金堂 → 永尾剱神社 → 勝烈亭</div>
+  </div>
+  <div class="card">
+    <h2>📍 實際停靠</h2>
+    <div class="stops">
+      <div class="stop"><div class="n">1</div><div class="info"><b>SAKURA MACHI Kumamoto</b><span>熊本城旁的購物中心｜車停附近的 Times</span></div></div>
+      <div class="stop"><div class="n">2</div><div class="info"><b>RHC CAFE（早餐）</b><span>SAKURA MACHI Kumamoto 1F｜10:00 開門就進去</span></div></div>
+      <div class="stop"><div class="n">3</div><div class="info"><b>熊本城</b><span>中央区本丸 1-1</span></div></div>
+      <div class="stop"><div class="n">4</div><div class="info"><b>櫻之馬場 城彩苑</b><span>中央区二之丸 1-1-2</span></div></div>
+      <div class="stop"><div class="n">5</div><div class="info"><b>下通：靴下屋 Life and Feel 熊本下通り店</b><span>中央区手取本町 4-4-5｜<a target="_blank" rel="noopener" href="https://shimotoori.com/shop/kutsushitaya/">下通公式</a></span></div></div>
+      <div class="stop"><div class="n">6</div><div class="info"><b>下通：文具店</b></div></div>
+      <div class="stop"><div class="n">7</div><div class="info"><b>KINH DO - 金堂（午餐・越南料理）</b><span>下通一帶｜<a target="_blank" rel="noopener" href="https://maps.app.goo.gl/vm5ss6n5dcMvVAX26">Google Maps</a></span></div></div>
+      <div class="stop"><div class="n">8</div><div class="info"><b>永尾剱神社（海中鳥居）</b><span>開車過去，看海、逛神社｜<a target="_blank" rel="noopener" href="https://maps.app.goo.gl/arhLQSAsZbgLQuw19">Google Maps</a></span></div></div>
+      <div class="stop"><div class="n">9</div><div class="info"><b>とんかつ勝烈亭 アミュプラザくまもと店（晚餐）</b><span>アミュプラザくまもと 7F（熊本駅直結）</span></div></div>
+    </div>
+    <div class="alert ok">🛍️ <b>買了什麼</b><ul><li>襪子（靴下屋 Life and Feel 熊本下通り店）</li><li>手帕，給小孩當口水巾，材質剛好（下通的文具店）</li></ul></div>
+    <div class="alert warn">🔄 <b>跟原計畫不同</b><ul><li>車停 SAKURA MACHI 附近的 Times（原排城彩苑停車場）；早餐加 RHC CAFE</li><li>商店街只逛下通（原排上通・下通、鶴屋、くまモンスクエア）</li><li>午餐原排城彩苑 → KINH DO 金堂（越南料理）</li><li>新增：下午開車到永尾剱神社看海中鳥居</li><li>晚餐照計畫吃勝烈亭，但吃的是アミュプラザくまもと店（原排新市街本店）</li></ul></div>
+    <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/SAKURA+MACHI+Kumamoto/Kumamoto+Castle,+1-1+Honmaru,+Chuo+Ward,+Kumamoto,+860-0002,+Japan/Sakura-no-baba+Josaien,+1-1-2+Ninomaru,+Chuo+Ward,+Kumamoto,+860-0008,+Japan/Kutsushitaya+Life+and+Feel+Kumamoto+Shimotori,+4-4-5+Tetorihoncho,+Chuo+Ward,+Kumamoto,+Japan/KINH+DO+-+%E9%87%91%E5%A0%82,+Kumamoto/Einoo+Shrine,+Kumamoto/Amu+Plaza+Kumamoto/">🗺️ 實際路線 Google Maps</a>
+  </div>
+
+  <div class="day-hero">
+    <span class="day-num">DAY 5 · 9/23 (三・秋分日)</span>
+    <h2>熊本 → 阿蘇 → 九重 → 別府</h2>
+    <div class="day-meta"><span>🏨 Super Hotel 別府駅前</span></div>
+    <div class="day-route">熊本之門酒店 → 米塚 → 草千里（早餐・騎馬）→ 中岳火口 → 大觀峰 → 九重"夢"大吊橋 → Super Hotel 別府駅前 → 一蘭 大分弁天店</div>
+  </div>
+  <div class="card">
+    <h2>📍 實際停靠</h2>
+    <div class="stops">
+      <div class="stop"><div class="n">1</div><div class="info"><b>米塚</b><span>熊本県阿蘇市｜圓錐形小火山</span></div></div>
+      <div class="stop"><div class="n">2</div><div class="info"><b>草千里：休息區吃早餐</b><span>草千里停車場旁那排連棟商店</span></div></div>
+      <div class="stop"><div class="n">3</div><div class="info"><b>草千里 騎馬</b><span>草千里入口處｜10:00 一開就騎，下馬後在草千里散步</span></div></div>
+      <div class="stop"><div class="n">4</div><div class="info"><b>中岳火口</b><span>火口入口封閉，開車到外面的停車場繞一圈</span></div></div>
+      <div class="stop"><div class="n">5</div><div class="info"><b>大觀峰</b><span>熊本県阿蘇市｜阿蘇五岳全景</span></div></div>
+      <div class="stop"><div class="n">6</div><div class="info"><b>九重"夢"大吊橋</b><span>玖珠郡九重町田野 1208｜¥500</span></div></div>
+      <div class="stop"><div class="n">7</div><div class="info"><b>Super Hotel 別府駅前（停車、check-in）</b><span>別府市駅前町 13-8</span></div></div>
+      <div class="stop"><div class="n">8</div><div class="info"><b>一蘭 大分弁天店（晚餐）</b><span>大分市弁天 3-5-1｜從別府開車過去</span></div></div>
+    </div>
+    <div class="alert warn">🔄 <b>跟原計畫不同</b><ul><li>順序改成先米塚、再草千里；早餐在草千里休息區吃</li><li>新增：草千里騎馬、中岳火口外繞一圈（火口封閉）</li><li>九重"夢"大吊橋從 Day 6 提前到這天</li><li>沒去：道の駅 阿蘇、長者原、グローバルタワー</li><li>晚餐原排とよ常 → 開到大分吃一蘭 大分弁天店</li></ul></div>
+    <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Hotel+The+Gate+Kumamoto,+1-14-1+Kasuga,+Nishi+Ward,+Kumamoto,+860-0047,+Japan/Komezuka,+Otohime,+Aso,+Kumamoto+869-2225,+Japan/Kusasenrigahama,+Akamizu,+Aso,+Kumamoto+869-2612,+Japan/Aso+Nakadake+Crater,+Aso,+Kumamoto,+Japan/Daikanbo,+Yamada,+Aso,+Kumamoto+869-2313,+Japan/Kokonoe+Yume+Otsurihashi,+1208+Tano,+Kokonoe,+Kusu+District,+Oita+879-4911,+Japan/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/Ichiran+Oita+Benten,+3-5-1+Benten,+Oita,+Japan/">🗺️ 實際路線 Google Maps</a>
+  </div>
+
+  <div class="day-hero">
+    <span class="day-num">DAY 6 · 9/24 (四)</span>
+    <h2>由布院 → 別府地獄めぐり</h2>
+    <div class="day-meta"><span>🏨 Super Hotel 別府駅前</span></div>
+    <div class="day-route">Super Hotel 別府駅前 → 金鱗湖 → 湯の坪街道 → 鐵輪 5 地獄 → 柴石 2 地獄 → Super Hotel → ヤマダデンキ → 焼肉 円円</div>
+  </div>
+  <div class="card">
+    <h2>📍 實際停靠</h2>
+    <div class="stops">
+      <div class="stop"><div class="n">1</div><div class="info"><b>金鱗湖</b><span>由布市湯布院町川上 1561-1</span></div></div>
+      <div class="stop"><div class="n">2</div><div class="info"><b>湯の坪街道</b><span>由布市湯布院町</span></div></div>
+      <div class="stop"><div class="n">3</div><div class="info"><b>別府地獄めぐり 鐵輪 5 地獄</b><span>海・鬼石坊主・かまど・鬼山・白池｜車停海地獄（別府市大字鉄輪 559-1），走路串連</span></div></div>
+      <div class="stop"><div class="n">4</div><div class="info"><b>別府地獄めぐり 柴石 2 地獄</b><span>血の池・龍巻（別府市野田）｜走回海地獄取車開過去，停血の池地獄停車場</span></div></div>
+      <div class="stop"><div class="n">5</div><div class="info"><b>Super Hotel 別府駅前</b><span>回飯店休息</span></div></div>
+      <div class="stop"><div class="n">6</div><div class="info"><b>ヤマダデンキ テックランド別府駅前店</b><span>別府駅旁（約 100 m）</span></div></div>
+      <div class="stop"><div class="n">7</div><div class="info"><b>焼肉 円円（晚餐）</b><span>別府市北浜 1-746-15｜別府駅往海邊走約 5 分</span></div></div>
+    </div>
+    <div class="alert ok">🛍️ <b>買了什麼</b><ul><li><b>塵蟎機</b> IRIS FCA-A3-W 白色（ヤマダデンキ テックランド別府駅前店）</li></ul></div>
+    <div class="alert warn">🔄 <b>跟原計畫不同</b><ul><li>順序改成先由布院、再別府地獄；由布院只逛金鱗湖、湯の坪街道（沒去由布院駅・YUFUiNFO）</li><li>地獄 7 個照計畫全看，但沒吃地獄蒸し工房</li><li>九重"夢"大吊橋已在 Day 5 去過</li><li>沒去：明礬 湯の里、竹瓦温泉</li><li>晚餐原排千成／東洋軒 → 焼肉 円円</li><li>必買清單的塵蟎機在這天買到（原排 Day 3 熊本 Bic Camera）</li></ul></div>
+    <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/Lake+Kinrin,+1561-1+Kawakami,+Yufuin,+Yufu,+Oita,+Japan/Yunotsubo+Kaido,+Yufuin,+Yufu,+Oita,+Japan/Umi+Jigoku,+559-1+Kannawa,+Beppu,+Oita,+Japan/Chinoike+Jigoku,+Noda,+Beppu,+Oita,+Japan/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/Yakiniku+Ennen,+1-746-15+Kitahama,+Beppu,+Oita,+Japan/">🗺️ 實際路線 Google Maps</a>
+  </div>
+
+  <div class="day-hero">
+    <span class="day-num">DAY 7 · 9/25 (五)</span>
+    <h2>回國日｜還車 → 天神 → 機場</h2>
+    <div class="day-meta"><span>✈️ CI0117 21:00 FUK → 22:25 TPE</span></div>
+    <div class="day-route">Super Hotel 別府駅前 → IX RENTAL（還車）→ 福岡空港（寄行李）→ 地鐵到天神 → 福岡PARCO → SEAM・大國藥妝 → Bic Camera 天神 2 号館 → 福岡空港</div>
+  </div>
+  <div class="card">
+    <h2>📍 實際停靠</h2>
+    <div class="stops">
+      <div class="stop"><div class="n">1</div><div class="info"><b>一早從別府出發</b><span>路上在便利商店買東西吃</span></div></div>
+      <div class="stop"><div class="n">2</div><div class="info"><b>IX RENTAL 福岡機場店（還車）</b><span>博多区西月隈 2-4-31｜9:30 抵達、9:50 還完</span></div></div>
+      <div class="stop"><div class="n">3</div><div class="info"><b>福岡空港 國際線航廈</b><span>門市接駁車送到機場；行李寄放置物櫃</span></div></div>
+      <div class="stop"><div class="n">4</div><div class="info"><b>天神</b><span>搭地鐵空港線過去</span></div></div>
+      <div class="stop"><div class="n">5</div><div class="info"><b>福岡PARCO 本館</b><span>天神駅直結</span></div></div>
+      <div class="stop"><div class="n">6</div><div class="info"><b>麦わらストア 福岡店</b><span>福岡PARCO 本館 7F</span></div></div>
+      <div class="stop"><div class="n">7</div><div class="info"><b>SK-II</b><span>天神</span></div></div>
+      <div class="stop"><div class="n">8</div><div class="info"><b>SEAM 天神大名店</b><span>中央区大名 2-1-53 BPRスクエア天神大名 1F</span></div></div>
+      <div class="stop"><div class="n">9</div><div class="info"><b>大國藥妝</b><span>SEAM 隔壁</span></div></div>
+      <div class="stop"><div class="n">10</div><div class="info"><b>Bic Camera 天神 2 号館</b><span>中央区天神 2-4-5</span></div></div>
+      <div class="stop"><div class="n">11</div><div class="info"><b>福岡空港 國際線航廈</b><span>出境後 PORTER → 貴賓室休息</span></div></div>
+      <div class="stop"><div class="n">✈️</div><div class="info"><b>CI0117 21:00 起飛</b><span>22:25 抵 TPE</span></div></div>
+    </div>
+    <div class="alert ok">🛍️ <b>買了什麼</b><ul><li><b>吉伊卡哇</b> 騎乘款（福岡PARCO 本館）</li><li><b>海賊王</b>：懸賞令、布魯克人形立牌、抽卡（1/12 機率）抽到魯夫（麦わらストア 福岡店）</li><li><b>SK-II 保養套裝</b>，給老婆、媽媽（天神）</li><li>潤髮乳（SEAM 天神大名店）</li><li>藥妝（大國藥妝）</li><li><b>寶可夢卡 烈空坐限定版</b> 20 張（一人限購 10 張）、電競冰絲袖套（Bic Camera 天神 2 号館）</li><li><b>PORTER 皮夾</b>，給岳父（福岡空港 國際線出境後）</li></ul></div>
+    <div class="alert warn">🔄 <b>跟原計畫不同</b><ul><li>IX RENTAL 不接受延後還車：原排 14:30 還車 → 一早從別府出發，9:50 還完</li><li>原排開車到天神 → 還車後行李寄機場置物櫃，搭地鐵進天神</li><li>藍瓶已在 Day 2 去過</li><li>明太子、博多通りもん沒買</li></ul></div>
+    <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Super+Hotel+Beppu+Ekimae,+13-8+Ekimaecho,+Beppu,+Oita,+874-0935,+Japan/IX+RENTAL,+2-4-31+Nishitsukiguma,+Hakata+Ward,+Fukuoka,+812-0058,+Japan/Fukuoka+Airport,+778-1+Shimousui,+Hakata+Ward,+Fukuoka,+812-0003,+Japan/Fukuoka+PARCO,+Tenjin,+Chuo+Ward,+Fukuoka,+Japan/SEAM+Tenjin+Daimyo,+2-1-53+Daimyo,+Chuo+Ward,+Fukuoka,+Japan/Bic+Camera+Tenjin+2,+2-4-5+Tenjin,+Chuo+Ward,+Fukuoka,+Japan/Fukuoka+Airport,+778-1+Shimousui,+Hakata+Ward,+Fukuoka,+812-0003,+Japan/">🗺️ 實際路線 Google Maps</a>
+  </div>
 </section>
 
 <!-- ============ FOOD ============ -->
@@ -670,7 +997,7 @@
       <tbody>
         <tr><td><b>一蘭 本社總本店</b>（24h）</td><td>博多区中洲 5-3-2；本社限定「重箱」吃法</td></tr>
         <tr><td><b>博多もつ鍋 おおやま 本店</b></td><td>博多区中洲 3-7-24；醬油味噌湯頭都神</td></tr>
-        <tr><td><b>博多もつ鍋 笑樂 本店</b> ✅ Day 2 吃過</td><td>中央区西中洲 11-4</td></tr>
+        <tr><td><b>博多もつ鍋 笑樂 本店</b></td><td>中央区西中洲 11-4</td></tr>
         <tr><td><b>水炊き 橙</b>（中洲）</td><td>博多区中洲 5-3-8；雞湯系名店</td></tr>
         <tr><td><b>水炊き 若杉 本店</b></td><td>博多区奈良屋町 8-12（旅館步行 7 分）</td></tr>
         <tr><td><b>元祖博多めんたい重</b></td><td>中央区西中洲 6-15；明太子米飯重</td></tr>
@@ -720,38 +1047,20 @@
 <!-- ============ SHOPPING ============ -->
 <section class="panel" id="shopping" role="tabpanel">
   <div class="card">
-    <h2>🔌 行前清單（家電・周邊）</h2>
+    <h2>🔌 Bic Camera 必買清單（Day 3 熊本）</h2>
+    <p style="font-size:13px;color:var(--text-soft)"><b>主場：Day 3 傍晚 アミュプラザくまもと店</b>（熊本市西区春日 3-15-60 JR熊本白川ビル 1F・2F，10:00–20:00，飯店步行 2–5 分）。熊本只有這一間 — 沒買到的，Day 7 在天神 1・2 号館（藍瓶旁）或機場出境後的 <b>Air BicCamera</b> 補。吹風機、塵蟎機的箱子放後座。其他天順路的店見每日行程的「🔌 附近 Bic Camera」。</p>
     <div class="table-wrap"><table>
-      <thead><tr><th>品項</th><th>型號</th><th>結果</th></tr></thead>
+      <thead><tr><th>品項</th><th>日本型番</th><th>參考價</th><th>電壓</th></tr></thead>
       <tbody>
-        <tr><td><b>吹風機</b></td><td>Panasonic <b>EH-NE7N</b></td><td>✅ Day 2 Bic Camera 天神</td></tr>
-        <tr><td><b>刮鬍刀</b>（給爸爸）</td><td>Panasonic ラムダッシュ パームイン <b>ES-PV3A</b><br><span style="color:var(--muted);font-size:12px">掌上型 5 枚刃，ES-PV6A 同款</span></td><td>✅ Day 2 Bic Camera 天神</td></tr>
-        <tr><td><b>塵蟎機</b>（白色）</td><td>アイリスオーヤマ 布団クリーナー <b>FCA-A3-W</b></td><td>✅ Day 6 ヤマダデンキ 別府駅前</td></tr>
-        <tr><td><b>滑鼠墊</b></td><td>ARTISAN（アーチサン）NINJA FX ゼロ／飛燕</td><td>❌ 沒買到</td></tr>
-        <tr><td><b>滑鼠</b></td><td>Pulsar（パルサー）X2V2／Xlite 系列</td><td>❌ 沒買到</td></tr>
+        <tr><td><b>吹風機</b></td><td>Panasonic <b>EH-NE7N</b><br><span style="color:var(--muted);font-size:12px"><a target="_blank" rel="noopener" href="https://gmonline.twglobalmall.com/product/2EC0321160001015">台灣商品頁</a>對應型號 ⚠️ 待確認</span></td><td>⚠️ 未查到</td><td>⚠️ <b>只有 AC100V</b></td></tr>
+        <tr><td><b>刮鬍刀</b><br>掌上型 5 枚刃</td><td>Panasonic <b>ラムダッシュ パームイン</b><br>ES-PV6A／ES-PV3A</td><td>⚠️ 未查到</td><td>✅ 100–240V<br>USB-C 充電</td></tr>
+        <tr><td><b>塵蟎機</b></td><td>アイリスオーヤマ<br><b>FCA-B2H</b>／FCA-A3</td><td>約 ¥17,720–18,800<br><span style="color:var(--muted);font-size:12px">⚠️ 未證實</span></td><td>⚠️ <b>只有 AC100V</b></td></tr>
+        <tr><td><b>滑鼠墊</b>（劍匠）</td><td><b>ARTISAN（アーチサン）</b><br>NINJA FX ゼロ／飛燕</td><td>XXL 約 ¥7,500<br><span style="color:var(--muted);font-size:12px">⚠️ 未證實</span></td><td>—</td></tr>
+        <tr><td><b>滑鼠</b>（palus）</td><td>推測 <b>Pulsar（パルサー）</b><br>X2V2／Xlite ⚠️ 待確認</td><td>約 ¥9,700<br><span style="color:var(--muted);font-size:12px">⚠️ 未證實</span></td><td>USB</td></tr>
       </tbody>
     </table></div>
-    <div class="alert info">⚡ <b>電壓</b>：吹風機 EH-NE7N 日本版官方規格是 <b>AC100V</b>；刮鬍刀是 <b>AC100–240V 自動切換</b>。</div>
-  </div>
-
-  <div class="card">
-    <h2>🎁 其他戰利品</h2>
-    <div class="table-wrap"><table>
-      <thead><tr><th>Day</th><th>品項</th><th>在哪買</th></tr></thead>
-      <tbody>
-        <tr><td>2</td><td>藍瓶 <b>天神限定杯</b></td><td>藍瓶咖啡 福岡天神</td></tr>
-        <tr><td>4</td><td>襪子</td><td>靴下屋 Life and Feel 熊本下通り店</td></tr>
-        <tr><td>4</td><td>手帕（給小孩當口水巾，材質剛好）</td><td>下通的文具店</td></tr>
-        <tr><td>7</td><td><b>吉伊卡哇</b> 騎乘款</td><td>福岡PARCO 本館</td></tr>
-        <tr><td>7</td><td><b>海賊王</b>：懸賞令、布魯克人形立牌、抽卡（1/12 機率）抽到魯夫</td><td>麦わらストア 福岡店（PARCO 本館 7F）</td></tr>
-        <tr><td>7</td><td><b>SK-II 保養套裝</b>（給老婆、媽媽）</td><td>天神</td></tr>
-        <tr><td>7</td><td>潤髮乳</td><td>SEAM 天神大名店</td></tr>
-        <tr><td>7</td><td>藥妝</td><td>大國藥妝（SEAM 隔壁）</td></tr>
-        <tr><td>7</td><td><b>寶可夢卡 烈空坐限定版</b>（一人限購 10 張，兩人共 20 張）、電競冰絲袖套</td><td>Bic Camera 天神 2 号館</td></tr>
-        <tr><td>7</td><td><b>PORTER 皮夾</b>（給岳父）</td><td>福岡空港 國際線 出境後</td></tr>
-      </tbody>
-    </table></div>
-    <div class="alert info">明太子、博多通りもん這次都沒買。</div>
+    <div class="alert warn">⚠️ <b>吹風機、塵蟎機的日本版只有 AC100V</b>（官方規格「AC100V 50-60Hz」），台灣 110V 使用有風險 — 買前再想想，或改挑國際電壓款。</div>
+    <div class="alert info">🔎 出發前在 biccamera.com 商品頁查熊本アミュプラザ店有沒有貨。<br>🛂 免稅帶<b>護照正本</b>，熊本店在店內免稅對應收銀台辦理（⚠️ 未查到官方頁面）；門檻與入境章規定未查到官方頁面，保險起見入境時請審查官蓋章。</div>
   </div>
 
   <div class="card">
@@ -784,8 +1093,20 @@
         <tr><td>岡本屋 地獄蒸布丁（不耐放）</td><td>明礬 岡本屋売店</td></tr>
         <tr><td>かぼす製品、椎茸乾貨</td><td>別府站、道の駅</td></tr>
         <tr><td>関アジ・関サバ 加工品</td><td>別府站、福岡空港</td></tr>
-        <tr><td>由布院 B-speak ロールケーキ</td><td>湯之坪商店街</td></tr>
+        <tr><td>由布院 B-speak ロールケーキ</td><td>湯之坪商店街（Day 6 順買）</td></tr>
         <tr><td>Snoopy 茶屋限定品</td><td>湯之坪商店街</td></tr>
+      </tbody>
+    </table></div>
+    <h3>🛒 採買時機</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Day</th><th>採買重點</th></tr></thead>
+      <tbody>
+        <tr><td>2</td><td>工房とったん「またいちの塩」花藻塩；一蘭の森 限定伴手禮</td></tr>
+        <tr><td>4</td><td>城彩苑（馬肉、陣太鼓）；下午上通・下通、鶴屋 くまモンスクエア</td></tr>
+        <tr><td>5</td><td>道の駅阿蘇（阿蘇牛乳）；別府站湯花</td></tr>
+        <tr><td>6</td><td>由布院湯之坪（B-speak、Snoopy）；明礬湯之里補湯花；岡本屋現買布丁</td></tr>
+        <tr><td>3</td><td><b>Bic Camera 熊本（アミュプラザ）</b>照必買清單買</td></tr>
+        <tr><td>7</td><td>明太子、通りもん在<b>機場出境後免稅店</b>買；熊本沒買到的在天神 Bic 或機場 Air BicCamera 補</td></tr>
       </tbody>
     </table></div>
   </div>
@@ -834,9 +1155,10 @@
     <div class="table-wrap"><table>
       <tbody>
         <tr><td>取/還車門市</td><td><b>IX RENTAL 福岡機場店</b><br>🇯🇵 アイエックスレンタカー 福岡支店<br>🇯🇵 福岡市博多区西月隈 2-4-31<br>🇬🇧 2-4-31 Nishitsukiguma, Hakata-ku, Fukuoka<br>📞 <a href="tel:+818032261688">+81-80-3226-1688</a></td></tr>
-        <tr><td>取車</td><td>9/19 訂單 10:00；門市不接受改時間，<b>實際約 19:00 取車</b></td></tr>
-        <tr><td>還車</td><td>9/25 訂單 10:00；門市不接受延後，<b>9:30 抵達、9:50 還完車</b></td></tr>
-        <tr><td>接駁</td><td><b>無定時接駁車</b>：取車時到「一般車」乘降場後打電話請門市來接；還車後門市開車送到機場</td></tr>
+        <tr><td>取車</td><td>9/19 10:00（<b>需改 18:45–19:30</b>）</td></tr>
+        <tr><td>還車</td><td>9/25 10:00（<b>需改 14:30–15:00</b>）</td></tr>
+        <tr><td>門市營業</td><td>⚠️ 未確認（查到週日 08:00–20:00）</td></tr>
+        <tr><td>接駁</td><td><b>無定時接駁車</b>：到「一般車」乘降場後打電話請門市來接</td></tr>
         <tr><td>車輛</td><td>5 人座 / <b>行李僅 2 件</b> / 自排 / 空調</td></tr>
         <tr><td>費用</td><td>NT$ 6,697（線上已付）</td></tr>
         <tr><td>燃油 / 里程</td><td>滿油取還 / 無限里程</td></tr>
@@ -868,15 +1190,16 @@
     </div>
     <p style="font-size:12px;color:var(--text-soft);margin-top:8px">☝️ 點圖可開大圖（IX RENTAL 福岡支店官方指引，含日／英／中／韓四語）</p>
 
-    <div class="alert warn">📞 接人專線同門市 <a href="tel:+818032261688">+81-80-3226-1688</a>；「一般車」是一般車輛乘降區，不是巴士站。<br>🚐 還車後門市開接駁車送我們到福岡空港國際線航廈。</div>
+    <div class="alert warn">📞 接人專線同門市 <a href="tel:+818032261688">+81-80-3226-1688</a>；「一般車」是一般車輛乘降區，不是巴士站。<br>⚠️ <b>還車後回機場</b>的接送方式未確認，取車時當面問清楚。</div>
 
     <h3>訂單已含（不必另外加購）</h3>
     <ul>
       <li>✅ <b>ETC 卡</b>、<b>GPS 導航</b>、<b>多人駕駛</b>（1 位免費）</li>
       <li>✅ <b>租車自負額 US$0</b>、車輛竊盜搶奪 US$0</li>
       <li>✅ 第三人責任險（自負額 US$1,237）、營業損失賠償 NOC（上限 US$800）</li>
+      <li>❓ <b>KEP</b> 6 天 ¥15,000，取車臨櫃請對方跟 ETC 實付比較</li>
     </ul>
-    <div class="alert info">📝 訂單標示<b>不可更改</b>，門市也不接受協調：9/19 晚上去取車照樣有車；9/25 只能照訂單一早還車。</div>
+    <div class="alert danger">⚠️ 訂單標示<b>不可更改</b>；<b>2026/9/18 10:00 前可免費取消</b>。時間協調不成要在期限前重訂。</div>
     <h3>必備文件</h3>
     <ul class="checklist">
       <li>台灣駕照正本（兩位駕駛）</li>
@@ -888,7 +1211,7 @@
 
   <div class="card">
     <h2>🚇 市區交通（地鐵・市電・巴士）</h2>
-    <p style="font-size:13px;color:var(--text-soft)">9/19 傍晚取車 → 9/25 上午還車，中間全程自駕。Day 7 還車後靠地鐵：福岡空港 → 天神採買 → 回機場。資料 2026/08 查證。</p>
+    <p style="font-size:13px;color:var(--text-soft)">全程自駕，以下是不開車時的備援：Day 7 還車後採買、市區夜間移動、喝酒不開車。資料 2026/08 查證，出發前再對一次官網。</p>
 
     <h3>🌸 福岡市地下鐵（福岡市地下鉄 / Fukuoka City Subway）</h3>
     <div class="table-wrap"><table>
@@ -929,7 +1252,7 @@
       <tbody>
         <tr><td>軌道運輸</td><td><b>沒有地鐵也沒有市電</b></td></tr>
         <tr><td>主要交通</td><td><b>龜之井巴士</b>（亀の井バス / Kamenoi Bus）— 別府駅・別府駅西口・鐵輪為轉運點</td></tr>
-        <tr><td>一日券</td><td>My Beppu Free（マイべっぷフリー）迷你版，含鐵輪・地獄區 — 價格以官網為準</td></tr>
+        <tr><td>一日券</td><td>My Beppu Free（マイべっぷフリー）迷你版，含鐵輪・地獄區 — <b>價格出發前官網確認</b></td></tr>
         <tr><td>JR</td><td>日豐本線 別府 ↔ 大分 約 12 分</td></tr>
       </tbody>
     </table></div>
@@ -937,27 +1260,46 @@
   </div>
 
   <div class="card">
-    <h2>🍽️ 用餐：全程沒預約，都是現場</h2>
-    <div class="alert info">連假期間（9/19–9/23）也沒訂位。唯一撲空的是 Day 3 柳川御花的鰻魚飯（客滿），改吃同在柳川的万榮堂。</div>
+    <h2>🍽️ 用餐策略（我們不預約，全部現場）</h2>
+    <p style="font-size:13px;color:var(--text-soft)">不訂位就得靠時間差 — 下面是每家的開門時間與該去的時段。</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>餐廳</th><th>營業時間</th><th>現場攻略</th></tr></thead>
+      <tbody>
+        <tr><td><b>藩主立花邸 蒸籠鰻魚飯</b><br>Day 3 午餐</td><td><b>11:00–15:00</b></td><td>⚠️ <b>最要留意的一家</b>。L.O. 未公布，Day 3 已調成 <b>13:00 進場</b>，再晚有吃不到的風險</td></tr>
+        <tr><td><b>一蘭の森</b><br>Day 2 午餐</td><td>依官網</td><td>現場候位，連假排隊抓 30 分</td></tr>
+        <tr><td><b>食堂 おわん</b><br>Day 3 早餐</td><td>7:30–10:00（L.O. 9:30）</td><td>⚠️ <b>不定休</b>，可能撲空。備案：川端商店街或便利商店</td></tr>
+        <tr><td><b>水炊き 若杉 / 橙</b></td><td>晚間</td><td>不訂位就<b>開店就進場</b>（17:30–18:00）</td></tr>
+        <tr><td><b>博多もつ鍋 おおやま / 笑樂</b></td><td>晚間</td><td>連假 19:00 後大排長龍，<b>18:00 前入座</b></td></tr>
+        <tr><td><b>とよ常 本店</b>（別府）</td><td>午/晚</td><td>銅板神店，避開 12:00 與 19:00</td></tr>
+      </tbody>
+    </table></div>
+    <div class="alert ok">🎯 <b>不預約的通則：比人潮早一輪</b>。午餐 11:00 前、晚餐 18:00 前入座，連假幾乎都不用排。</div>
+    <div class="alert warn">⚠️ <b>唯一真正有風險的是 Day 3 鰻魚飯</b>（15:00 就關）。趕不上的話，備案是柳川市區的 <b>若松屋</b> 或 <b>本吉屋</b>（晚間也營業）。</div>
   </div>
 
   <div class="card">
-    <h3>門票（成人單張，2026/08 行前查證）</h3>
+    <h3>門票（成人單張）</h3>
     <div class="table-wrap"><table>
       <thead><tr><th>景點</th><th>票價</th></tr></thead>
       <tbody>
-        <tr><td>熊本城（Day 4）</td><td>¥800（9:00–17:00 / 最終 16:00）</td></tr>
-        <tr><td>九重"夢"大吊橋（Day 5）</td><td>¥500（8:30–18:00）</td></tr>
+        <tr><td>熊本城</td><td>¥800（9:00–17:00 / 最終 16:00）｜<b>8/13 震後重新開園</b></td></tr>
         <tr><td>別府地獄めぐり（Day 6，7 地獄共通券）</td><td>¥2,400（8:00–17:00；單館 ¥450）</td></tr>
+        <tr><td>九重"夢"大吊橋（Day 6）</td><td>¥500（8:30–18:00）</td></tr>
+        <tr><td>グローバルタワー（Day 5 晚上）</td><td>¥300（展望台 9:00–21:00）</td></tr>
+        <tr><td>COMICO ART MUSEUM（Day 6，選擇性）</td><td>¥1,700（事前預約優先）</td></tr>
+        <tr><td>柳川松濤園・藩主立花邸（含史料館）</td><td>¥1,000（見學 10:00–16:00）</td></tr>
+        <tr><td>阿蘇火山博物館</td><td>¥1,100（選擇性）｜警戒等級 2（9/4 起）照常開放</td></tr>
+        <tr><td>竹瓦溫泉</td><td>入浴 ¥300 / 砂湯 ¥1,500</td></tr>
+        <tr><td>地獄蒸し工房</td><td>食材 ¥500–1,500 + 蒸し釜 小 ¥400／大 ¥600（15 分內）</td></tr>
       </tbody>
     </table></div>
-    <h3>免費</h3>
-    <p style="font-size:13px;color:var(--text-soft)">箱島神社、太宰府天滿宮、城彩苑、永尾剱神社、米塚、草千里浜（停車 ¥500）、大觀峰、金鱗湖、由布院湯の坪街道</p>
+    <h3>完全免費</h3>
+    <p style="font-size:13px;color:var(--text-soft)">箱島神社、夫婦岩 二見ヶ浦、太宰府天滿宮、城彩苑、米塚展望所、草千里浜（停車 ¥500）、大觀峰、道の駅 阿蘇、長者原、由布院湯之坪、由布院駅・YUFUiNFO、明礬湯之里</p>
   </div>
 
   <div class="card">
-    <h2>💰 預算試算（行前估算）</h2>
-    <p style="font-size:13px;color:var(--text-soft)">出發前估的 2 人共用固定費用，不是實際花費；門票含了後來沒去的松濤園、グローバルタワー。餐費、伴手禮、個人消費另計</p>
+    <h2>💰 預算試算</h2>
+    <p style="font-size:13px;color:var(--text-soft)">2 人共用固定費用；餐費、伴手禮、個人消費另計</p>
     <div class="table-wrap"><table>
       <tbody>
         <tr><td>🏨 住宿 6 晚</td><td><b>TWD 13,329</b></td></tr>
@@ -970,22 +1312,6 @@
     </table></div>
     <div class="alert info">日幣小計 <b>¥34,000</b>（≈ TWD 7,480）</div>
     <div class="alert ok">合計 ≈ <b>NT$27,510（2 人）</b> / 每人約 <b>NT$13,755</b></div>
-  </div>
-
-  <div class="card">
-    <h2>📱 必裝 App</h2>
-    <div class="table-wrap"><table>
-      <thead><tr><th>App</th><th>用途</th></tr></thead>
-      <tbody>
-        <tr><td><b>Google Maps</b></td><td>主要導航</td></tr>
-        <tr><td><b>NAVITIME for Japan Travel</b></td><td>離線地圖、JR 換乘、加油站</td></tr>
-        <tr><td><b>Yahoo!カーナビ</b></td><td>路線比 Google 準</td></tr>
-        <tr><td><b>Tabelog 食べログ</b></td><td>查餐廳評分、營業時間、公休日</td></tr>
-        <tr><td><b>Japan Official Travel</b></td><td>災害警報、急救醫院</td></tr>
-        <tr><td><b>LINE</b></td><td>日本人通訊主要工具</td></tr>
-        <tr><td>PayPay（可選）</td><td>日本最大電子支付</td></tr>
-      </tbody>
-    </table></div>
   </div>
 </section>
 
@@ -1091,27 +1417,34 @@
 
   <div class="card">
     <h2>🅿️ 停車場一覽</h2>
-    <p style="font-size:13px;color:var(--text-soft)">我們實際停過的地方；費率是 2026/08 行前查證的資料。日本幾乎沒有合法路邊停車，每個點都要先想好停哪。</p>
+    <p style="font-size:13px;color:var(--text-soft)">2026/08 查證。日本幾乎沒有合法路邊停車，每個點都要先想好停哪。</p>
     <div class="table-wrap"><table>
-      <thead><tr><th>Day</th><th>地點</th><th>費率</th><th>備註</th></tr></thead>
+      <thead><tr><th>Day</th><th>地點</th><th>費率</th><th>要注意</th></tr></thead>
       <tbody>
-        <tr><td>1・2・3早</td><td><b>中今旅館</b>自有</td><td><b>¥500/日</b></td><td>無法預約，現場問櫃台</td></tr>
+        <tr><td>1・2・3早</td><td><b>中今旅館</b>自有</td><td><b>¥500/日</b></td><td>⚠️ <b>無法預約</b>，現場問櫃台</td></tr>
         <tr><td></td><td>↳ トラストパーク櫛田神社前<br><span style="color:var(--muted);font-size:12px">冷泉町 8-4，步行 3 分</span></td><td>2hr ¥500<br>12hr ¥1,400</td><td>就在旅館旁</td></tr>
         <tr><td></td><td>↳ Times（櫛田神社周邊）</td><td>60分 ¥200<br>日間上限 ¥1,500<br><b>夜間 20:00–08:00 上限 ¥600</b></td><td>過夜停這種較划算</td></tr>
-        <tr><td>2</td><td><b>糸島</b><br><span style="color:var(--muted);font-size:12px">一蘭の森・とったん・箱島神社</span></td><td><b>免費</b></td><td></td></tr>
-        <tr><td>2</td><td><b>天神</b>：天神中央公園的停車場</td><td>—</td><td>晚餐、藍瓶、Bic 都走路，逛完開回中今</td></tr>
-        <tr><td>3</td><td><b>太宰府駐車センター</b></td><td><b>¥500 一次</b></td><td>850 台、8:00–17:00</td></tr>
+        <tr><td>2</td><td><b>糸島全線</b><br><span style="color:var(--muted);font-size:12px">一蘭の森・とったん・箱島神社・二見ヶ浦</span></td><td><b>免費</b></td><td>二見ヶ浦傍晚會滿，<b>17:30 前卡位</b></td></tr>
+        <tr><td>3</td><td><b>太宰府駐車センター</b></td><td><b>¥500 一次</b></td><td>850 台、8:00–17:00。<b>連假 10:00 後易滿</b>，我們排 9:00 到剛好</td></tr>
+        <tr><td>3</td><td><b>柳川 松濤園・立花邸</b></td><td><b>免費</b></td><td>園區專用</td></tr>
         <tr><td>3・4</td><td><b>熊本之門酒店</b><br>⚠️ <b>飯店無停車場</b></td><td>附近 Times 約 30分 ¥200<br><b>24hr 上限 ¥1,100–1,200</b></td><td>Times JR熊本駅ビル第3（2分）／九州労働金庫熊本駅支店（2分）／熊本駅前第4（3分）<br>⚠️ <b>地下車位夜間關閉、無法取車</b></td></tr>
-        <tr><td>4</td><td><b>熊本城・下通</b>：SAKURA MACHI Kumamoto 附近的 Times</td><td>依現場</td><td>RHC CAFE、熊本城、城彩苑、下通都走路</td></tr>
+        <tr><td>4</td><td><b>熊本城・城彩苑</b></td><td><b>2hr ¥400，之後每hr ¥200</b><br><span style="color:var(--muted);font-size:12px">2026/4/1 改制</span></td><td>停到傍晚約 8 hr ≈ <b>¥1,600</b>，下午走路去上通・下通</td></tr>
+        <tr><td></td><td>↳ 二之丸・三之丸駐車場</td><td>—</td><td>4–10 月 8:00–18:30；城彩苑滿了停這，<b>有免費接駁</b>（10–15 分一班）</td></tr>
+        <tr><td>3・4</td><td><b>西松屋 熊本江越店</b>（想到再去）</td><td><b>免費</b></td><td>附設 28 台，9:00–20:00</td></tr>
         <tr><td>5</td><td><b>草千里</b></td><td><b>¥500/日</b></td><td>2024/7 起改<b>自動攝影 + 後付制</b>（無人閘門，別以為沒收費就開走）</td></tr>
-        <tr><td>5</td><td><b>大觀峰</b></td><td><b>免費</b></td><td></td></tr>
-        <tr><td>5</td><td><b>九重"夢"大吊橋</b></td><td><b>免費</b></td><td>中村區約 229 台，8:30–18:00</td></tr>
+        <tr><td>5</td><td><b>道の駅 阿蘇</b> / <b>大觀峰</b></td><td><b>免費</b></td><td>大觀峰茶店 8:30–17:00</td></tr>
         <tr><td>5・6</td><td><b>Super Hotel 別府駅前</b></td><td><b>¥500/晚</b></td><td><b>先到先停、不能預約</b></td></tr>
-        <tr><td>6</td><td><b>由布院（金鱗湖・湯の坪街道）</b></td><td>依現場</td><td>周邊民營停車場</td></tr>
-        <tr><td>6</td><td><b>別府地獄めぐり</b>（7 地獄）</td><td><b>免費</b></td><td>鐵輪 5 個停<b>海地獄</b>走路串連；柴石 2 個開車約 10 分，停<b>血の池地獄</b></td></tr>
+        <tr><td>5</td><td><b>グローバルタワー</b></td><td>室外<b>免費</b></td><td>室外 138 台；室內首 1 hr 免費、之後 ¥100/hr</td></tr>
+        <tr><td>6</td><td><b>別府地獄めぐり</b>（7 地獄）／<b>明礬 湯の里</b></td><td><b>免費</b></td><td>鐵輪 5 個停海地獄走路串連，柴石 2 個另外開車約 10 分；湯の里 80 台</td></tr>
+        <tr><td>6</td><td><b>九重"夢"大吊橋</b></td><td><b>免費</b></td><td>中村區約 229 台，8:30–18:00</td></tr>
+        <tr><td>6</td><td><b>由布院（湯の坪街道）</b></td><td>依現場</td><td>9/24 是平日；官方提醒連假周邊道路與停車場「大変混雑」，先看停車場地圖</td></tr>
+        <tr><td>6</td><td><b>竹瓦温泉</b></td><td>—</td><td>⚠️ <b>無停車場</b>，停周邊投幣式</td></tr>
+        <tr><td>3</td><td><b>Bic Camera 熊本（アミュプラザ）</b></td><td>—</td><td>車停飯店附近的 Times，走路 2–5 分過去</td></tr>
+        <tr><td>7</td><td><b>天神（藍瓶）</b></td><td>依現場</td><td>藍瓶沒有停車場，停周邊投幣式；若順便逛 Bic，提携「天神ビックタワー駐車場」單張收據滿 ¥3,000 送 1hr</td></tr>
       </tbody>
     </table></div>
     <div class="alert info">💡 <b>投幣停車場怎麼用</b>：車輪下擋板升起 → 離開前到繳費機<b>輸入車位號碼</b>付款 → 擋板降下才能開走。忘記付款開不走。</div>
+    <div class="alert ok">💰 <b>6 天停車費預估</b>：中今 ¥1,000 + 熊本 2 晚 ~¥2,400 + 景點 ~¥2,500 + 別府 ¥1,000 ≈ <b>¥7,000</b>（已列入預算）。</div>
   </div>
 
   <div class="card">
@@ -1134,6 +1467,82 @@
     </div>
     <div class="alert info">📋 我們的保險：<b>租車自負額 US$0</b>、車輛竊盜 US$0、第三人責任險（自負額 US$1,237）、NOC 上限 US$800 — 已全包在訂單內。</div>
     <div class="alert danger">⚠️ 但<b>肇事逃逸、酒駕、無照</b>等情況，保險一律不理賠。</div>
+  </div>
+</section>
+
+<!-- ============ PREP ============ -->
+<section class="panel" id="prep" role="tabpanel">
+  <div class="card">
+    <h2>✅ 已完成</h2>
+    <ul class="checklist">
+      <li class="done">機票 CI0128 / CI0117</li>
+      <li class="done">租車 Klook / IX RENTAL</li>
+      <li class="done">中今旅館（9/19、20）</li>
+      <li class="done">熊本之門酒店（9/21、22）</li>
+      <li class="done">Super Hotel 別府駅前（9/23、24）</li>
+      <li class="done">每日 Google Maps 路線</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🔴 最優先：2026/9/18 10:00 前必辦（免費取消期限）</h2>
+    <ul class="checklist urgent">
+      <li>💬 <b>用 LINE 跟 IX RENTAL 約</b>改取/還車時間（電話備用 <a href="tel:+818032261688">+81-80-3226-1688</a>）<br>
+        9/19：10:00 → <b>18:45–19:30</b>　9/25：10:00 → <b>14:30–15:00</b><br>
+        順便確認門市營業時間、機場接駁、兩位駕駛登記、ETC + GPS 領取</li>
+      <li>協調不成 → <b>9/18 10:00 前免費取消，改訂別家</b></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🗓️ 一個月前</h2>
+    <ul class="checklist">
+      <li>駕照日文譯本（台灣監理所 NT$100，兩位各一份）</li>
+      <li>海外醫療險</li>
+      <li>📞 中今旅館 +81-92-261-5070：停車位、21:00 前抵達、行李寄放</li>
+      <li>📞 熊本之門酒店 +81-96-288-0170：<b>附近停哪個停車場</b>（飯店無停車場）</li>
+      <li>📞 Super Hotel 別府駅前 +81-977-73-9000：停車與早餐時間</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🗓️ 兩週內</h2>
+    <ul class="checklist">
+      <li>換日幣（現金 ¥40,000–60,000/人；中今旅館 ¥24,800 現場付現）</li>
+      <li>海外刷卡（玉山 Pi 拍錢 / 聯邦賴點 / 樂天）</li>
+      <li>eSIM（Holafly / Ubigi / 中華電信漫遊）— Super Hotel <b>不提供網路</b></li>
+      <li>📞 食堂おわん 092-292-0409：確認 9/21 有開（不定休）</li>
+      <li>記下各店營業時間（<b>不預約，全部現場</b>）：立花邸鰻魚飯 11:00–15:00、食堂おわん 7:30–10:00（不定休）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🗓️ 出發前</h2>
+    <ul class="checklist">
+      <li>印日文譯本、駕照、護照、<b>Klook 憑證</b>（紙本必備）</li>
+      <li>印機票訂位代號、三家飯店訂房確認單（含 PIN 碼）</li>
+      <li>下載離線地圖（中今旅館 / 熊本之門 / Super Hotel / IX RENTAL）</li>
+      <li>健保卡</li>
+      <li>確認<b>阿蘇噴火警戒等級</b>（9/4 起為 <b>2</b>）<a target="_blank" href="https://www.aso-volcano.jp/">aso-volcano.jp</a></li>
+      <li>確認阿蘇道路狀況 <a target="_blank" href="https://www.city.aso.kumamoto.jp/trafficinfo/">阿蘇市道路交通情報</a></li>
+      <li class="done">地獄蒸し工房 9/24 照常營業（休館日為每月第 3 個週三，9 月是 9/16）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>📱 必裝 App</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>App</th><th>用途</th></tr></thead>
+      <tbody>
+        <tr><td><b>Google Maps</b></td><td>主要導航</td></tr>
+        <tr><td><b>NAVITIME for Japan Travel</b></td><td>離線地圖、JR 換乘、加油站</td></tr>
+        <tr><td><b>Yahoo!カーナビ</b></td><td>路線比 Google 準</td></tr>
+        <tr><td><b>Tabelog 食べログ</b></td><td>查餐廳評分、營業時間、公休日</td></tr>
+        <tr><td><b>Japan Official Travel</b></td><td>災害警報、急救醫院</td></tr>
+        <tr><td><b>LINE</b></td><td>日本人通訊主要工具</td></tr>
+        <tr><td>PayPay（可選）</td><td>日本最大電子支付</td></tr>
+      </tbody>
+    </table></div>
   </div>
 </section>
 
@@ -1188,8 +1597,12 @@
       <tbody id="fxRefTable">
         <tr><td>一蘭拉麵</td><td>¥980</td><td>—</td></tr>
         <tr><td>もつ鍋一人份</td><td>¥2,500</td><td>—</td></tr>
+        <tr><td>立花邸 鰻魚せいろ蒸し（おすすめセット）</td><td>¥3,888</td><td>—</td></tr>
+        <tr><td>とよ常特上天丼</td><td>¥980</td><td>—</td></tr>
         <tr><td>熊本城門票</td><td>¥800</td><td>—</td></tr>
+        <tr><td>松濤園・立花邸 入園</td><td>¥1,000</td><td>—</td></tr>
         <tr><td>別府地獄めぐり 共通券</td><td>¥2,400</td><td>—</td></tr>
+        <tr><td>地獄蒸し工房（一份）</td><td>¥1,000</td><td>—</td></tr>
         <tr><td>湯花入浴劑（小包）</td><td>¥600</td><td>—</td></tr>
         <tr><td>博多通りもん（10 入）</td><td>¥1,400</td><td>—</td></tr>
         <tr><td>B-speak ロールケーキ（半條）</td><td>¥1,600</td><td>—</td></tr>
@@ -1217,6 +1630,9 @@
       <a href="tel:+81922615070"><span class="name">🏨 中今旅館</span><span class="num">+81-92-261-5070</span></a>
       <a href="tel:+81962880170"><span class="name">🏨 熊本之門酒店</span><span class="num">+81-96-288-0170</span></a>
       <a href="tel:+81977739000"><span class="name">🏨 Super Hotel 別府駅前</span><span class="num">+81-977-73-9000</span></a>
+      <a href="tel:+81944732217"><span class="name">🍱 藩主立花邸（園區餐廳）</span><span class="num">+81-944-73-2217</span></a>
+      <a href="tel:+81922920409"><span class="name">🍚 食堂 おわん（Day 3 早餐）</span><span class="num">092-292-0409</span></a>
+      <a href="tel:+81977663775"><span class="name">♨️ 地獄蒸し工房</span><span class="num">0977-66-3775</span></a>
     </div>
   </div>
 
@@ -1245,7 +1661,7 @@
     <tbody>
       <tr><td><b>一蘭 本社總本店</b>（24h）</td><td>中洲 5-3-2｜本社限定「重箱」</td></tr>
       <tr><td><b>博多もつ鍋 おおやま</b></td><td>中洲 3-7-24｜醬油味噌都神</td></tr>
-      <tr><td><b>博多もつ鍋 笑樂</b> ✅ Day 2 吃過</td><td>西中洲 11-4</td></tr>
+      <tr><td><b>博多もつ鍋 笑樂</b></td><td>西中洲 11-4</td></tr>
       <tr><td><b>水炊き 橙</b></td><td>中洲 5-3-8｜雞湯名店</td></tr>
       <tr><td><b>水炊き 若杉</b></td><td>奈良屋町 8-12（旅館步行 7 分）</td></tr>
       <tr><td><b>元祖博多めんたい重</b></td><td>西中洲 6-15｜明太子米飯重</td></tr>
@@ -1332,7 +1748,7 @@
     '4':{name:'熊本', lat:32.8032, lon:130.7079, date:'2026-09-22'},
     '5':{name:'熊本 → 阿蘇 → 別府', lat:32.9441, lon:131.0676, date:'2026-09-23'},
     '6':{name:'別府 / 由布院', lat:33.2846, lon:131.4910, date:'2026-09-24'},
-    '7':{name:'別府 → 福岡空港 → 天神', lat:33.5904, lon:130.4017, date:'2026-09-25'},
+    '7':{name:'別府 → 博多 → 機場', lat:33.5904, lon:130.4017, date:'2026-09-25'},
   };
   // 9月下旬氣候平均（fallback）
   const climatology = {
@@ -1342,7 +1758,7 @@
     '熊本':{hi:28,lo:21,rain:30,note:'熊本市區偏熱'},
     '熊本 → 阿蘇 → 別府':{hi:23,lo:14,rain:35,note:'阿蘇山區涼快，山上溫差大，帶薄外套'},
     '別府 / 由布院':{hi:25,lo:18,rain:35,note:'九重、由布院山區較涼，別府海邊回溫'},
-    '別府 → 福岡空港 → 天神':{hi:27,lo:21,rain:30,note:'福岡再回到偏熱'},
+    '別府 → 博多 → 機場':{hi:27,lo:21,rain:30,note:'博多再回到偏熱'},
   };
   const wmoIcon = c=>{
     if(c===0) return '☀️';
@@ -1373,7 +1789,7 @@
           <div class="meta">降雨機率約 ${k.rain}%</div>
         </div>
       </div>
-      <div class="weather-fallback">⚠️ 取不到當天的天氣資料，改顯示往年 9 月下旬平均：${k.note}</div>
+      <div class="weather-fallback">⚠️ 預報需出發前 16 天內查詢。目前顯示往年 9 月下旬平均：${k.note}</div>
     `;
   }
   async function fetchWeather(d){

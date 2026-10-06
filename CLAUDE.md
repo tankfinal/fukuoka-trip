@@ -6,6 +6,8 @@
 - `index.html`：GitHub Pages 網頁版，獨立手刻，不是由 README 產生
 - Remote：`tankfinal/fukuoka-trip`
 
+行程已走完。README 與 index.html 的規劃內容是出發前的版本，**原樣保留不改**；實際走法、採買、跟原計畫的差異只寫在 README「✅ 實際行程（含採買）」段與 index.html 的「✅ 實際行程」tab（`id="actual"`）。
+
 ## 分工：Claude 查詢與改檔，Google 驗證由使用者手動
 
 | 工作類型 | 誰做 |
